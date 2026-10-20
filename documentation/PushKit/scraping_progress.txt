@@ -1,4 +1,0 @@
-Completed scraping PushKit!
-Total pages scraped: 0
-Pages skipped (unchanged): 30
-Pages failed: 0

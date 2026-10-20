@@ -1,4 +1,0 @@
-Completed scraping Accessory Notifications!
-Total pages scraped: 0
-Pages skipped (unchanged): 98
-Pages failed: 0

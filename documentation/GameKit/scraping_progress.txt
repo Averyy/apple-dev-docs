@@ -1,4 +1,0 @@
-Completed scraping GameKit!
-Total pages scraped: 0
-Pages skipped (unchanged): 1064
-Pages failed: 0

@@ -1,4 +1,0 @@
-Completed scraping RelevanceKit!
-Total pages scraped: 0
-Pages skipped (unchanged): 31
-Pages failed: 0

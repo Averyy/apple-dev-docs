@@ -1,4 +1,0 @@
-Completed scraping Visual Intelligence!
-Total pages scraped: 0
-Pages skipped (unchanged): 10
-Pages failed: 0

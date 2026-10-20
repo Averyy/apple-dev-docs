@@ -1,4 +1,0 @@
-Completed scraping Watch Connectivity!
-Total pages scraped: 0
-Pages skipped (unchanged): 106
-Pages failed: 0

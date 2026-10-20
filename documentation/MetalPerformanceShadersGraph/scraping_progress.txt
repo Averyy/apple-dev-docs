@@ -1,4 +1,0 @@
-Completed scraping Metal Performance Shaders Graph!
-Total pages scraped: 0
-Pages skipped (unchanged): 812
-Pages failed: 0

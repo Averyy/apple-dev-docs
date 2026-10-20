@@ -1,4 +1,0 @@
-Completed scraping Collaboration!
-Total pages scraped: 0
-Pages skipped (unchanged): 42
-Pages failed: 0

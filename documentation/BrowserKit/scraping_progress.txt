@@ -1,4 +1,0 @@
-Completed scraping BrowserKit!
-Total pages scraped: 0
-Pages skipped (unchanged): 103
-Pages failed: 0

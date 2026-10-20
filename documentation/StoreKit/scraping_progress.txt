@@ -1,4 +1,0 @@
-Completed scraping StoreKit!
-Total pages scraped: 0
-Pages skipped (unchanged): 1425
-Pages failed: 0

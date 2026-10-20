@@ -1,4 +1,0 @@
-Completed scraping Image Playground!
-Total pages scraped: 0
-Pages skipped (unchanged): 79
-Pages failed: 0

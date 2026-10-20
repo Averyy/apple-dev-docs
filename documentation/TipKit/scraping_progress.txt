@@ -1,4 +1,0 @@
-Completed scraping TipKit!
-Total pages scraped: 0
-Pages skipped (unchanged): 191
-Pages failed: 0

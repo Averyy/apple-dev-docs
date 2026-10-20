@@ -1,4 +1,0 @@
-Completed scraping InputMethodKit!
-Total pages scraped: 0
-Pages skipped (unchanged): 102
-Pages failed: 0

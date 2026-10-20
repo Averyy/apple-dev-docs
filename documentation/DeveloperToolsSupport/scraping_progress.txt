@@ -1,4 +1,0 @@
-Completed scraping DeveloperToolsSupport!
-Total pages scraped: 0
-Pages skipped (unchanged): 83
-Pages failed: 0

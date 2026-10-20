@@ -1,4 +1,0 @@
-Completed scraping Speech!
-Total pages scraped: 0
-Pages skipped (unchanged): 387
-Pages failed: 0

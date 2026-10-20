@@ -1,4 +1,0 @@
-Completed scraping Distributed!
-Total pages scraped: 0
-Pages skipped (unchanged): 92
-Pages failed: 0

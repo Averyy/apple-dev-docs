@@ -1,4 +1,0 @@
-Completed scraping Playground Bluetooth!
-Total pages scraped: 0
-Pages skipped (unchanged): 65
-Pages failed: 0

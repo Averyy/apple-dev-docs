@@ -1,4 +1,0 @@
-Completed scraping SKAdNetwork for Web Ads!
-Total pages scraped: 0
-Pages skipped (unchanged): 8
-Pages failed: 0

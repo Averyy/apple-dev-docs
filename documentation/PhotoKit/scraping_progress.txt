@@ -1,4 +1,0 @@
-Completed scraping PhotoKit!
-Total pages scraped: 0
-Pages skipped (unchanged): 12
-Pages failed: 0

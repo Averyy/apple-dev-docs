@@ -178,14 +178,13 @@ def framework_hash_files(hash_dir: Path) -> HashFiles:
 def _write_count(hash_file: FrameworkHashFile, runs: int, report: UnlistedReport) -> bool:
     """Write a framework's unlisted_runs (0 drops it); False, a failure for the run, if that failed.
 
-    The hash file is reloaded with its own session, so the save changes
-    nothing else in it (session_id and last_updated stay, for old-way orphan
-    detection); set_metadata marks the manager modified, so a metadata-only
-    change is saved. A file that couldn't be read when it was classified
+    The hash file is reloaded and saved with only the count changed;
+    set_metadata marks the manager modified, so a metadata-only change is
+    saved. A file that couldn't be read when it was classified
     (hash_file.load_error) is replaced by one holding only the count, as
     HashManager's save replaces any file that failed to load.
     """
-    manager = HashManager(hash_file.path, resume_session=True)
+    manager = HashManager(hash_file.path)
     if manager.load_error is not None and hash_file.load_error is None:
         report.failures.append(f"{hash_file.framework_id}: hash file can't be loaded ({manager.load_error})")
         return False

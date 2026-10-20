@@ -1,4 +1,0 @@
-Completed scraping Assignables!
-Total pages scraped: 0
-Pages skipped (unchanged): 257
-Pages failed: 0

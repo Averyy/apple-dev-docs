@@ -109,28 +109,97 @@ def test_etag_updated_after_regeneration():
 
 
 def test_metadata_is_preserved_across_save_and_load() -> None:
-    """Nested metadata survives load and save; the per-run keys are rewritten."""
+    """Nested metadata survives load and save; total_pages is rewritten and the legacy keys are dropped."""
     with tempfile.TemporaryDirectory() as d:
         cache = Path(d) / "fw_hashes.json"
         cache.write_text(json.dumps({
             "metadata": {
-                "last_updated": "old", "total_pages": 99, "session_id": "old",
+                "last_updated": "old", "total_pages": 99, "session_id": "old", "partial_session": "old",
                 "root_gone_runs": 1, "failure_storm_runs": 2, "pending_orphans": ["a.md"],
+                "module": {"parent": "other"},
             },
             "hashes": {"u": {"hash": "h", "file_path": "documentation/fw/u.md"}},
         }))
         hm = HashManager(cache)
-        assert hm.metadata == {"root_gone_runs": 1, "failure_storm_runs": 2, "pending_orphans": ["a.md"]}
-        hm.touch("u")
+        assert hm.metadata == {
+            "root_gone_runs": 1, "failure_storm_runs": 2, "pending_orphans": ["a.md"], "module": {"parent": "other"},
+        }
+        hm.set_counter("u", "consecutive_failures", 1)
         hm.save()
         metadata = json.loads(cache.read_text())["metadata"]
-        assert list(metadata) == [
-            "last_updated", "total_pages", "session_id", "root_gone_runs", "failure_storm_runs", "pending_orphans",
-        ]
-        assert metadata["session_id"] == hm.session_id
+        assert list(metadata) == ["failure_storm_runs", "module", "pending_orphans", "root_gone_runs", "total_pages"]
         assert metadata["total_pages"] == 1
         assert HashManager(cache).metadata == hm.metadata
     print("PASS: metadata_is_preserved_across_save_and_load")
+
+
+def test_legacy_fields_are_dropped_on_load() -> None:
+    """The fields no longer written are dropped on load, and leave the file at its next save.
+
+    Per entry: last_checked, session_id, a status other than "error", and an
+    error entry's hash. Counters and every content field stay.
+    """
+    with tempfile.TemporaryDirectory() as d:
+        cache = Path(d) / "fw_hashes.json"
+        legacy = json.dumps({
+            "metadata": {"last_updated": "t", "total_pages": 4, "session_id": "s", "partial_session": "s"},
+            "hashes": {
+                "live": {"hash": "h", "last_checked": "t", "status": "unchanged", "session_id": "s",
+                         "etag": "E", "file_path": "documentation/fw/live.md"},
+                "new": {"hash": "h2", "last_checked": "t", "status": "new", "session_id": "s",
+                        "file_path": "documentation/fw/new.md", "consecutive_local_errors": 1},
+                "gone": {"hash": "", "last_checked": "t", "status": "error", "error": "HTTP 404",
+                         "consecutive_failures": 2},
+                "kept": {"hash": "", "status": "unchanged", "session_id": "s", "file_path": "documentation/fw/kept.md"},
+            },
+        }, indent=2)
+        cache.write_text(legacy)
+        hm = HashManager(cache)
+        assert hm.hashes == {
+            "live": {"hash": "h", "etag": "E", "file_path": "documentation/fw/live.md"},
+            "new": {"hash": "h2", "file_path": "documentation/fw/new.md", "consecutive_local_errors": 1},
+            "gone": {"status": "error", "error": "HTTP 404", "consecutive_failures": 2},
+            "kept": {"hash": "", "file_path": "documentation/fw/kept.md"},
+        }
+        assert hm.metadata == {}
+        # Loading changes nothing on disk: an unmodified manager writes nothing
+        assert hm.save() is True and cache.read_text() == legacy
+        # Any change writes the whole file without them
+        hm.set_counter("gone", "consecutive_failures", 3)
+        assert hm.save() is True
+        saved = json.loads(cache.read_text())
+        assert saved["metadata"] == {"total_pages": 4}
+        assert saved["hashes"] == hm.hashes
+        assert saved["hashes"]["gone"] == {"status": "error", "error": "HTTP 404", "consecutive_failures": 3}
+    print("PASS: legacy_fields_are_dropped_on_load")
+
+
+def test_a_second_save_of_the_same_entries_is_byte_identical() -> None:
+    """Sorted keys and no timestamps: a run that rewrites what a file holds writes the same bytes.
+
+    E.g. a page re-marked as a 404 every run (mark_error always marks the
+    manager modified), or an unchanged page whose hash and etag are written again.
+    """
+    with tempfile.TemporaryDirectory() as d:
+        cache = Path(d) / "fw_hashes.json"
+        hm = HashManager(cache)
+        hm.update_hash("b", "content", etag="E", file_path=Path("documentation/fw/b.md"))
+        hm.update_hash("a", "content", etag="E", file_path=Path("documentation/fw/a.md"))
+        hm.mark_error("c", "HTTP 404")
+        hm.set_counter("a", "consecutive_failures", 1)
+        hm.set_metadata("pending_orphans", ["documentation/fw/x.md"])
+        assert hm.save() is True
+        first = cache.read_bytes()
+        assert first == json.dumps(json.loads(first), indent=2, sort_keys=True).encode()
+        for rewrite in ("mark_error", "update_hash"):
+            again = HashManager(cache)
+            if rewrite == "mark_error":
+                again.mark_error("c", "HTTP 404")
+            else:
+                again.update_hash("b", "content", etag="E", file_path=Path("documentation/fw/b.md"))
+            assert again.save() is True
+            assert cache.read_bytes() == first, rewrite
+    print("PASS: a_second_save_of_the_same_entries_is_byte_identical")
 
 
 def test_set_metadata_marks_modified_and_drops_falsy() -> None:
@@ -181,23 +250,52 @@ def test_counters_survive_update_hash_mark_error_and_save() -> None:
     print("PASS: counters_survive_update_hash_mark_error_and_save")
 
 
-def test_touch_refreshes_only_the_session() -> None:
-    """touch keeps hash, etag and file_path, refreshing session_id and last_checked."""
+def test_touch_only_records_the_url() -> None:
+    """touch adds the URL to the touched set, leaving its entry alone; nothing is saved for it."""
     with tempfile.TemporaryDirectory() as d:
-        hm = HashManager(Path(d) / "fw_hashes.json")
-        hm.hashes["u"] = {
-            "hash": "h", "last_checked": "old", "status": "unchanged", "session_id": "old",
-            "etag": "E", "file_path": "documentation/fw/u.md",
+        cache = Path(d) / "fw_hashes.json"
+        hm = HashManager(cache)
+        hm.update_hash("u", "content", etag="E", file_path=Path("documentation/fw/u.md"))
+        assert hm.save() is True
+        later = HashManager(cache)
+        before = dict(later.hashes["u"])
+        later.touch("u")
+        assert later.touched == {"u"} and later.hashes["u"] == before
+        cache.unlink()
+        assert later.save() is True and not cache.exists()  # not modified: nothing written
+    print("PASS: touch_only_records_the_url")
+
+
+def test_set_file_path_sets_only_the_path() -> None:
+    """set_file_path leaves hash, etag and counters alone, and marks the manager modified only on a change."""
+    with tempfile.TemporaryDirectory() as d:
+        cache = Path(d) / "fw_hashes.json"
+        hm = HashManager(cache)
+        hm.update_hash("u", "content", etag="E", file_path=Path("documentation/fw/old.md"))
+        hm.set_counter("u", "consecutive_failures", 2)
+        assert hm.save() is True
+        saved = cache.read_text()
+        same = HashManager(cache)
+        same.set_file_path("u", "documentation/fw/old.md")  # unchanged: not modified, not rewritten
+        cache.unlink()
+        assert same.save() is True and not cache.exists()
+        cache.write_text(saved)
+        renamed = HashManager(cache)
+        renamed.set_file_path("u", Path("documentation/fw/new.md"))
+        assert renamed.touched == set()
+        assert renamed.save() is True
+        assert json.loads(cache.read_text())["hashes"]["u"] == {
+            "hash": renamed.get_content_hash("content"), "etag": "E", "file_path": "documentation/fw/new.md",
+            "consecutive_failures": 2,
         }
-        hm.touch("u")
-        assert hm.hashes["u"]["session_id"] == hm.session_id
-        assert hm.hashes["u"]["last_checked"] != "old"
-        assert {k: hm.hashes["u"][k] for k in ("hash", "status", "etag", "file_path")} == {
-            "hash": "h", "status": "unchanged", "etag": "E", "file_path": "documentation/fw/u.md",
-        }
-        hm.save()
-        assert json.loads(hm.cache_file.read_text())["hashes"]["u"]["session_id"] == hm.session_id
-    print("PASS: touch_refreshes_only_the_session")
+        try:
+            renamed.set_file_path("missing", "documentation/fw/x.md")
+        except KeyError:
+            pass
+        else:
+            raise AssertionError("set_file_path created an entry")
+        assert "missing" not in renamed.hashes
+    print("PASS: set_file_path_sets_only_the_path")
 
 
 def test_keep_file_records_a_file_on_disk_only() -> None:
@@ -216,16 +314,29 @@ def test_keep_file_records_a_file_on_disk_only() -> None:
         assert hm.keep_file("v", page.with_name("page.md")) is True
         assert hm.keep_file("u", page) is True
         entry = hm.hashes["u"]
-        assert entry["file_path"] == str(page)
-        assert entry["status"] == "unchanged" and entry["hash"] == "" and "etag" not in entry
-        assert entry["session_id"] == hm.session_id and entry["consecutive_failures"] == 3
-        assert hm.hashes["v"]["status"] == "new"
+        assert entry == {"hash": "", "file_path": str(page), "consecutive_failures": 3}
+        assert hm.hashes["v"] == {"hash": "", "file_path": str(page.with_name("page.md"))}
+        assert hm.touched == {"u", "v"}
         # The next run refetches it without an etag and converts it again
         assert hm.has_changed("u", "content") is True and hm.get_etag("u") is None
         del hm.hashes["v"]
-        hm.save()
-        assert hm.get_orphaned_files(page.parent) == []
+        assert hm.get_untouched_files(page.parent) == []
+        assert hm.save() is True and json.loads(hm.cache_file.read_text())["hashes"]["u"] == entry
     print("PASS: keep_file_records_a_file_on_disk_only")
+
+
+def test_keep_file_alone_is_saved() -> None:
+    """keep_file marks the manager modified: e.g. a lost hash file, then the root fails with its file on disk."""
+    with tempfile.TemporaryDirectory() as d:
+        cache = Path(d) / "fw_hashes.json"
+        page = Path(d) / "fw" / "fw.md"
+        page.parent.mkdir()
+        page.write_text("# fw\n")
+        hm = HashManager(cache)
+        assert hm.keep_file("root", page) is True
+        assert hm.save() is True and cache.exists()
+        assert json.loads(cache.read_text())["hashes"] == {"root": {"hash": "", "file_path": str(page)}}
+    print("PASS: keep_file_alone_is_saved")
 
 
 def test_a_path_that_cant_be_checked_counts_as_missing() -> None:
@@ -241,13 +352,14 @@ def test_a_path_that_cant_be_checked_counts_as_missing() -> None:
         assert hm.keep_file("u", page) is False  # nothing changes: the URL keeps its counted error entry
         assert hm.hashes["u"] == before
         # An entry that records such a path: refetched without an etag and converted again
-        hm.hashes["v"] = {"hash": "h", "status": "unchanged", "etag": "E", "file_path": str(page)}
+        hm.hashes["v"] = {"hash": "h", "etag": "E", "file_path": str(page)}
         assert hm.get_etag("v") is None
         assert hm.has_changed("v", "content", etag="E") is True
         assert hm.prune_missing_files() == 1 and "v" not in hm.hashes
         # Orphan detection checks a touched entry's path without raising
-        hm.hashes["w"] = {"hash": "h", "status": "unchanged", "session_id": hm.session_id, "file_path": str(page)}
-        assert hm.get_orphaned_files(page.parent) == [page.parent / "other.md"]
+        hm.hashes["w"] = {"hash": "h", "file_path": str(page)}
+        hm.touch("w")
+        assert hm.get_untouched_files(page.parent) == [page.parent / "other.md"]
     print("PASS: a_path_that_cant_be_checked_counts_as_missing")
 
 
@@ -266,8 +378,9 @@ def test_a_dir_that_cant_be_listed_keeps_its_entries() -> None:
         locked.mkdir(parents=True)
         page = locked / "child.md"
         page.write_text("# child\n")
-        hm.hashes["u"] = {"hash": hm.get_content_hash("content"), "status": "unchanged", "etag": "E",
-                          "session_id": hm.session_id, "file_path": str(page), "consecutive_local_errors": 2}
+        hm.hashes["u"] = {"hash": hm.get_content_hash("content"), "etag": "E", "file_path": str(page),
+                          "consecutive_local_errors": 2}
+        hm.touch("u")
         hm.mark_error("v", "HTTP 502")
         locked.chmod(0)
         try:
@@ -276,8 +389,7 @@ def test_a_dir_that_cant_be_listed_keeps_its_entries() -> None:
             assert hm.prune_missing_files() == 0 and hm.hashes["u"]["consecutive_local_errors"] == 2
             before = dict(hm.hashes["v"])
             assert hm.keep_file("v", page) is False and hm.hashes["v"] == before
-            hm.save()
-            assert hm.get_orphaned_files(Path(d) / "fw") == []
+            assert hm.get_untouched_files(Path(d) / "fw") == []
         finally:
             locked.chmod(0o755)
     print("PASS: a_dir_that_cant_be_listed_keeps_its_entries")
@@ -485,36 +597,6 @@ def test_write_text_atomic_writes_whole_or_not_at_all() -> None:
     print("PASS: write_text_atomic_writes_whole_or_not_at_all")
 
 
-def test_a_partial_run_marks_its_save_only_when_it_writes() -> None:
-    """mark_partial sets metadata.partial_session only on a manager whose save writes anyway."""
-    with tempfile.TemporaryDirectory() as d:
-        cache = Path(d) / "fw_hashes.json"
-        hm = HashManager(cache)
-        hm.update_hash("u", "content", file_path=Path("documentation/fw/u.md"))
-        assert hm.save() is True
-        before = cache.read_text()
-        quiet = HashManager(cache)
-        quiet.mark_partial()  # nothing changed: nothing to write
-        assert quiet.save() is True and cache.read_text() == before
-        assert not HashManager(cache).partial
-        busy = HashManager(cache)
-        busy.touch("u")
-        busy.mark_partial()
-        assert busy.save() is True
-        reloaded = HashManager(cache)
-        assert reloaded.partial and reloaded.get_metadata("partial_session") == busy.session_id
-        reloaded.set_metadata("partial_session", None)  # a run that finishes unblocked drops it
-        assert reloaded.save() is True and not HashManager(cache).partial
-
-        # The mark never makes a manager worth saving: a removed framework
-        # (no hash file, no docs dir) still writes nothing
-        gone = HashManager(Path(d) / "gone_hashes.json", Path(d) / "gone")
-        gone.mark_error("root", "HTTP 404")
-        gone.mark_partial()
-        assert gone.save() is True and not (Path(d) / "gone_hashes.json").exists()
-    print("PASS: a_partial_run_marks_its_save_only_when_it_writes")
-
-
 def main():
     tests = [
         test_new_url_is_changed,
@@ -525,9 +607,13 @@ def main():
         test_etag_updated_after_regeneration,
         test_metadata_is_preserved_across_save_and_load,
         test_set_metadata_marks_modified_and_drops_falsy,
+        test_legacy_fields_are_dropped_on_load,
+        test_a_second_save_of_the_same_entries_is_byte_identical,
         test_counters_survive_update_hash_mark_error_and_save,
-        test_touch_refreshes_only_the_session,
+        test_touch_only_records_the_url,
+        test_set_file_path_sets_only_the_path,
         test_keep_file_records_a_file_on_disk_only,
+        test_keep_file_alone_is_saved,
         test_a_path_that_cant_be_checked_counts_as_missing,
         test_a_dir_that_cant_be_listed_keeps_its_entries,
         test_save_skips_a_manager_with_nothing_to_keep,
@@ -535,7 +621,6 @@ def main():
         test_a_failed_save_is_reported_and_keeps_the_previous_file,
         test_a_file_that_fails_to_load_is_replaced_by_the_next_save,
         test_write_text_atomic_writes_whole_or_not_at_all,
-        test_a_partial_run_marks_its_save_only_when_it_writes,
     ]
 
     passed = 0

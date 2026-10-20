@@ -1,4 +1,0 @@
-Completed scraping ExtensionFoundation!
-Total pages scraped: 0
-Pages skipped (unchanged): 97
-Pages failed: 0

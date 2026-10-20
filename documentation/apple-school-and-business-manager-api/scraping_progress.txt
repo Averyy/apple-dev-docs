@@ -1,4 +1,0 @@
-Completed scraping Apple School Manager and Apple Business APIs!
-Total pages scraped: 0
-Pages skipped (unchanged): 4
-Pages failed: 0

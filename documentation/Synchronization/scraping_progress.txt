@@ -1,4 +1,0 @@
-Completed scraping Synchronization!
-Total pages scraped: 0
-Pages skipped (unchanged): 197
-Pages failed: 0

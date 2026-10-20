@@ -4,26 +4,22 @@ Delete orphaned files at the end of scraping.
 
 The scrape (scrape.py --cleanup-orphans) cleans from each framework's result,
 computed right after its hash file was saved (cleanup_after_scrape): only the
-frameworks scraped this run, never one whose run hit a failure of ours. The
-standalone main() collects every framework's orphans from its persisted
-session instead, skipping a framework whose last save came from a scrape that
-didn't finish it or hit a failure of ours. Both delete through delete_orphans,
-presenting them once for approval unless the cleanup is automatic.
+frameworks scraped this run, never one whose run hit a failure of ours. It
+deletes through delete_orphans, presenting them once for approval unless the
+cleanup is automatic.
 """
 
-import os
 import shutil
 import sys
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import TYPE_CHECKING, Dict, Final, Iterable, List, Optional, Sequence, Tuple
+from typing import TYPE_CHECKING, Dict, Final, List, Optional, Sequence, Tuple
 
 # Add parent directory to path for imports
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from analysis.check_orphans import HashManager
 from scraper.config import Config
-from scraper.utils.hash_manager import same_name_any_case, valve_trips
+from scraper.utils.hash_manager import HashManager, same_name_any_case, valve_trips
 from scraper.utils.logger import get_logger
 
 if TYPE_CHECKING:
@@ -200,14 +196,13 @@ def _remove_empty_dirs(path: Path, framework_dir: Path) -> None:
 def _write_hash_file(cleanup: FrameworkCleanup, prune: bool, report: CleanupReport) -> bool:
     """Prune the entries of deleted files and write a changed pending_orphans.
 
-    Reloads the framework's hash file with the scrape's session (so old-way
-    orphan detection still compares against it) and saves once; a
-    pending_orphans change is saved even when nothing else changed.
+    Reloads the framework's hash file and saves once; a pending_orphans
+    change is saved even when nothing else changed.
 
     Returns:
         False if the write failed (reported in report.failures)
     """
-    hash_manager = HashManager(cleanup.hash_file, cleanup.framework_dir, resume_session=True)
+    hash_manager = HashManager(cleanup.hash_file, cleanup.framework_dir)
     if hash_manager.load_error is not None:
         # Never replace a hash file we can't read with what this write holds
         report.failures.append(f"{cleanup.framework}: hash file failed to load: {hash_manager.load_error}")
@@ -264,8 +259,7 @@ def delete_orphans(cleanups: Sequence[FrameworkCleanup], interactive: bool) -> C
     on a run that deletes nothing.
 
     Which frameworks are cleaned (never one blocked by a failure of ours) and
-    what each deletes is decided by the caller (cleanup_after_scrape, or
-    collect_all_orphans for the standalone check).
+    what each deletes is decided by the caller (cleanup_after_scrape).
 
     Args:
         cleanups: Each framework's deletions and pending_orphans change
@@ -318,36 +312,6 @@ def describe_skip(outcome: "FrameworkOutcome") -> str:
     if outcome.blocks:
         return ", ".join(f"{reason} x{len(details)}" for reason, details in outcome.blocks.items())
     return f"root gone, run {outcome.root_gone_runs}"
-
-
-def _shadow_summary(outcomes: Sequence["FrameworkOutcome"]) -> None:
-    """D5 shadow mode: log how often the two ways of finding orphans disagreed.
-
-    compared: frameworks whose orphans were found both ways (orphan_shadow);
-    mismatched: those whose two sets differ, blocked ones excluded; blocked:
-    frameworks blocked by a failure of ours or that raised (logged, never in
-    mismatched), so a run with blocked frameworks isn't taken for full
-    coverage. Also appended to the GitHub Actions step summary.
-    """
-    compared = [outcome for outcome in outcomes if outcome.shadow_mismatch is not None]
-    mismatched = [outcome for outcome in compared if outcome.shadow_mismatch and not outcome.blocked]
-    blocked = [outcome for outcome in outcomes if outcome.blocked]
-    log = logger.warning if mismatched else logger.info
-    log(
-        "orphan_shadow_summary",
-        compared=len(compared),
-        mismatched=len(mismatched),
-        blocked=len(blocked),
-        mismatched_frameworks=[outcome.framework_id for outcome in mismatched],
-    )
-    step_summary = os.environ.get("GITHUB_STEP_SUMMARY")
-    if step_summary:
-        try:
-            with open(step_summary, "a") as f:
-                f.write(f"orphan_shadow_summary compared={len(compared)} mismatched={len(mismatched)} "
-                        f"blocked={len(blocked)}\n")
-        except OSError as e:
-            logger.warning("step_summary_write_failed", file=step_summary, error=str(e))
 
 
 def _print_summary(report: CleanupReport, skipped: Sequence["FrameworkOutcome"],
@@ -417,7 +381,6 @@ def cleanup_after_scrape(outcomes: Sequence["FrameworkOutcome"], interactive: bo
     Returns:
         The report; its failures are errors for the run
     """
-    _shadow_summary(outcomes)
     cleanups: List[FrameworkCleanup] = []
     skipped: List["FrameworkOutcome"] = []
     root_pending: List["FrameworkOutcome"] = []
@@ -442,120 +405,3 @@ def cleanup_after_scrape(outcomes: Sequence["FrameworkOutcome"], interactive: bo
     report = delete_orphans(cleanups, interactive)
     _print_summary(report, skipped, root_pending, root_gone)
     return report
-
-
-def collect_all_orphans(skip_frameworks: Iterable[str] = ()) -> Dict[str, List[Path]]:
-    """Collect orphaned files from all frameworks, from each one's persisted session.
-
-    For the standalone check (main), outside a scrape. A framework whose
-    orphans trip the valve is skipped: confirm-then-delete belongs to the
-    scrape, whose two clean runs confirm a mass removal. So is a framework
-    whose hash file's last save came from a scrape that didn't finish its
-    discovery or whose cleanup was blocked (HashManager.partial): only the
-    pages that scrape reached carry its session, so every other live page
-    would look orphaned.
-
-    Args:
-        skip_frameworks: Framework ids (any casing) whose cleanup is blocked
-            this run, e.g. by a failed request of ours; none of their files
-            are collected.
-    """
-    cleanups, _, _ = _collect(skip_frameworks)
-    return {cleanup.framework: cleanup.delete for cleanup in cleanups}
-
-
-def _collect(
-    skip_frameworks: Iterable[str] = (),
-) -> Tuple[List[FrameworkCleanup], Dict[str, Tuple[int, int]], List[str]]:
-    """Each framework's orphans from its persisted session (see collect_all_orphans).
-
-    Returns:
-        The frameworks' cleanups; framework -> (orphans, files) for each
-        framework the valve skips; and the frameworks skipped because their
-        last save came from an interrupted or blocked scrape (nothing of
-        either kind of skipped framework is deleted or written)
-    """
-    hash_dir = Path(".hashes")
-    doc_dir = Path("documentation")
-
-    if not hash_dir.exists() or not doc_dir.exists():
-        return [], {}, []
-
-    cleanups = []
-    held: Dict[str, Tuple[int, int]] = {}
-    partial: List[str] = []
-    skip = {framework.lower() for framework in skip_frameworks}
-
-    # Get all hash files
-    hash_files = list(hash_dir.glob("*_hashes.json"))
-
-    for hash_file in hash_files:
-        framework_name = hash_file.stem.replace("_hashes", "")
-        if framework_name.lower() in skip:
-            logger.info("orphan_cleanup_skipped", framework=framework_name)
-            continue
-
-        # Load hash manager
-        hash_manager = HashManager(hash_file)
-        if hash_manager.partial:
-            logger.warning("orphan_cleanup_skipped_partial", framework=framework_name)
-            partial.append(framework_name)
-            continue
-
-        # Get framework directory, in any casing
-        framework_dirs = [path for path in same_name_any_case(doc_dir / framework_name) if path.is_dir()]
-        if not framework_dirs:
-            continue
-        framework_dir = framework_dirs[0]
-
-        # Find orphaned files
-        all_files = HashManager.framework_files(framework_dir)
-        orphaned_files = hash_manager.get_orphaned_files(framework_dir, all_files)
-
-        if orphaned_files:
-            # Safety check
-            if valve_trips(len(orphaned_files), len(all_files)):
-                logger.warning(f"Skipping {framework_name}: too many orphans ({len(orphaned_files)}/{len(all_files)})")
-                held[framework_name] = (len(orphaned_files), len(all_files))
-                continue
-
-            cleanups.append(FrameworkCleanup(
-                framework_name, framework_dir, hash_file, files=len(all_files), delete=orphaned_files
-            ))
-
-    return cleanups, held, partial
-
-
-def main() -> None:
-    """Main entry point."""
-    print("🔍 Collecting orphaned files across all frameworks...")
-
-    cleanups, held, partial = _collect()
-
-    if held:
-        print(f"⏸️  Not deleted, held by the valve (at least half of a framework's files, or over 1,000) in "
-              f"{len(held)} frameworks; the scrape's cleanup deletes them once two clean runs find them "
-              "orphaned (pending_orphans):")
-        for framework, (orphans, files) in sorted(held.items()):
-            print(f"   - {framework}: {orphans} of {files} files")
-    if partial:
-        print(f"⏸️  Skipped {len(partial)} frameworks whose hash file was last saved by a scrape that didn't "
-              "reach all their pages (interrupted, or blocked by a failure: partial_session): every page it "
-              "didn't reach would look orphaned. The next scrape that finishes each one unblocked clears this: "
-              + ", ".join(sorted(partial)))
-
-    if not cleanups:
-        print("✅ No other orphaned files found" if held or partial else "✅ No orphaned files found!")
-        return
-
-    report = delete_orphans(cleanups, interactive=True)
-    if report.deleted:
-        print(f"\n✅ Deleted {sum(report.deleted.values())} orphaned files")
-    if report.pruned:
-        print(f"🧹 Pruned {report.pruned} hash entries for deleted files")
-    for failure in report.failures:
-        print(f"❌ {failure}")
-
-
-if __name__ == "__main__":
-    main()

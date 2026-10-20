@@ -1,4 +1,0 @@
-Completed scraping External Purchase Server API!
-Total pages scraped: 0
-Pages skipped (unchanged): 84
-Pages failed: 0

@@ -1,441 +1,277 @@
 {
-  "metadata": {
-    "last_updated": "2026-10-20T07:42:04.648296",
-    "total_pages": 54,
-    "session_id": "2026-10-20T07:42:00.642930"
-  },
   "hashes": {
-    "https://developer.apple.com/tutorials/data/documentation/watchOS-Apps.json": {
-      "hash": "0adc78f87b3b1fd47bc7a4f4ac4ff422b61470d96cbc12926b968c529c640387",
-      "last_checked": "2026-10-20T07:42:00.788277",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:42:00.642930",
-      "etag": "\"9f83-65b3a3243916b-df\"",
-      "file_path": "documentation/watchOS-Apps/watchOS-Apps.md"
-    },
     "https://developer.apple.com/documentation/watchOS-Apps": {
-      "hash": "0adc78f87b3b1fd47bc7a4f4ac4ff422b61470d96cbc12926b968c529c640387",
-      "last_checked": "2026-10-20T07:42:00.751389",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:42:00.642930",
       "etag": "\"9f83-65b3a3243916b-df\"",
-      "file_path": "documentation/watchOS-Apps/watchOS-Apps.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchos-apps/creating-an-intuitive-and-effective-ui-in-watchos-10.json": {
-      "hash": "97f28161ac38374240269adb7bb1dfb6c4beb7238df6df41d2af4abf93d5578d",
-      "last_checked": "2026-10-20T07:42:01.065317",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:42:00.642930",
-      "etag": "\"1313e-65d55a2a106cf-df\"",
-      "file_path": "documentation/watchOS-Apps/creating-an-intuitive-and-effective-ui-in-watchos-10.md"
-    },
-    "https://developer.apple.com/documentation/watchos-apps/creating-an-intuitive-and-effective-ui-in-watchos-10": {
-      "hash": "97f28161ac38374240269adb7bb1dfb6c4beb7238df6df41d2af4abf93d5578d",
-      "last_checked": "2026-10-16T07:31:51.694592",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:51.182463",
-      "etag": "\"1313e-65d55a2a106cf-df\"",
-      "file_path": "documentation/watchOS-Apps/creating-an-intuitive-and-effective-ui-in-watchos-10.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchos-apps/updating-your-app-and-widgets-for-watchos-10.json": {
-      "hash": "08e991a848636f64464f640cff32615d02238b44666911861310c29356b4ed52",
-      "last_checked": "2026-10-20T07:42:01.261210",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:42:00.642930",
-      "etag": "\"20cd-65d55a2a106cf-df\"",
-      "file_path": "documentation/watchOS-Apps/updating-your-app-and-widgets-for-watchos-10.md"
-    },
-    "https://developer.apple.com/documentation/watchos-apps/updating-your-app-and-widgets-for-watchos-10": {
-      "hash": "08e991a848636f64464f640cff32615d02238b44666911861310c29356b4ed52",
-      "last_checked": "2026-10-16T07:31:51.804046",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:51.182463",
-      "etag": "\"20cd-65d55a2a106cf-df\"",
-      "file_path": "documentation/watchOS-Apps/updating-your-app-and-widgets-for-watchos-10.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchos-apps/building_a_watchos_app.json": {
-      "hash": "0badb9657a59e4b176e3a2fded3a165301d93011330f0b99dcfcbb12ed7a834b",
-      "last_checked": "2026-10-20T07:42:01.345665",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:42:00.642930",
-      "etag": "\"9480-65d55a2a106cf-df\"",
-      "file_path": "documentation/watchOS-Apps/building-a-watchos-app.md"
-    },
-    "https://developer.apple.com/documentation/watchos-apps/building_a_watchos_app": {
-      "hash": "0badb9657a59e4b176e3a2fded3a165301d93011330f0b99dcfcbb12ed7a834b",
-      "last_checked": "2026-10-16T07:31:51.888581",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:51.182463",
-      "etag": "\"9480-65d55a2a106cf-df\"",
-      "file_path": "documentation/watchOS-Apps/building-a-watchos-app.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchos-apps/setting-up-a-watchos-project.json": {
-      "hash": "33d4c7c8ad5079f7e23fb73ba4683c1bbc1e37664e9fd4d3ae4e7508a5849b14",
-      "last_checked": "2026-10-20T07:42:01.643361",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:42:00.642930",
-      "etag": "\"3b81-659021f38795b-df\"",
-      "file_path": "documentation/watchOS-Apps/setting-up-a-watchos-project.md"
-    },
-    "https://developer.apple.com/documentation/watchos-apps/setting-up-a-watchos-project": {
-      "hash": "33d4c7c8ad5079f7e23fb73ba4683c1bbc1e37664e9fd4d3ae4e7508a5849b14",
-      "last_checked": "2026-09-15T07:29:21.945319",
-      "status": "unchanged",
-      "session_id": "2026-09-15T07:29:20.888015",
-      "etag": "\"3b81-659021f38795b-df\"",
-      "file_path": "documentation/watchOS-Apps/setting-up-a-watchos-project.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchos-apps/creating-independent-watchos-apps.json": {
-      "hash": "20284dc7495c71f23cb868dbcc806e8ab5cbdae994c31c89843144065cd7aba8",
-      "last_checked": "2026-10-20T07:42:01.775190",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:42:00.642930",
-      "etag": "\"5f94-65b8a233ecabc-df\"",
-      "file_path": "documentation/watchOS-Apps/creating-independent-watchos-apps.md"
-    },
-    "https://developer.apple.com/documentation/watchos-apps/creating-independent-watchos-apps": {
-      "hash": "20284dc7495c71f23cb868dbcc806e8ab5cbdae994c31c89843144065cd7aba8",
-      "last_checked": "2026-09-18T07:39:40.397718",
-      "status": "unchanged",
-      "session_id": "2026-09-18T07:39:39.268720",
-      "etag": "\"5f94-65b8a233ecabc-df\"",
-      "file_path": "documentation/watchOS-Apps/creating-independent-watchos-apps.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchos-apps/keeping-your-watchos-app-s-content-up-to-date.json": {
-      "hash": "48f3bd733e43980492ab77c8cf33b145102c1889113c43b3a538b282abe83a2c",
-      "last_checked": "2026-10-20T07:42:01.880970",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:42:00.642930",
-      "etag": "\"764a-659021f38795b-df\"",
-      "file_path": "documentation/watchOS-Apps/keeping-your-watchos-app-s-content-up-to-date.md"
-    },
-    "https://developer.apple.com/documentation/watchos-apps/keeping-your-watchos-app-s-content-up-to-date": {
-      "hash": "48f3bd733e43980492ab77c8cf33b145102c1889113c43b3a538b282abe83a2c",
-      "last_checked": "2026-09-15T07:29:22.126362",
-      "status": "unchanged",
-      "session_id": "2026-09-15T07:29:20.888015",
-      "etag": "\"764a-659021f38795b-df\"",
-      "file_path": "documentation/watchOS-Apps/keeping-your-watchos-app-s-content-up-to-date.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchos-apps/updating-watchos-apps-with-timelines.json": {
-      "hash": "2d7818c0a44cd9d36b8c03d59fff472bb00b80b182c538b3eb54db2bb75164f4",
-      "last_checked": "2026-10-20T07:42:02.065563",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:42:00.642930",
-      "etag": "\"8438-65d55a2a106cf-df\"",
-      "file_path": "documentation/watchOS-Apps/updating-watchos-apps-with-timelines.md"
-    },
-    "https://developer.apple.com/documentation/watchos-apps/updating-watchos-apps-with-timelines": {
-      "hash": "2d7818c0a44cd9d36b8c03d59fff472bb00b80b182c538b3eb54db2bb75164f4",
-      "last_checked": "2026-10-16T07:31:52.546461",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:51.182463",
-      "etag": "\"8438-65d55a2a106cf-df\"",
-      "file_path": "documentation/watchOS-Apps/updating-watchos-apps-with-timelines.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchos-apps/authenticating-users-on-apple-watch.json": {
-      "hash": "0b5b8be5825e6e016508e55c1bd2b5ccf799379c4cea346f04ad48117421e34d",
-      "last_checked": "2026-10-20T07:42:02.193955",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:42:00.642930",
-      "etag": "\"7441-65d55a2a106cf-df\"",
-      "file_path": "documentation/watchOS-Apps/authenticating-users-on-apple-watch.md"
-    },
-    "https://developer.apple.com/documentation/watchos-apps/authenticating-users-on-apple-watch": {
-      "hash": "0b5b8be5825e6e016508e55c1bd2b5ccf799379c4cea346f04ad48117421e34d",
-      "last_checked": "2026-10-16T07:31:52.670346",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:51.182463",
-      "etag": "\"7441-65d55a2a106cf-df\"",
-      "file_path": "documentation/watchOS-Apps/authenticating-users-on-apple-watch.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchos-apps/enabling-double-tap.json": {
-      "hash": "6ba500624a09d2a20e8616ec82177ed46d544f9b62a6879df2eb4d6bf514a8d2",
-      "last_checked": "2026-10-20T07:42:02.324177",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:42:00.642930",
-      "etag": "\"43ff-65d55a2a106cf-df\"",
-      "file_path": "documentation/watchOS-Apps/enabling-double-tap.md"
-    },
-    "https://developer.apple.com/documentation/watchos-apps/enabling-double-tap": {
-      "hash": "6ba500624a09d2a20e8616ec82177ed46d544f9b62a6879df2eb4d6bf514a8d2",
-      "last_checked": "2026-10-16T07:31:52.765742",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:51.182463",
-      "etag": "\"43ff-65d55a2a106cf-df\"",
-      "file_path": "documentation/watchOS-Apps/enabling-double-tap.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchos-apps/create-accessible-experiences-for-watchos.json": {
-      "hash": "2fe11fb6aeaf202569689c421fdca0faacf45e55f7c074fe15ff59b231386c7d",
-      "last_checked": "2026-10-20T07:42:02.468276",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:42:00.642930",
-      "etag": "\"ea5-65d55a2a106cf-df\"",
-      "file_path": "documentation/watchOS-Apps/create-accessible-experiences-for-watchos.md"
-    },
-    "https://developer.apple.com/documentation/watchos-apps/create-accessible-experiences-for-watchos": {
-      "hash": "2fe11fb6aeaf202569689c421fdca0faacf45e55f7c074fe15ff59b231386c7d",
-      "last_checked": "2026-10-16T07:31:52.814943",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:51.182463",
-      "etag": "\"ea5-65d55a2a106cf-df\"",
-      "file_path": "documentation/watchOS-Apps/create-accessible-experiences-for-watchos.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchos-apps/building-a-productivity-app-for-apple-watch.json": {
-      "hash": "30018c0ff6bda500f78339a7eae5428ebb395a2384de15f4b8c3205636636f21",
-      "last_checked": "2026-10-20T07:42:02.557060",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:42:00.642930",
-      "etag": "\"199c-65d55a2a106cf-df\"",
-      "file_path": "documentation/watchOS-Apps/building-a-productivity-app-for-apple-watch.md"
-    },
-    "https://developer.apple.com/documentation/watchos-apps/building-a-productivity-app-for-apple-watch": {
-      "hash": "30018c0ff6bda500f78339a7eae5428ebb395a2384de15f4b8c3205636636f21",
-      "last_checked": "2026-10-16T07:31:52.909446",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:51.182463",
-      "etag": "\"199c-65d55a2a106cf-df\"",
-      "file_path": "documentation/watchOS-Apps/building-a-productivity-app-for-apple-watch.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchos-apps/supporting-multiple-watch-sizes.json": {
-      "hash": "55ee5dce9f347be38e2c1a26cc8b0e603d14976b307b0aacd1537d1380ebf4c3",
-      "last_checked": "2026-10-20T07:42:02.728971",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:42:00.642930",
-      "etag": "\"7657-65d55a2a106cf-df\"",
-      "file_path": "documentation/watchOS-Apps/supporting-multiple-watch-sizes.md"
-    },
-    "https://developer.apple.com/documentation/watchos-apps/supporting-multiple-watch-sizes": {
-      "hash": "55ee5dce9f347be38e2c1a26cc8b0e603d14976b307b0aacd1537d1380ebf4c3",
-      "last_checked": "2026-10-16T07:31:52.997476",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:51.182463",
-      "etag": "\"7657-65d55a2a106cf-df\"",
-      "file_path": "documentation/watchOS-Apps/supporting-multiple-watch-sizes.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchos-apps/designing-your-app-for-the-always-on-state.json": {
-      "hash": "5a1ff09aa7cf6a4a9f5480d50eeae619a9ccbca2da98c7c2fcd19570e7c7c43c",
-      "last_checked": "2026-10-20T07:42:02.867342",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:42:00.642930",
-      "etag": "\"9577-65d55a2a106cf-df\"",
-      "file_path": "documentation/watchOS-Apps/designing-your-app-for-the-always-on-state.md"
-    },
-    "https://developer.apple.com/documentation/watchos-apps/designing-your-app-for-the-always-on-state": {
-      "hash": "5a1ff09aa7cf6a4a9f5480d50eeae619a9ccbca2da98c7c2fcd19570e7c7c43c",
-      "last_checked": "2026-10-16T07:31:53.079587",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:51.182463",
-      "etag": "\"9577-65d55a2a106cf-df\"",
-      "file_path": "documentation/watchOS-Apps/designing-your-app-for-the-always-on-state.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchos-apps/setting-the-app-s-accent-color.json": {
-      "hash": "91858fddb78399d750add075517be444e5e3c749ad27885857393626e312f134",
-      "last_checked": "2026-10-20T07:42:03.015150",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:42:00.642930",
-      "etag": "\"287d-659021f38795b-df\"",
-      "file_path": "documentation/watchOS-Apps/setting-the-app-s-accent-color.md"
-    },
-    "https://developer.apple.com/documentation/watchos-apps/setting-the-app-s-accent-color": {
-      "hash": "91858fddb78399d750add075517be444e5e3c749ad27885857393626e312f134",
-      "last_checked": "2026-09-15T07:29:23.017733",
-      "status": "unchanged",
-      "session_id": "2026-09-15T07:29:20.888015",
-      "etag": "\"287d-659021f38795b-df\"",
-      "file_path": "documentation/watchOS-Apps/setting-the-app-s-accent-color.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchos-apps/notifications.json": {
-      "hash": "ee8dff4b147da8f6e538d8799cfeb5d43e90ac492bf3a35a48bd7834982404a1",
-      "last_checked": "2026-10-20T07:42:03.121334",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:42:00.642930",
-      "etag": "\"2799-659021f38795b-df\"",
-      "file_path": "documentation/watchOS-Apps/notifications.md"
-    },
-    "https://developer.apple.com/documentation/watchos-apps/notifications": {
-      "hash": "ee8dff4b147da8f6e538d8799cfeb5d43e90ac492bf3a35a48bd7834982404a1",
-      "last_checked": "2026-09-15T07:29:23.249031",
-      "status": "unchanged",
-      "session_id": "2026-09-15T07:29:20.888015",
-      "etag": "\"2799-659021f38795b-df\"",
-      "file_path": "documentation/watchOS-Apps/notifications.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchos-apps/making-default-and-ephemeral-requests.json": {
-      "hash": "1d4b769e83aefa705ed1b79d61a2110a0f02de1429f46877db0a90626ae4311e",
-      "last_checked": "2026-10-20T07:42:03.319770",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:42:00.642930",
-      "etag": "\"8729-659021f38795b-df\"",
-      "file_path": "documentation/watchOS-Apps/making-default-and-ephemeral-requests.md"
-    },
-    "https://developer.apple.com/documentation/watchos-apps/making-default-and-ephemeral-requests": {
-      "hash": "1d4b769e83aefa705ed1b79d61a2110a0f02de1429f46877db0a90626ae4311e",
-      "last_checked": "2026-09-15T07:29:23.483286",
-      "status": "unchanged",
-      "session_id": "2026-09-15T07:29:20.888015",
-      "etag": "\"8729-659021f38795b-df\"",
-      "file_path": "documentation/watchOS-Apps/making-default-and-ephemeral-requests.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchos-apps/making-background-requests.json": {
-      "hash": "ef8f1189b213ad8893fd38e1526a457929ddf9bfc2f5886d696a7e464b4ced6b",
-      "last_checked": "2026-10-20T07:42:03.431054",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:42:00.642930",
-      "etag": "\"4fcd-659021f38795b-df\"",
-      "file_path": "documentation/watchOS-Apps/making-background-requests.md"
-    },
-    "https://developer.apple.com/documentation/watchos-apps/making-background-requests": {
-      "hash": "ef8f1189b213ad8893fd38e1526a457929ddf9bfc2f5886d696a7e464b4ced6b",
-      "last_checked": "2026-09-15T07:29:23.578631",
-      "status": "unchanged",
-      "session_id": "2026-09-15T07:29:20.888015",
-      "etag": "\"4fcd-659021f38795b-df\"",
-      "file_path": "documentation/watchOS-Apps/making-background-requests.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchos-apps/setting-up-tests-for-your-watchos-app.json": {
-      "hash": "40df241d4136eb468b34415c7315f2714a9600ae7db2baa895252eabee17204b",
-      "last_checked": "2026-10-20T07:42:03.587487",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:42:00.642930",
-      "etag": "\"2685-659021f38795b-df\"",
-      "file_path": "documentation/watchOS-Apps/setting-up-tests-for-your-watchos-app.md"
-    },
-    "https://developer.apple.com/documentation/watchos-apps/setting-up-tests-for-your-watchos-app": {
-      "hash": "40df241d4136eb468b34415c7315f2714a9600ae7db2baa895252eabee17204b",
-      "last_checked": "2026-09-15T07:29:23.673088",
-      "status": "unchanged",
-      "session_id": "2026-09-15T07:29:20.888015",
-      "etag": "\"2685-659021f38795b-df\"",
-      "file_path": "documentation/watchOS-Apps/setting-up-tests-for-your-watchos-app.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchos-apps/enabling-and-receiving-notifications.json": {
-      "hash": "64b65fc0fc6a08a18759100fd6148853256f54eb0024607024807f46907b08ca",
-      "last_checked": "2026-10-20T07:42:03.746968",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:42:00.642930",
-      "etag": "\"5cbf-659021f38795b-df\"",
-      "file_path": "documentation/watchOS-Apps/enabling-and-receiving-notifications.md"
-    },
-    "https://developer.apple.com/documentation/watchos-apps/enabling-and-receiving-notifications": {
-      "hash": "64b65fc0fc6a08a18759100fd6148853256f54eb0024607024807f46907b08ca",
-      "last_checked": "2026-09-15T07:29:23.763256",
-      "status": "unchanged",
-      "session_id": "2026-09-15T07:29:20.888015",
-      "etag": "\"5cbf-659021f38795b-df\"",
-      "file_path": "documentation/watchOS-Apps/enabling-and-receiving-notifications.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchos-apps/presenting-notifications-on-apple-watch.json": {
-      "hash": "ab99beec42e75a2e6751053e9ae6d57c5a31e70d52579e76d73b4c689fc0a41c",
-      "last_checked": "2026-10-20T07:42:03.890097",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:42:00.642930",
-      "etag": "\"6760-659021f38795b-df\"",
-      "file_path": "documentation/watchOS-Apps/presenting-notifications-on-apple-watch.md"
-    },
-    "https://developer.apple.com/documentation/watchos-apps/presenting-notifications-on-apple-watch": {
-      "hash": "ab99beec42e75a2e6751053e9ae6d57c5a31e70d52579e76d73b4c689fc0a41c",
-      "last_checked": "2026-09-15T07:29:23.866596",
-      "status": "unchanged",
-      "session_id": "2026-09-15T07:29:20.888015",
-      "etag": "\"6760-659021f38795b-df\"",
-      "file_path": "documentation/watchOS-Apps/presenting-notifications-on-apple-watch.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchos-apps/taking-advantage-of-notification-forwarding.json": {
-      "hash": "155affb99723ccc6a03d0434599a4676ffe9d02ca9a114343ddcb55c92975bc0",
-      "last_checked": "2026-10-20T07:42:04.024549",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:42:00.642930",
-      "etag": "\"20f7-659021f38795b-df\"",
-      "file_path": "documentation/watchOS-Apps/taking-advantage-of-notification-forwarding.md"
-    },
-    "https://developer.apple.com/documentation/watchos-apps/taking-advantage-of-notification-forwarding": {
-      "hash": "155affb99723ccc6a03d0434599a4676ffe9d02ca9a114343ddcb55c92975bc0",
-      "last_checked": "2026-09-15T07:29:23.969730",
-      "status": "unchanged",
-      "session_id": "2026-09-15T07:29:20.888015",
-      "etag": "\"20f7-659021f38795b-df\"",
-      "file_path": "documentation/watchOS-Apps/taking-advantage-of-notification-forwarding.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchos-apps/customizing-your-long-look-interface.json": {
-      "hash": "aafd4ce8bdd9fda74ab467d7778b7edad731b9d5a40e19957be959dbe9b18ab3",
-      "last_checked": "2026-10-20T07:42:04.136232",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:42:00.642930",
-      "etag": "\"4364-65d55a2a106cf-df\"",
-      "file_path": "documentation/watchOS-Apps/customizing-your-long-look-interface.md"
-    },
-    "https://developer.apple.com/documentation/watchos-apps/customizing-your-long-look-interface": {
-      "hash": "aafd4ce8bdd9fda74ab467d7778b7edad731b9d5a40e19957be959dbe9b18ab3",
-      "last_checked": "2026-10-16T07:31:54.297674",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:51.182463",
-      "etag": "\"4364-65d55a2a106cf-df\"",
-      "file_path": "documentation/watchOS-Apps/customizing-your-long-look-interface.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchos-apps/adding-actions-to-notifications-on-watchos.json": {
-      "hash": "c66ea0d950848744c8f15fbc4d0576ada7aecc3a3e7248fbe8527eddc0f535c8",
-      "last_checked": "2026-10-20T07:42:04.284252",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:42:00.642930",
-      "etag": "\"842e-65d55a2a106cf-df\"",
-      "file_path": "documentation/watchOS-Apps/adding-actions-to-notifications-on-watchos.md"
+      "file_path": "documentation/watchOS-Apps/watchOS-Apps.md",
+      "hash": "0adc78f87b3b1fd47bc7a4f4ac4ff422b61470d96cbc12926b968c529c640387"
     },
     "https://developer.apple.com/documentation/watchos-apps/adding-actions-to-notifications-on-watchos": {
-      "hash": "c66ea0d950848744c8f15fbc4d0576ada7aecc3a3e7248fbe8527eddc0f535c8",
-      "last_checked": "2026-10-16T07:31:54.359348",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:51.182463",
       "etag": "\"842e-65d55a2a106cf-df\"",
-      "file_path": "documentation/watchOS-Apps/adding-actions-to-notifications-on-watchos.md"
+      "file_path": "documentation/watchOS-Apps/adding-actions-to-notifications-on-watchos.md",
+      "hash": "c66ea0d950848744c8f15fbc4d0576ada7aecc3a3e7248fbe8527eddc0f535c8"
     },
-    "https://developer.apple.com/tutorials/data/documentation/watchos-apps/grouping-notifications.json": {
-      "hash": "f2bbf39b25d5e03e1bcb7705ca8f62b79af1e445aa07beae7a70b969559a6a9f",
-      "last_checked": "2026-10-20T07:42:04.418277",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:42:00.642930",
-      "etag": "\"27fb-65d55a2a106cf-df\"",
-      "file_path": "documentation/watchOS-Apps/grouping-notifications.md"
+    "https://developer.apple.com/documentation/watchos-apps/authenticating-users-on-apple-watch": {
+      "etag": "\"7441-65d55a2a106cf-df\"",
+      "file_path": "documentation/watchOS-Apps/authenticating-users-on-apple-watch.md",
+      "hash": "0b5b8be5825e6e016508e55c1bd2b5ccf799379c4cea346f04ad48117421e34d"
+    },
+    "https://developer.apple.com/documentation/watchos-apps/building-a-productivity-app-for-apple-watch": {
+      "etag": "\"199c-65d55a2a106cf-df\"",
+      "file_path": "documentation/watchOS-Apps/building-a-productivity-app-for-apple-watch.md",
+      "hash": "30018c0ff6bda500f78339a7eae5428ebb395a2384de15f4b8c3205636636f21"
+    },
+    "https://developer.apple.com/documentation/watchos-apps/building_a_watchos_app": {
+      "etag": "\"9480-65d55a2a106cf-df\"",
+      "file_path": "documentation/watchOS-Apps/building-a-watchos-app.md",
+      "hash": "0badb9657a59e4b176e3a2fded3a165301d93011330f0b99dcfcbb12ed7a834b"
+    },
+    "https://developer.apple.com/documentation/watchos-apps/create-accessible-experiences-for-watchos": {
+      "etag": "\"ea5-65d55a2a106cf-df\"",
+      "file_path": "documentation/watchOS-Apps/create-accessible-experiences-for-watchos.md",
+      "hash": "2fe11fb6aeaf202569689c421fdca0faacf45e55f7c074fe15ff59b231386c7d"
+    },
+    "https://developer.apple.com/documentation/watchos-apps/creating-an-intuitive-and-effective-ui-in-watchos-10": {
+      "etag": "\"1313e-65d55a2a106cf-df\"",
+      "file_path": "documentation/watchOS-Apps/creating-an-intuitive-and-effective-ui-in-watchos-10.md",
+      "hash": "97f28161ac38374240269adb7bb1dfb6c4beb7238df6df41d2af4abf93d5578d"
+    },
+    "https://developer.apple.com/documentation/watchos-apps/creating-independent-watchos-apps": {
+      "etag": "\"5f94-65b8a233ecabc-df\"",
+      "file_path": "documentation/watchOS-Apps/creating-independent-watchos-apps.md",
+      "hash": "20284dc7495c71f23cb868dbcc806e8ab5cbdae994c31c89843144065cd7aba8"
+    },
+    "https://developer.apple.com/documentation/watchos-apps/customizing-your-long-look-interface": {
+      "etag": "\"4364-65d55a2a106cf-df\"",
+      "file_path": "documentation/watchOS-Apps/customizing-your-long-look-interface.md",
+      "hash": "aafd4ce8bdd9fda74ab467d7778b7edad731b9d5a40e19957be959dbe9b18ab3"
+    },
+    "https://developer.apple.com/documentation/watchos-apps/designing-your-app-for-the-always-on-state": {
+      "etag": "\"9577-65d55a2a106cf-df\"",
+      "file_path": "documentation/watchOS-Apps/designing-your-app-for-the-always-on-state.md",
+      "hash": "5a1ff09aa7cf6a4a9f5480d50eeae619a9ccbca2da98c7c2fcd19570e7c7c43c"
+    },
+    "https://developer.apple.com/documentation/watchos-apps/enabling-and-receiving-notifications": {
+      "etag": "\"5cbf-659021f38795b-df\"",
+      "file_path": "documentation/watchOS-Apps/enabling-and-receiving-notifications.md",
+      "hash": "64b65fc0fc6a08a18759100fd6148853256f54eb0024607024807f46907b08ca"
+    },
+    "https://developer.apple.com/documentation/watchos-apps/enabling-double-tap": {
+      "etag": "\"43ff-65d55a2a106cf-df\"",
+      "file_path": "documentation/watchOS-Apps/enabling-double-tap.md",
+      "hash": "6ba500624a09d2a20e8616ec82177ed46d544f9b62a6879df2eb4d6bf514a8d2"
     },
     "https://developer.apple.com/documentation/watchos-apps/grouping-notifications": {
-      "hash": "f2bbf39b25d5e03e1bcb7705ca8f62b79af1e445aa07beae7a70b969559a6a9f",
-      "last_checked": "2026-10-16T07:31:54.422178",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:51.182463",
       "etag": "\"27fb-65d55a2a106cf-df\"",
-      "file_path": "documentation/watchOS-Apps/grouping-notifications.md"
+      "file_path": "documentation/watchOS-Apps/grouping-notifications.md",
+      "hash": "f2bbf39b25d5e03e1bcb7705ca8f62b79af1e445aa07beae7a70b969559a6a9f"
     },
-    "https://developer.apple.com/tutorials/data/documentation/watchos-apps/testing-custom-notification-interfaces.json": {
-      "hash": "d59e6506d7d476c953a59c0d69f94327868e3862aebdaf33096dd3584bb4b7cb",
-      "last_checked": "2026-10-20T07:42:04.569280",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:42:00.642930",
-      "etag": "\"567b-65d55a2a106cf-df\"",
-      "file_path": "documentation/watchOS-Apps/testing-custom-notification-interfaces.md"
+    "https://developer.apple.com/documentation/watchos-apps/keeping-your-watchos-app-s-content-up-to-date": {
+      "etag": "\"764a-659021f38795b-df\"",
+      "file_path": "documentation/watchOS-Apps/keeping-your-watchos-app-s-content-up-to-date.md",
+      "hash": "48f3bd733e43980492ab77c8cf33b145102c1889113c43b3a538b282abe83a2c"
     },
-    "https://developer.apple.com/documentation/watchos-apps/testing-custom-notification-interfaces": {
-      "hash": "d59e6506d7d476c953a59c0d69f94327868e3862aebdaf33096dd3584bb4b7cb",
-      "last_checked": "2026-10-16T07:31:54.509808",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:51.182463",
-      "etag": "\"567b-65d55a2a106cf-df\"",
-      "file_path": "documentation/watchOS-Apps/testing-custom-notification-interfaces.md"
+    "https://developer.apple.com/documentation/watchos-apps/making-background-requests": {
+      "etag": "\"4fcd-659021f38795b-df\"",
+      "file_path": "documentation/watchOS-Apps/making-background-requests.md",
+      "hash": "ef8f1189b213ad8893fd38e1526a457929ddf9bfc2f5886d696a7e464b4ced6b"
     },
-    "https://developer.apple.com/tutorials/data/documentation/watchos-apps/migrating-to-a-single-target-watchos-app.json": {
-      "hash": "5bed432ea95069f392da0052484324bbdf4a04c933522723e1887c66324793f1",
-      "last_checked": "2026-10-20T07:42:01.500736",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:42:00.642930",
-      "etag": "\"31ef-659021f38795b-df\"",
-      "file_path": "documentation/watchOS-Apps/migrating-to-a-single-target-watchos-app.md"
+    "https://developer.apple.com/documentation/watchos-apps/making-default-and-ephemeral-requests": {
+      "etag": "\"8729-659021f38795b-df\"",
+      "file_path": "documentation/watchOS-Apps/making-default-and-ephemeral-requests.md",
+      "hash": "1d4b769e83aefa705ed1b79d61a2110a0f02de1429f46877db0a90626ae4311e"
     },
     "https://developer.apple.com/documentation/watchos-apps/migrating-to-a-single-target-watchos-app": {
-      "hash": "5bed432ea95069f392da0052484324bbdf4a04c933522723e1887c66324793f1",
-      "last_checked": "2026-09-15T07:29:21.853464",
-      "status": "unchanged",
-      "session_id": "2026-09-15T07:29:20.888015",
       "etag": "\"31ef-659021f38795b-df\"",
-      "file_path": "documentation/watchOS-Apps/migrating-to-a-single-target-watchos-app.md"
+      "file_path": "documentation/watchOS-Apps/migrating-to-a-single-target-watchos-app.md",
+      "hash": "5bed432ea95069f392da0052484324bbdf4a04c933522723e1887c66324793f1"
+    },
+    "https://developer.apple.com/documentation/watchos-apps/notifications": {
+      "etag": "\"2799-659021f38795b-df\"",
+      "file_path": "documentation/watchOS-Apps/notifications.md",
+      "hash": "ee8dff4b147da8f6e538d8799cfeb5d43e90ac492bf3a35a48bd7834982404a1"
+    },
+    "https://developer.apple.com/documentation/watchos-apps/presenting-notifications-on-apple-watch": {
+      "etag": "\"6760-659021f38795b-df\"",
+      "file_path": "documentation/watchOS-Apps/presenting-notifications-on-apple-watch.md",
+      "hash": "ab99beec42e75a2e6751053e9ae6d57c5a31e70d52579e76d73b4c689fc0a41c"
+    },
+    "https://developer.apple.com/documentation/watchos-apps/setting-the-app-s-accent-color": {
+      "etag": "\"287d-659021f38795b-df\"",
+      "file_path": "documentation/watchOS-Apps/setting-the-app-s-accent-color.md",
+      "hash": "91858fddb78399d750add075517be444e5e3c749ad27885857393626e312f134"
+    },
+    "https://developer.apple.com/documentation/watchos-apps/setting-up-a-watchos-project": {
+      "etag": "\"3b81-659021f38795b-df\"",
+      "file_path": "documentation/watchOS-Apps/setting-up-a-watchos-project.md",
+      "hash": "33d4c7c8ad5079f7e23fb73ba4683c1bbc1e37664e9fd4d3ae4e7508a5849b14"
+    },
+    "https://developer.apple.com/documentation/watchos-apps/setting-up-tests-for-your-watchos-app": {
+      "etag": "\"2685-659021f38795b-df\"",
+      "file_path": "documentation/watchOS-Apps/setting-up-tests-for-your-watchos-app.md",
+      "hash": "40df241d4136eb468b34415c7315f2714a9600ae7db2baa895252eabee17204b"
+    },
+    "https://developer.apple.com/documentation/watchos-apps/supporting-multiple-watch-sizes": {
+      "etag": "\"7657-65d55a2a106cf-df\"",
+      "file_path": "documentation/watchOS-Apps/supporting-multiple-watch-sizes.md",
+      "hash": "55ee5dce9f347be38e2c1a26cc8b0e603d14976b307b0aacd1537d1380ebf4c3"
+    },
+    "https://developer.apple.com/documentation/watchos-apps/taking-advantage-of-notification-forwarding": {
+      "etag": "\"20f7-659021f38795b-df\"",
+      "file_path": "documentation/watchOS-Apps/taking-advantage-of-notification-forwarding.md",
+      "hash": "155affb99723ccc6a03d0434599a4676ffe9d02ca9a114343ddcb55c92975bc0"
+    },
+    "https://developer.apple.com/documentation/watchos-apps/testing-custom-notification-interfaces": {
+      "etag": "\"567b-65d55a2a106cf-df\"",
+      "file_path": "documentation/watchOS-Apps/testing-custom-notification-interfaces.md",
+      "hash": "d59e6506d7d476c953a59c0d69f94327868e3862aebdaf33096dd3584bb4b7cb"
+    },
+    "https://developer.apple.com/documentation/watchos-apps/updating-watchos-apps-with-timelines": {
+      "etag": "\"8438-65d55a2a106cf-df\"",
+      "file_path": "documentation/watchOS-Apps/updating-watchos-apps-with-timelines.md",
+      "hash": "2d7818c0a44cd9d36b8c03d59fff472bb00b80b182c538b3eb54db2bb75164f4"
+    },
+    "https://developer.apple.com/documentation/watchos-apps/updating-your-app-and-widgets-for-watchos-10": {
+      "etag": "\"20cd-65d55a2a106cf-df\"",
+      "file_path": "documentation/watchOS-Apps/updating-your-app-and-widgets-for-watchos-10.md",
+      "hash": "08e991a848636f64464f640cff32615d02238b44666911861310c29356b4ed52"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchOS-Apps.json": {
+      "etag": "\"9f83-65b3a3243916b-df\"",
+      "file_path": "documentation/watchOS-Apps/watchOS-Apps.md",
+      "hash": "0adc78f87b3b1fd47bc7a4f4ac4ff422b61470d96cbc12926b968c529c640387"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchos-apps/adding-actions-to-notifications-on-watchos.json": {
+      "etag": "\"842e-65d55a2a106cf-df\"",
+      "file_path": "documentation/watchOS-Apps/adding-actions-to-notifications-on-watchos.md",
+      "hash": "c66ea0d950848744c8f15fbc4d0576ada7aecc3a3e7248fbe8527eddc0f535c8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchos-apps/authenticating-users-on-apple-watch.json": {
+      "etag": "\"7441-65d55a2a106cf-df\"",
+      "file_path": "documentation/watchOS-Apps/authenticating-users-on-apple-watch.md",
+      "hash": "0b5b8be5825e6e016508e55c1bd2b5ccf799379c4cea346f04ad48117421e34d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchos-apps/building-a-productivity-app-for-apple-watch.json": {
+      "etag": "\"199c-65d55a2a106cf-df\"",
+      "file_path": "documentation/watchOS-Apps/building-a-productivity-app-for-apple-watch.md",
+      "hash": "30018c0ff6bda500f78339a7eae5428ebb395a2384de15f4b8c3205636636f21"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchos-apps/building_a_watchos_app.json": {
+      "etag": "\"9480-65d55a2a106cf-df\"",
+      "file_path": "documentation/watchOS-Apps/building-a-watchos-app.md",
+      "hash": "0badb9657a59e4b176e3a2fded3a165301d93011330f0b99dcfcbb12ed7a834b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchos-apps/create-accessible-experiences-for-watchos.json": {
+      "etag": "\"ea5-65d55a2a106cf-df\"",
+      "file_path": "documentation/watchOS-Apps/create-accessible-experiences-for-watchos.md",
+      "hash": "2fe11fb6aeaf202569689c421fdca0faacf45e55f7c074fe15ff59b231386c7d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchos-apps/creating-an-intuitive-and-effective-ui-in-watchos-10.json": {
+      "etag": "\"1313e-65d55a2a106cf-df\"",
+      "file_path": "documentation/watchOS-Apps/creating-an-intuitive-and-effective-ui-in-watchos-10.md",
+      "hash": "97f28161ac38374240269adb7bb1dfb6c4beb7238df6df41d2af4abf93d5578d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchos-apps/creating-independent-watchos-apps.json": {
+      "etag": "\"5f94-65b8a233ecabc-df\"",
+      "file_path": "documentation/watchOS-Apps/creating-independent-watchos-apps.md",
+      "hash": "20284dc7495c71f23cb868dbcc806e8ab5cbdae994c31c89843144065cd7aba8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchos-apps/customizing-your-long-look-interface.json": {
+      "etag": "\"4364-65d55a2a106cf-df\"",
+      "file_path": "documentation/watchOS-Apps/customizing-your-long-look-interface.md",
+      "hash": "aafd4ce8bdd9fda74ab467d7778b7edad731b9d5a40e19957be959dbe9b18ab3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchos-apps/designing-your-app-for-the-always-on-state.json": {
+      "etag": "\"9577-65d55a2a106cf-df\"",
+      "file_path": "documentation/watchOS-Apps/designing-your-app-for-the-always-on-state.md",
+      "hash": "5a1ff09aa7cf6a4a9f5480d50eeae619a9ccbca2da98c7c2fcd19570e7c7c43c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchos-apps/enabling-and-receiving-notifications.json": {
+      "etag": "\"5cbf-659021f38795b-df\"",
+      "file_path": "documentation/watchOS-Apps/enabling-and-receiving-notifications.md",
+      "hash": "64b65fc0fc6a08a18759100fd6148853256f54eb0024607024807f46907b08ca"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchos-apps/enabling-double-tap.json": {
+      "etag": "\"43ff-65d55a2a106cf-df\"",
+      "file_path": "documentation/watchOS-Apps/enabling-double-tap.md",
+      "hash": "6ba500624a09d2a20e8616ec82177ed46d544f9b62a6879df2eb4d6bf514a8d2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchos-apps/grouping-notifications.json": {
+      "etag": "\"27fb-65d55a2a106cf-df\"",
+      "file_path": "documentation/watchOS-Apps/grouping-notifications.md",
+      "hash": "f2bbf39b25d5e03e1bcb7705ca8f62b79af1e445aa07beae7a70b969559a6a9f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchos-apps/keeping-your-watchos-app-s-content-up-to-date.json": {
+      "etag": "\"764a-659021f38795b-df\"",
+      "file_path": "documentation/watchOS-Apps/keeping-your-watchos-app-s-content-up-to-date.md",
+      "hash": "48f3bd733e43980492ab77c8cf33b145102c1889113c43b3a538b282abe83a2c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchos-apps/making-background-requests.json": {
+      "etag": "\"4fcd-659021f38795b-df\"",
+      "file_path": "documentation/watchOS-Apps/making-background-requests.md",
+      "hash": "ef8f1189b213ad8893fd38e1526a457929ddf9bfc2f5886d696a7e464b4ced6b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchos-apps/making-default-and-ephemeral-requests.json": {
+      "etag": "\"8729-659021f38795b-df\"",
+      "file_path": "documentation/watchOS-Apps/making-default-and-ephemeral-requests.md",
+      "hash": "1d4b769e83aefa705ed1b79d61a2110a0f02de1429f46877db0a90626ae4311e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchos-apps/migrating-to-a-single-target-watchos-app.json": {
+      "etag": "\"31ef-659021f38795b-df\"",
+      "file_path": "documentation/watchOS-Apps/migrating-to-a-single-target-watchos-app.md",
+      "hash": "5bed432ea95069f392da0052484324bbdf4a04c933522723e1887c66324793f1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchos-apps/notifications.json": {
+      "etag": "\"2799-659021f38795b-df\"",
+      "file_path": "documentation/watchOS-Apps/notifications.md",
+      "hash": "ee8dff4b147da8f6e538d8799cfeb5d43e90ac492bf3a35a48bd7834982404a1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchos-apps/presenting-notifications-on-apple-watch.json": {
+      "etag": "\"6760-659021f38795b-df\"",
+      "file_path": "documentation/watchOS-Apps/presenting-notifications-on-apple-watch.md",
+      "hash": "ab99beec42e75a2e6751053e9ae6d57c5a31e70d52579e76d73b4c689fc0a41c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchos-apps/setting-the-app-s-accent-color.json": {
+      "etag": "\"287d-659021f38795b-df\"",
+      "file_path": "documentation/watchOS-Apps/setting-the-app-s-accent-color.md",
+      "hash": "91858fddb78399d750add075517be444e5e3c749ad27885857393626e312f134"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchos-apps/setting-up-a-watchos-project.json": {
+      "etag": "\"3b81-659021f38795b-df\"",
+      "file_path": "documentation/watchOS-Apps/setting-up-a-watchos-project.md",
+      "hash": "33d4c7c8ad5079f7e23fb73ba4683c1bbc1e37664e9fd4d3ae4e7508a5849b14"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchos-apps/setting-up-tests-for-your-watchos-app.json": {
+      "etag": "\"2685-659021f38795b-df\"",
+      "file_path": "documentation/watchOS-Apps/setting-up-tests-for-your-watchos-app.md",
+      "hash": "40df241d4136eb468b34415c7315f2714a9600ae7db2baa895252eabee17204b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchos-apps/supporting-multiple-watch-sizes.json": {
+      "etag": "\"7657-65d55a2a106cf-df\"",
+      "file_path": "documentation/watchOS-Apps/supporting-multiple-watch-sizes.md",
+      "hash": "55ee5dce9f347be38e2c1a26cc8b0e603d14976b307b0aacd1537d1380ebf4c3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchos-apps/taking-advantage-of-notification-forwarding.json": {
+      "etag": "\"20f7-659021f38795b-df\"",
+      "file_path": "documentation/watchOS-Apps/taking-advantage-of-notification-forwarding.md",
+      "hash": "155affb99723ccc6a03d0434599a4676ffe9d02ca9a114343ddcb55c92975bc0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchos-apps/testing-custom-notification-interfaces.json": {
+      "etag": "\"567b-65d55a2a106cf-df\"",
+      "file_path": "documentation/watchOS-Apps/testing-custom-notification-interfaces.md",
+      "hash": "d59e6506d7d476c953a59c0d69f94327868e3862aebdaf33096dd3584bb4b7cb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchos-apps/updating-watchos-apps-with-timelines.json": {
+      "etag": "\"8438-65d55a2a106cf-df\"",
+      "file_path": "documentation/watchOS-Apps/updating-watchos-apps-with-timelines.md",
+      "hash": "2d7818c0a44cd9d36b8c03d59fff472bb00b80b182c538b3eb54db2bb75164f4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchos-apps/updating-your-app-and-widgets-for-watchos-10.json": {
+      "etag": "\"20cd-65d55a2a106cf-df\"",
+      "file_path": "documentation/watchOS-Apps/updating-your-app-and-widgets-for-watchos-10.md",
+      "hash": "08e991a848636f64464f640cff32615d02238b44666911861310c29356b4ed52"
     }
+  },
+  "metadata": {
+    "total_pages": 54
   }
 }

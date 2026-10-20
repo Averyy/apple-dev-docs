@@ -19,10 +19,6 @@ from scraper.json_scraper import AppleJSONDocumentationScraper, FrameworkOutcome
 from framework_list_scraper import AppleFrameworkListScraper
 from cleanup_removed_frameworks import framework_hash_files
 
-# Import orphan cleanup functionality
-sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'analysis'))
-from check_orphans import cleanup_framework_orphans
-
 # The list guard: technologies.json must list at least this share of our Apple
 # framework hash files (those not already counted as unlisted), or the run aborts
 MIN_LISTED_SHARE: Final = 0.9

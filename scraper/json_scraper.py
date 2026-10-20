@@ -10,7 +10,7 @@ from urllib.parse import urlparse
 
 from scraper.base import NOT_MODIFIED, BaseAppleScraper, FetchFailed
 from scraper.config import Config
-from scraper.utils.hash_manager import PARTIAL_SESSION_KEY, same_name_any_case, write_text_atomic
+from scraper.utils.hash_manager import same_name_any_case, write_text_atomic
 from scraper.utils.logger import get_logger
 from scraper.utils.markdown_converter import AppleDocMarkdownConverter
 
@@ -32,10 +32,6 @@ PERSISTENT_FAILURE_RUNS: Final = 3
 FAILURE_STORM_MIN: Final = 5
 FAILURE_STORM_SHARE: Final = 0.01
 FAILURE_STORM_RUNS: Final = 3
-
-# D5 shadow mode: how many paths of each side of a difference the
-# orphan_shadow event lists
-SHADOW_SAMPLE: Final = 10
 
 # How a page's fetch failed this run (see _handle_fetch_failure):
 # previously_good: a page with a live entry failed; it is kept and touched.
@@ -64,8 +60,8 @@ class OrphanScan:
             in another casing)
         hash_file: The framework's hash file
         files: How many .md files the docs dir holds
-        orphans: The orphan candidates the old way finds (entries holding the
-            persisted session_id), which deletion uses during D5's shadow mode
+        orphans: The orphan candidates: the .md files no entry this run
+            touched records (HashManager.get_untouched_files)
         pending_orphans: metadata.pending_orphans as the run's save left it:
             the candidates an earlier clean run held for confirmation
     """
@@ -102,8 +98,6 @@ class FrameworkOutcome:
         stats: The scraper's stats
         orphan_scan: The framework's orphan candidates, for a framework the
             end-of-run cleanup may clean (see scan_orphans)
-        shadow_mismatch: Whether D5's two ways of finding orphans disagreed,
-            if they were compared (see scan_orphans)
     """
 
     framework_id: str
@@ -116,7 +110,6 @@ class FrameworkOutcome:
     raised: Optional[str] = None
     stats: Dict[str, Any] = field(default_factory=dict)
     orphan_scan: Optional[OrphanScan] = None
-    shadow_mismatch: Optional[bool] = None
 
     def block(self, reason: str, detail: str) -> None:
         """Block this framework's orphan cleanup for this run."""
@@ -229,21 +222,8 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         # when that script's own fetch failed this run. Saved by __aexit__.
         self.hash_manager.set_metadata("unlisted_runs", 0)
 
-        try:
-            await self.discover_and_scrape_streaming()
-        except BaseException:
-            # Interrupted (Ctrl-C, the step's timeout) or raised: the save
-            # (__aexit__) holds only the pages reached so far
-            self.hash_manager.mark_partial()
-            raise
+        await self.discover_and_scrape_streaming()
         self._apply_failure_policy()
-        if self.outcome.blocked:
-            # A failure of ours: the pages under a page that failed weren't
-            # reached either, so their entries keep an older session
-            self.hash_manager.mark_partial()
-        else:
-            # Finished unblocked: a page whose entry lacks this session is treated as removed
-            self.hash_manager.set_metadata(PARTIAL_SESSION_KEY, None)
         
         self.stats["end_time"] = time.time()
         self.stats["duration"] = self.stats["end_time"] - self.stats["start_time"]
@@ -265,24 +245,18 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         """Discover URLs and scrape them immediately for real-time feedback."""
         logger.info("starting_streaming_discovery_and_scrape", framework=self.framework_name)
         
-        # Progress file (written only once the output dir exists)
-        progress_file = self.output_dir / "scraping_progress.txt" 
-        self._write_progress_file(progress_file, f"Starting {self.framework_name} streaming scrape...\n")
-        
         # Start with the framework's main JSON file
         framework_json_url = self.root_json_url
         
         # Scrape the main framework page first
         main_doc_url = f"https://developer.apple.com/documentation/{self.framework_id}"
-        self._write_progress_file(progress_file, f"Scraping main page: {main_doc_url}\n")
         await self._scrape_and_save_url(main_doc_url)
         
         # Use iterative approach instead of recursion to avoid stack overflow
         try:
-            await self._discover_and_scrape_iterative([framework_json_url], progress_file)
+            await self._discover_and_scrape_iterative([framework_json_url])
         finally:
-            # Final progress update - ALWAYS execute this even if an error occurs
-            self._update_progress_file(progress_file, "COMPLETED", final=True)
+            # Logged even if discovery raised
             logger.info(
                 "framework_scraping_finalized",
                 framework=self.framework_name,
@@ -290,30 +264,6 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
                 pages_skipped=self.stats['pages_skipped'],
                 pages_failed=self.stats['pages_failed']
             )
-        
-    def _update_progress_file(self, progress_file: Path, last_url: str, final: bool = False) -> None:
-        """Update progress file with current statistics."""
-        if final:
-            content = f"""Completed scraping {self.framework_name}!
-Total pages scraped: {self.stats['pages_scraped']}
-Pages skipped (unchanged): {self.stats['pages_skipped']}
-Pages failed: {self.stats['pages_failed']}
-"""
-        else:
-            content = f"""Scraping {self.framework_name} in progress...
-Last scraped: {last_url}
-Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} skipped, {self.stats['pages_failed']} failed
-"""
-        self._write_progress_file(progress_file, content)
-
-    def _write_progress_file(self, progress_file: Path, content: str) -> None:
-        """Write the progress file, but only into an output dir that already exists.
-
-        Never creates the dir: a framework that writes no page (e.g. its root
-        returns 404) must leave nothing behind.
-        """
-        if self.output_dir.is_dir():
-            write_text_atomic(progress_file, content)
         
     async def _scrape_and_save_url(self, url: str) -> bool:
         """Scrape a single URL and save it immediately (via scrape_page)."""
@@ -325,7 +275,7 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
             self.outcome.block("exception", url)
             return False
     
-    async def _discover_and_scrape_iterative(self, initial_json_urls, progress_file) -> None:
+    async def _discover_and_scrape_iterative(self, initial_json_urls) -> None:
         """Iterative version of discovery to avoid recursion depth issues with optimized ETag usage."""
         from collections import deque
 
@@ -363,7 +313,7 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
                         max_queue_size=max_queue_size,
                     )
                 in_flight.add(asyncio.create_task(
-                    self._process_queued_url(json_url, url_queue, progress_file)
+                    self._process_queued_url(json_url, url_queue)
                 ))
 
             if not in_flight:
@@ -383,7 +333,7 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
             framework=self.framework_name,
         )
 
-    async def _process_queued_url(self, json_url: str, url_queue: Deque[str], progress_file: Path) -> None:
+    async def _process_queued_url(self, json_url: str, url_queue: Deque[str]) -> None:
         """Process a single discovered URL: fetch, enqueue children, save if changed."""
         try:
             # OPTIMIZED: Fetch JSON with ETag support for discovery
@@ -401,15 +351,14 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
                 logger.debug("content_unchanged_skip_scrape", json_url=json_url, doc_url=doc_url)
                 self.stats['pages_skipped'] += 1
 
-                # Update hash session info for orphan detection even though
-                # content unchanged. PRESERVE the recorded file path: paths can
+                # Touch the entry for orphan detection even though content
+                # unchanged. PRESERVE the recorded file path: paths can
                 # be data-dependent (kind-suffix disambiguation uses symbol_kind),
                 # so recomputing from the URL alone with empty data would record
                 # a wrong path and get the real file orphan-deleted.
                 if json_url in self.hash_manager.hashes:
-                    existing_data = self.hash_manager.hashes[json_url]
-                    if not existing_data.get('file_path'):
-                        existing_data['file_path'] = str(self._get_organized_file_path(doc_url, {}))
+                    if not self.hash_manager.hashes[json_url].get('file_path'):
+                        self.hash_manager.set_file_path(json_url, self._get_organized_file_path(doc_url, {}))
                     self.hash_manager.touch(json_url)
 
                 # IMPORTANT: Still need to discover child pages!
@@ -438,10 +387,6 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
                     if isinstance(discovery_result, FetchFailed):
                         # The 304 proved the page live; only its links are missing
                         self._handle_fetch_failure(json_url, discovery_result, after_304=True)
-
-                # Update progress
-                if self.stats['pages_skipped'] % 50 == 0:
-                    self._update_progress_file(progress_file, f"{doc_url} (skipped)")
                 return
 
             # Got 200 OK - content is new or changed
@@ -492,7 +437,7 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
                     stored_path = self.hash_manager.hashes[json_url].get('file_path')
                     if stored_path:
                         file_path = Path(stored_path)
-                        # Update hash with current session info even though content unchanged
+                        # Touch both keys and record the new etag
                         self.hash_manager.update_hash(json_url, response_text, etag, file_path)
                         self.hash_manager.update_hash(doc_url, response_text, etag, file_path)
                     else:
@@ -508,9 +453,6 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
 
             if saved:
                 self.stats['pages_scraped'] += 1
-
-                # Update progress
-                self._update_progress_file(progress_file, doc_url)
 
                 # Log progress every 10 files
                 if self.stats['pages_scraped'] % 10 == 0:
@@ -571,8 +513,8 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
           entry, so its file (and any subtree no longer reachable) is orphaned
           and cleaned. Never blocks.
         - Any other failure of a live page, or of a discovery refetch after a
-          304: keep the entry and refresh its session_id, so its file isn't
-          orphaned; it blocks cleanup and counts toward D8.
+          304: keep the entry and touch it, so its file isn't orphaned; it
+          blocks cleanup and counts toward D8.
         - A URL with no live entry: an error entry. A transient failure blocks
           and counts (it may be the new parent of a moved page); a 4xx doesn't.
           A URL that no entry records but whose file is on disk, though, is a
@@ -603,7 +545,7 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
 
         kind: FailureKind
         if after_304:
-            # The 304 already refreshed the entry's session_id
+            # The 304 already touched the entry
             kind = "after_304"
         elif self._is_previously_good(hm.hashes.get(json_url)):
             hm.touch(json_url)
@@ -823,54 +765,36 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
 
         Fills self.outcome for the end-of-run cleanup, so neither the scraper
         nor its hash manager has to be kept until then:
-        - A root that answered 404/410 this run: no cleanup and no shadow
-          comparison (the end-of-run pass deletes the framework at 2 runs).
-        - Zero-touched guard: a framework where no entry received this run's
-          session_id is never cleaned. It logs framework_zero_touched and
-          blocks, as a failure of ours (the persisted session would be an
-          older run's, whose candidates aren't this run's).
-        - D5 shadow mode: the orphans are found both ways over the same
-          files, the old way (the persisted session_id, which deletion keeps
-          using) and the new way (the in-memory touched set), and logged as
-          orphan_shadow. A blocked or raised framework is compared and logged
-          too, but keeps no candidates.
+        - A root that answered 404/410 this run: no cleanup (the end-of-run
+          pass deletes the framework at 2 runs).
+        - Zero-touched guard: a framework where this run touched no entry is
+          never cleaned. It logs framework_zero_touched and blocks, as a
+          failure of ours (every file it has would look orphaned).
+        - The candidates are the .md files no entry this run touched records
+          (the in-memory touched set). A blocked or raised framework keeps
+          none.
         """
         outcome = self.outcome
         if outcome.root_gone_runs:
             return
         hm = self.hash_manager
-        if not outcome.blocked and not hm.touched_this_session():
+        if not outcome.blocked and not hm.touched:
             logger.error("framework_zero_touched", framework=self.framework_name, framework_id=self.framework_id)
             outcome.block("zero_touched", self.framework_id)
+        if outcome.blocked:
+            return
 
         # The output dir, or that dir in another casing
         framework_dir = next(
             (path for path in same_name_any_case(self.output_dir) if path.is_dir()), self.output_dir
         )
         existing = hm.framework_files(framework_dir)
-        old = hm.get_orphaned_files(framework_dir, existing)
-        new = hm.get_untouched_files(framework_dir, existing)
-        only_old = sorted(set(old) - set(new))
-        only_new = sorted(set(new) - set(old))
-        outcome.shadow_mismatch = bool(only_old or only_new)
-        log = logger.warning if outcome.shadow_mismatch and not outcome.blocked else logger.info
-        log(
-            "orphan_shadow",
-            framework=self.framework_id,
-            old=len(old),
-            new=len(new),
-            only_old=[str(path) for path in only_old[:SHADOW_SAMPLE]],
-            only_new=[str(path) for path in only_new[:SHADOW_SAMPLE]],
-            blocked=outcome.blocked,
-        )
-        if outcome.blocked:
-            return
         pending = hm.get_metadata("pending_orphans")
         outcome.orphan_scan = OrphanScan(
             framework_dir=framework_dir,
             hash_file=hm.cache_file,
             files=len(existing),
-            orphans=old,
+            orphans=hm.get_untouched_files(framework_dir, existing),
             pending_orphans=[path for path in pending if isinstance(path, str)] if isinstance(pending, list) else [],
         )
 
@@ -1000,35 +924,22 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
             if self._is_root(json_url):
                 self._root_ok = True
             if stored_etag:
-                # 304 response - content unchanged - update session tracking
+                # 304 response - content unchanged - touch the entries
                 logger.debug("content_unchanged_via_etag", url=url, json_url=json_url)
                 
-                # Reuse stored file_path for session tracking (skip expensive recalculation)
+                # Reuse the stored file_path (skip expensive recalculation)
                 existing = self.hash_manager.hashes.get(json_url) or self.hash_manager.hashes.get(url) or {}
                 file_path = Path(existing['file_path']) if existing.get('file_path') else self._get_organized_file_path(url, {})
                 
-                # ALWAYS update or create hash entries for both URLs with current session info
-                # This ensures orphan detection works correctly
-                if json_url not in self.hash_manager.hashes:
-                    self.hash_manager.hashes[json_url] = {}
-                    
-                existing_data = self.hash_manager.hashes[json_url]
-                self.hash_manager.touch(json_url)
-                existing_data['file_path'] = str(file_path)
-                existing_data['status'] = 'unchanged'
-                if stored_etag:
-                    existing_data['etag'] = stored_etag
-                
-                # Also update the doc URL entry
-                if url not in self.hash_manager.hashes:
-                    self.hash_manager.hashes[url] = {}
-                    
-                doc_data = self.hash_manager.hashes[url]
-                self.hash_manager.touch(url)
-                doc_data['file_path'] = str(file_path)
-                doc_data['status'] = 'unchanged'
-                if stored_etag:
-                    doc_data['etag'] = stored_etag
+                # Touch both URLs' entries, so orphan detection keeps the file,
+                # and record the file on both. Only a missing file_path or a
+                # missing key (created with the stored etag) changes an entry,
+                # so a 304 alone leaves the hash file as it is.
+                for key in (json_url, url):
+                    if key not in self.hash_manager.hashes:
+                        self.hash_manager.hashes[key] = {'etag': stored_etag}
+                    self.hash_manager.touch(key)
+                    self.hash_manager.set_file_path(key, file_path)
                 
                 self.stats["pages_skipped"] += 1
             return None
@@ -1049,16 +960,16 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
         if not self.hash_manager.has_changed(json_url, response_text, etag) and not self.hash_manager.has_changed(url, response_text, etag):
             logger.debug("content_unchanged", url=url)
             
-            # Content unchanged but still need to update session tracking for orphan detection
+            # Content unchanged, but both keys are still touched for orphan detection
             try:
                 page_data = self._extract_from_json(json_data, url)
                 if page_data:
                     file_path = self._get_organized_file_path(url, page_data)
-                    # Update hash with current session info
+                    # Touch both keys and record the new etag
                     self.hash_manager.update_hash(json_url, response_text, etag, file_path)
                     self.hash_manager.update_hash(url, response_text, etag, file_path)
             except Exception as e:
-                logger.warning("failed_to_update_session_tracking", url=url, error=str(e))
+                logger.warning("failed_to_touch_unchanged_root", url=url, error=str(e))
             
             self.stats["pages_skipped"] += 1
             return None

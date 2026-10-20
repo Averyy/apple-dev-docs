@@ -3,9 +3,8 @@
 import hashlib
 import json
 import os
-from datetime import datetime
 from pathlib import Path
-from typing import Any, Dict, Final, Iterable, Optional, Set, List, Tuple
+from typing import Any, Dict, Final, Iterable, Optional, Set, List, Tuple, Union
 
 from scraper.utils.logger import get_logger
 
@@ -15,19 +14,19 @@ logger = get_logger(__name__)
 # update_hash, mark_error and keep_file carry them over; callers reset them explicitly.
 COUNTER_FIELDS: Final = ("consecutive_failures", "consecutive_local_errors")
 
-# Metadata keys every save rewrites; any other key is preserved as loaded.
-RUN_METADATA_KEYS: Final = ("last_updated", "total_pages", "session_id")
+# Metadata keys dropped on load: total_pages, which every save rewrites, and
+# the ones no longer written (last_updated, session_id, partial_session). Any
+# other key is preserved as loaded.
+RUN_METADATA_KEYS: Final = ("total_pages", "last_updated", "session_id", "partial_session")
+
+# Per-entry fields no longer written, dropped on load, so an entry loses them
+# at its file's next save; so are a status other than "error" ("new",
+# "unchanged") and an error entry's hash (see _without_legacy_fields).
+LEGACY_ENTRY_FIELDS: Final = ("last_checked", "session_id")
 
 # The mass-removal valve: more orphan candidates than this in one framework
 # (or at least half its files) are confirmed on a second clean run first.
 VALVE_MAX_ORPHANS: Final = 1000
-
-# Present only on a hash file whose last save came from a framework run that
-# may not have reached every page it has: its discovery didn't finish
-# (interrupted, or raised), or a failure of ours blocked its cleanup (e.g. a
-# failed fetch keeps the pages under it unreached). Its session_id, which only
-# the pages reached carry (see HashManager.mark_partial).
-PARTIAL_SESSION_KEY: Final = "partial_session"
 
 # The longest file name, in bytes, on the filesystems we write to (ext4, APFS)
 NAME_MAX: Final = 255
@@ -112,18 +111,13 @@ def write_text_atomic(path: Path, text: str) -> None:
 class HashManager:
     """Manage content hashes for incremental scraping."""
     
-    def __init__(self, cache_file: Path, output_dir: Optional[Path] = None, resume_session: bool = False) -> None:
+    def __init__(self, cache_file: Path, output_dir: Optional[Path] = None) -> None:
         """Initialize hash manager with a cache file.
         
         Args:
             cache_file: Path to the JSON file storing hashes
             output_dir: The dir of the files the entries record, if there is
                 one (see save)
-            resume_session: Keep the session the cache file holds (its
-                session_id and last_updated) instead of starting one: for a
-                manager reloaded after the scrape to prune entries or write
-                pending_orphans, so old-way orphan detection still compares
-                against the scrape's session
         """
         self.cache_file = cache_file
         self.output_dir = output_dir
@@ -132,29 +126,37 @@ class HashManager:
         # starts empty), else None
         self.load_error: Optional[str] = None
         hashes, metadata = self._load_hashes()
-        self.hashes: Dict[str, Dict[str, Any]] = hashes
+        # The entries without the fields no longer written
+        self.hashes: Dict[str, Dict[str, Any]] = {
+            url: self._without_legacy_fields(entry) for url, entry in hashes.items()
+        }
         # Nested metadata (e.g. root_gone_runs, failure_storm_runs), without
-        # the per-run keys save() writes itself
+        # total_pages, which save() writes itself, and the legacy keys
         self.metadata: Dict[str, Any] = {
             key: value for key, value in metadata.items() if key not in RUN_METADATA_KEYS
         }
         # A file that failed to load is replaced by the next save
         self._modified = self.load_error is not None
-        # The session_id the cache file holds (its last save's), which old-way
-        # orphan detection compares the entries against
-        saved_session_id = metadata.get("session_id")
-        self.saved_session_id: Optional[str] = saved_session_id if isinstance(saved_session_id, str) else None
-        self.session_id = datetime.utcnow().isoformat()  # Track current scraping session
-        # The last_updated a save writes; None writes the time of the save
-        self._last_updated: Optional[str] = None
-        if resume_session and self.saved_session_id:
-            self.session_id = self.saved_session_id
-            last_updated = metadata.get("last_updated")
-            self._last_updated = last_updated if isinstance(last_updated, str) else None
-        # URLs whose entries this session touched (update_hash, touch): the
-        # in-memory record of what the run saw live, the new way of finding
-        # orphans that D5's shadow mode compares with the session_id one
+        # URLs whose entries this run touched (update_hash, touch, keep_file):
+        # the in-memory record of what the run saw live, from which orphans
+        # are found (get_untouched_files)
         self.touched: Set[str] = set()
+
+    @staticmethod
+    def _without_legacy_fields(entry: Any) -> Any:
+        """An entry without the fields no longer written (LEGACY_ENTRY_FIELDS).
+
+        Anything that isn't an entry (e.g. another scraper's file digest) is
+        returned as it is.
+        """
+        if not isinstance(entry, dict):
+            return entry
+        cleaned = {key: value for key, value in entry.items() if key not in LEGACY_ENTRY_FIELDS}
+        if cleaned.get("status") == "error":
+            cleaned.pop("hash", None)
+        else:
+            cleaned.pop("status", None)
+        return cleaned
     
     def _load_hashes(self) -> Tuple[Dict[str, Dict[str, Any]], Dict[str, Any]]:
         """Load existing hashes and metadata from cache file.
@@ -184,10 +186,9 @@ class HashManager:
         """False when the manager holds nothing a later run needs.
 
         That is no entry with a file_path, no per-entry counter and no
-        metadata beyond total_pages/root_gone_runs (and partial_session,
-        which only describes the entries).
+        metadata beyond total_pages/root_gone_runs.
         """
-        if any(key not in ("root_gone_runs", PARTIAL_SESSION_KEY) for key in self.metadata):
+        if any(key != "root_gone_runs" for key in self.metadata):
             return True
         return any(
             entry.get("file_path") or any(field in entry for field in COUNTER_FIELDS)
@@ -209,6 +210,9 @@ class HashManager:
     def save(self) -> bool:
         """Save hashes to cache file if modified.
 
+        Writes {"metadata": {...}, "hashes": {...}} with sorted keys, so a
+        save of unchanged entries writes the same bytes. The metadata is
+        total_pages plus every other key as loaded or set (set_metadata).
         The data goes to a temp file that then replaces the cache file, so a
         failed write (e.g. a full disk) leaves the previous file whole.
 
@@ -237,16 +241,14 @@ class HashManager:
         try:
             data = {
                 "metadata": {
-                    "last_updated": self._last_updated or datetime.utcnow().isoformat(),
                     "total_pages": len(self.hashes),
-                    "session_id": self.session_id,  # Store current session ID in metadata
                     **self.metadata
                 },
                 "hashes": self.hashes
             }
             
             with open(temp_file, 'w') as f:
-                json.dump(data, f, indent=2)
+                json.dump(data, f, indent=2, sort_keys=True)
             os.replace(temp_file, self.cache_file)
             
             logger.info(
@@ -255,7 +257,6 @@ class HashManager:
                 entries=len(self.hashes)
             )
             self._modified = False
-            self.saved_session_id = self.session_id
             return True
         except OSError as e:
             logger.error(
@@ -376,8 +377,9 @@ class HashManager:
         """Whether an output file (or dir) exists: True, False, or None if that can't be told.
 
         Falls back to a case-insensitive sibling check so this agrees with
-        get_orphaned_files' view of existence when recorded casing drifts
-        from on-disk casing (e.g. hash files shared across macOS/Linux).
+        orphan detection's view of existence (get_untouched_files) when
+        recorded casing drifts from on-disk casing (e.g. hash files shared
+        across macOS/Linux).
         That check also answers for a path stat can't check: a name over the
         filesystem's limit is never in its dir's listing. None when its dir
         can't be checked or listed either (e.g. no permission on it), where
@@ -427,8 +429,11 @@ class HashManager:
         return len(dead)
 
     def update_hash(self, url: str, content: str, etag: Optional[str] = None, file_path: Optional[Path] = None) -> None:
-        """Update hash and ETag for a URL.
+        """Update hash and ETag for a URL, and touch it.
         
+        The entry holds only content fields (hash, etag, file_path) and the
+        run counters it had.
+
         Args:
             url: URL of the content
             content: Content to hash
@@ -436,12 +441,7 @@ class HashManager:
             file_path: Optional file path where content is saved
         """
         current_hash = self.get_content_hash(content)
-        entry: Dict[str, Any] = {
-            "hash": current_hash,
-            "last_checked": datetime.utcnow().isoformat(),
-            "status": "unchanged" if url in self.hashes else "new",
-            "session_id": self.session_id  # Track which session updated this
-        }
+        entry: Dict[str, Any] = {"hash": current_hash}
         
         # Store ETag if provided for faster future comparisons
         if etag:
@@ -463,19 +463,15 @@ class HashManager:
     def mark_error(self, url: str, error: str) -> None:
         """Mark a URL as having an error.
         
-        The entry loses its file_path, session_id and etag but keeps its
-        run counters, so a failure count survives the error entry.
+        The entry holds only status "error" and the error: it loses its
+        hash, etag and file_path but keeps its run counters, so a failure
+        count survives the error entry.
 
         Args:
             url: URL that failed
             error: Error message
         """
-        entry: Dict[str, Any] = {
-            "hash": "",
-            "last_checked": datetime.utcnow().isoformat(),
-            "status": "error",
-            "error": error
-        }
+        entry: Dict[str, Any] = {"status": "error", "error": error}
         self.hashes[url] = self._with_counters(url, entry)
         self._modified = True
         logger.debug("marked_error", url=url, error=error)
@@ -489,16 +485,13 @@ class HashManager:
         return entry
 
     def touch(self, url: str) -> None:
-        """Record that this run saw the URL's page live, leaving its content fields alone.
+        """Record that this run saw the URL's page live, leaving its entry alone.
 
-        Refreshes session_id and last_checked, and adds the URL to the
-        touched set, so orphan detection (both ways) keeps the entry's file.
+        Adds the URL to the touched set, so orphan detection keeps the
+        entry's file. Nothing is written: a run that only touches entries
+        (all 304s) saves nothing.
         """
-        entry = self.hashes[url]
-        entry["session_id"] = self.session_id
-        entry["last_checked"] = datetime.utcnow().isoformat()
         self.touched.add(url)
-        self._modified = True
 
     def keep_file(self, url: str, file_path: Path) -> bool:
         """Record a live page's file that is on disk but no live entry records.
@@ -516,15 +509,26 @@ class HashManager:
         """
         if self._output_file_on_disk(str(file_path)) is not True:
             return False
-        entry: Dict[str, Any] = {
-            "hash": "",
-            "status": "unchanged" if url in self.hashes else "new",
-            "file_path": str(file_path),
-        }
+        entry: Dict[str, Any] = {"hash": "", "file_path": str(file_path)}
         self.hashes[url] = self._with_counters(url, entry)
         self.touch(url)
+        self._modified = True
         logger.debug("kept_file", url=url, file=str(file_path))
         return True
+
+    def set_file_path(self, url: str, file_path: Union[str, Path]) -> None:
+        """Record the URL's file at a path, leaving its hash, etag and counters alone.
+
+        Marks the manager modified when the path changes, so save() writes
+        it (e.g. the 304 backfill of a missing file_path, or a renamed file).
+
+        Raises:
+            KeyError: The URL has no entry
+        """
+        entry = self.hashes[url]
+        if entry.get("file_path") != str(file_path):
+            entry["file_path"] = str(file_path)
+            self._modified = True
 
     def get_counter(self, url: str, field: str) -> int:
         """A run counter of the URL's entry (0 when absent)."""
@@ -563,70 +567,6 @@ class HashManager:
             del self.metadata[key]
             self._modified = True
 
-    def mark_partial(self) -> None:
-        """Mark this session's save as one from a framework run that may not
-        have reached every page it has (metadata.partial_session = its
-        session_id): its discovery didn't finish, or its cleanup is blocked.
-
-        Only the pages it reached carry the session, so old-way orphan
-        detection against it would take every page it didn't reach for an
-        orphan: the standalone orphan tools skip a framework so marked, as the
-        scrape's own cleanup skips a blocked one, until a run that finishes
-        its discovery unblocked drops the key. Set only when the save writes
-        anyway (the manager is modified): otherwise the file stays as its
-        last save left it.
-        """
-        if self._modified:
-            self.set_metadata(PARTIAL_SESSION_KEY, self.session_id)
-
-    @property
-    def partial(self) -> bool:
-        """The hash file's last save came from a framework run that may not
-        have reached every page it has (see mark_partial)."""
-        return PARTIAL_SESSION_KEY in self.metadata
-
-    def get_unchanged_urls(self) -> Set[str]:
-        """Get URLs that haven't changed since last scrape.
-        
-        Returns:
-            Set of URLs with unchanged content
-        """
-        return {
-            url for url, data in self.hashes.items()
-            if data.get("status") == "unchanged"
-        }
-    
-    def get_error_urls(self) -> Set[str]:
-        """Get URLs that had errors during last scrape.
-        
-        Returns:
-            Set of URLs with errors
-        """
-        return {
-            url for url, data in self.hashes.items()
-            if data.get("status") == "error"
-        }
-    
-    def get_statistics(self) -> Dict[str, int]:
-        """Get hash cache statistics.
-        
-        Returns:
-            Dictionary with statistics
-        """
-        statuses: Dict[str, int] = {}
-        for data in self.hashes.values():
-            status = data.get("status", "unknown")
-            statuses[status] = statuses.get(status, 0) + 1
-        
-        return {
-            "total": len(self.hashes),
-            **statuses
-        }
-    
-    def touched_this_session(self) -> bool:
-        """Whether any entry received this session's session_id (the zero-touched guard's test)."""
-        return any(entry.get("session_id") == self.session_id for entry in self.hashes.values())
-
     @staticmethod
     def framework_files(framework_dir: Path) -> Set[Path]:
         """The .md files under a framework's docs dir (none if it doesn't exist)."""
@@ -658,64 +598,11 @@ class HashManager:
                 kept.update(by_lower.get(str(path).lower(), ()))
         return existing_files - kept
 
-    def get_orphaned_files(self, framework_dir: Path, existing_files: Optional[Set[Path]] = None) -> List[Path]:
-        """Find markdown files that exist on disk but weren't updated in recent session.
-        
-        This is the core of orphan detection - files that exist but weren't touched
-        in the most recent scraping session are likely removed from Apple's docs.
-        The old way (D5): the most recent session is the one the cache file
-        holds (its last save's).
-        
-        Args:
-            framework_dir: Directory to check for orphaned files
-            existing_files: The .md files under it, if already listed
-            
-        Returns:
-            List of orphaned file paths
-        """
-        if existing_files is None:
-            if not framework_dir.exists():
-                return []
-            existing_files = self.framework_files(framework_dir)
-
-        # The session ID from the last save, else the newest one an entry holds
-        latest_session_id = self.saved_session_id
-        if not latest_session_id:
-            for data in self.hashes.values():
-                if "session_id" in data and data["session_id"]:
-                    session_id = data["session_id"]
-                    if latest_session_id is None or session_id > latest_session_id:
-                        latest_session_id = session_id
-
-        # If no session IDs found, all files are potentially orphaned
-        if not latest_session_id:
-            logger.warning("no_session_ids_found", framework_dir=str(framework_dir))
-            return sorted(list(existing_files))
-
-        # Orphans are files that exist but weren't touched in the latest session
-        orphaned = self._unrecorded(existing_files, (
-            data["file_path"]
-            for data in self.hashes.values()
-            if data.get("session_id") == latest_session_id and data.get("file_path")
-        ))
-
-        logger.info(
-            "orphan_detection_results",
-            framework_dir=str(framework_dir),
-            existing_files=len(existing_files),
-            touched_files=len(existing_files) - len(orphaned),
-            orphaned_files=len(orphaned),
-            latest_session_id=latest_session_id
-        )
-
-        return sorted(list(orphaned))
-
     def get_untouched_files(self, framework_dir: Path, existing_files: Optional[Set[Path]] = None) -> List[Path]:
-        """Markdown files on disk that no entry this session touched records.
+        """Markdown files on disk that no entry this run touched records: the orphans.
 
-        The new way of finding orphans (D5): from the in-memory touched set,
-        with no session_id read back. Valid only in the process that scraped
-        the framework; a manager loaded later touched nothing.
+        From the in-memory touched set, so valid only in the process that
+        scraped the framework; a manager loaded later touched nothing.
 
         Args:
             framework_dir: Directory to check for orphaned files

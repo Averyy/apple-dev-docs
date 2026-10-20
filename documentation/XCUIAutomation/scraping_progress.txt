@@ -1,4 +1,0 @@
-Completed scraping XCUIAutomation!
-Total pages scraped: 0
-Pages skipped (unchanged): 524
-Pages failed: 0

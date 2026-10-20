@@ -1,4 +1,0 @@
-Completed scraping Swift Playgrounds!
-Total pages scraped: 0
-Pages skipped (unchanged): 25
-Pages failed: 0

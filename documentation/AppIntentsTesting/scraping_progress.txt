@@ -1,4 +1,0 @@
-Completed scraping App Intents Testing!
-Total pages scraped: 0
-Pages skipped (unchanged): 119
-Pages failed: 0

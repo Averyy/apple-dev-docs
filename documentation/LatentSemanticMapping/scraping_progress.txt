@@ -1,4 +1,0 @@
-Completed scraping Latent Semantic Mapping!
-Total pages scraped: 0
-Pages skipped (unchanged): 73
-Pages failed: 0

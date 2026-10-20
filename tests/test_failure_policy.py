@@ -94,6 +94,7 @@ class Runs:
     def __init__(self, monkeypatch: pytest.MonkeyPatch) -> None:
         self.monkeypatch = monkeypatch
         self.events: List[EventDict] = []
+        self.last: Optional[AppleJSONDocumentationScraper] = None  # the last run's scraper
 
     async def run(self, routes: Dict[str, List[Spec]], fw: str = FW) -> AppleJSONDocumentationScraper:
         apple = Apple(routes)
@@ -106,6 +107,7 @@ class Runs:
                 await scraper.scrape_framework()
         self.events = events
         assert apple.unrouted == []
+        self.last = scraper
         return scraper
 
     def logged(self, event: str) -> List[EventDict]:
@@ -122,11 +124,11 @@ class Runs:
         entry: Dict[str, Any] = Runs.saved(fw)["hashes"][json_url(path)]
         return entry
 
-    @staticmethod
-    def orphans(fw: str = FW) -> Set[Path]:
-        """Old-way orphan detection for the framework, from the saved session."""
-        manager = HashManager(Config.get_hash_file(fw))
-        return set(manager.get_orphaned_files(Config.get_framework_output_dir(fw)))
+    def orphans(self, fw: str = FW) -> Set[Path]:
+        """Orphan detection for the framework, from the last run's in-memory touched set."""
+        scraper = self.last
+        assert scraper is not None and scraper.framework_id == fw
+        return set(scraper.hash_manager.get_untouched_files(Config.get_framework_output_dir(fw)))
 
     @staticmethod
     def cleanup(*scrapers: AppleJSONDocumentationScraper, interactive: bool = False) -> CleanupReport:
@@ -212,13 +214,36 @@ class TestCleanRuns:
         assert outcome == FrameworkOutcome(framework_id=FW, stats=outcome.stats)
         assert not outcome.skip_cleanup
         saved = runs.saved()
-        assert set(saved["metadata"]) == {"last_updated", "total_pages", "session_id"}
+        assert set(saved["metadata"]) == {"total_pages"}
         assert all(not counters(e) for e in saved["hashes"].values())
         assert runs.orphans() == set()
-        progress = (Path("documentation") / FW / "scraping_progress.txt").read_text()
-        assert progress.startswith("Completed scraping")
+        assert not (Path("documentation") / FW / "scraping_progress.txt").exists()
         # No unconditional root fetch before scrape_page (the old topic-hierarchy fetch)
         assert not hasattr(scraper, "topic_hierarchy")
+
+    async def test_a_304_only_run_saves_nothing(self, runs: Runs) -> None:
+        """Every page answers 304: its entries are only touched, so the hash file isn't rewritten."""
+        await seeded(runs)
+        hash_file = Config.get_hash_file(FW)
+        before = hash_file.read_bytes()
+        mtime = hash_file.stat().st_mtime_ns
+        scraper = await runs.run(routes_for(SITE))
+        assert scraper.hash_manager.touched >= {json_url(path) for path in SITE}
+        assert hash_file.read_bytes() == before and hash_file.stat().st_mtime_ns == mtime
+        assert runs.orphans() == set() and would_delete(scraper) == {}
+
+    async def test_an_etag_rotation_changes_only_the_etags(self, runs: Runs) -> None:
+        """The same content under new etags (e.g. a CDN redeploy): only the etag values change."""
+        await seeded(runs)
+        before = runs.saved()
+        rotated = {url: [ok(spec["body"], f"{spec['etag']}-r") for spec in specs]
+                   for url, specs in routes_for(SITE).items()}
+        await runs.run(rotated)
+        after = runs.saved()
+        assert after["metadata"] == before["metadata"]
+        assert set(after["hashes"]) == set(before["hashes"])
+        for url, entry in before["hashes"].items():
+            assert after["hashes"][url] == {**entry, "etag": f"{entry['etag']}-r"}, url
 
     async def test_metadata_and_local_error_counts_survive_a_quiet_run(self, runs: Runs) -> None:
         await seeded(runs)
@@ -228,15 +253,14 @@ class TestCleanRuns:
         data["metadata"]["module"] = {"parent": "other"}
         unlinked = json_url("testkit/unlinked")
         data["hashes"][unlinked] = {
-            "hash": "", "last_checked": "2026-01-01T00:00:00", "status": "error",
-            "error": "HTTP 502", "consecutive_failures": 2, "consecutive_local_errors": 2,
+            "status": "error", "error": "HTTP 502", "consecutive_failures": 2, "consecutive_local_errors": 2,
         }
         hash_file.write_text(json.dumps(data, indent=2))
         await runs.run(routes_for(SITE))
         saved = runs.saved()
         assert saved["metadata"]["pending_orphans"] == ["documentation/testkit/old.md"]
         assert saved["metadata"]["module"] == {"parent": "other"}
-        assert list(saved["metadata"])[:3] == ["last_updated", "total_pages", "session_id"]
+        assert list(saved["metadata"]) == ["module", "pending_orphans", "total_pages"]
         # A local-error count resets only on a successful save; a run that
         # never fetched the URL ends its D8 streak
         assert counters(saved["hashes"][unlinked]) == {"consecutive_local_errors": 2}
@@ -261,8 +285,7 @@ class TestD8:
             assert outcome.skip_cleanup and outcome.persistent_fetch_failures == []
             entry = runs.entry(ALPHA)
             assert entry["consecutive_failures"] == run
-            assert entry["status"] != "error" and entry["file_path"] == str(file_of(ALPHA))
-            assert entry["session_id"] == runs.saved()["metadata"]["session_id"]
+            assert entry.get("status") != "error" and entry["file_path"] == str(file_of(ALPHA))
             # The kept page isn't an orphan; its unreached child would be, but cleanup is blocked
             assert runs.orphans() == {file_of(ALPHA_CHILD)}
             assert would_delete(scraper) == {}
@@ -326,7 +349,7 @@ class TestD8:
         assert scraper.outcome.persistent_fetch_failures == [json_url(ALPHA)]
         entry = runs.entry(ALPHA)
         # The 304 proved it live: no mark_error, still touched, file kept
-        assert entry["status"] != "error" and entry["consecutive_failures"] == 3
+        assert entry.get("status") != "error" and entry["consecutive_failures"] == 3
         assert runs.orphans() == {file_of(ALPHA_CHILD)}
 
     async def test_404_on_a_good_page_is_removed_in_the_same_run(self, runs: Runs) -> None:
@@ -372,9 +395,7 @@ class TestNeverGood:
         site: Site = {**SITE, ROOT: [ALPHA, BETA, GAMMA, NEW], NEW: []}
         scraper = await runs.run(routes_for(site, {NEW: [status(code)]}))
         assert not scraper.outcome.skip_cleanup
-        assert runs.entry(NEW) == {
-            "hash": "", "last_checked": runs.entry(NEW)["last_checked"], "status": "error", "error": f"HTTP {code}"
-        }
+        assert runs.entry(NEW) == {"status": "error", "error": f"HTTP {code}"}
 
     async def test_pages_reachable_only_through_it_go_when_it_stops_blocking(self, runs: Runs) -> None:
         await seeded(runs)
@@ -479,7 +500,7 @@ class TestLocalErrors:
         try:
             scraper = await runs.run(routes_for(SITE))
             assert scraper.outcome.blocks == {}
-            assert runs.entry(ALPHA_CHILD)["session_id"] == runs.saved()["metadata"]["session_id"]
+            assert json_url(ALPHA_CHILD) in scraper.hash_manager.touched
             # Alpha/child changes; beta is no longer linked, then gamma (real removals)
             site: Site = {**SITE, ROOT: [ALPHA, GAMMA]}
             removed = {3: [file_of(BETA)], 4: [file_of(GAMMA)]}
@@ -552,7 +573,7 @@ class TestLocalErrors:
             entry = runs.entry(ALPHA)
             assert entry["consecutive_local_errors"] == run
             # Its JSON-URL key records the file again, with no etag and an unknown hash
-            assert entry["status"] != "error" and entry["file_path"] == str(file_of(ALPHA))
+            assert entry.get("status") != "error" and entry["file_path"] == str(file_of(ALPHA))
             assert entry["hash"] == "" and "etag" not in entry and "consecutive_failures" not in entry
             assert runs.orphans() == set()
         assert scraper.outcome.blocks == {}
@@ -666,7 +687,7 @@ class TestRoot:
         assert "root_gone_runs" not in runs.saved()["metadata"]
         assert len(runs.logged("root_fetch_conflict")) == 1 and runs.logged("page_gone") == []
         entry = runs.entry(ROOT)
-        assert entry["status"] != "error" and entry["file_path"] == str(file_of(ROOT)) and entry["etag"]
+        assert entry.get("status") != "error" and entry["file_path"] == str(file_of(ROOT)) and entry["etag"]
         assert counters(entry) == {}
         assert runs.orphans() == {file_of(path) for path in SITE if path != ROOT}
 
@@ -802,7 +823,7 @@ class TestScrapeEverything:
         await seeded(runs)
         stray = Path("documentation") / FW / "stray.md"
         stray.write_text("# stray\n")
-        assert cleanup_orphans_at_end.collect_all_orphans() == {FW: [stray]}
+        assert runs.orphans() == {stray}
         scraped: List[Dict[str, Any]] = []
 
         async def scrape_frameworks(**kwargs: Any) -> Dict[str, Any]:
@@ -921,7 +942,7 @@ class TestScrapeEverything:
         await seeded(runs)
 
         async def boom(self: AppleJSONDocumentationScraper) -> Dict[str, Any]:
-            self.hash_manager.touch(json_url(ROOT))
+            self.hash_manager.set_counter(json_url(ROOT), "consecutive_failures", 1)
             raise RuntimeError("bug")
 
         monkeypatch.setattr(AppleJSONDocumentationScraper, "scrape_framework", boom)
@@ -966,7 +987,7 @@ class TestHashFileThatFailsToLoad:
         # The file was replaced, and records beta as a page we have
         assert HashManager(hash_file).load_error is None
         entry = runs.entry(BETA)
-        assert entry["status"] != "error" and entry["file_path"] == str(file_of(BETA))
+        assert entry.get("status") != "error" and entry["file_path"] == str(file_of(BETA))
         assert entry["consecutive_failures"] == 1
         assert runs.orphans() == set()
 
@@ -1052,7 +1073,7 @@ class TestLostEntries:
             scraper = await runs.run(routes_for(site, {victim: [status(403)]}))
             assert scraper.outcome.blocks == {"fetch_failed": [json_url(victim)]}
             entry = runs.entry(victim)
-            assert entry["status"] != "error" and entry["file_path"] == str(file_of(victim))
+            assert entry.get("status") != "error" and entry["file_path"] == str(file_of(victim))
             assert entry["consecutive_failures"] == run
             assert runs.orphans() == set()
         scraper = await runs.run(routes_for(site, {victim: [status(403)]}))

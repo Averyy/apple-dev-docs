@@ -1,4 +1,0 @@
-Completed scraping CloudKit!
-Total pages scraped: 0
-Pages skipped (unchanged): 1053
-Pages failed: 0

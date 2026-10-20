@@ -1,25 +1,17 @@
 {
-  "metadata": {
-    "last_updated": "2026-10-20T07:42:11.011348",
-    "total_pages": 2,
-    "session_id": "2026-10-20T07:42:10.658575"
-  },
   "hashes": {
-    "https://developer.apple.com/tutorials/data/documentation/SampleCode.json": {
-      "hash": "c11fe2bdafb79b685537003a2a106f6db44d21c89e01518b4901a62c7bee7041",
-      "last_checked": "2026-10-20T07:42:10.869714",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:42:10.658575",
-      "etag": "\"701c5-65dd9d25f3054-df\"",
-      "file_path": "documentation/SampleCode/SampleCode.md"
-    },
     "https://developer.apple.com/documentation/SampleCode": {
-      "hash": "c11fe2bdafb79b685537003a2a106f6db44d21c89e01518b4901a62c7bee7041",
-      "last_checked": "2026-10-20T07:42:10.863328",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:42:10.658575",
       "etag": "\"701c5-65dd9d25f3054-df\"",
-      "file_path": "documentation/SampleCode/SampleCode.md"
+      "file_path": "documentation/SampleCode/SampleCode.md",
+      "hash": "c11fe2bdafb79b685537003a2a106f6db44d21c89e01518b4901a62c7bee7041"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/SampleCode.json": {
+      "etag": "\"701c5-65dd9d25f3054-df\"",
+      "file_path": "documentation/SampleCode/SampleCode.md",
+      "hash": "c11fe2bdafb79b685537003a2a106f6db44d21c89e01518b4901a62c7bee7041"
     }
+  },
+  "metadata": {
+    "total_pages": 2
   }
 }

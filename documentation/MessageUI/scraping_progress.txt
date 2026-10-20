@@ -1,4 +1,0 @@
-Completed scraping Message UI!
-Total pages scraped: 0
-Pages skipped (unchanged): 80
-Pages failed: 0

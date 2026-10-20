@@ -1,4 +1,0 @@
-Completed scraping Apple News!
-Total pages scraped: 0
-Pages skipped (unchanged): 61
-Pages failed: 0

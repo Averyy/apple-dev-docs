@@ -1,4 +1,0 @@
-Completed scraping Accessibility!
-Total pages scraped: 0
-Pages skipped (unchanged): 304
-Pages failed: 0

@@ -1,4 +1,0 @@
-Completed scraping JavaScriptCore!
-Total pages scraped: 0
-Pages skipped (unchanged): 363
-Pages failed: 0

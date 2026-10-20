@@ -1,4 +1,0 @@
-Completed scraping DiskImageKit!
-Total pages scraped: 0
-Pages skipped (unchanged): 59
-Pages failed: 0

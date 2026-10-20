@@ -1,4 +1,0 @@
-Completed scraping TV Services!
-Total pages scraped: 0
-Pages skipped (unchanged): 142
-Pages failed: 0

@@ -1,4 +1,0 @@
-Completed scraping VisionEntitlementServices!
-Total pages scraped: 0
-Pages skipped (unchanged): 35
-Pages failed: 0

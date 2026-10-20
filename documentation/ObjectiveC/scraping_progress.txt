@@ -1,4 +1,0 @@
-Completed scraping Objective-C Runtime!
-Total pages scraped: 0
-Pages skipped (unchanged): 655
-Pages failed: 0

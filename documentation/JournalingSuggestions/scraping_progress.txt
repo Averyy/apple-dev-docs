@@ -1,4 +1,0 @@
-Completed scraping Journaling Suggestions!
-Total pages scraped: 0
-Pages skipped (unchanged): 108
-Pages failed: 0

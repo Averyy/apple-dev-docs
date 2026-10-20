@@ -1,4 +1,0 @@
-Completed scraping SafetyKit!
-Total pages scraped: 0
-Pages skipped (unchanged): 47
-Pages failed: 0

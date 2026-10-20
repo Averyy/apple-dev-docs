@@ -1,4 +1,0 @@
-Completed scraping Social!
-Total pages scraped: 0
-Pages skipped (unchanged): 64
-Pages failed: 0

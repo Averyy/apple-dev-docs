@@ -146,8 +146,9 @@ class BaseAppleScraper(ABC):
         """Async context manager exit.
 
         A failed hash save raises (unless the scrape already did), so the
-        framework fails and orphan cleanup skips it: against the previous
-        run's hash file, every page saved this run would look orphaned.
+        framework fails and orphan cleanup skips it: this run's entries (new
+        pages, counters, error entries) weren't saved, and its cleanup would
+        prune and write pending_orphans onto the previous run's hash file.
         """
         if self.session:
             await self.session.aclose()

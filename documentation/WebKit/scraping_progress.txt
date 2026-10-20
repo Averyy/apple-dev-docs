@@ -1,4 +1,0 @@
-Completed scraping WebKit!
-Total pages scraped: 0
-Pages skipped (unchanged): 3040
-Pages failed: 0

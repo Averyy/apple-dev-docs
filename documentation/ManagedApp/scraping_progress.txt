@@ -1,4 +1,0 @@
-Completed scraping ManagedApp!
-Total pages scraped: 0
-Pages skipped (unchanged): 36
-Pages failed: 0

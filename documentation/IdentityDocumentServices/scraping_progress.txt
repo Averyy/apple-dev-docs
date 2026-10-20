@@ -1,4 +1,0 @@
-Completed scraping IdentityDocumentServices!
-Total pages scraped: 0
-Pages skipped (unchanged): 82
-Pages failed: 0

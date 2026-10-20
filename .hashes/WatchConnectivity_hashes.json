@@ -1,1689 +1,1057 @@
 {
-  "metadata": {
-    "last_updated": "2026-10-20T07:41:13.967616",
-    "total_pages": 210,
-    "session_id": "2026-10-20T07:40:57.599351"
-  },
   "hashes": {
-    "https://developer.apple.com/tutorials/data/documentation/WatchConnectivity.json": {
-      "hash": "167f5fa771fbdfc468a4a6123559c5b2c99e8431df61ce3118f724d6d0e8a706",
-      "last_checked": "2026-10-20T07:40:57.752978",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"2ed6-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/WatchConnectivity.md"
-    },
     "https://developer.apple.com/documentation/WatchConnectivity": {
-      "hash": "167f5fa771fbdfc468a4a6123559c5b2c99e8431df61ce3118f724d6d0e8a706",
-      "last_checked": "2026-10-20T07:40:57.746353",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
       "etag": "\"2ed6-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/WatchConnectivity.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsession.json": {
-      "hash": "3325ffb87c9fa7e9f4666698fea7635f43d4f565bce860d51f1a227eb1292865",
-      "last_checked": "2026-10-20T07:40:58.142974",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"13805-65d55e6088413-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsession.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcsession": {
-      "hash": "3325ffb87c9fa7e9f4666698fea7635f43d4f565bce860d51f1a227eb1292865",
-      "last_checked": "2026-10-16T07:31:05.805926",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"13805-65d55e6088413-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsession.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsessiondelegate.json": {
-      "hash": "96cee3b36d7976e667ca1bd954ad84fe32013a98697e9e4fa64c398844227632",
-      "last_checked": "2026-10-20T07:40:58.311283",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"b03e-65d55e6088413-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsessiondelegate.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcsessiondelegate": {
-      "hash": "96cee3b36d7976e667ca1bd954ad84fe32013a98697e9e4fa64c398844227632",
-      "last_checked": "2026-10-16T07:31:06.031789",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"b03e-65d55e6088413-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsessiondelegate.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsessionfile.json": {
-      "hash": "8384313901ef5ee8e1ba92ccd8efaf551640933a8b1be1307273337fa40fed3a",
-      "last_checked": "2026-10-20T07:40:58.601117",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"5888-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsessionfile.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcsessionfile": {
-      "hash": "8384313901ef5ee8e1ba92ccd8efaf551640933a8b1be1307273337fa40fed3a",
-      "last_checked": "2026-10-16T07:31:06.119086",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"5888-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsessionfile.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsessionfiletransfer.json": {
-      "hash": "eee6fdabda26bb601463a7a5a2ac81e09503467aae599a4815f79660698f29bd",
-      "last_checked": "2026-10-20T07:40:58.861063",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"5d36-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsessionfiletransfer.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcsessionfiletransfer": {
-      "hash": "eee6fdabda26bb601463a7a5a2ac81e09503467aae599a4815f79660698f29bd",
-      "last_checked": "2026-10-16T07:31:06.206850",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"5d36-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsessionfiletransfer.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsessionuserinfotransfer.json": {
-      "hash": "08a83b1a25728ef675058f7be979f038094175af7aef9f3378eec481c0201b95",
-      "last_checked": "2026-10-20T07:40:59.026224",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"6fd2-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsessionuserinfotransfer.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcsessionuserinfotransfer": {
-      "hash": "08a83b1a25728ef675058f7be979f038094175af7aef9f3378eec481c0201b95",
-      "last_checked": "2026-10-16T07:31:06.515531",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"6fd2-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsessionuserinfotransfer.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/transferring-data-with-watch-connectivity.json": {
-      "hash": "8c95dfbac866d21f345de161346089c1af63361d37b22c7e3762eb5da7dec2d7",
-      "last_checked": "2026-10-20T07:40:59.107035",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"81e8-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/transferring-data-with-watch-connectivity.md"
+      "file_path": "documentation/WatchConnectivity/WatchConnectivity.md",
+      "hash": "167f5fa771fbdfc468a4a6123559c5b2c99e8431df61ce3118f724d6d0e8a706"
     },
     "https://developer.apple.com/documentation/watchconnectivity/transferring-data-with-watch-connectivity": {
-      "hash": "8c95dfbac866d21f345de161346089c1af63361d37b22c7e3762eb5da7dec2d7",
-      "last_checked": "2026-10-16T07:31:06.623144",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
       "etag": "\"81e8-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/transferring-data-with-watch-connectivity.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsession/issupported().json": {
-      "hash": "7da2388e90498d309a19e0cd980b3d5809cb72e16ff83dff93e45016fbca3012",
-      "last_checked": "2026-10-20T07:40:59.294962",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"2f48-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsession/issupported.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcsession/issupported()": {
-      "hash": "7da2388e90498d309a19e0cd980b3d5809cb72e16ff83dff93e45016fbca3012",
-      "last_checked": "2026-10-16T07:31:06.712164",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"2f48-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsession/issupported.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsession/default.json": {
-      "hash": "60a6cae850a99c42fcdff43c6e64bce84d6cc9971a22b68e26aeca0caef0100c",
-      "last_checked": "2026-10-20T07:40:59.484890",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"25e4-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsession/default.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcsession/default": {
-      "hash": "60a6cae850a99c42fcdff43c6e64bce84d6cc9971a22b68e26aeca0caef0100c",
-      "last_checked": "2026-10-16T07:31:06.934326",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"25e4-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsession/default.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsession/delegate.json": {
-      "hash": "97aa6f465a576cf6f4a52d1378bfd3119f697b07fbd714ddb93197046fb17326",
-      "last_checked": "2026-10-20T07:40:59.632319",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"30f4-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsession/delegate.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcsession/delegate": {
-      "hash": "97aa6f465a576cf6f4a52d1378bfd3119f697b07fbd714ddb93197046fb17326",
-      "last_checked": "2026-10-16T07:31:07.232471",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"30f4-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsession/delegate.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsession/activate().json": {
-      "hash": "1e179b8aff9e67ebe1df13769466e28645d463c91af77e62380d877b9787137d",
-      "last_checked": "2026-10-20T07:40:59.764843",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"3070-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsession/activate.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcsession/activate()": {
-      "hash": "1e179b8aff9e67ebe1df13769466e28645d463c91af77e62380d877b9787137d",
-      "last_checked": "2026-10-16T07:31:07.321534",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"3070-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsession/activate.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsession/activationstate.json": {
-      "hash": "3df5b569ab06ead79e8faa4e88eb6e73cef01233a164609b9d5e47f0db1f5691",
-      "last_checked": "2026-10-20T07:41:00.039994",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"415e-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsession/activationstate.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcsession/activationstate": {
-      "hash": "3df5b569ab06ead79e8faa4e88eb6e73cef01233a164609b9d5e47f0db1f5691",
-      "last_checked": "2026-10-16T07:31:07.607281",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"415e-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsession/activationstate.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsession/ispaired.json": {
-      "hash": "7a2dcb001a70794607a7b62232f1d0c237a427d8ef2ded74aa6ad99a610a55cf",
-      "last_checked": "2026-10-20T07:41:00.306840",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"4d6d-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsession/ispaired.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcsession/ispaired": {
-      "hash": "7a2dcb001a70794607a7b62232f1d0c237a427d8ef2ded74aa6ad99a610a55cf",
-      "last_checked": "2026-10-16T07:31:07.905975",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"4d6d-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsession/ispaired.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsession/iosdeviceneedsunlockafterrebootforreachability.json": {
-      "hash": "cba99f9eaa4c4d06dae42b31a3d6edb3f11b37aa1c62686daafc82c4625c9a7f",
-      "last_checked": "2026-10-20T07:41:00.593368",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"54d1-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsession/iosdeviceneedsunlockafterrebootforreachability.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcsession/iosdeviceneedsunlockafterrebootforreachability": {
-      "hash": "cba99f9eaa4c4d06dae42b31a3d6edb3f11b37aa1c62686daafc82c4625c9a7f",
-      "last_checked": "2026-10-16T07:31:07.990972",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"54d1-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsession/iosdeviceneedsunlockafterrebootforreachability.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsession/iswatchappinstalled.json": {
-      "hash": "9e0946211f5d7f50028a57eb92b89d067e1e0d95dc3df7706d22d01036448187",
-      "last_checked": "2026-10-20T07:41:00.749571",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"4e84-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsession/iswatchappinstalled.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcsession/iswatchappinstalled": {
-      "hash": "9e0946211f5d7f50028a57eb92b89d067e1e0d95dc3df7706d22d01036448187",
-      "last_checked": "2026-10-16T07:31:08.113498",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"4e84-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsession/iswatchappinstalled.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsession/iscompanionappinstalled.json": {
-      "hash": "1e57e950d09f87036f6c5d37bd4d3171637f35cc1e3bfd8b7d25b6a09c045fab",
-      "last_checked": "2026-10-20T07:41:00.894557",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"3c35-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsession/iscompanionappinstalled.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcsession/iscompanionappinstalled": {
-      "hash": "1e57e950d09f87036f6c5d37bd4d3171637f35cc1e3bfd8b7d25b6a09c045fab",
-      "last_checked": "2026-10-16T07:31:08.208136",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"3c35-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsession/iscompanionappinstalled.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsession/iscomplicationenabled.json": {
-      "hash": "8d4209e72acef21997a03370f974fc2db3fcec364253d587e226bbd87f3026a5",
-      "last_checked": "2026-10-20T07:41:01.038545",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"5591-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsession/iscomplicationenabled.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcsession/iscomplicationenabled": {
-      "hash": "8d4209e72acef21997a03370f974fc2db3fcec364253d587e226bbd87f3026a5",
-      "last_checked": "2026-10-16T07:31:08.499609",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"5591-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsession/iscomplicationenabled.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsession/watchdirectoryurl.json": {
-      "hash": "874f2210c18773d895d1026cdcba0155242d4e02e158170a6cb28d203cc95981",
-      "last_checked": "2026-10-20T07:41:01.168570",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"4bb9-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsession/watchdirectoryurl.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcsession/watchdirectoryurl": {
-      "hash": "874f2210c18773d895d1026cdcba0155242d4e02e158170a6cb28d203cc95981",
-      "last_checked": "2026-10-16T07:31:08.595480",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"4bb9-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsession/watchdirectoryurl.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsession/isreachable.json": {
-      "hash": "33fcb415643b5aabfd00cae5600d128e776ab7411d8c4619bdbdb0ba9282263e",
-      "last_checked": "2026-10-20T07:41:01.305840",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"4823-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsession/isreachable.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcsession/isreachable": {
-      "hash": "33fcb415643b5aabfd00cae5600d128e776ab7411d8c4619bdbdb0ba9282263e",
-      "last_checked": "2026-10-16T07:31:08.819877",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"4823-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsession/isreachable.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsession/updateapplicationcontext(_:).json": {
-      "hash": "0a99d8564bc4edbb9efe39c81de08b09cd9a207a716e0c89a9aaa6f62e7f1832",
-      "last_checked": "2026-10-20T07:41:01.550059",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"5327-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsession/updateapplicationcontext.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcsession/updateapplicationcontext(_:)": {
-      "hash": "0a99d8564bc4edbb9efe39c81de08b09cd9a207a716e0c89a9aaa6f62e7f1832",
-      "last_checked": "2026-10-16T07:31:09.044515",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"5327-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsession/updateapplicationcontext.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsession/applicationcontext.json": {
-      "hash": "8cdb1b08efa02bdd8cd00128eb5e3ee634dee66e4a491b524dd724f955fb871a",
-      "last_checked": "2026-10-20T07:41:01.843046",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"2f16-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsession/applicationcontext.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcsession/applicationcontext": {
-      "hash": "8cdb1b08efa02bdd8cd00128eb5e3ee634dee66e4a491b524dd724f955fb871a",
-      "last_checked": "2026-10-16T07:31:09.136107",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"2f16-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsession/applicationcontext.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsession/receivedapplicationcontext.json": {
-      "hash": "82c6f2467534d07fc8929a2ab2658daeb4c9ec5e2a9345a334885528a0ec03ac",
-      "last_checked": "2026-10-20T07:41:01.998163",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"3645-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsession/receivedapplicationcontext.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcsession/receivedapplicationcontext": {
-      "hash": "82c6f2467534d07fc8929a2ab2658daeb4c9ec5e2a9345a334885528a0ec03ac",
-      "last_checked": "2026-10-16T07:31:09.221788",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"3645-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsession/receivedapplicationcontext.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsession/sendmessage(_:replyhandler:errorhandler:).json": {
-      "hash": "dfbf41350f42440925ff2dcf703a1e7442f5ac8963bbc560a1db3a69a11024c2",
-      "last_checked": "2026-10-20T07:41:02.157192",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"5a01-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsession/sendmessage-replyhandlererrorhandler.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcsession/sendmessage(_:replyhandler:errorhandler:)": {
-      "hash": "dfbf41350f42440925ff2dcf703a1e7442f5ac8963bbc560a1db3a69a11024c2",
-      "last_checked": "2026-10-16T07:31:09.320286",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"5a01-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsession/sendmessage-replyhandlererrorhandler.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsession/sendmessagedata(_:replyhandler:errorhandler:).json": {
-      "hash": "ec11e15c3b33a93a6452fd198a28072786c8847a4dfede0305027ae56ba70fd8",
-      "last_checked": "2026-10-20T07:41:02.305678",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"583f-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsession/sendmessagedata-replyhandlererrorhandler.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcsession/sendmessagedata(_:replyhandler:errorhandler:)": {
-      "hash": "ec11e15c3b33a93a6452fd198a28072786c8847a4dfede0305027ae56ba70fd8",
-      "last_checked": "2026-10-16T07:31:09.408496",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"583f-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsession/sendmessagedata-replyhandlererrorhandler.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsession/remainingcomplicationuserinfotransfers.json": {
-      "hash": "744e9b37962d05dfc6ef159763d5f5e14b36fd09c8f81ee0fdad20145d6f2e89",
-      "last_checked": "2026-10-20T07:41:02.583591",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"3188-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsession/remainingcomplicationuserinfotransfers.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcsession/remainingcomplicationuserinfotransfers": {
-      "hash": "744e9b37962d05dfc6ef159763d5f5e14b36fd09c8f81ee0fdad20145d6f2e89",
-      "last_checked": "2026-10-16T07:31:09.639276",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"3188-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsession/remainingcomplicationuserinfotransfers.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsession/transfercurrentcomplicationuserinfo(_:).json": {
-      "hash": "3c3763fb0bdbb4e4b3390b8749eddceb79f8300267720a9757defacdb911b2d7",
-      "last_checked": "2026-10-20T07:41:02.716280",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"439c-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsession/transfercurrentcomplicationuserinfo.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcsession/transfercurrentcomplicationuserinfo(_:)": {
-      "hash": "3c3763fb0bdbb4e4b3390b8749eddceb79f8300267720a9757defacdb911b2d7",
-      "last_checked": "2026-10-16T07:31:09.793857",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"439c-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsession/transfercurrentcomplicationuserinfo.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsession/transferuserinfo(_:).json": {
-      "hash": "99630ef0b3d97001fb1dfc395c45d8d19deecb93aacc843ef1842cf806375c91",
-      "last_checked": "2026-10-20T07:41:02.845268",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"4287-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsession/transferuserinfo.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcsession/transferuserinfo(_:)": {
-      "hash": "99630ef0b3d97001fb1dfc395c45d8d19deecb93aacc843ef1842cf806375c91",
-      "last_checked": "2026-10-16T07:31:09.876440",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"4287-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsession/transferuserinfo.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsession/outstandinguserinfotransfers.json": {
-      "hash": "9d20ffbf0d419b7b0c7738e91e946a5547484e9a653d231ff0f9f6a89682fee8",
-      "last_checked": "2026-10-20T07:41:03.001737",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"3433-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsession/outstandinguserinfotransfers.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcsession/outstandinguserinfotransfers": {
-      "hash": "9d20ffbf0d419b7b0c7738e91e946a5547484e9a653d231ff0f9f6a89682fee8",
-      "last_checked": "2026-10-16T07:31:10.118778",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"3433-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsession/outstandinguserinfotransfers.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsession/transferfile(_:metadata:).json": {
-      "hash": "8cc6775c069e124fafe60a5b0dd4637ed9a125d608a0c5438731d613a3145c71",
-      "last_checked": "2026-10-20T07:41:03.129141",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"527d-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsession/transferfile-metadata.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcsession/transferfile(_:metadata:)": {
-      "hash": "8cc6775c069e124fafe60a5b0dd4637ed9a125d608a0c5438731d613a3145c71",
-      "last_checked": "2026-10-16T07:31:10.205948",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"527d-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsession/transferfile-metadata.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsession/outstandingfiletransfers.json": {
-      "hash": "90e26ab0274ff815aa8b766bd4f39b1ce62c6c806d819c0cd765a4e1cf0ba315",
-      "last_checked": "2026-10-20T07:41:03.262602",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"3215-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsession/outstandingfiletransfers.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcsession/outstandingfiletransfers": {
-      "hash": "90e26ab0274ff815aa8b766bd4f39b1ce62c6c806d819c0cd765a4e1cf0ba315",
-      "last_checked": "2026-10-16T07:31:10.292537",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"3215-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsession/outstandingfiletransfers.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsession/hascontentpending.json": {
-      "hash": "5bee5b299e2b8f2c3485e4de1d155b673cab82f54f6739621cacf8f133cdf2a1",
-      "last_checked": "2026-10-20T07:41:03.415193",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"45e3-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsession/hascontentpending.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcsession/hascontentpending": {
-      "hash": "5bee5b299e2b8f2c3485e4de1d155b673cab82f54f6739621cacf8f133cdf2a1",
-      "last_checked": "2026-10-16T07:31:10.384078",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"45e3-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsession/hascontentpending.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsessionactivationstate.json": {
-      "hash": "2b505c30a843748efd226c899190476ad05cb9e6fcdea2454361ea13d1cd05e0",
-      "last_checked": "2026-10-20T07:41:03.559089",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"479e-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsessionactivationstate.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcsessionactivationstate": {
-      "hash": "2b505c30a843748efd226c899190476ad05cb9e6fcdea2454361ea13d1cd05e0",
-      "last_checked": "2026-10-16T07:31:10.468893",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"479e-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsessionactivationstate.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerrordomain.json": {
-      "hash": "2177013cdb3d7c69da345b584f14b038a8a9537da014aaf5328b4625112cef93",
-      "last_checked": "2026-10-20T07:41:03.696923",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"256c-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerrordomain.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcerrordomain": {
-      "hash": "2177013cdb3d7c69da345b584f14b038a8a9537da014aaf5328b4625112cef93",
-      "last_checked": "2026-10-16T07:31:10.546812",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"256c-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerrordomain.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror.json": {
-      "hash": "47a58b0f12ab1a5f2a73fb64b58ee3936ccf3479d2616a7de9bf250f22ba9acb",
-      "last_checked": "2026-10-20T07:41:03.854098",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"76bf-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror.md"
+      "file_path": "documentation/WatchConnectivity/transferring-data-with-watch-connectivity.md",
+      "hash": "8c95dfbac866d21f345de161346089c1af63361d37b22c7e3762eb5da7dec2d7"
     },
     "https://developer.apple.com/documentation/watchconnectivity/wcerror": {
-      "hash": "47a58b0f12ab1a5f2a73fb64b58ee3936ccf3479d2616a7de9bf250f22ba9acb",
-      "last_checked": "2026-10-16T07:31:10.632822",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
       "etag": "\"76bf-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/code.json": {
-      "hash": "f14429d4cc23862c5f833f9fa7c0525e2b15ec3e489ea087584802af80f4bbb7",
-      "last_checked": "2026-10-20T07:41:03.995709",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"9890-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/code.md"
+      "file_path": "documentation/WatchConnectivity/wcerror.md",
+      "hash": "47a58b0f12ab1a5f2a73fb64b58ee3936ccf3479d2616a7de9bf250f22ba9acb"
     },
     "https://developer.apple.com/documentation/watchconnectivity/wcerror/code": {
-      "hash": "f14429d4cc23862c5f833f9fa7c0525e2b15ec3e489ea087584802af80f4bbb7",
-      "last_checked": "2026-10-16T07:31:10.728385",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
       "etag": "\"9890-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/code.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsessiondelegate/session(_:activationdidcompletewith:error:).json": {
-      "hash": "96e4d40fb813bfdeb1b1404d353f4a92da8401e648c28428165de70f5ec7c750",
-      "last_checked": "2026-10-20T07:41:04.151112",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"6100-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsessiondelegate/session-activationdidcompletewitherror.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcsessiondelegate/session(_:activationdidcompletewith:error:)": {
-      "hash": "96e4d40fb813bfdeb1b1404d353f4a92da8401e648c28428165de70f5ec7c750",
-      "last_checked": "2026-10-16T07:31:10.826017",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"6100-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsessiondelegate/session-activationdidcompletewitherror.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsessiondelegate/sessiondidbecomeinactive(_:).json": {
-      "hash": "2a54cc17b301ee7d3fc8d44a5a8273aead679e4b9fcda699ab945dba5e98fd5f",
-      "last_checked": "2026-10-20T07:41:04.304171",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"3929-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsessiondelegate/sessiondidbecomeinactive.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcsessiondelegate/sessiondidbecomeinactive(_:)": {
-      "hash": "2a54cc17b301ee7d3fc8d44a5a8273aead679e4b9fcda699ab945dba5e98fd5f",
-      "last_checked": "2026-10-16T07:31:10.920740",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"3929-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsessiondelegate/sessiondidbecomeinactive.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsessiondelegate/sessiondiddeactivate(_:).json": {
-      "hash": "4d9440da2330eefb0b898e64180e69bf34587f780486830ef4eb4485b0495709",
-      "last_checked": "2026-10-20T07:41:04.446487",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"4056-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsessiondelegate/sessiondiddeactivate.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcsessiondelegate/sessiondiddeactivate(_:)": {
-      "hash": "4d9440da2330eefb0b898e64180e69bf34587f780486830ef4eb4485b0495709",
-      "last_checked": "2026-10-16T07:31:11.027321",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"4056-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsessiondelegate/sessiondiddeactivate.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsessiondelegate/sessionwatchstatedidchange(_:).json": {
-      "hash": "f830fd6b84e68459b5ad8e19594e2e27e6f17a0bd491baed385faea97f471b04",
-      "last_checked": "2026-10-20T07:41:04.606060",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"4b42-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsessiondelegate/sessionwatchstatedidchange.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcsessiondelegate/sessionwatchstatedidchange(_:)": {
-      "hash": "f830fd6b84e68459b5ad8e19594e2e27e6f17a0bd491baed385faea97f471b04",
-      "last_checked": "2026-10-16T07:31:11.066780",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"4b42-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsessiondelegate/sessionwatchstatedidchange.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsessiondelegate/sessionreachabilitydidchange(_:).json": {
-      "hash": "5834875827d8658f1f8470afe646b0983321f73cff515eebf9991a65972e3410",
-      "last_checked": "2026-10-20T07:41:04.754186",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"3d02-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsessiondelegate/sessionreachabilitydidchange.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcsessiondelegate/sessionreachabilitydidchange(_:)": {
-      "hash": "5834875827d8658f1f8470afe646b0983321f73cff515eebf9991a65972e3410",
-      "last_checked": "2026-10-16T07:31:11.171443",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"3d02-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsessiondelegate/sessionreachabilitydidchange.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsessiondelegate/sessioncompanionappinstalleddidchange(_:).json": {
-      "hash": "2668765147bc6917a9219690ce303c9d8e7fc360d21c64cee4254e5c790928ec",
-      "last_checked": "2026-10-20T07:41:04.890098",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"34a4-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsessiondelegate/sessioncompanionappinstalleddidchange.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcsessiondelegate/sessioncompanionappinstalleddidchange(_:)": {
-      "hash": "2668765147bc6917a9219690ce303c9d8e7fc360d21c64cee4254e5c790928ec",
-      "last_checked": "2026-10-16T07:31:11.274051",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"34a4-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsessiondelegate/sessioncompanionappinstalleddidchange.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsessiondelegate/session(_:didreceiveapplicationcontext:).json": {
-      "hash": "4a4811e8a493cb876504d44b536c6b135df350c46e903817877423becf8cdd68",
-      "last_checked": "2026-10-20T07:41:05.031522",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"3b12-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsessiondelegate/session-didreceiveapplicationcontext.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcsessiondelegate/session(_:didreceiveapplicationcontext:)": {
-      "hash": "4a4811e8a493cb876504d44b536c6b135df350c46e903817877423becf8cdd68",
-      "last_checked": "2026-10-16T07:31:11.377988",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"3b12-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsessiondelegate/session-didreceiveapplicationcontext.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsessiondelegate/session(_:didreceivemessage:).json": {
-      "hash": "b333d531c7210a062f72f6a355a8b7d93d32bb2b6a706f9f4c98b9cea4ce1e78",
-      "last_checked": "2026-10-20T07:41:05.180886",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"55c3-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsessiondelegate/session-didreceivemessage.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcsessiondelegate/session(_:didreceivemessage:)": {
-      "hash": "b333d531c7210a062f72f6a355a8b7d93d32bb2b6a706f9f4c98b9cea4ce1e78",
-      "last_checked": "2026-10-16T07:31:11.424994",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"55c3-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsessiondelegate/session-didreceivemessage.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsessiondelegate/session(_:didreceivemessage:replyhandler:).json": {
-      "hash": "a41c237d410c05aa1abfd9c48a51c728ad3bdbb607a6fa9fd055d4164a1adf56",
-      "last_checked": "2026-10-20T07:41:05.331477",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"6250-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsessiondelegate/session-didreceivemessagereplyhandler.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcsessiondelegate/session(_:didreceivemessage:replyhandler:)": {
-      "hash": "a41c237d410c05aa1abfd9c48a51c728ad3bdbb607a6fa9fd055d4164a1adf56",
-      "last_checked": "2026-10-16T07:31:11.533299",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"6250-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsessiondelegate/session-didreceivemessagereplyhandler.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsessiondelegate/session(_:didreceivemessagedata:).json": {
-      "hash": "3c15f4ecd7f6f2aa8952392aac918c5ba3e49e1940cc045909fb43d98c952883",
-      "last_checked": "2026-10-20T07:41:05.464563",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"554f-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsessiondelegate/session-didreceivemessagedata.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcsessiondelegate/session(_:didreceivemessagedata:)": {
-      "hash": "3c15f4ecd7f6f2aa8952392aac918c5ba3e49e1940cc045909fb43d98c952883",
-      "last_checked": "2026-10-16T07:31:11.633661",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"554f-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsessiondelegate/session-didreceivemessagedata.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsessiondelegate/session(_:didreceivemessagedata:replyhandler:).json": {
-      "hash": "2e10cd89a4664d343098575cbec1524bed669f148719141e5ccbb5558df4cff3",
-      "last_checked": "2026-10-20T07:41:05.605642",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"60c8-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsessiondelegate/session-didreceivemessagedatareplyhandler.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcsessiondelegate/session(_:didreceivemessagedata:replyhandler:)": {
-      "hash": "2e10cd89a4664d343098575cbec1524bed669f148719141e5ccbb5558df4cff3",
-      "last_checked": "2026-10-16T07:31:11.743921",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"60c8-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsessiondelegate/session-didreceivemessagedatareplyhandler.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsessiondelegate/session(_:didreceiveuserinfo:).json": {
-      "hash": "e159a8cefdea30a274af21c250c54af8bc169b8ee86583042dc0a576445d37d4",
-      "last_checked": "2026-10-20T07:41:05.745074",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"3b9c-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsessiondelegate/session-didreceiveuserinfo.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcsessiondelegate/session(_:didreceiveuserinfo:)": {
-      "hash": "e159a8cefdea30a274af21c250c54af8bc169b8ee86583042dc0a576445d37d4",
-      "last_checked": "2026-10-16T07:31:12.053912",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"3b9c-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsessiondelegate/session-didreceiveuserinfo.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsessiondelegate/session(_:didfinish:error:)-8627b.json": {
-      "hash": "e47497a48208cb0957e44b15f87c44b296dd744efd8f5b977d902395461d9b18",
-      "last_checked": "2026-10-20T07:41:05.886934",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"42bf-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsessiondelegate/session-didfinisherror-8627b.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcsessiondelegate/session(_:didfinish:error:)-8627b": {
-      "hash": "e47497a48208cb0957e44b15f87c44b296dd744efd8f5b977d902395461d9b18",
-      "last_checked": "2026-10-16T07:31:12.152870",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"42bf-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsessiondelegate/session-didfinisherror-8627b.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsessiondelegate/session(_:didreceive:).json": {
-      "hash": "7be9a03a4d879557ee6f63e43d6a396d85f6af75b3881dad929c7ecbcfda00b9",
-      "last_checked": "2026-10-20T07:41:06.041461",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"3f66-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsessiondelegate/session-didreceive.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcsessiondelegate/session(_:didreceive:)": {
-      "hash": "7be9a03a4d879557ee6f63e43d6a396d85f6af75b3881dad929c7ecbcfda00b9",
-      "last_checked": "2026-10-16T07:31:12.195848",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"3f66-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsessiondelegate/session-didreceive.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsessiondelegate/session(_:didfinish:error:)-6dtcu.json": {
-      "hash": "872909445c116397b4bb0caef18d8db2beee9fa4e0ddfa3700713b2dfb8cd5f5",
-      "last_checked": "2026-10-20T07:41:06.187734",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"4174-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsessiondelegate/session-didfinisherror-6dtcu.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcsessiondelegate/session(_:didfinish:error:)-6dtcu": {
-      "hash": "872909445c116397b4bb0caef18d8db2beee9fa4e0ddfa3700713b2dfb8cd5f5",
-      "last_checked": "2026-10-16T07:31:12.266785",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"4174-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsessiondelegate/session-didfinisherror-6dtcu.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsessionfile/fileurl.json": {
-      "hash": "bd520af3db3019103cc0c034c62ea6626466c78b6fee88bdd2a15d72183143c4",
-      "last_checked": "2026-10-20T07:41:06.339302",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"2c74-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsessionfile/fileurl.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcsessionfile/fileurl": {
-      "hash": "bd520af3db3019103cc0c034c62ea6626466c78b6fee88bdd2a15d72183143c4",
-      "last_checked": "2026-10-16T07:31:12.332759",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"2c74-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsessionfile/fileurl.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsessionfile/metadata.json": {
-      "hash": "b0c5a2b64b5c8c5974d5e7318a27656846ea686aaf57f97862d6a0775a0f8c07",
-      "last_checked": "2026-10-20T07:41:06.495888",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"25f7-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsessionfile/metadata.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcsessionfile/metadata": {
-      "hash": "b0c5a2b64b5c8c5974d5e7318a27656846ea686aaf57f97862d6a0775a0f8c07",
-      "last_checked": "2026-10-16T07:31:12.459536",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"25f7-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsessionfile/metadata.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsessionfiletransfer/file.json": {
-      "hash": "2cbd20a5a837478461a50afe85ce19fe44d13690f9ff71fe71273c7c0f704850",
-      "last_checked": "2026-10-20T07:41:06.630955",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"20f6-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsessionfiletransfer/file.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcsessionfiletransfer/file": {
-      "hash": "2cbd20a5a837478461a50afe85ce19fe44d13690f9ff71fe71273c7c0f704850",
-      "last_checked": "2026-10-16T07:31:12.497499",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"20f6-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsessionfiletransfer/file.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsessionfiletransfer/istransferring.json": {
-      "hash": "7280bba43227dad965e77ee14fde7340c9451ae43a8d60adb17003d491abd6c9",
-      "last_checked": "2026-10-20T07:41:06.774563",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"30b8-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsessionfiletransfer/istransferring.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcsessionfiletransfer/istransferring": {
-      "hash": "7280bba43227dad965e77ee14fde7340c9451ae43a8d60adb17003d491abd6c9",
-      "last_checked": "2026-10-16T07:31:12.571048",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"30b8-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsessionfiletransfer/istransferring.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsessionfiletransfer/progress.json": {
-      "hash": "1c06e75fcf08707304475e01123a7890c128a87d7c8a4939793aa748841a38e6",
-      "last_checked": "2026-10-20T07:41:06.918961",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"2c06-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsessionfiletransfer/progress.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcsessionfiletransfer/progress": {
-      "hash": "1c06e75fcf08707304475e01123a7890c128a87d7c8a4939793aa748841a38e6",
-      "last_checked": "2026-10-16T07:31:12.621785",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"2c06-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsessionfiletransfer/progress.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsessionfiletransfer/cancel().json": {
-      "hash": "e0e774956f9dc795db2eb25e5f098e00d755f50f72bf5708b9b62ebf2d0507c5",
-      "last_checked": "2026-10-20T07:41:07.057198",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"26bf-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsessionfiletransfer/cancel.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcsessionfiletransfer/cancel()": {
-      "hash": "e0e774956f9dc795db2eb25e5f098e00d755f50f72bf5708b9b62ebf2d0507c5",
-      "last_checked": "2026-10-16T07:31:12.725462",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"26bf-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsessionfiletransfer/cancel.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsessionuserinfotransfer/iscurrentcomplicationinfo.json": {
-      "hash": "ce89d8e46e9332a14e4909f621926e7e894975046ac242100094f61068a5c28e",
-      "last_checked": "2026-10-20T07:41:07.196759",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"394e-65d55e6088413-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsessionuserinfotransfer/iscurrentcomplicationinfo.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcsessionuserinfotransfer/iscurrentcomplicationinfo": {
-      "hash": "ce89d8e46e9332a14e4909f621926e7e894975046ac242100094f61068a5c28e",
-      "last_checked": "2026-10-16T07:31:12.912660",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"394e-65d55e6088413-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsessionuserinfotransfer/iscurrentcomplicationinfo.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsessionuserinfotransfer/userinfo.json": {
-      "hash": "f3fea45b61824b3a2479b436259c3b8b9f942fcd8a7837bcebac130b04ae34dd",
-      "last_checked": "2026-10-20T07:41:07.328591",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"269b-65d55e6088413-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsessionuserinfotransfer/userinfo.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcsessionuserinfotransfer/userinfo": {
-      "hash": "f3fea45b61824b3a2479b436259c3b8b9f942fcd8a7837bcebac130b04ae34dd",
-      "last_checked": "2026-10-16T07:31:12.952924",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"269b-65d55e6088413-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsessionuserinfotransfer/userinfo.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsessionuserinfotransfer/istransferring.json": {
-      "hash": "06fc069a5874582c28144dc62d41a1b51a87b91598b8d99d31dd9d08c634aeca",
-      "last_checked": "2026-10-20T07:41:07.468146",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"2c16-65d55e6088413-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsessionuserinfotransfer/istransferring.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcsessionuserinfotransfer/istransferring": {
-      "hash": "06fc069a5874582c28144dc62d41a1b51a87b91598b8d99d31dd9d08c634aeca",
-      "last_checked": "2026-10-16T07:31:13.021676",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"2c16-65d55e6088413-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsessionuserinfotransfer/istransferring.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsessionuserinfotransfer/cancel().json": {
-      "hash": "8299ad8606e1c4c49bc5011fe2ff8c4040d0680389215699f18af9f5e00787fa",
-      "last_checked": "2026-10-20T07:41:07.611057",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"2218-65d55e6088413-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsessionuserinfotransfer/cancel.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcsessionuserinfotransfer/cancel()": {
-      "hash": "8299ad8606e1c4c49bc5011fe2ff8c4040d0680389215699f18af9f5e00787fa",
-      "last_checked": "2026-10-16T07:31:13.119279",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"2218-65d55e6088413-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsessionuserinfotransfer/cancel.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsessionactivationstate/notactivated.json": {
-      "hash": "3bd6bc0e673ea52a1255599df6ad1c10ada22b17e9a38f5f0a8d471b76e0e128",
-      "last_checked": "2026-10-20T07:41:07.892194",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"2775-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsessionactivationstate/notactivated.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcsessionactivationstate/notactivated": {
-      "hash": "3bd6bc0e673ea52a1255599df6ad1c10ada22b17e9a38f5f0a8d471b76e0e128",
-      "last_checked": "2026-10-16T07:31:13.297243",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"2775-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsessionactivationstate/notactivated.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsessionactivationstate/inactive.json": {
-      "hash": "5a1b714cf95f1330a76349e8f543fc2b4cb2b5a57c9182b30eb9c551103e89d3",
-      "last_checked": "2026-10-20T07:41:08.035468",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"2766-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsessionactivationstate/inactive.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcsessionactivationstate/inactive": {
-      "hash": "5a1b714cf95f1330a76349e8f543fc2b4cb2b5a57c9182b30eb9c551103e89d3",
-      "last_checked": "2026-10-16T07:31:13.336924",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"2766-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsessionactivationstate/inactive.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsessionactivationstate/activated.json": {
-      "hash": "273aed2a7aca9045e17b13ffa358c6a14575c2dbdf2ecac70f2c47dcab807920",
-      "last_checked": "2026-10-20T07:41:08.173347",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"26f0-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsessionactivationstate/activated.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcsessionactivationstate/activated": {
-      "hash": "273aed2a7aca9045e17b13ffa358c6a14575c2dbdf2ecac70f2c47dcab807920",
-      "last_checked": "2026-10-16T07:31:13.395799",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"26f0-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsessionactivationstate/activated.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsessionactivationstate/init(rawvalue:).json": {
-      "hash": "4287dab00b6fa4d411fbe92294564b3295886146d80c0b06c29cc4fa29000d43",
-      "last_checked": "2026-10-20T07:41:08.311141",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"14bc-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsessionactivationstate/init-rawvalue.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcsessionactivationstate/init(rawvalue:)": {
-      "hash": "4287dab00b6fa4d411fbe92294564b3295886146d80c0b06c29cc4fa29000d43",
-      "last_checked": "2026-10-16T07:31:13.496242",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"14bc-65d55e605aee9-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsessionactivationstate/init-rawvalue.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/genericerror.json": {
-      "hash": "3033f3629639ef677a9d1fd4328f87a7a036570555b009777df49d32002da9bc",
-      "last_checked": "2026-10-20T07:41:08.469076",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"50c3-65d55e6088413-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/genericerror.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcerror/genericerror": {
-      "hash": "3033f3629639ef677a9d1fd4328f87a7a036570555b009777df49d32002da9bc",
-      "last_checked": "2026-10-16T07:31:13.597816",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"50c3-65d55e6088413-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/genericerror.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/sessionnotsupported.json": {
-      "hash": "fc9491a8b21c92174d692cd212744a86dba675f19146af809006406e4df3bbbc",
-      "last_checked": "2026-10-20T07:41:08.613269",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"5109-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/sessionnotsupported.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcerror/sessionnotsupported": {
-      "hash": "fc9491a8b21c92174d692cd212744a86dba675f19146af809006406e4df3bbbc",
-      "last_checked": "2026-10-16T07:31:13.676118",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"5109-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/sessionnotsupported.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/sessionmissingdelegate.json": {
-      "hash": "2eaf0daa6070e9d5223ce079f369a498b9b1c4a18c9f1db84576bcb8eb2ae449",
-      "last_checked": "2026-10-20T07:41:08.753045",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"512b-65d55e6088413-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/sessionmissingdelegate.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcerror/sessionmissingdelegate": {
-      "hash": "2eaf0daa6070e9d5223ce079f369a498b9b1c4a18c9f1db84576bcb8eb2ae449",
-      "last_checked": "2026-10-16T07:31:13.715853",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"512b-65d55e6088413-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/sessionmissingdelegate.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/sessionnotactivated.json": {
-      "hash": "282b907defb83034db450bece7ed95363e020c31bdb54fc76825d5a954346b14",
-      "last_checked": "2026-10-20T07:41:08.880215",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"50fb-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/sessionnotactivated.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcerror/sessionnotactivated": {
-      "hash": "282b907defb83034db450bece7ed95363e020c31bdb54fc76825d5a954346b14",
-      "last_checked": "2026-10-16T07:31:13.773140",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"50fb-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/sessionnotactivated.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/devicenotpaired.json": {
-      "hash": "5ea17cb6aa43253e19a488b691eeb8dcf906326f7c94eddc8a5715ca5e928cc0",
-      "last_checked": "2026-10-20T07:41:09.013496",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"51c7-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/devicenotpaired.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcerror/devicenotpaired": {
-      "hash": "5ea17cb6aa43253e19a488b691eeb8dcf906326f7c94eddc8a5715ca5e928cc0",
-      "last_checked": "2026-10-16T07:31:13.845415",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"51c7-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/devicenotpaired.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/watchappnotinstalled.json": {
-      "hash": "6864500f7ed30462c65a668c96b4f33ee91c7d56ae31fb03db4fab2dc0926b96",
-      "last_checked": "2026-10-20T07:41:09.157206",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"5111-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/watchappnotinstalled.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcerror/watchappnotinstalled": {
-      "hash": "6864500f7ed30462c65a668c96b4f33ee91c7d56ae31fb03db4fab2dc0926b96",
-      "last_checked": "2026-10-16T07:31:13.902483",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"5111-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/watchappnotinstalled.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/notreachable.json": {
-      "hash": "cbb06b907c77e444922b8ada79f0e8b54edd64433ac9a8167464cfea1b0e1713",
-      "last_checked": "2026-10-20T07:41:09.297410",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"51c7-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/notreachable.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcerror/notreachable": {
-      "hash": "cbb06b907c77e444922b8ada79f0e8b54edd64433ac9a8167464cfea1b0e1713",
-      "last_checked": "2026-10-16T07:31:14.037679",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"51c7-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/notreachable.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/invalidparameter.json": {
-      "hash": "93404f59c3be2d40abc8fa1f44bc99fbbf516c5e7b66c713e88d564a64aae28d",
-      "last_checked": "2026-10-20T07:41:09.432310",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"50d1-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/invalidparameter.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcerror/invalidparameter": {
-      "hash": "93404f59c3be2d40abc8fa1f44bc99fbbf516c5e7b66c713e88d564a64aae28d",
-      "last_checked": "2026-10-16T07:31:14.202910",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"50d1-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/invalidparameter.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/payloadtoolarge.json": {
-      "hash": "a3c31b605c302ee96412ab2c5195ba4abf51672dd4e9effd186fc5447de0d0d2",
-      "last_checked": "2026-10-20T07:41:09.573337",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"51d0-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/payloadtoolarge.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcerror/payloadtoolarge": {
-      "hash": "a3c31b605c302ee96412ab2c5195ba4abf51672dd4e9effd186fc5447de0d0d2",
-      "last_checked": "2026-10-16T07:31:14.256964",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"51d0-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/payloadtoolarge.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/payloadunsupportedtypes.json": {
-      "hash": "54924f8c22837871ab77f3edd92aa760242b5027c0236e7f843d5ed106aeb39b",
-      "last_checked": "2026-10-20T07:41:09.719761",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"510a-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/payloadunsupportedtypes.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcerror/payloadunsupportedtypes": {
-      "hash": "54924f8c22837871ab77f3edd92aa760242b5027c0236e7f843d5ed106aeb39b",
-      "last_checked": "2026-10-16T07:31:14.309393",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"510a-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/payloadunsupportedtypes.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/messagereplyfailed.json": {
-      "hash": "689d199024f0ef76662d34da77dd4b195fb1b32917119273522c43112a054515",
-      "last_checked": "2026-10-20T07:41:09.860915",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"50e9-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/messagereplyfailed.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcerror/messagereplyfailed": {
-      "hash": "689d199024f0ef76662d34da77dd4b195fb1b32917119273522c43112a054515",
-      "last_checked": "2026-10-16T07:31:14.451715",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"50e9-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/messagereplyfailed.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/messagereplytimedout.json": {
-      "hash": "b4775ecd22a82e10c24b53e776e56562fbd8ccfdc5e296fc7a76a51473d46b37",
-      "last_checked": "2026-10-20T07:41:09.990206",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"5104-65d55e6088413-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/messagereplytimedout.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcerror/messagereplytimedout": {
-      "hash": "b4775ecd22a82e10c24b53e776e56562fbd8ccfdc5e296fc7a76a51473d46b37",
-      "last_checked": "2026-10-16T07:31:14.539373",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"5104-65d55e6088413-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/messagereplytimedout.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/fileaccessdenied.json": {
-      "hash": "8c7bec3deb4fae0af97f4150abc1b53a4648d70fe4436eeb3c4c55b6f136ade3",
-      "last_checked": "2026-10-20T07:41:10.137573",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"520c-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/fileaccessdenied.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcerror/fileaccessdenied": {
-      "hash": "8c7bec3deb4fae0af97f4150abc1b53a4648d70fe4436eeb3c4c55b6f136ade3",
-      "last_checked": "2026-10-16T07:31:14.573969",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"520c-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/fileaccessdenied.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/deliveryfailed.json": {
-      "hash": "6ce2124ceef6283df7095e5e7e11dcfffbcc58131eea9ce84d3e4f08907a7f55",
-      "last_checked": "2026-10-20T07:41:10.281082",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"50d8-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/deliveryfailed.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcerror/deliveryfailed": {
-      "hash": "6ce2124ceef6283df7095e5e7e11dcfffbcc58131eea9ce84d3e4f08907a7f55",
-      "last_checked": "2026-10-16T07:31:14.684159",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"50d8-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/deliveryfailed.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/insufficientspace.json": {
-      "hash": "920d0dfdc411d85fbcf4f43faad2f26138bbcb778509a295a357f4e157b50088",
-      "last_checked": "2026-10-20T07:41:10.423651",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"5102-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/insufficientspace.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcerror/insufficientspace": {
-      "hash": "920d0dfdc411d85fbcf4f43faad2f26138bbcb778509a295a357f4e157b50088",
-      "last_checked": "2026-10-16T07:31:14.770117",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"5102-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/insufficientspace.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/sessioninactive.json": {
-      "hash": "650dfa6232008848423cdcdaf3a7701355043c1f65040ab373a1d9e28440d916",
-      "last_checked": "2026-10-20T07:41:10.561925",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"51ba-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/sessioninactive.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcerror/sessioninactive": {
-      "hash": "650dfa6232008848423cdcdaf3a7701355043c1f65040ab373a1d9e28440d916",
-      "last_checked": "2026-10-16T07:31:14.823829",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"51ba-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/sessioninactive.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/transfertimedout.json": {
-      "hash": "8c289d2de939734235f0a8c8f2aee6f894d3d3a08cc4ec604362eb6fe4465bee",
-      "last_checked": "2026-10-20T07:41:10.717106",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"5120-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/transfertimedout.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcerror/transfertimedout": {
-      "hash": "8c289d2de939734235f0a8c8f2aee6f894d3d3a08cc4ec604362eb6fe4465bee",
-      "last_checked": "2026-10-16T07:31:14.873424",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"5120-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/transfertimedout.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/companionappnotinstalled.json": {
-      "hash": "9cc85c334a811adb006d99a8649c242fcef1e3200b07a18164ea8186d447573b",
-      "last_checked": "2026-10-20T07:41:10.870378",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"5154-65d55e6088413-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/companionappnotinstalled.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcerror/companionappnotinstalled": {
-      "hash": "9cc85c334a811adb006d99a8649c242fcef1e3200b07a18164ea8186d447573b",
-      "last_checked": "2026-10-16T07:31:14.952622",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"5154-65d55e6088413-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/companionappnotinstalled.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/watchonlyapp.json": {
-      "hash": "a7ce1f90784c5dfbc134a969e59d39706156912c94eb02bdc65d5ac4af03fb03",
-      "last_checked": "2026-10-20T07:41:11.016251",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"50b6-65d55e6088413-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/watchonlyapp.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcerror/watchonlyapp": {
-      "hash": "a7ce1f90784c5dfbc134a969e59d39706156912c94eb02bdc65d5ac4af03fb03",
-      "last_checked": "2026-10-16T07:31:15.055742",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"50b6-65d55e6088413-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/watchonlyapp.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/errordomain.json": {
-      "hash": "b926cbe3489fae8a779dd1c9404abeec3e2efee15d58fa204ea689e827756569",
-      "last_checked": "2026-10-20T07:41:11.148281",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"1220-65d55e6088413-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/errordomain.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcerror/errordomain": {
-      "hash": "b926cbe3489fae8a779dd1c9404abeec3e2efee15d58fa204ea689e827756569",
-      "last_checked": "2026-10-16T07:31:15.152868",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"1220-65d55e6088413-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/errordomain.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/code/genericerror.json": {
-      "hash": "493c4107f0d3ab721695937a2b08b7ef48f80a3ff3159aa15f4e205e8d493c2a",
-      "last_checked": "2026-10-20T07:41:11.299793",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"6a2d-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/code/genericerror.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcerror/code/genericerror": {
-      "hash": "493c4107f0d3ab721695937a2b08b7ef48f80a3ff3159aa15f4e205e8d493c2a",
-      "last_checked": "2026-10-16T07:31:15.252725",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"6a2d-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/code/genericerror.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/code/sessionnotsupported.json": {
-      "hash": "0e1ac1f57ef5abfa106dd613557bce62339a3245a77de60c3587ddc053bd3437",
-      "last_checked": "2026-10-20T07:41:11.445843",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"6a8f-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/code/sessionnotsupported.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcerror/code/sessionnotsupported": {
-      "hash": "0e1ac1f57ef5abfa106dd613557bce62339a3245a77de60c3587ddc053bd3437",
-      "last_checked": "2026-10-16T07:31:15.352024",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"6a8f-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/code/sessionnotsupported.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/code/sessionmissingdelegate.json": {
-      "hash": "51ba2d5ebc908c8591f3862cb7e19d8b86ab037da22d9c73c9c52f6989aaf71b",
-      "last_checked": "2026-10-20T07:41:11.582285",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"6abd-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/code/sessionmissingdelegate.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcerror/code/sessionmissingdelegate": {
-      "hash": "51ba2d5ebc908c8591f3862cb7e19d8b86ab037da22d9c73c9c52f6989aaf71b",
-      "last_checked": "2026-10-16T07:31:15.438105",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"6abd-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/code/sessionmissingdelegate.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/code/sessionnotactivated.json": {
-      "hash": "67754b514c21a39765ecf07a3e9871847871da8a3d268fbe5d2324e2aa0d4a28",
-      "last_checked": "2026-10-20T07:41:11.712667",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"6a81-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/code/sessionnotactivated.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcerror/code/sessionnotactivated": {
-      "hash": "67754b514c21a39765ecf07a3e9871847871da8a3d268fbe5d2324e2aa0d4a28",
-      "last_checked": "2026-10-16T07:31:15.499267",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"6a81-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/code/sessionnotactivated.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/code/devicenotpaired.json": {
-      "hash": "41a48b4669d54032f01ca081301a7926907326b0b3a4fea94766652fd134be34",
-      "last_checked": "2026-10-20T07:41:11.854942",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"6b3d-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/code/devicenotpaired.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcerror/code/devicenotpaired": {
-      "hash": "41a48b4669d54032f01ca081301a7926907326b0b3a4fea94766652fd134be34",
-      "last_checked": "2026-10-16T07:31:15.623357",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"6b3d-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/code/devicenotpaired.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/code/watchappnotinstalled.json": {
-      "hash": "83e007656b7dd02ba6ecd35d88627e9ad73a204e9edb3e4f11ad1bf54d442ee2",
-      "last_checked": "2026-10-20T07:41:11.996878",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"6a9b-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/code/watchappnotinstalled.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcerror/code/watchappnotinstalled": {
-      "hash": "83e007656b7dd02ba6ecd35d88627e9ad73a204e9edb3e4f11ad1bf54d442ee2",
-      "last_checked": "2026-10-16T07:31:15.722211",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"6a9b-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/code/watchappnotinstalled.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/code/notreachable.json": {
-      "hash": "0b4a3860836952d9dca3019e7d2666d2a2337c52ec3f3414a8bf7206cd5dc868",
-      "last_checked": "2026-10-20T07:41:12.132310",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"6b31-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/code/notreachable.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcerror/code/notreachable": {
-      "hash": "0b4a3860836952d9dca3019e7d2666d2a2337c52ec3f3414a8bf7206cd5dc868",
-      "last_checked": "2026-10-16T07:31:15.837379",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"6b31-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/code/notreachable.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/code/invalidparameter.json": {
-      "hash": "44b7836a7645d5f897098047aae89f64242741d292b1829156f5f6f993756c1e",
-      "last_checked": "2026-10-20T07:41:12.278567",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"6a4b-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/code/invalidparameter.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcerror/code/invalidparameter": {
-      "hash": "44b7836a7645d5f897098047aae89f64242741d292b1829156f5f6f993756c1e",
-      "last_checked": "2026-10-16T07:31:15.890993",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"6a4b-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/code/invalidparameter.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/code/payloadtoolarge.json": {
-      "hash": "caf6e097c835c9e15480944a714b288f71f61ec4827b21cfc2066f7857ea7636",
-      "last_checked": "2026-10-20T07:41:12.409564",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"6b46-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/code/payloadtoolarge.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcerror/code/payloadtoolarge": {
-      "hash": "caf6e097c835c9e15480944a714b288f71f61ec4827b21cfc2066f7857ea7636",
-      "last_checked": "2026-10-16T07:31:15.945463",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"6b46-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/code/payloadtoolarge.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/code/payloadunsupportedtypes.json": {
-      "hash": "8e3605500f08fe8adcab6b4b6ab20eaa4399d716a4b46136c3001801c7de718b",
-      "last_checked": "2026-10-20T07:41:12.559016",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"6aa0-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/code/payloadunsupportedtypes.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcerror/code/payloadunsupportedtypes": {
-      "hash": "8e3605500f08fe8adcab6b4b6ab20eaa4399d716a4b46136c3001801c7de718b",
-      "last_checked": "2026-10-16T07:31:16.006042",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"6aa0-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/code/payloadunsupportedtypes.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/code/messagereplyfailed.json": {
-      "hash": "770ba1b4ba6586bfcebf41c59337c7f59221fd4a067aa324520745b5907bf440",
-      "last_checked": "2026-10-20T07:41:12.682614",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"6a6b-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/code/messagereplyfailed.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcerror/code/messagereplyfailed": {
-      "hash": "770ba1b4ba6586bfcebf41c59337c7f59221fd4a067aa324520745b5907bf440",
-      "last_checked": "2026-10-16T07:31:16.070201",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"6a6b-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/code/messagereplyfailed.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/code/messagereplytimedout.json": {
-      "hash": "7ae7e18b0b929ef4854bcf0b56f2ac51a51c3d623d489d1bd4e0cde65d674cad",
-      "last_checked": "2026-10-20T07:41:12.821657",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"6a8e-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/code/messagereplytimedout.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcerror/code/messagereplytimedout": {
-      "hash": "7ae7e18b0b929ef4854bcf0b56f2ac51a51c3d623d489d1bd4e0cde65d674cad",
-      "last_checked": "2026-10-16T07:31:16.136271",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"6a8e-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/code/messagereplytimedout.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/code/fileaccessdenied.json": {
-      "hash": "e91fd1dae26688b03ba93cea61d8f68525f59e40651fa031a01866e04f2e0c70",
-      "last_checked": "2026-10-20T07:41:12.975851",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"6b86-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/code/fileaccessdenied.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcerror/code/fileaccessdenied": {
-      "hash": "e91fd1dae26688b03ba93cea61d8f68525f59e40651fa031a01866e04f2e0c70",
-      "last_checked": "2026-10-16T07:31:16.216798",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"6b86-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/code/fileaccessdenied.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/code/deliveryfailed.json": {
-      "hash": "c88ce2f0e6734c68808741d0d0001db46c8dc7ea28e5ba135fe65f6100bfea5f",
-      "last_checked": "2026-10-20T07:41:13.126365",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"6a4a-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/code/deliveryfailed.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcerror/code/deliveryfailed": {
-      "hash": "c88ce2f0e6734c68808741d0d0001db46c8dc7ea28e5ba135fe65f6100bfea5f",
-      "last_checked": "2026-10-16T07:31:16.266363",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"6a4a-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/code/deliveryfailed.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/code/insufficientspace.json": {
-      "hash": "89034ee6905b60e05eea5d2840545f01f2b5633e0f79a333e0a2a09eefb2a4d2",
-      "last_checked": "2026-10-20T07:41:13.244137",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"6a80-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/code/insufficientspace.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcerror/code/insufficientspace": {
-      "hash": "89034ee6905b60e05eea5d2840545f01f2b5633e0f79a333e0a2a09eefb2a4d2",
-      "last_checked": "2026-10-16T07:31:16.356811",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"6a80-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/code/insufficientspace.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/code/sessioninactive.json": {
-      "hash": "3e66d026eba1b13c1e328584b6f2eec8749e6c9d828844d131ff59270f17be93",
-      "last_checked": "2026-10-20T07:41:13.405248",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"6b30-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/code/sessioninactive.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcerror/code/sessioninactive": {
-      "hash": "3e66d026eba1b13c1e328584b6f2eec8749e6c9d828844d131ff59270f17be93",
-      "last_checked": "2026-10-16T07:31:16.408850",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"6b30-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/code/sessioninactive.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/code/transfertimedout.json": {
-      "hash": "14d5dce7af8344216d19dcaa20f0c4b33400d50149c42693e5112538aef07269",
-      "last_checked": "2026-10-20T07:41:13.491875",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"6aa0-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/code/transfertimedout.md"
-    },
-    "https://developer.apple.com/documentation/watchconnectivity/wcerror/code/transfertimedout": {
-      "hash": "14d5dce7af8344216d19dcaa20f0c4b33400d50149c42693e5112538aef07269",
-      "last_checked": "2026-10-16T07:31:16.474481",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"6aa0-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/code/transfertimedout.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/code/companionappnotinstalled.json": {
-      "hash": "9d75072a7fa04f9f64ca9d77970242e8f0fab25c72b583e76cc67d4adb34b1dc",
-      "last_checked": "2026-10-20T07:41:13.616926",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"6b26-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/code/companionappnotinstalled.md"
+      "file_path": "documentation/WatchConnectivity/wcerror/code.md",
+      "hash": "f14429d4cc23862c5f833f9fa7c0525e2b15ec3e489ea087584802af80f4bbb7"
     },
     "https://developer.apple.com/documentation/watchconnectivity/wcerror/code/companionappnotinstalled": {
-      "hash": "9d75072a7fa04f9f64ca9d77970242e8f0fab25c72b583e76cc67d4adb34b1dc",
-      "last_checked": "2026-10-16T07:31:16.527883",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
       "etag": "\"6b26-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/code/companionappnotinstalled.md"
+      "file_path": "documentation/WatchConnectivity/wcerror/code/companionappnotinstalled.md",
+      "hash": "9d75072a7fa04f9f64ca9d77970242e8f0fab25c72b583e76cc67d4adb34b1dc"
     },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/code/watchonlyapp.json": {
-      "hash": "249890abebcd1f25ed436f39bc288327a17e51eb84ab576364e5da8b885f3c56",
-      "last_checked": "2026-10-20T07:41:13.813531",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"6a10-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/code/watchonlyapp.md"
+    "https://developer.apple.com/documentation/watchconnectivity/wcerror/code/deliveryfailed": {
+      "etag": "\"6a4a-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/code/deliveryfailed.md",
+      "hash": "c88ce2f0e6734c68808741d0d0001db46c8dc7ea28e5ba135fe65f6100bfea5f"
     },
-    "https://developer.apple.com/documentation/watchconnectivity/wcerror/code/watchonlyapp": {
-      "hash": "249890abebcd1f25ed436f39bc288327a17e51eb84ab576364e5da8b885f3c56",
-      "last_checked": "2026-10-16T07:31:16.613991",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
-      "etag": "\"6a10-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/code/watchonlyapp.md"
+    "https://developer.apple.com/documentation/watchconnectivity/wcerror/code/devicenotpaired": {
+      "etag": "\"6b3d-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/code/devicenotpaired.md",
+      "hash": "41a48b4669d54032f01ca081301a7926907326b0b3a4fea94766652fd134be34"
     },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/code/init(rawvalue:).json": {
-      "hash": "25f5dbd32828bd5891fca40379e32c44f5c2f62216ebc9db071b6f97dde1d297",
-      "last_checked": "2026-10-20T07:41:13.895063",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"1642-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/code/init-rawvalue.md"
+    "https://developer.apple.com/documentation/watchconnectivity/wcerror/code/fileaccessdenied": {
+      "etag": "\"6b86-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/code/fileaccessdenied.md",
+      "hash": "e91fd1dae26688b03ba93cea61d8f68525f59e40651fa031a01866e04f2e0c70"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcerror/code/genericerror": {
+      "etag": "\"6a2d-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/code/genericerror.md",
+      "hash": "493c4107f0d3ab721695937a2b08b7ef48f80a3ff3159aa15f4e205e8d493c2a"
     },
     "https://developer.apple.com/documentation/watchconnectivity/wcerror/code/init(rawvalue:)": {
-      "hash": "25f5dbd32828bd5891fca40379e32c44f5c2f62216ebc9db071b6f97dde1d297",
-      "last_checked": "2026-10-16T07:31:16.719218",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
       "etag": "\"1642-65d55e6076bfc-df\"",
-      "file_path": "documentation/WatchConnectivity/wcerror/code/init-rawvalue.md"
+      "file_path": "documentation/WatchConnectivity/wcerror/code/init-rawvalue.md",
+      "hash": "25f5dbd32828bd5891fca40379e32c44f5c2f62216ebc9db071b6f97dde1d297"
     },
-    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsessionuserinfotransfer/init(coder:).json": {
-      "hash": "3b2951229329a2dd983c1315bae85bb76d2a552ec8481a99f3e48242ea29ed9d",
-      "last_checked": "2026-10-20T07:41:07.755314",
-      "status": "unchanged",
-      "session_id": "2026-10-20T07:40:57.599351",
-      "etag": "\"1627-65d55e6088413-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsessionuserinfotransfer/init-coder.md"
+    "https://developer.apple.com/documentation/watchconnectivity/wcerror/code/insufficientspace": {
+      "etag": "\"6a80-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/code/insufficientspace.md",
+      "hash": "89034ee6905b60e05eea5d2840545f01f2b5633e0f79a333e0a2a09eefb2a4d2"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcerror/code/invalidparameter": {
+      "etag": "\"6a4b-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/code/invalidparameter.md",
+      "hash": "44b7836a7645d5f897098047aae89f64242741d292b1829156f5f6f993756c1e"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcerror/code/messagereplyfailed": {
+      "etag": "\"6a6b-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/code/messagereplyfailed.md",
+      "hash": "770ba1b4ba6586bfcebf41c59337c7f59221fd4a067aa324520745b5907bf440"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcerror/code/messagereplytimedout": {
+      "etag": "\"6a8e-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/code/messagereplytimedout.md",
+      "hash": "7ae7e18b0b929ef4854bcf0b56f2ac51a51c3d623d489d1bd4e0cde65d674cad"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcerror/code/notreachable": {
+      "etag": "\"6b31-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/code/notreachable.md",
+      "hash": "0b4a3860836952d9dca3019e7d2666d2a2337c52ec3f3414a8bf7206cd5dc868"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcerror/code/payloadtoolarge": {
+      "etag": "\"6b46-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/code/payloadtoolarge.md",
+      "hash": "caf6e097c835c9e15480944a714b288f71f61ec4827b21cfc2066f7857ea7636"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcerror/code/payloadunsupportedtypes": {
+      "etag": "\"6aa0-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/code/payloadunsupportedtypes.md",
+      "hash": "8e3605500f08fe8adcab6b4b6ab20eaa4399d716a4b46136c3001801c7de718b"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcerror/code/sessioninactive": {
+      "etag": "\"6b30-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/code/sessioninactive.md",
+      "hash": "3e66d026eba1b13c1e328584b6f2eec8749e6c9d828844d131ff59270f17be93"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcerror/code/sessionmissingdelegate": {
+      "etag": "\"6abd-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/code/sessionmissingdelegate.md",
+      "hash": "51ba2d5ebc908c8591f3862cb7e19d8b86ab037da22d9c73c9c52f6989aaf71b"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcerror/code/sessionnotactivated": {
+      "etag": "\"6a81-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/code/sessionnotactivated.md",
+      "hash": "67754b514c21a39765ecf07a3e9871847871da8a3d268fbe5d2324e2aa0d4a28"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcerror/code/sessionnotsupported": {
+      "etag": "\"6a8f-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/code/sessionnotsupported.md",
+      "hash": "0e1ac1f57ef5abfa106dd613557bce62339a3245a77de60c3587ddc053bd3437"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcerror/code/transfertimedout": {
+      "etag": "\"6aa0-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/code/transfertimedout.md",
+      "hash": "14d5dce7af8344216d19dcaa20f0c4b33400d50149c42693e5112538aef07269"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcerror/code/watchappnotinstalled": {
+      "etag": "\"6a9b-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/code/watchappnotinstalled.md",
+      "hash": "83e007656b7dd02ba6ecd35d88627e9ad73a204e9edb3e4f11ad1bf54d442ee2"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcerror/code/watchonlyapp": {
+      "etag": "\"6a10-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/code/watchonlyapp.md",
+      "hash": "249890abebcd1f25ed436f39bc288327a17e51eb84ab576364e5da8b885f3c56"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcerror/companionappnotinstalled": {
+      "etag": "\"5154-65d55e6088413-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/companionappnotinstalled.md",
+      "hash": "9cc85c334a811adb006d99a8649c242fcef1e3200b07a18164ea8186d447573b"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcerror/deliveryfailed": {
+      "etag": "\"50d8-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/deliveryfailed.md",
+      "hash": "6ce2124ceef6283df7095e5e7e11dcfffbcc58131eea9ce84d3e4f08907a7f55"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcerror/devicenotpaired": {
+      "etag": "\"51c7-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/devicenotpaired.md",
+      "hash": "5ea17cb6aa43253e19a488b691eeb8dcf906326f7c94eddc8a5715ca5e928cc0"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcerror/errordomain": {
+      "etag": "\"1220-65d55e6088413-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/errordomain.md",
+      "hash": "b926cbe3489fae8a779dd1c9404abeec3e2efee15d58fa204ea689e827756569"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcerror/fileaccessdenied": {
+      "etag": "\"520c-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/fileaccessdenied.md",
+      "hash": "8c7bec3deb4fae0af97f4150abc1b53a4648d70fe4436eeb3c4c55b6f136ade3"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcerror/genericerror": {
+      "etag": "\"50c3-65d55e6088413-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/genericerror.md",
+      "hash": "3033f3629639ef677a9d1fd4328f87a7a036570555b009777df49d32002da9bc"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcerror/insufficientspace": {
+      "etag": "\"5102-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/insufficientspace.md",
+      "hash": "920d0dfdc411d85fbcf4f43faad2f26138bbcb778509a295a357f4e157b50088"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcerror/invalidparameter": {
+      "etag": "\"50d1-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/invalidparameter.md",
+      "hash": "93404f59c3be2d40abc8fa1f44bc99fbbf516c5e7b66c713e88d564a64aae28d"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcerror/messagereplyfailed": {
+      "etag": "\"50e9-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/messagereplyfailed.md",
+      "hash": "689d199024f0ef76662d34da77dd4b195fb1b32917119273522c43112a054515"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcerror/messagereplytimedout": {
+      "etag": "\"5104-65d55e6088413-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/messagereplytimedout.md",
+      "hash": "b4775ecd22a82e10c24b53e776e56562fbd8ccfdc5e296fc7a76a51473d46b37"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcerror/notreachable": {
+      "etag": "\"51c7-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/notreachable.md",
+      "hash": "cbb06b907c77e444922b8ada79f0e8b54edd64433ac9a8167464cfea1b0e1713"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcerror/payloadtoolarge": {
+      "etag": "\"51d0-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/payloadtoolarge.md",
+      "hash": "a3c31b605c302ee96412ab2c5195ba4abf51672dd4e9effd186fc5447de0d0d2"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcerror/payloadunsupportedtypes": {
+      "etag": "\"510a-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/payloadunsupportedtypes.md",
+      "hash": "54924f8c22837871ab77f3edd92aa760242b5027c0236e7f843d5ed106aeb39b"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcerror/sessioninactive": {
+      "etag": "\"51ba-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/sessioninactive.md",
+      "hash": "650dfa6232008848423cdcdaf3a7701355043c1f65040ab373a1d9e28440d916"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcerror/sessionmissingdelegate": {
+      "etag": "\"512b-65d55e6088413-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/sessionmissingdelegate.md",
+      "hash": "2eaf0daa6070e9d5223ce079f369a498b9b1c4a18c9f1db84576bcb8eb2ae449"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcerror/sessionnotactivated": {
+      "etag": "\"50fb-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/sessionnotactivated.md",
+      "hash": "282b907defb83034db450bece7ed95363e020c31bdb54fc76825d5a954346b14"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcerror/sessionnotsupported": {
+      "etag": "\"5109-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/sessionnotsupported.md",
+      "hash": "fc9491a8b21c92174d692cd212744a86dba675f19146af809006406e4df3bbbc"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcerror/transfertimedout": {
+      "etag": "\"5120-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/transfertimedout.md",
+      "hash": "8c289d2de939734235f0a8c8f2aee6f894d3d3a08cc4ec604362eb6fe4465bee"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcerror/watchappnotinstalled": {
+      "etag": "\"5111-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/watchappnotinstalled.md",
+      "hash": "6864500f7ed30462c65a668c96b4f33ee91c7d56ae31fb03db4fab2dc0926b96"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcerror/watchonlyapp": {
+      "etag": "\"50b6-65d55e6088413-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/watchonlyapp.md",
+      "hash": "a7ce1f90784c5dfbc134a969e59d39706156912c94eb02bdc65d5ac4af03fb03"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcerrordomain": {
+      "etag": "\"256c-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerrordomain.md",
+      "hash": "2177013cdb3d7c69da345b584f14b038a8a9537da014aaf5328b4625112cef93"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcsession": {
+      "etag": "\"13805-65d55e6088413-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsession.md",
+      "hash": "3325ffb87c9fa7e9f4666698fea7635f43d4f565bce860d51f1a227eb1292865"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcsession/activate()": {
+      "etag": "\"3070-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsession/activate.md",
+      "hash": "1e179b8aff9e67ebe1df13769466e28645d463c91af77e62380d877b9787137d"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcsession/activationstate": {
+      "etag": "\"415e-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsession/activationstate.md",
+      "hash": "3df5b569ab06ead79e8faa4e88eb6e73cef01233a164609b9d5e47f0db1f5691"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcsession/applicationcontext": {
+      "etag": "\"2f16-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsession/applicationcontext.md",
+      "hash": "8cdb1b08efa02bdd8cd00128eb5e3ee634dee66e4a491b524dd724f955fb871a"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcsession/default": {
+      "etag": "\"25e4-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsession/default.md",
+      "hash": "60a6cae850a99c42fcdff43c6e64bce84d6cc9971a22b68e26aeca0caef0100c"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcsession/delegate": {
+      "etag": "\"30f4-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsession/delegate.md",
+      "hash": "97aa6f465a576cf6f4a52d1378bfd3119f697b07fbd714ddb93197046fb17326"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcsession/hascontentpending": {
+      "etag": "\"45e3-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsession/hascontentpending.md",
+      "hash": "5bee5b299e2b8f2c3485e4de1d155b673cab82f54f6739621cacf8f133cdf2a1"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcsession/iosdeviceneedsunlockafterrebootforreachability": {
+      "etag": "\"54d1-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsession/iosdeviceneedsunlockafterrebootforreachability.md",
+      "hash": "cba99f9eaa4c4d06dae42b31a3d6edb3f11b37aa1c62686daafc82c4625c9a7f"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcsession/iscompanionappinstalled": {
+      "etag": "\"3c35-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsession/iscompanionappinstalled.md",
+      "hash": "1e57e950d09f87036f6c5d37bd4d3171637f35cc1e3bfd8b7d25b6a09c045fab"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcsession/iscomplicationenabled": {
+      "etag": "\"5591-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsession/iscomplicationenabled.md",
+      "hash": "8d4209e72acef21997a03370f974fc2db3fcec364253d587e226bbd87f3026a5"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcsession/ispaired": {
+      "etag": "\"4d6d-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsession/ispaired.md",
+      "hash": "7a2dcb001a70794607a7b62232f1d0c237a427d8ef2ded74aa6ad99a610a55cf"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcsession/isreachable": {
+      "etag": "\"4823-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsession/isreachable.md",
+      "hash": "33fcb415643b5aabfd00cae5600d128e776ab7411d8c4619bdbdb0ba9282263e"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcsession/issupported()": {
+      "etag": "\"2f48-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsession/issupported.md",
+      "hash": "7da2388e90498d309a19e0cd980b3d5809cb72e16ff83dff93e45016fbca3012"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcsession/iswatchappinstalled": {
+      "etag": "\"4e84-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsession/iswatchappinstalled.md",
+      "hash": "9e0946211f5d7f50028a57eb92b89d067e1e0d95dc3df7706d22d01036448187"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcsession/outstandingfiletransfers": {
+      "etag": "\"3215-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsession/outstandingfiletransfers.md",
+      "hash": "90e26ab0274ff815aa8b766bd4f39b1ce62c6c806d819c0cd765a4e1cf0ba315"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcsession/outstandinguserinfotransfers": {
+      "etag": "\"3433-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsession/outstandinguserinfotransfers.md",
+      "hash": "9d20ffbf0d419b7b0c7738e91e946a5547484e9a653d231ff0f9f6a89682fee8"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcsession/receivedapplicationcontext": {
+      "etag": "\"3645-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsession/receivedapplicationcontext.md",
+      "hash": "82c6f2467534d07fc8929a2ab2658daeb4c9ec5e2a9345a334885528a0ec03ac"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcsession/remainingcomplicationuserinfotransfers": {
+      "etag": "\"3188-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsession/remainingcomplicationuserinfotransfers.md",
+      "hash": "744e9b37962d05dfc6ef159763d5f5e14b36fd09c8f81ee0fdad20145d6f2e89"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcsession/sendmessage(_:replyhandler:errorhandler:)": {
+      "etag": "\"5a01-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsession/sendmessage-replyhandlererrorhandler.md",
+      "hash": "dfbf41350f42440925ff2dcf703a1e7442f5ac8963bbc560a1db3a69a11024c2"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcsession/sendmessagedata(_:replyhandler:errorhandler:)": {
+      "etag": "\"583f-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsession/sendmessagedata-replyhandlererrorhandler.md",
+      "hash": "ec11e15c3b33a93a6452fd198a28072786c8847a4dfede0305027ae56ba70fd8"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcsession/transfercurrentcomplicationuserinfo(_:)": {
+      "etag": "\"439c-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsession/transfercurrentcomplicationuserinfo.md",
+      "hash": "3c3763fb0bdbb4e4b3390b8749eddceb79f8300267720a9757defacdb911b2d7"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcsession/transferfile(_:metadata:)": {
+      "etag": "\"527d-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsession/transferfile-metadata.md",
+      "hash": "8cc6775c069e124fafe60a5b0dd4637ed9a125d608a0c5438731d613a3145c71"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcsession/transferuserinfo(_:)": {
+      "etag": "\"4287-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsession/transferuserinfo.md",
+      "hash": "99630ef0b3d97001fb1dfc395c45d8d19deecb93aacc843ef1842cf806375c91"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcsession/updateapplicationcontext(_:)": {
+      "etag": "\"5327-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsession/updateapplicationcontext.md",
+      "hash": "0a99d8564bc4edbb9efe39c81de08b09cd9a207a716e0c89a9aaa6f62e7f1832"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcsession/watchdirectoryurl": {
+      "etag": "\"4bb9-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsession/watchdirectoryurl.md",
+      "hash": "874f2210c18773d895d1026cdcba0155242d4e02e158170a6cb28d203cc95981"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcsessionactivationstate": {
+      "etag": "\"479e-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsessionactivationstate.md",
+      "hash": "2b505c30a843748efd226c899190476ad05cb9e6fcdea2454361ea13d1cd05e0"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcsessionactivationstate/activated": {
+      "etag": "\"26f0-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsessionactivationstate/activated.md",
+      "hash": "273aed2a7aca9045e17b13ffa358c6a14575c2dbdf2ecac70f2c47dcab807920"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcsessionactivationstate/inactive": {
+      "etag": "\"2766-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsessionactivationstate/inactive.md",
+      "hash": "5a1b714cf95f1330a76349e8f543fc2b4cb2b5a57c9182b30eb9c551103e89d3"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcsessionactivationstate/init(rawvalue:)": {
+      "etag": "\"14bc-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsessionactivationstate/init-rawvalue.md",
+      "hash": "4287dab00b6fa4d411fbe92294564b3295886146d80c0b06c29cc4fa29000d43"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcsessionactivationstate/notactivated": {
+      "etag": "\"2775-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsessionactivationstate/notactivated.md",
+      "hash": "3bd6bc0e673ea52a1255599df6ad1c10ada22b17e9a38f5f0a8d471b76e0e128"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcsessiondelegate": {
+      "etag": "\"b03e-65d55e6088413-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsessiondelegate.md",
+      "hash": "96cee3b36d7976e667ca1bd954ad84fe32013a98697e9e4fa64c398844227632"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcsessiondelegate/session(_:activationdidcompletewith:error:)": {
+      "etag": "\"6100-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsessiondelegate/session-activationdidcompletewitherror.md",
+      "hash": "96e4d40fb813bfdeb1b1404d353f4a92da8401e648c28428165de70f5ec7c750"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcsessiondelegate/session(_:didfinish:error:)-6dtcu": {
+      "etag": "\"4174-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsessiondelegate/session-didfinisherror-6dtcu.md",
+      "hash": "872909445c116397b4bb0caef18d8db2beee9fa4e0ddfa3700713b2dfb8cd5f5"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcsessiondelegate/session(_:didfinish:error:)-8627b": {
+      "etag": "\"42bf-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsessiondelegate/session-didfinisherror-8627b.md",
+      "hash": "e47497a48208cb0957e44b15f87c44b296dd744efd8f5b977d902395461d9b18"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcsessiondelegate/session(_:didreceive:)": {
+      "etag": "\"3f66-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsessiondelegate/session-didreceive.md",
+      "hash": "7be9a03a4d879557ee6f63e43d6a396d85f6af75b3881dad929c7ecbcfda00b9"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcsessiondelegate/session(_:didreceiveapplicationcontext:)": {
+      "etag": "\"3b12-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsessiondelegate/session-didreceiveapplicationcontext.md",
+      "hash": "4a4811e8a493cb876504d44b536c6b135df350c46e903817877423becf8cdd68"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcsessiondelegate/session(_:didreceivemessage:)": {
+      "etag": "\"55c3-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsessiondelegate/session-didreceivemessage.md",
+      "hash": "b333d531c7210a062f72f6a355a8b7d93d32bb2b6a706f9f4c98b9cea4ce1e78"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcsessiondelegate/session(_:didreceivemessage:replyhandler:)": {
+      "etag": "\"6250-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsessiondelegate/session-didreceivemessagereplyhandler.md",
+      "hash": "a41c237d410c05aa1abfd9c48a51c728ad3bdbb607a6fa9fd055d4164a1adf56"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcsessiondelegate/session(_:didreceivemessagedata:)": {
+      "etag": "\"554f-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsessiondelegate/session-didreceivemessagedata.md",
+      "hash": "3c15f4ecd7f6f2aa8952392aac918c5ba3e49e1940cc045909fb43d98c952883"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcsessiondelegate/session(_:didreceivemessagedata:replyhandler:)": {
+      "etag": "\"60c8-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsessiondelegate/session-didreceivemessagedatareplyhandler.md",
+      "hash": "2e10cd89a4664d343098575cbec1524bed669f148719141e5ccbb5558df4cff3"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcsessiondelegate/session(_:didreceiveuserinfo:)": {
+      "etag": "\"3b9c-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsessiondelegate/session-didreceiveuserinfo.md",
+      "hash": "e159a8cefdea30a274af21c250c54af8bc169b8ee86583042dc0a576445d37d4"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcsessiondelegate/sessioncompanionappinstalleddidchange(_:)": {
+      "etag": "\"34a4-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsessiondelegate/sessioncompanionappinstalleddidchange.md",
+      "hash": "2668765147bc6917a9219690ce303c9d8e7fc360d21c64cee4254e5c790928ec"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcsessiondelegate/sessiondidbecomeinactive(_:)": {
+      "etag": "\"3929-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsessiondelegate/sessiondidbecomeinactive.md",
+      "hash": "2a54cc17b301ee7d3fc8d44a5a8273aead679e4b9fcda699ab945dba5e98fd5f"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcsessiondelegate/sessiondiddeactivate(_:)": {
+      "etag": "\"4056-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsessiondelegate/sessiondiddeactivate.md",
+      "hash": "4d9440da2330eefb0b898e64180e69bf34587f780486830ef4eb4485b0495709"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcsessiondelegate/sessionreachabilitydidchange(_:)": {
+      "etag": "\"3d02-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsessiondelegate/sessionreachabilitydidchange.md",
+      "hash": "5834875827d8658f1f8470afe646b0983321f73cff515eebf9991a65972e3410"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcsessiondelegate/sessionwatchstatedidchange(_:)": {
+      "etag": "\"4b42-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsessiondelegate/sessionwatchstatedidchange.md",
+      "hash": "f830fd6b84e68459b5ad8e19594e2e27e6f17a0bd491baed385faea97f471b04"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcsessionfile": {
+      "etag": "\"5888-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsessionfile.md",
+      "hash": "8384313901ef5ee8e1ba92ccd8efaf551640933a8b1be1307273337fa40fed3a"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcsessionfile/fileurl": {
+      "etag": "\"2c74-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsessionfile/fileurl.md",
+      "hash": "bd520af3db3019103cc0c034c62ea6626466c78b6fee88bdd2a15d72183143c4"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcsessionfile/metadata": {
+      "etag": "\"25f7-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsessionfile/metadata.md",
+      "hash": "b0c5a2b64b5c8c5974d5e7318a27656846ea686aaf57f97862d6a0775a0f8c07"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcsessionfiletransfer": {
+      "etag": "\"5d36-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsessionfiletransfer.md",
+      "hash": "eee6fdabda26bb601463a7a5a2ac81e09503467aae599a4815f79660698f29bd"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcsessionfiletransfer/cancel()": {
+      "etag": "\"26bf-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsessionfiletransfer/cancel.md",
+      "hash": "e0e774956f9dc795db2eb25e5f098e00d755f50f72bf5708b9b62ebf2d0507c5"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcsessionfiletransfer/file": {
+      "etag": "\"20f6-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsessionfiletransfer/file.md",
+      "hash": "2cbd20a5a837478461a50afe85ce19fe44d13690f9ff71fe71273c7c0f704850"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcsessionfiletransfer/istransferring": {
+      "etag": "\"30b8-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsessionfiletransfer/istransferring.md",
+      "hash": "7280bba43227dad965e77ee14fde7340c9451ae43a8d60adb17003d491abd6c9"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcsessionfiletransfer/progress": {
+      "etag": "\"2c06-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsessionfiletransfer/progress.md",
+      "hash": "1c06e75fcf08707304475e01123a7890c128a87d7c8a4939793aa748841a38e6"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcsessionuserinfotransfer": {
+      "etag": "\"6fd2-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsessionuserinfotransfer.md",
+      "hash": "08a83b1a25728ef675058f7be979f038094175af7aef9f3378eec481c0201b95"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcsessionuserinfotransfer/cancel()": {
+      "etag": "\"2218-65d55e6088413-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsessionuserinfotransfer/cancel.md",
+      "hash": "8299ad8606e1c4c49bc5011fe2ff8c4040d0680389215699f18af9f5e00787fa"
     },
     "https://developer.apple.com/documentation/watchconnectivity/wcsessionuserinfotransfer/init(coder:)": {
-      "hash": "3b2951229329a2dd983c1315bae85bb76d2a552ec8481a99f3e48242ea29ed9d",
-      "last_checked": "2026-10-16T07:31:13.212346",
-      "status": "unchanged",
-      "session_id": "2026-10-16T07:31:04.334011",
       "etag": "\"1627-65d55e6088413-df\"",
-      "file_path": "documentation/WatchConnectivity/wcsessionuserinfotransfer/init-coder.md"
+      "file_path": "documentation/WatchConnectivity/wcsessionuserinfotransfer/init-coder.md",
+      "hash": "3b2951229329a2dd983c1315bae85bb76d2a552ec8481a99f3e48242ea29ed9d"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcsessionuserinfotransfer/iscurrentcomplicationinfo": {
+      "etag": "\"394e-65d55e6088413-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsessionuserinfotransfer/iscurrentcomplicationinfo.md",
+      "hash": "ce89d8e46e9332a14e4909f621926e7e894975046ac242100094f61068a5c28e"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcsessionuserinfotransfer/istransferring": {
+      "etag": "\"2c16-65d55e6088413-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsessionuserinfotransfer/istransferring.md",
+      "hash": "06fc069a5874582c28144dc62d41a1b51a87b91598b8d99d31dd9d08c634aeca"
+    },
+    "https://developer.apple.com/documentation/watchconnectivity/wcsessionuserinfotransfer/userinfo": {
+      "etag": "\"269b-65d55e6088413-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsessionuserinfotransfer/userinfo.md",
+      "hash": "f3fea45b61824b3a2479b436259c3b8b9f942fcd8a7837bcebac130b04ae34dd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/WatchConnectivity.json": {
+      "etag": "\"2ed6-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/WatchConnectivity.md",
+      "hash": "167f5fa771fbdfc468a4a6123559c5b2c99e8431df61ce3118f724d6d0e8a706"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/transferring-data-with-watch-connectivity.json": {
+      "etag": "\"81e8-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/transferring-data-with-watch-connectivity.md",
+      "hash": "8c95dfbac866d21f345de161346089c1af63361d37b22c7e3762eb5da7dec2d7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror.json": {
+      "etag": "\"76bf-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror.md",
+      "hash": "47a58b0f12ab1a5f2a73fb64b58ee3936ccf3479d2616a7de9bf250f22ba9acb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/code.json": {
+      "etag": "\"9890-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/code.md",
+      "hash": "f14429d4cc23862c5f833f9fa7c0525e2b15ec3e489ea087584802af80f4bbb7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/code/companionappnotinstalled.json": {
+      "etag": "\"6b26-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/code/companionappnotinstalled.md",
+      "hash": "9d75072a7fa04f9f64ca9d77970242e8f0fab25c72b583e76cc67d4adb34b1dc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/code/deliveryfailed.json": {
+      "etag": "\"6a4a-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/code/deliveryfailed.md",
+      "hash": "c88ce2f0e6734c68808741d0d0001db46c8dc7ea28e5ba135fe65f6100bfea5f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/code/devicenotpaired.json": {
+      "etag": "\"6b3d-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/code/devicenotpaired.md",
+      "hash": "41a48b4669d54032f01ca081301a7926907326b0b3a4fea94766652fd134be34"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/code/fileaccessdenied.json": {
+      "etag": "\"6b86-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/code/fileaccessdenied.md",
+      "hash": "e91fd1dae26688b03ba93cea61d8f68525f59e40651fa031a01866e04f2e0c70"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/code/genericerror.json": {
+      "etag": "\"6a2d-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/code/genericerror.md",
+      "hash": "493c4107f0d3ab721695937a2b08b7ef48f80a3ff3159aa15f4e205e8d493c2a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/code/init(rawvalue:).json": {
+      "etag": "\"1642-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/code/init-rawvalue.md",
+      "hash": "25f5dbd32828bd5891fca40379e32c44f5c2f62216ebc9db071b6f97dde1d297"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/code/insufficientspace.json": {
+      "etag": "\"6a80-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/code/insufficientspace.md",
+      "hash": "89034ee6905b60e05eea5d2840545f01f2b5633e0f79a333e0a2a09eefb2a4d2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/code/invalidparameter.json": {
+      "etag": "\"6a4b-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/code/invalidparameter.md",
+      "hash": "44b7836a7645d5f897098047aae89f64242741d292b1829156f5f6f993756c1e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/code/messagereplyfailed.json": {
+      "etag": "\"6a6b-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/code/messagereplyfailed.md",
+      "hash": "770ba1b4ba6586bfcebf41c59337c7f59221fd4a067aa324520745b5907bf440"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/code/messagereplytimedout.json": {
+      "etag": "\"6a8e-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/code/messagereplytimedout.md",
+      "hash": "7ae7e18b0b929ef4854bcf0b56f2ac51a51c3d623d489d1bd4e0cde65d674cad"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/code/notreachable.json": {
+      "etag": "\"6b31-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/code/notreachable.md",
+      "hash": "0b4a3860836952d9dca3019e7d2666d2a2337c52ec3f3414a8bf7206cd5dc868"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/code/payloadtoolarge.json": {
+      "etag": "\"6b46-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/code/payloadtoolarge.md",
+      "hash": "caf6e097c835c9e15480944a714b288f71f61ec4827b21cfc2066f7857ea7636"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/code/payloadunsupportedtypes.json": {
+      "etag": "\"6aa0-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/code/payloadunsupportedtypes.md",
+      "hash": "8e3605500f08fe8adcab6b4b6ab20eaa4399d716a4b46136c3001801c7de718b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/code/sessioninactive.json": {
+      "etag": "\"6b30-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/code/sessioninactive.md",
+      "hash": "3e66d026eba1b13c1e328584b6f2eec8749e6c9d828844d131ff59270f17be93"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/code/sessionmissingdelegate.json": {
+      "etag": "\"6abd-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/code/sessionmissingdelegate.md",
+      "hash": "51ba2d5ebc908c8591f3862cb7e19d8b86ab037da22d9c73c9c52f6989aaf71b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/code/sessionnotactivated.json": {
+      "etag": "\"6a81-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/code/sessionnotactivated.md",
+      "hash": "67754b514c21a39765ecf07a3e9871847871da8a3d268fbe5d2324e2aa0d4a28"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/code/sessionnotsupported.json": {
+      "etag": "\"6a8f-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/code/sessionnotsupported.md",
+      "hash": "0e1ac1f57ef5abfa106dd613557bce62339a3245a77de60c3587ddc053bd3437"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/code/transfertimedout.json": {
+      "etag": "\"6aa0-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/code/transfertimedout.md",
+      "hash": "14d5dce7af8344216d19dcaa20f0c4b33400d50149c42693e5112538aef07269"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/code/watchappnotinstalled.json": {
+      "etag": "\"6a9b-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/code/watchappnotinstalled.md",
+      "hash": "83e007656b7dd02ba6ecd35d88627e9ad73a204e9edb3e4f11ad1bf54d442ee2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/code/watchonlyapp.json": {
+      "etag": "\"6a10-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/code/watchonlyapp.md",
+      "hash": "249890abebcd1f25ed436f39bc288327a17e51eb84ab576364e5da8b885f3c56"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/companionappnotinstalled.json": {
+      "etag": "\"5154-65d55e6088413-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/companionappnotinstalled.md",
+      "hash": "9cc85c334a811adb006d99a8649c242fcef1e3200b07a18164ea8186d447573b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/deliveryfailed.json": {
+      "etag": "\"50d8-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/deliveryfailed.md",
+      "hash": "6ce2124ceef6283df7095e5e7e11dcfffbcc58131eea9ce84d3e4f08907a7f55"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/devicenotpaired.json": {
+      "etag": "\"51c7-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/devicenotpaired.md",
+      "hash": "5ea17cb6aa43253e19a488b691eeb8dcf906326f7c94eddc8a5715ca5e928cc0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/errordomain.json": {
+      "etag": "\"1220-65d55e6088413-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/errordomain.md",
+      "hash": "b926cbe3489fae8a779dd1c9404abeec3e2efee15d58fa204ea689e827756569"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/fileaccessdenied.json": {
+      "etag": "\"520c-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/fileaccessdenied.md",
+      "hash": "8c7bec3deb4fae0af97f4150abc1b53a4648d70fe4436eeb3c4c55b6f136ade3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/genericerror.json": {
+      "etag": "\"50c3-65d55e6088413-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/genericerror.md",
+      "hash": "3033f3629639ef677a9d1fd4328f87a7a036570555b009777df49d32002da9bc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/insufficientspace.json": {
+      "etag": "\"5102-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/insufficientspace.md",
+      "hash": "920d0dfdc411d85fbcf4f43faad2f26138bbcb778509a295a357f4e157b50088"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/invalidparameter.json": {
+      "etag": "\"50d1-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/invalidparameter.md",
+      "hash": "93404f59c3be2d40abc8fa1f44bc99fbbf516c5e7b66c713e88d564a64aae28d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/messagereplyfailed.json": {
+      "etag": "\"50e9-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/messagereplyfailed.md",
+      "hash": "689d199024f0ef76662d34da77dd4b195fb1b32917119273522c43112a054515"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/messagereplytimedout.json": {
+      "etag": "\"5104-65d55e6088413-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/messagereplytimedout.md",
+      "hash": "b4775ecd22a82e10c24b53e776e56562fbd8ccfdc5e296fc7a76a51473d46b37"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/notreachable.json": {
+      "etag": "\"51c7-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/notreachable.md",
+      "hash": "cbb06b907c77e444922b8ada79f0e8b54edd64433ac9a8167464cfea1b0e1713"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/payloadtoolarge.json": {
+      "etag": "\"51d0-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/payloadtoolarge.md",
+      "hash": "a3c31b605c302ee96412ab2c5195ba4abf51672dd4e9effd186fc5447de0d0d2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/payloadunsupportedtypes.json": {
+      "etag": "\"510a-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/payloadunsupportedtypes.md",
+      "hash": "54924f8c22837871ab77f3edd92aa760242b5027c0236e7f843d5ed106aeb39b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/sessioninactive.json": {
+      "etag": "\"51ba-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/sessioninactive.md",
+      "hash": "650dfa6232008848423cdcdaf3a7701355043c1f65040ab373a1d9e28440d916"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/sessionmissingdelegate.json": {
+      "etag": "\"512b-65d55e6088413-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/sessionmissingdelegate.md",
+      "hash": "2eaf0daa6070e9d5223ce079f369a498b9b1c4a18c9f1db84576bcb8eb2ae449"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/sessionnotactivated.json": {
+      "etag": "\"50fb-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/sessionnotactivated.md",
+      "hash": "282b907defb83034db450bece7ed95363e020c31bdb54fc76825d5a954346b14"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/sessionnotsupported.json": {
+      "etag": "\"5109-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/sessionnotsupported.md",
+      "hash": "fc9491a8b21c92174d692cd212744a86dba675f19146af809006406e4df3bbbc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/transfertimedout.json": {
+      "etag": "\"5120-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/transfertimedout.md",
+      "hash": "8c289d2de939734235f0a8c8f2aee6f894d3d3a08cc4ec604362eb6fe4465bee"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/watchappnotinstalled.json": {
+      "etag": "\"5111-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/watchappnotinstalled.md",
+      "hash": "6864500f7ed30462c65a668c96b4f33ee91c7d56ae31fb03db4fab2dc0926b96"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerror/watchonlyapp.json": {
+      "etag": "\"50b6-65d55e6088413-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerror/watchonlyapp.md",
+      "hash": "a7ce1f90784c5dfbc134a969e59d39706156912c94eb02bdc65d5ac4af03fb03"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcerrordomain.json": {
+      "etag": "\"256c-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcerrordomain.md",
+      "hash": "2177013cdb3d7c69da345b584f14b038a8a9537da014aaf5328b4625112cef93"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsession.json": {
+      "etag": "\"13805-65d55e6088413-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsession.md",
+      "hash": "3325ffb87c9fa7e9f4666698fea7635f43d4f565bce860d51f1a227eb1292865"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsession/activate().json": {
+      "etag": "\"3070-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsession/activate.md",
+      "hash": "1e179b8aff9e67ebe1df13769466e28645d463c91af77e62380d877b9787137d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsession/activationstate.json": {
+      "etag": "\"415e-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsession/activationstate.md",
+      "hash": "3df5b569ab06ead79e8faa4e88eb6e73cef01233a164609b9d5e47f0db1f5691"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsession/applicationcontext.json": {
+      "etag": "\"2f16-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsession/applicationcontext.md",
+      "hash": "8cdb1b08efa02bdd8cd00128eb5e3ee634dee66e4a491b524dd724f955fb871a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsession/default.json": {
+      "etag": "\"25e4-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsession/default.md",
+      "hash": "60a6cae850a99c42fcdff43c6e64bce84d6cc9971a22b68e26aeca0caef0100c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsession/delegate.json": {
+      "etag": "\"30f4-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsession/delegate.md",
+      "hash": "97aa6f465a576cf6f4a52d1378bfd3119f697b07fbd714ddb93197046fb17326"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsession/hascontentpending.json": {
+      "etag": "\"45e3-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsession/hascontentpending.md",
+      "hash": "5bee5b299e2b8f2c3485e4de1d155b673cab82f54f6739621cacf8f133cdf2a1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsession/iosdeviceneedsunlockafterrebootforreachability.json": {
+      "etag": "\"54d1-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsession/iosdeviceneedsunlockafterrebootforreachability.md",
+      "hash": "cba99f9eaa4c4d06dae42b31a3d6edb3f11b37aa1c62686daafc82c4625c9a7f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsession/iscompanionappinstalled.json": {
+      "etag": "\"3c35-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsession/iscompanionappinstalled.md",
+      "hash": "1e57e950d09f87036f6c5d37bd4d3171637f35cc1e3bfd8b7d25b6a09c045fab"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsession/iscomplicationenabled.json": {
+      "etag": "\"5591-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsession/iscomplicationenabled.md",
+      "hash": "8d4209e72acef21997a03370f974fc2db3fcec364253d587e226bbd87f3026a5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsession/ispaired.json": {
+      "etag": "\"4d6d-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsession/ispaired.md",
+      "hash": "7a2dcb001a70794607a7b62232f1d0c237a427d8ef2ded74aa6ad99a610a55cf"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsession/isreachable.json": {
+      "etag": "\"4823-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsession/isreachable.md",
+      "hash": "33fcb415643b5aabfd00cae5600d128e776ab7411d8c4619bdbdb0ba9282263e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsession/issupported().json": {
+      "etag": "\"2f48-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsession/issupported.md",
+      "hash": "7da2388e90498d309a19e0cd980b3d5809cb72e16ff83dff93e45016fbca3012"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsession/iswatchappinstalled.json": {
+      "etag": "\"4e84-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsession/iswatchappinstalled.md",
+      "hash": "9e0946211f5d7f50028a57eb92b89d067e1e0d95dc3df7706d22d01036448187"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsession/outstandingfiletransfers.json": {
+      "etag": "\"3215-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsession/outstandingfiletransfers.md",
+      "hash": "90e26ab0274ff815aa8b766bd4f39b1ce62c6c806d819c0cd765a4e1cf0ba315"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsession/outstandinguserinfotransfers.json": {
+      "etag": "\"3433-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsession/outstandinguserinfotransfers.md",
+      "hash": "9d20ffbf0d419b7b0c7738e91e946a5547484e9a653d231ff0f9f6a89682fee8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsession/receivedapplicationcontext.json": {
+      "etag": "\"3645-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsession/receivedapplicationcontext.md",
+      "hash": "82c6f2467534d07fc8929a2ab2658daeb4c9ec5e2a9345a334885528a0ec03ac"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsession/remainingcomplicationuserinfotransfers.json": {
+      "etag": "\"3188-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsession/remainingcomplicationuserinfotransfers.md",
+      "hash": "744e9b37962d05dfc6ef159763d5f5e14b36fd09c8f81ee0fdad20145d6f2e89"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsession/sendmessage(_:replyhandler:errorhandler:).json": {
+      "etag": "\"5a01-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsession/sendmessage-replyhandlererrorhandler.md",
+      "hash": "dfbf41350f42440925ff2dcf703a1e7442f5ac8963bbc560a1db3a69a11024c2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsession/sendmessagedata(_:replyhandler:errorhandler:).json": {
+      "etag": "\"583f-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsession/sendmessagedata-replyhandlererrorhandler.md",
+      "hash": "ec11e15c3b33a93a6452fd198a28072786c8847a4dfede0305027ae56ba70fd8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsession/transfercurrentcomplicationuserinfo(_:).json": {
+      "etag": "\"439c-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsession/transfercurrentcomplicationuserinfo.md",
+      "hash": "3c3763fb0bdbb4e4b3390b8749eddceb79f8300267720a9757defacdb911b2d7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsession/transferfile(_:metadata:).json": {
+      "etag": "\"527d-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsession/transferfile-metadata.md",
+      "hash": "8cc6775c069e124fafe60a5b0dd4637ed9a125d608a0c5438731d613a3145c71"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsession/transferuserinfo(_:).json": {
+      "etag": "\"4287-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsession/transferuserinfo.md",
+      "hash": "99630ef0b3d97001fb1dfc395c45d8d19deecb93aacc843ef1842cf806375c91"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsession/updateapplicationcontext(_:).json": {
+      "etag": "\"5327-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsession/updateapplicationcontext.md",
+      "hash": "0a99d8564bc4edbb9efe39c81de08b09cd9a207a716e0c89a9aaa6f62e7f1832"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsession/watchdirectoryurl.json": {
+      "etag": "\"4bb9-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsession/watchdirectoryurl.md",
+      "hash": "874f2210c18773d895d1026cdcba0155242d4e02e158170a6cb28d203cc95981"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsessionactivationstate.json": {
+      "etag": "\"479e-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsessionactivationstate.md",
+      "hash": "2b505c30a843748efd226c899190476ad05cb9e6fcdea2454361ea13d1cd05e0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsessionactivationstate/activated.json": {
+      "etag": "\"26f0-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsessionactivationstate/activated.md",
+      "hash": "273aed2a7aca9045e17b13ffa358c6a14575c2dbdf2ecac70f2c47dcab807920"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsessionactivationstate/inactive.json": {
+      "etag": "\"2766-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsessionactivationstate/inactive.md",
+      "hash": "5a1b714cf95f1330a76349e8f543fc2b4cb2b5a57c9182b30eb9c551103e89d3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsessionactivationstate/init(rawvalue:).json": {
+      "etag": "\"14bc-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsessionactivationstate/init-rawvalue.md",
+      "hash": "4287dab00b6fa4d411fbe92294564b3295886146d80c0b06c29cc4fa29000d43"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsessionactivationstate/notactivated.json": {
+      "etag": "\"2775-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsessionactivationstate/notactivated.md",
+      "hash": "3bd6bc0e673ea52a1255599df6ad1c10ada22b17e9a38f5f0a8d471b76e0e128"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsessiondelegate.json": {
+      "etag": "\"b03e-65d55e6088413-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsessiondelegate.md",
+      "hash": "96cee3b36d7976e667ca1bd954ad84fe32013a98697e9e4fa64c398844227632"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsessiondelegate/session(_:activationdidcompletewith:error:).json": {
+      "etag": "\"6100-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsessiondelegate/session-activationdidcompletewitherror.md",
+      "hash": "96e4d40fb813bfdeb1b1404d353f4a92da8401e648c28428165de70f5ec7c750"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsessiondelegate/session(_:didfinish:error:)-6dtcu.json": {
+      "etag": "\"4174-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsessiondelegate/session-didfinisherror-6dtcu.md",
+      "hash": "872909445c116397b4bb0caef18d8db2beee9fa4e0ddfa3700713b2dfb8cd5f5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsessiondelegate/session(_:didfinish:error:)-8627b.json": {
+      "etag": "\"42bf-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsessiondelegate/session-didfinisherror-8627b.md",
+      "hash": "e47497a48208cb0957e44b15f87c44b296dd744efd8f5b977d902395461d9b18"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsessiondelegate/session(_:didreceive:).json": {
+      "etag": "\"3f66-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsessiondelegate/session-didreceive.md",
+      "hash": "7be9a03a4d879557ee6f63e43d6a396d85f6af75b3881dad929c7ecbcfda00b9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsessiondelegate/session(_:didreceiveapplicationcontext:).json": {
+      "etag": "\"3b12-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsessiondelegate/session-didreceiveapplicationcontext.md",
+      "hash": "4a4811e8a493cb876504d44b536c6b135df350c46e903817877423becf8cdd68"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsessiondelegate/session(_:didreceivemessage:).json": {
+      "etag": "\"55c3-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsessiondelegate/session-didreceivemessage.md",
+      "hash": "b333d531c7210a062f72f6a355a8b7d93d32bb2b6a706f9f4c98b9cea4ce1e78"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsessiondelegate/session(_:didreceivemessage:replyhandler:).json": {
+      "etag": "\"6250-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsessiondelegate/session-didreceivemessagereplyhandler.md",
+      "hash": "a41c237d410c05aa1abfd9c48a51c728ad3bdbb607a6fa9fd055d4164a1adf56"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsessiondelegate/session(_:didreceivemessagedata:).json": {
+      "etag": "\"554f-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsessiondelegate/session-didreceivemessagedata.md",
+      "hash": "3c15f4ecd7f6f2aa8952392aac918c5ba3e49e1940cc045909fb43d98c952883"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsessiondelegate/session(_:didreceivemessagedata:replyhandler:).json": {
+      "etag": "\"60c8-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsessiondelegate/session-didreceivemessagedatareplyhandler.md",
+      "hash": "2e10cd89a4664d343098575cbec1524bed669f148719141e5ccbb5558df4cff3"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsessiondelegate/session(_:didreceiveuserinfo:).json": {
+      "etag": "\"3b9c-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsessiondelegate/session-didreceiveuserinfo.md",
+      "hash": "e159a8cefdea30a274af21c250c54af8bc169b8ee86583042dc0a576445d37d4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsessiondelegate/sessioncompanionappinstalleddidchange(_:).json": {
+      "etag": "\"34a4-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsessiondelegate/sessioncompanionappinstalleddidchange.md",
+      "hash": "2668765147bc6917a9219690ce303c9d8e7fc360d21c64cee4254e5c790928ec"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsessiondelegate/sessiondidbecomeinactive(_:).json": {
+      "etag": "\"3929-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsessiondelegate/sessiondidbecomeinactive.md",
+      "hash": "2a54cc17b301ee7d3fc8d44a5a8273aead679e4b9fcda699ab945dba5e98fd5f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsessiondelegate/sessiondiddeactivate(_:).json": {
+      "etag": "\"4056-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsessiondelegate/sessiondiddeactivate.md",
+      "hash": "4d9440da2330eefb0b898e64180e69bf34587f780486830ef4eb4485b0495709"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsessiondelegate/sessionreachabilitydidchange(_:).json": {
+      "etag": "\"3d02-65d55e6076bfc-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsessiondelegate/sessionreachabilitydidchange.md",
+      "hash": "5834875827d8658f1f8470afe646b0983321f73cff515eebf9991a65972e3410"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsessiondelegate/sessionwatchstatedidchange(_:).json": {
+      "etag": "\"4b42-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsessiondelegate/sessionwatchstatedidchange.md",
+      "hash": "f830fd6b84e68459b5ad8e19594e2e27e6f17a0bd491baed385faea97f471b04"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsessionfile.json": {
+      "etag": "\"5888-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsessionfile.md",
+      "hash": "8384313901ef5ee8e1ba92ccd8efaf551640933a8b1be1307273337fa40fed3a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsessionfile/fileurl.json": {
+      "etag": "\"2c74-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsessionfile/fileurl.md",
+      "hash": "bd520af3db3019103cc0c034c62ea6626466c78b6fee88bdd2a15d72183143c4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsessionfile/metadata.json": {
+      "etag": "\"25f7-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsessionfile/metadata.md",
+      "hash": "b0c5a2b64b5c8c5974d5e7318a27656846ea686aaf57f97862d6a0775a0f8c07"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsessionfiletransfer.json": {
+      "etag": "\"5d36-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsessionfiletransfer.md",
+      "hash": "eee6fdabda26bb601463a7a5a2ac81e09503467aae599a4815f79660698f29bd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsessionfiletransfer/cancel().json": {
+      "etag": "\"26bf-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsessionfiletransfer/cancel.md",
+      "hash": "e0e774956f9dc795db2eb25e5f098e00d755f50f72bf5708b9b62ebf2d0507c5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsessionfiletransfer/file.json": {
+      "etag": "\"20f6-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsessionfiletransfer/file.md",
+      "hash": "2cbd20a5a837478461a50afe85ce19fe44d13690f9ff71fe71273c7c0f704850"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsessionfiletransfer/istransferring.json": {
+      "etag": "\"30b8-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsessionfiletransfer/istransferring.md",
+      "hash": "7280bba43227dad965e77ee14fde7340c9451ae43a8d60adb17003d491abd6c9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsessionfiletransfer/progress.json": {
+      "etag": "\"2c06-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsessionfiletransfer/progress.md",
+      "hash": "1c06e75fcf08707304475e01123a7890c128a87d7c8a4939793aa748841a38e6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsessionuserinfotransfer.json": {
+      "etag": "\"6fd2-65d55e605aee9-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsessionuserinfotransfer.md",
+      "hash": "08a83b1a25728ef675058f7be979f038094175af7aef9f3378eec481c0201b95"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsessionuserinfotransfer/cancel().json": {
+      "etag": "\"2218-65d55e6088413-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsessionuserinfotransfer/cancel.md",
+      "hash": "8299ad8606e1c4c49bc5011fe2ff8c4040d0680389215699f18af9f5e00787fa"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsessionuserinfotransfer/init(coder:).json": {
+      "etag": "\"1627-65d55e6088413-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsessionuserinfotransfer/init-coder.md",
+      "hash": "3b2951229329a2dd983c1315bae85bb76d2a552ec8481a99f3e48242ea29ed9d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsessionuserinfotransfer/iscurrentcomplicationinfo.json": {
+      "etag": "\"394e-65d55e6088413-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsessionuserinfotransfer/iscurrentcomplicationinfo.md",
+      "hash": "ce89d8e46e9332a14e4909f621926e7e894975046ac242100094f61068a5c28e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsessionuserinfotransfer/istransferring.json": {
+      "etag": "\"2c16-65d55e6088413-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsessionuserinfotransfer/istransferring.md",
+      "hash": "06fc069a5874582c28144dc62d41a1b51a87b91598b8d99d31dd9d08c634aeca"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/watchconnectivity/wcsessionuserinfotransfer/userinfo.json": {
+      "etag": "\"269b-65d55e6088413-df\"",
+      "file_path": "documentation/WatchConnectivity/wcsessionuserinfotransfer/userinfo.md",
+      "hash": "f3fea45b61824b3a2479b436259c3b8b9f942fcd8a7837bcebac130b04ae34dd"
     }
+  },
+  "metadata": {
+    "total_pages": 210
   }
 }

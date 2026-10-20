@@ -1,4 +1,0 @@
-Completed scraping hvf!
-Total pages scraped: 0
-Pages skipped (unchanged): 120
-Pages failed: 0

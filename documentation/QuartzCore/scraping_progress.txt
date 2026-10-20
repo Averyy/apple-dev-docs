@@ -1,4 +1,0 @@
-Completed scraping Core Animation!
-Total pages scraped: 0
-Pages skipped (unchanged): 676
-Pages failed: 0

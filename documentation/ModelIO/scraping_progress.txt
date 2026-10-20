@@ -1,4 +1,0 @@
-Completed scraping Model I/O!
-Total pages scraped: 0
-Pages skipped (unchanged): 900
-Pages failed: 0

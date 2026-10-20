@@ -1,4 +1,0 @@
-Completed scraping ColorSync!
-Total pages scraped: 0
-Pages skipped (unchanged): 352
-Pages failed: 0

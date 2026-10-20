@@ -203,7 +203,7 @@ class TestExit1:
 
     async def test_zero_touched(self, runs: Runs, monkeypatch: pytest.MonkeyPatch,
                                 capsys: pytest.CaptureFixture[str]) -> None:
-        """A session-tracking bug of ours: no entry got this run's session_id."""
+        """A touch-tracking bug of ours: this run touched no entry."""
         await seeded(runs)
         orphan = stray()
         monkeypatch.setattr(HashManager, "touch", lambda self, url: None)

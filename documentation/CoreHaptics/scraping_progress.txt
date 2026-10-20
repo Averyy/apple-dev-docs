@@ -1,4 +1,0 @@
-Completed scraping Core Haptics!
-Total pages scraped: 0
-Pages skipped (unchanged): 220
-Pages failed: 0

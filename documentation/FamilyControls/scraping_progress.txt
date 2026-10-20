@@ -1,4 +1,0 @@
-Completed scraping Family Controls!
-Total pages scraped: 0
-Pages skipped (unchanged): 54
-Pages failed: 0

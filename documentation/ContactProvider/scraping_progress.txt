@@ -1,4 +1,0 @@
-Completed scraping ContactProvider!
-Total pages scraped: 0
-Pages skipped (unchanged): 67
-Pages failed: 0

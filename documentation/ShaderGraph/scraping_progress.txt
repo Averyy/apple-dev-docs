@@ -1,4 +1,0 @@
-Completed scraping ShaderGraph!
-Total pages scraped: 0
-Pages skipped (unchanged): 250
-Pages failed: 0

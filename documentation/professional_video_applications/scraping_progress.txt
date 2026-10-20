@@ -1,4 +1,0 @@
-Completed scraping Professional Video Applications!
-Total pages scraped: 0
-Pages skipped (unchanged): 6
-Pages failed: 0

@@ -1,4 +1,0 @@
-Completed scraping TVML!
-Total pages scraped: 0
-Pages skipped (unchanged): 190
-Pages failed: 0

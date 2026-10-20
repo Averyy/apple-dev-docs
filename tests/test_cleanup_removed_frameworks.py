@@ -36,8 +36,6 @@ from scraper.utils.hash_manager import HashManager
 from tests.test_failure_policy import FW, SITE, Apple, Runs, file_of, routes_for, sandbox_runs, seeded
 from tests.test_fetch_results import doc_url, json_url
 
-SESSION = "2026-10-09T07:07:00.000001"
-
 
 @pytest.fixture
 def runs(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> Iterator[Runs]:
@@ -50,7 +48,6 @@ def make_framework(fw: str, pages: int = 2, docs_dir: Optional[str] = None,
     docs = Config.OUTPUT_DIR / (docs_dir or fw)
     hash_file = hash_file or Config.get_hash_file(fw)
     manager = HashManager(hash_file)
-    manager.session_id = SESSION
     for i in range(pages):
         path = docs / f"page{i}.md"
         path.parent.mkdir(parents=True, exist_ok=True)
@@ -368,7 +365,7 @@ class TestUnlistedFrameworks:
         assert saved("kit01")["metadata"]["unlisted_runs"] == 1
         assert prescrape(monkeypatch, ["kit00", "kit01"]) == 0
         data = saved("kit01")
-        assert data["hashes"] == {} and set(data["metadata"]) == {"last_updated", "total_pages", "session_id"}
+        assert data["hashes"] == {} and set(data["metadata"]) == {"total_pages"}
         assert [(f.framework_id, f.unlisted_runs) for f in framework_hash_files(Config.CACHE_DIR).frameworks] == [
             ("kit00", 0), ("kit01", 0)]
         # Unlisted once more: run 1 again, then removed on run 2

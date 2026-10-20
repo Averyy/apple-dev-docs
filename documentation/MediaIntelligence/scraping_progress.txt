@@ -1,4 +1,0 @@
-Completed scraping Media Intelligence!
-Total pages scraped: 0
-Pages skipped (unchanged): 78
-Pages failed: 0

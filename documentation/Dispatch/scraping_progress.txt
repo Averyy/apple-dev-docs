@@ -1,4 +1,0 @@
-Completed scraping Dispatch!
-Total pages scraped: 0
-Pages skipped (unchanged): 355
-Pages failed: 0

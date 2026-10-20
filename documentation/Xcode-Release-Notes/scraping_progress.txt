@@ -1,4 +1,0 @@
-Completed scraping Xcode Release Notes!
-Total pages scraped: 0
-Pages skipped (unchanged): 68
-Pages failed: 0

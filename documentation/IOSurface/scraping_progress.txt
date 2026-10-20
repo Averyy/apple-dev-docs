@@ -1,4 +1,0 @@
-Completed scraping IOSurface!
-Total pages scraped: 0
-Pages skipped (unchanged): 216
-Pages failed: 0

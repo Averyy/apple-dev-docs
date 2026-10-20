@@ -1,4 +1,0 @@
-Completed scraping Immersive Media Support!
-Total pages scraped: 0
-Pages skipped (unchanged): 256
-Pages failed: 0

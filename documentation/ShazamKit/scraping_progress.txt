@@ -1,4 +1,0 @@
-Completed scraping ShazamKit!
-Total pages scraped: 0
-Pages skipped (unchanged): 151
-Pages failed: 0
