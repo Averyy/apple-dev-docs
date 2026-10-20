@@ -11,6 +11,12 @@ from typing import Dict, List, Optional, Any, Set
 import argparse
 from datetime import datetime
 
+# The kind of an Apple page without a **Kind** line, by its **Role** line (Apple's
+# roleHeading); any other role, or none, is an article. A Framework role always comes
+# with **Kind**: module.
+ROLE_KINDS = {"Article": "article", "API Collection": "collection", "Sample Code": "sample-code"}
+
+
 class MetadataExtractor:
     """Extract structured metadata from Apple documentation markdown files."""
 
@@ -83,7 +89,8 @@ class MetadataExtractor:
         # Apple's **Kind** values (the page's symbolKind, lowercased, including the legacy
         # reference's codes) -> kind. A value missing here is "unknown" (e.g. "uid", the
         # Installer JS and WebKit JS pseudo-symbols, which are objects, methods and
-        # properties alike); a page with no **Kind** line is an "article".
+        # properties alike); a page with no **Kind** line is kinded by its **Role** line
+        # (ROLE_KINDS), else an "article".
         self.kind_mappings = {
             # Types
             "class": "class",
@@ -471,12 +478,15 @@ class MetadataExtractor:
     def extract_kind(self, content: str) -> str:
         """
         Extract the kind of API: the page's **Kind** line through kind_mappings (e.g.
-        instm -> method, econst -> case), "unknown" for a value it doesn't list, and
-        "article" for a page without one (articles, collections, other sources' docs).
+        instm -> method, econst -> case), "unknown" for a value it doesn't list. A page
+        without one is kinded by its **Role** line through ROLE_KINDS (an API collection,
+        sample code), and is an "article" for any other role or none (articles, other
+        sources' docs).
         """
-        kind = self.header_fields(content).get('Kind')
+        fields = self.header_fields(content)
+        kind = fields.get('Kind')
         if kind is None:
-            return 'article'
+            return ROLE_KINDS.get(fields.get('Role', ''), 'article')
         return self.kind_mappings.get(kind.lower(), 'unknown')
     
     def extract_overview(self, content: str) -> str:
@@ -493,11 +503,13 @@ class MetadataExtractor:
 
         # Try to get first non-empty paragraph after title, past the header's
         # "**Key**: value" lines (and the list an empty one heads, e.g. **Availability**:)
+        # and a deprecation summary ("> **Deprecated**: …" and its "> " lines)
         lines = content.split('\n')
         found_title = False
         overview_lines: List[str] = []
         skip_empty = True
         in_key_list = False
+        in_deprecation = False
         
         for i, line in enumerate(lines):
             # Found title
@@ -513,6 +525,13 @@ class MetadataExtractor:
                 if skip_empty and not line_stripped:
                     continue
                 if skip_empty:
+                    if line_stripped.startswith('> **Deprecated**:'):
+                        in_deprecation = True
+                        in_key_list = False
+                        continue
+                    if in_deprecation and line_stripped.startswith('>'):
+                        continue
+                    in_deprecation = False
                     key_line = self._header_line_pattern.match(line_stripped)
                     if key_line:
                         in_key_list = not key_line.group('value')

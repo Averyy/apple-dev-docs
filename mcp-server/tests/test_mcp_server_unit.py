@@ -619,6 +619,11 @@ class TestRanking(ToolTestCase):
         # lowercase word names properties of hundreds of types), not a one-word query (the
         # title boosts decide it), and only the name as typed
         self.assertEqual(score(dict(boosted, kind="article"), "async Task"), 0.8)
+        # Nor an API collection or sample code (kinded by their **Role** line), while a
+        # framework (module) keeps it
+        self.assertEqual(score(dict(boosted, kind="collection"), "async Task"), 0.8)
+        self.assertEqual(score(dict(boosted, kind="sample-code"), "async Task"), 0.8)
+        self.assertEqual(score(dict(boosted, kind="module"), "async Task"), 0.9)
         self.assertEqual(score(dict(boosted, api_name="task", title="task"), "async task"), 0.8)
         self.assertEqual(score(dict(boosted, title="Task.init"), "Task"), 0.8)
         self.assertEqual(score(boosted, "async TASK"), 0.8)

@@ -1,20 +1,149 @@
 """JSON-based Apple documentation scraper that uses Apple's data endpoints."""
 
 import asyncio
+import copy
 import json
+import re
 import time
+from collections import Counter
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Any, Deque, Dict, Final, List, Literal, Optional, Set
+from typing import Any, Deque, Dict, Final, List, Literal, Optional, Set, Tuple
 from urllib.parse import urlparse
 
 from scraper.base import NOT_MODIFIED, BaseAppleScraper, FetchFailed
 from scraper.config import Config
+from scraper.utils.assets import hosting_root, variant_url
 from scraper.utils.hash_manager import same_name_any_case, write_text_atomic
 from scraper.utils.logger import get_logger
-from scraper.utils.markdown_converter import AppleDocMarkdownConverter
+from scraper.utils.markdown_converter import AppleDocMarkdownConverter, join_blocks, labeled, quote_blocks
 
 logger = get_logger(__name__)
+
+# The JSON the converter renders: the block and inline types that
+# _process_content_items and _resolve_inline_content render (exactly these,
+# pinned by a test) and the section kinds read. Any other is rendered as its
+# text (_fallback_blocks) and logged (unknown_content), once per type and
+# framework with its count. In such an unknown item, these tables also tell
+# a list of blocks from one of inline content
+KNOWN_BLOCK_TYPES: Final = frozenset({
+    'paragraph', 'heading', 'codeListing', 'unorderedList', 'orderedList',
+    'table', 'aside', 'imageBlock', 'termList', 'thematicBreak',
+    'tabNavigator', 'row', 'links', 'video',
+})
+KNOWN_INLINE_TYPES: Final = frozenset({
+    'text', 'reference', 'codeVoice', 'emphasis', 'strong', 'image', 'strikethrough',
+})
+KNOWN_SECTION_KINDS: Final = frozenset({
+    'declarations', 'content', 'discussion', 'returnValue', 'task', 'restBody',
+    'restResponses', 'possibleValues', 'thrown_errors', 'details', 'attributes',
+    'properties', 'restEndpoint', 'restParameters', 'parameters', 'mentions',
+})
+# Top-level and metadata keys: those read, and those ignored on purpose. Any
+# other is only logged (unknown_content)
+KNOWN_TOP_LEVEL_KEYS: Final = frozenset({
+    'metadata', 'abstract', 'primaryContentSections', 'topicSections',
+    'seeAlsoSections', 'relationshipsSections', 'defaultImplementationsSections',
+    'references', 'variantOverrides', 'deprecationSummary', 'sampleCodeDownload',
+    'diffAvailability', 'variants', 'hierarchy',
+    # Ignored on purpose
+    'identifier', 'kind', 'schemaVersion', 'legalNotices', 'sections',
+    'documentVersion', 'legacy_identifier', 'topicSectionsStyle',
+})
+KNOWN_METADATA_KEYS: Final = frozenset({
+    'title', 'externalID', 'symbolKind', 'navigatorTitle', 'roleHeading',
+    'required', 'modules', 'fragments', 'platforms', 'conformance',
+    # Ignored on purpose
+    'role', 'availableLanguages', 'extendedModule', 'parent', 'images', 'color',
+    'customMetadata', 'defaultSuggestedTags',
+})
+
+# A sample code download's relative URL (<hash>/<name>.zip) is served here
+DOCS_ASSETS_URL: Final = "https://docs-assets.developer.apple.com/published/"
+
+# A doc:// link written as text in Apple's prose: up to the first whitespace or
+# ">" (parentheses occur inside them); a trailing ".", "," or ";" is the prose's
+DOC_LITERAL: Final = re.compile(r'doc://[^/\s>]+/[^\s>]*')
+
+# A page's Objective-C/C declarations (interfaceLanguage occ) are fenced as
+# objc when one shows Objective-C syntax, else cpp when one shows C++, else c
+OBJC_MARKERS: Final = re.compile(
+    r'^\s*[-+]\s*\(|@(?:interface|protocol|property|class|optional|required|end)\b', re.MULTILINE)
+CPP_MARKERS: Final = re.compile(
+    r'::|\b(?:virtual|template|class|namespace|typename|operator|constexpr|override|explicit)\b')
+
+# Declaration fences: Swift first, the Objective-C/C variant last
+DECLARATION_ORDER: Final = {'swift': 0, 'occ': 2}
+
+# Attribute kinds of a property, parameter or key, with their labels
+ATTRIBUTE_LABELS: Final = {
+    'default': 'Default',
+    'minimum': 'Minimum',
+    'minimumExclusive': 'Minimum (exclusive)',
+    'maximum': 'Maximum',
+    'maximumExclusive': 'Maximum (exclusive)',
+    'minimumLength': 'Minimum Length',
+    'maximumLength': 'Maximum Length',
+}
+
+
+def apply_json_patch(document: Any, patch: List[Dict[str, Any]]) -> Any:
+    """An RFC 6902 patch's add, replace and remove operations applied to a copy of document.
+
+    The containers along each operation's path are copied and every value is
+    deep-copied, so document is never changed. Paths are JSON pointers ("~1"
+    for "/", "~0" for "~"); "" is the whole document.
+
+    Raises:
+        KeyError, IndexError, ValueError, TypeError: A path doesn't exist in
+            the document, or an operation isn't one of these three
+    """
+    copied: Set[int] = set()  # containers of the result that are already copies
+
+    def copy_of(container: Any) -> Any:
+        if id(container) in copied:
+            return container
+        fresh = list(container) if isinstance(container, list) else dict(container)
+        copied.add(id(fresh))
+        return fresh
+
+    root = document
+    for operation in patch:
+        op = operation.get('op')
+        if op not in ('add', 'replace', 'remove'):
+            raise ValueError(f"unsupported patch operation {op!r}")
+        path = operation.get('path', '')
+        tokens = [t.replace('~1', '/').replace('~0', '~') for t in path.split('/')[1:]] if path else []
+        if not tokens:
+            if op == 'remove':
+                raise ValueError("can't remove the whole document")
+            root = copy.deepcopy(operation.get('value'))
+            continue
+        root = copy_of(root)
+        parent = root
+        for token in tokens[:-1]:
+            index: Any = int(token) if isinstance(parent, list) else token
+            child = copy_of(parent[index])
+            parent[index] = child
+            parent = child
+        last = tokens[-1]
+        if isinstance(parent, list):
+            position = len(parent) if last == '-' else int(last)
+            if op == 'add':
+                parent.insert(position, copy.deepcopy(operation.get('value')))
+            elif op == 'replace':
+                parent[position] = copy.deepcopy(operation.get('value'))
+            else:
+                del parent[position]
+        elif isinstance(parent, dict):
+            if op == 'remove':
+                del parent[last]
+            else:
+                parent[last] = copy.deepcopy(operation.get('value'))
+        else:
+            raise TypeError(f"patch path {path!r} runs through a {type(parent).__name__}")
+    return root
+
 
 # 404/410: Apple removed the page. A removal, never a block.
 GONE_STATUSES: Final = (404, 410)
@@ -133,6 +262,8 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
     
     # Base URL for JSON data
     JSON_BASE_URL = "https://developer.apple.com/tutorials/data/documentation"
+    # Root-relative image and video URLs ("/images/…") are served under it
+    ASSET_ROOT = hosting_root(JSON_BASE_URL)
     
     def __init__(self, framework_id: str, framework_name: Optional[str] = None, 
                  include_cross_refs: bool = False) -> None:
@@ -151,6 +282,9 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         self.processed_urls: Set[str] = set()
         self.include_cross_refs = include_cross_refs
         self.cross_framework_refs: Dict[str, Set[str]] = {}  # Track cross-framework references
+        # JSON the converter doesn't know, (what, name) -> count, logged at the end
+        self._unknown_content: Counter[Tuple[str, str]] = Counter()
+        self._unknown_examples: Dict[Tuple[str, str], str] = {}  # (what, name) -> a page's URL
 
         # Failure policy state for this run, applied once by scrape_framework
         self.root_json_url = f"{self.JSON_BASE_URL}/{self.framework_id}.json"
@@ -232,6 +366,7 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         # Save cross-framework references if tracking was enabled
         if self.include_cross_refs:
             self.save_cross_framework_summary()
+        self._log_unknown_content()
         
         logger.info(
             "framework_scrape_complete",
@@ -1023,21 +1158,28 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         # Store current URL for relative path calculation
         self._current_scraping_url = doc_url
         
-        data = {
+        data: Dict[str, Any] = {
             'source_url': doc_url,
             'framework': self.framework_name,
             'framework_id': self.framework_id
         }
         
+        for key in json_data:
+            if key not in KNOWN_TOP_LEVEL_KEYS:
+                self._note_unknown('top-level key', key)
+
         # Extract comprehensive metadata
         metadata = json_data.get('metadata', {})
+        for key in metadata:
+            if key not in KNOWN_METADATA_KEYS:
+                self._note_unknown('metadata key', key)
         data['title'] = metadata.get('title', 'Untitled')
         
         # Extract additional metadata fields
         data['external_id'] = metadata.get('externalID', '')
         data['symbol_kind'] = metadata.get('symbolKind') or ''  # JSON null -> ''
         data['navigator_title'] = metadata.get('navigatorTitle', '')
-        data['role_heading'] = metadata.get('roleHeading', '')
+        data['role_heading'] = metadata.get('roleHeading') or ''
         data['required'] = metadata.get('required', False)
         data['modules'] = metadata.get('modules', [])
         
@@ -1061,22 +1203,33 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         if abstract:
             data['brief_description'] = self._resolve_inline_content(abstract, references)
         
-        # Extract comprehensive availability information
+        # Sample code: its project's download (a header line)
+        download = self._sample_download(json_data, references)
+        if download:
+            data['sample_download'] = download
+
+        # Extract comprehensive availability information. A platform is
+        # deprecated when it has deprecatedAt or deprecated: true (Apple often
+        # sets only the version); a missing introduced version leaves the
+        # bare platform name
         platforms = metadata.get('platforms', [])
         data['availability'] = []
+        messages: List[str] = []
         for p in platforms:
             availability_info = {
                 'platform': p.get('name', 'Unknown'),
-                'version': f"{p.get('introducedAt', '?')}+",
-                'deprecated': p.get('deprecated', False),
+                'introduced': p.get('introducedAt') or '',
+                'deprecated': bool(p.get('deprecated', False) or p.get('deprecatedAt')),
                 'beta': p.get('beta', False)
             }
             
             # Add deprecation details if available
             if p.get('deprecatedAt'):
                 availability_info['deprecated_at'] = p['deprecatedAt']
-            if p.get('deprecationMessage'):
-                availability_info['deprecation_message'] = p['deprecationMessage']
+            if p.get('renamed'):
+                availability_info['renamed'] = p['renamed']
+            if p.get('message') and p['message'] not in messages:
+                messages.append(p['message'])
             
             # Add beta information
             if p.get('isBeta', False):
@@ -1088,6 +1241,11 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
             
             data['availability'].append(availability_info)
         
+        # The deprecation summary, once: Apple's, or else the platforms' message
+        deprecation = self._deprecation_summary(json_data.get('deprecationSummary') or [], messages, references)
+        if deprecation:
+            data['deprecation_summary'] = deprecation
+
         # Extract diff availability for version changes
         if 'diffAvailability' in json_data:
             diff_availability = json_data['diffAvailability']
@@ -1096,25 +1254,20 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
                 'minor': diff_availability.get('minor', [])
             }
         
-        # Extract declaration
-        data['declaration'] = {}
+        # Extract declarations: one fence each, Swift first, then the
+        # Objective-C/C variant; a symbol's other overloads after them
         primary_content = json_data.get('primaryContentSections', [])
-        for section in primary_content:
-            if section.get('kind') == 'declarations':
-                for declaration in section.get('declarations', []):
-                    lang = 'swift'  # Default
-                    for platform in declaration.get('platforms', []):
-                        if platform == 'swift':
-                            lang = 'swift'
-                    
-                    # Reconstruct code from tokens with proper formatting
-                    tokens = declaration.get('tokens', [])
-                    code = self._format_declaration_from_tokens(tokens)
-                    if code:
-                        data['declaration'][lang] = code
+        data['declaration'], data['other_declarations'] = self._extract_declarations(json_data, primary_content)
+
+        # The constraints a symbol is available under ("Available when …")
+        conformance = metadata.get('conformance')
+        if isinstance(conformance, dict) and conformance.get('constraints'):
+            prefix = self._resolve_inline_content(conformance.get('availabilityPrefix') or [], references)
+            constraints = self._resolve_inline_content(conformance['constraints'], references)
+            data['conformance'] = f"{prefix} {constraints}".strip()
         
         # Extract all content sections comprehensively
-        content_sections = self._extract_all_content_sections(primary_content, references)
+        content_sections = self._extract_all_content_sections(primary_content, references, data['title'])
         data.update(content_sections)
         
         # Extract parameters
@@ -1129,16 +1282,125 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
                     # Extract description from content (may have multiple paragraphs, termLists, etc.)
                     content = param.get('content', [])
                     desc_parts = self._process_content_items(content, references)
-                    param_data['description'] = ' '.join(desc_parts)
+                    param_data['description'] = join_blocks(desc_parts, 2)
                     
                     parameters.append(param_data)
         
         data['parameters'] = parameters
         
         # Extract topics with complete signatures and descriptions from references
-        topics = []
-        for section in json_data.get('topicSections', []):
-            topic = {
+        data['topics'] = self._topic_groups(json_data.get('topicSections', []), references)
+
+        # The default implementations of a protocol requirement
+        data['default_implementations'] = self._topic_groups(
+            json_data.get('defaultImplementationsSections') or [], references)
+
+        # Extract see also, by group, with complete signatures
+        data['see_also'] = self._topic_groups(json_data.get('seeAlsoSections', []), references)
+
+        # Extract relationships (Inherited By, Conforming Types, etc.)
+        relationships = []
+        for section in json_data.get('relationshipsSections', []):
+            relationship = {
+                'title': section.get('title', ''),
+                'type': section.get('type', ''),
+                'items': []
+            }
+            for identifier in section.get('identifiers', []):
+                if identifier in references:
+                    ref_data = references[identifier]
+                    name = ref_data.get('title', identifier.split('/')[-1])
+                    relationship['items'].append({
+                        'name': name,
+                        'url': self._reference_url(ref_data.get('url', ''))
+                    })
+            if relationship['items']:
+                relationships.append(relationship)
+
+        data['relationships'] = relationships
+
+        # Extract mentions (related documentation links)
+        mentions = []
+        for section in primary_content:
+            if section.get('kind') == 'mentions':
+                mention_items = section.get('mentions', [])
+                for mention in mention_items:
+                    if mention in references:
+                        ref_data = references[mention]
+                        mentions.append({
+                            'title': ref_data.get('title', mention.split('/')[-1]),
+                            'url': self._reference_url(ref_data.get('url', ''))
+                        })
+
+        data['mentions'] = mentions
+
+        # Extract variants (different language implementations)
+        if 'variants' in json_data:
+            variants = json_data['variants']
+            data['variants'] = [
+                {
+                    'traits': variant.get('traits', []),
+                    'paths': variant.get('paths', [])
+                }
+                for variant in variants
+            ]
+
+        # Extract hierarchy information for navigation
+        if 'hierarchy' in json_data:
+            hierarchy = json_data['hierarchy']
+            data['hierarchy'] = {
+                'paths': hierarchy.get('paths', []),
+                'modules': hierarchy.get('modules', [])
+            }
+
+        return data
+
+    def _note_unknown(self, what: str, name: Any) -> None:
+        """Count JSON the converter doesn't know (a block or inline type, a
+        section kind, a top-level or metadata key); logged at the end of the
+        framework's run (_log_unknown_content)."""
+        key = (what, str(name))
+        if key not in self._unknown_content:
+            self._unknown_examples[key] = getattr(self, '_current_scraping_url', '')
+        self._unknown_content[key] += 1
+
+    def _log_unknown_content(self) -> None:
+        """One WARN per unknown block or inline type, section kind or key seen this run, with its count."""
+        for (what, name), count in sorted(self._unknown_content.items()):
+            logger.warning(
+                "unknown_content",
+                framework=self.framework_name,
+                what=what,
+                name=name,
+                count=count,
+                example=self._unknown_examples.get((what, name), '')
+            )
+
+    @staticmethod
+    def _reference_url(url_path: str) -> str:
+        """A reference's URL as linked: Apple's path under https://developer.apple.com,
+        an absolute URL (an external link's) as it is, "" for a reference without one."""
+        if not url_path:
+            return ''
+        if urlparse(url_path).scheme:
+            return url_path
+        return f"https://developer.apple.com{url_path}"
+
+    @staticmethod
+    def _is_symbol_reference(ref_data: Dict[str, Any]) -> bool:
+        """Whether a reference's title is shown as code, as DocC-Render does
+        (Reference.vue isSymbolReference/isDisplaySymbol): a symbol (not a
+        framework, role collection), shown by its symbol name."""
+        return (ref_data.get('kind') == 'symbol'
+                and ref_data.get('role') in ('symbol', 'dictionarySymbol')
+                and (not ref_data.get('ideTitle') or ref_data.get('titleStyle') == 'symbol'))
+
+    def _topic_groups(self, sections: List[Dict[str, Any]], references: Dict[str, Any]) -> List[Dict[str, Any]]:
+        """Topic-like sections (topics, default implementations, see also): per
+        group its title and items, each with its complete signature, URL and abstract."""
+        groups = []
+        for section in sections:
+            group: Dict[str, Any] = {
                 'title': section.get('title', ''),
                 'items': []
             }
@@ -1165,20 +1427,8 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
                             if len(reconstructed_signature) > len(full_title):
                                 full_title = reconstructed_signature
                     
-                    url_path = ref_data.get('url', '')
-                    if url_path:
-                        url = f"https://developer.apple.com{url_path}"
-                    else:
-                        # Fallback URL construction
-                        if identifier.startswith('doc://com.apple.'):
-                            parts = identifier.split('/documentation/')
-                            if len(parts) == 2:
-                                path = parts[1]
-                                url = f"https://developer.apple.com/documentation/{path}"
-                            else:
-                                url = identifier
-                        else:
-                            url = identifier
+                    # A reference without a URL (Apple's unresolvable ones) is plain text
+                    url = self._reference_url(ref_data.get('url', ''))
                     
                     # Extract description/abstract from reference
                     description = ""
@@ -1186,7 +1436,7 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
                         abstract_content = ref_data['abstract']
                         description = self._resolve_inline_content(abstract_content, references)
                     
-                    topic['items'].append({
+                    group['items'].append({
                         'name': full_title,
                         'url': url,
                         'description': description
@@ -1203,164 +1453,151 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
                             url = identifier
                     else:
                         url = identifier
-                    topic['items'].append({
+                    group['items'].append({
                         'name': name,
                         'url': url,
                         'description': ''
                     })
             
-            if topic['items']:
-                topics.append(topic)
-        
-        data['topics'] = topics
-        
-        # Extract see also with complete signatures
-        see_also = []
-        for section in json_data.get('seeAlsoSections', []):
-            for identifier in section.get('identifiers', []):
-                if identifier in references:
-                    ref_data = references[identifier]
-                    # Get the full title (complete signature)
-                    full_title = ref_data.get('title', identifier.split('/')[-1])
-                    
-                    # Try to get more complete signature from fragments
-                    if 'fragments' in ref_data:
-                        fragments = ref_data['fragments']
-                        signature_parts = []
-                        for frag in fragments:
-                            text = frag.get('text', '')
-                            if text:
-                                signature_parts.append(text)
-                        if signature_parts:
-                            reconstructed_signature = ''.join(signature_parts)
-                            if len(reconstructed_signature) > len(full_title):
-                                full_title = reconstructed_signature
-                    
-                    url_path = ref_data.get('url', '')
-                    if url_path:
-                        url = f"https://developer.apple.com{url_path}"
-                    else:
-                        # Fallback URL construction
-                        if identifier.startswith('doc://com.apple.'):
-                            parts = identifier.split('/documentation/')
-                            if len(parts) == 2:
-                                path = parts[1]
-                                url = f"https://developer.apple.com/documentation/{path}"
-                            else:
-                                url = identifier
-                        else:
-                            url = identifier
-                    
-                    # Extract description from abstract
-                    description = ""
-                    if 'abstract' in ref_data:
-                        abstract_content = ref_data['abstract']
-                        description = self._resolve_inline_content(abstract_content, references)
-                    
-                    see_also.append({
-                        'title': full_title,
-                        'url': url,
-                        'description': description
-                    })
-                else:
-                    # Fallback for identifiers not in references
-                    name = identifier.split('/')[-1] if '/' in identifier else identifier
-                    if identifier.startswith('doc://com.apple.'):
-                        parts = identifier.split('/documentation/')
-                        if len(parts) == 2:
-                            path = parts[1]
-                            url = f"https://developer.apple.com/documentation/{path}"
-                        else:
-                            url = identifier
-                    else:
-                        url = identifier
-                    see_also.append({
-                        'title': name,
-                        'url': url,
-                        'description': ''
-                    })
-        
-        data['see_also'] = see_also
-        
-        # Extract relationships (Inherited By, Conforming Types, etc.)
-        relationships = []
-        for section in json_data.get('relationshipsSections', []):
-            relationship = {
-                'title': section.get('title', ''),
-                'type': section.get('type', ''),
-                'items': []
-            }
-            for identifier in section.get('identifiers', []):
-                if identifier in references:
-                    ref_data = references[identifier]
-                    name = ref_data.get('title', identifier.split('/')[-1])
-                    url_path = ref_data.get('url', '')
-                    if url_path:
-                        url = f"https://developer.apple.com{url_path}"
-                    else:
-                        url = identifier
-                    relationship['items'].append({
-                        'name': name,
-                        'url': url
-                    })
-            if relationship['items']:
-                relationships.append(relationship)
-        
-        data['relationships'] = relationships
-        
-        # Extract mentions (related documentation links)
-        mentions = []
-        for section in primary_content:
-            if section.get('kind') == 'mentions':
-                mention_items = section.get('mentions', [])
-                for mention in mention_items:
-                    if mention in references:
-                        ref_data = references[mention]
-                        mentions.append({
-                            'title': ref_data.get('title', mention.split('/')[-1]),
-                            'url': f"https://developer.apple.com{ref_data.get('url', '')}"
-                        })
-        
-        data['mentions'] = mentions
-        
-        # Extract content headings for better organization
-        content_headings = []
-        for section in primary_content:
-            if section.get('kind') == 'content':
-                content_items = section.get('content', [])
-                for item in content_items:
-                    if item.get('type') == 'heading':
-                        level = item.get('level', 1)
-                        heading_text = self._resolve_inline_content(item.get('inlineContent', []), references)
-                        if heading_text.strip():
-                            content_headings.append({
-                                'level': level,
-                                'text': heading_text
-                            })
-        
-        data['content_headings'] = content_headings
-        
-        # Extract variants (different language implementations)
-        if 'variants' in json_data:
-            variants = json_data['variants']
-            data['variants'] = [
-                {
-                    'traits': variant.get('traits', []),
-                    'paths': variant.get('paths', [])
-                }
-                for variant in variants
+            if group['items']:
+                groups.append(group)
+        return groups
+
+    def _extract_declarations(
+        self, json_data: Dict[str, Any], primary_content: List[Dict[str, Any]]
+    ) -> Tuple[List[Dict[str, Any]], List[Dict[str, Any]]]:
+        """The page's declarations, one fence each, and its other overloads.
+
+        Each declaration's language is in its languages: swift, occ (the
+        Objective-C/C variant, fenced page-wide as objc, cpp or c), data (no
+        tag). Swift comes first, then the page's own declarations in other
+        languages, then the occ variant's: its declarations from the occ
+        variantOverrides patch that the page doesn't show already. When one
+        language has several declarations on different platforms, each is
+        labeled with them (*DriverKit*).
+
+        Returns:
+            ([{language, code, label}], [{language, code}] of other overloads)
+        """
+        found: List[Dict[str, Any]] = []
+        declarations = [
+            self._declaration_item(dec)
+            for section in primary_content if section.get('kind') == 'declarations'
+            for dec in section.get('declarations', [])
+        ]
+        for declaration in declarations + self._occ_declarations(json_data):
+            if declaration and not any(item['code'] == declaration['code'] for item in found):
+                found.append(declaration)
+        found.sort(key=lambda item: DECLARATION_ORDER.get(item['language'], 1))
+
+        occ_tag = 'c'
+        occ_code = '\n'.join(item['code'] for item in found if item['language'] == 'occ')
+        if OBJC_MARKERS.search(occ_code):
+            occ_tag = 'objc'
+        elif CPP_MARKERS.search(occ_code):
+            occ_tag = 'cpp'
+        tags = {'swift': 'swift', 'occ': occ_tag, 'data': ''}
+
+        result: List[Dict[str, Any]] = []
+        other_declarations: List[Dict[str, Any]] = []
+        for item in found:
+            same_language = [other for other in found if other['language'] == item['language']]
+            platform_labels = len(same_language) > 1 and len({tuple(other['platforms']) for other in same_language}) > 1
+            tag = tags.get(item['language'], item['language'])
+            result.append({
+                'language': tag,
+                'code': item['code'],
+                'label': ', '.join(item['platforms']) if platform_labels and item['platforms'] else '',
+            })
+            other_declarations.extend({'language': tag, 'code': other} for other in item['others'])
+        return result, other_declarations
+
+    def _declaration_item(self, dec: Dict[str, Any]) -> Optional[Dict[str, Any]]:
+        """A declaration's language (occ when its languages hold occ, else the
+        first, swift without any), platforms, code and its other overloads'
+        code; None for a declaration without code."""
+        code = self._format_declaration_from_tokens(dec.get('tokens', []))
+        if not code:
+            return None
+        languages = dec.get('languages') or ['swift']
+        others = [
+            self._format_declaration_from_tokens(other.get('tokens', []))
+            for other in (dec.get('otherDeclarations') or {}).get('declarations', [])
+        ]
+        return {
+            'language': 'occ' if 'occ' in languages else languages[0],
+            'platforms': [platform for platform in dec.get('platforms') or [] if isinstance(platform, str)],
+            'code': code,
+            'others': [other for other in others if other],
+        }
+
+    def _occ_declarations(self, json_data: Dict[str, Any]) -> List[Optional[Dict[str, Any]]]:
+        """The Objective-C/C declarations of the page's occ variant
+        (_declaration_item): its variantOverrides patches for
+        interfaceLanguage occ applied to a copy of the page (only their
+        operations on primaryContentSections, the only part read), and of its
+        declarations sections only the declarations whose languages contain
+        occ. The variant is optional: when its data can't be read, patched or
+        formatted, an occ_variant_patch_failed WARN and none (the page shows
+        its own declarations)."""
+        try:
+            operations = [
+                operation
+                for override in json_data.get('variantOverrides') or []
+                if any(isinstance(trait, dict) and trait.get('interfaceLanguage') == 'occ'
+                       for trait in override.get('traits') or [])
+                for operation in override.get('patch') or []
+                if operation.get('path', '') in ('', '/primaryContentSections')
+                or operation.get('path', '').startswith('/primaryContentSections/')
             ]
-        
-        # Extract hierarchy information for navigation
-        if 'hierarchy' in json_data:
-            hierarchy = json_data['hierarchy']
-            data['hierarchy'] = {
-                'paths': hierarchy.get('paths', []),
-                'modules': hierarchy.get('modules', [])
-            }
-        
-        return data
-    
+            if not operations:
+                return []
+            patched = apply_json_patch(
+                {'primaryContentSections': json_data.get('primaryContentSections', [])}, operations)
+            sections = patched.get('primaryContentSections') if isinstance(patched, dict) else None
+            return [
+                self._declaration_item(dec)
+                for section in sections or [] if isinstance(section, dict) and section.get('kind') == 'declarations'
+                for dec in section.get('declarations', [])
+                if 'occ' in (dec.get('languages') or [])
+            ]
+        except Exception as e:  # malformed variant data: any error, as the variant is optional
+            logger.warning("occ_variant_patch_failed", url=getattr(self, '_current_scraping_url', ''),
+                           error=f"{type(e).__name__}: {e}")
+            return []
+
+    def _deprecation_summary(
+        self, summary: List[Dict[str, Any]], messages: List[str], references: Dict[str, Any]
+    ) -> str:
+        """The page's deprecation summary as a "> **Deprecated**: …" quote
+        (quote_blocks): Apple's deprecationSummary (its paragraphs on that
+        line, joined with spaces; any other block on the quote's lines after
+        it), or else the platforms' messages, each once. "" when there is neither."""
+        blocks: List[str] = []
+        if summary:
+            paragraphs = self._process_content_items(
+                [block for block in summary if block.get('type') == 'paragraph'], references)
+            if paragraphs:
+                blocks.append(' '.join(paragraphs))
+            blocks.extend(self._process_content_items(
+                [block for block in summary if block.get('type') != 'paragraph'], references))
+        elif messages:
+            blocks.append(' '.join(messages))
+        return quote_blocks("**Deprecated**:", blocks) if blocks else ''
+
+    def _sample_download(self, json_data: Dict[str, Any], references: Dict[str, Any]) -> Optional[Dict[str, str]]:
+        """A sample code page's project download, {name, url}: its relative URL
+        (<hash>/<name>.zip) under docs-assets; None when the page has none."""
+        download = json_data.get('sampleCodeDownload')
+        if not isinstance(download, dict):
+            return None
+        identifier = (download.get('action') or {}).get('identifier', '')
+        url = (references.get(identifier) or {}).get('url') or identifier
+        if not url:
+            return None
+        if not urlparse(url).scheme:
+            url = f"{DOCS_ASSETS_URL}{url.lstrip('/')}"
+        return {'name': url.rstrip('/').rsplit('/', 1)[-1], 'url': url}
     async def save_page_data(self, url: str, data: Dict[str, Any], file_path: Optional[Path] = None) -> bool:
         """Save extracted data as markdown with organized folder structure.
         
@@ -1670,25 +1907,32 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
             item_type = item.get('type', '')
             
             if item_type == 'text':
-                resolved_parts.append(item.get('text', ''))
+                resolved_parts.append(self._rewrite_doc_literals(item.get('text', '')))
             elif item_type == 'reference':
                 # Resolve the reference to its actual name and create a proper link
                 identifier = item.get('identifier', '')
                 if identifier in references:
                     ref_data = references[identifier]
-                    title = ref_data.get('title', identifier.split('/')[-1])
+                    if item.get('overridingTitleInlineContent'):
+                        # The prose's own wording, formatted as Apple wrote it
+                        text = self._resolve_inline_content(item['overridingTitleInlineContent'], references)
+                    elif item.get('overridingTitle'):
+                        text = item['overridingTitle']
+                    else:
+                        # Code voice only for a symbol, as DocC-Render shows it
+                        title = ref_data.get('title', identifier.split('/')[-1])
+                        text = f"`{title}`" if self._is_symbol_reference(ref_data) else title
                     
                     # Get the URL for the reference
-                    url_path = ref_data.get('url', '')
-                    if url_path:
+                    url = self._reference_url(ref_data.get('url', ''))
+                    if url:
                         # Convert Apple URL to local markdown path
-                        apple_url = f"https://developer.apple.com{url_path}"
-                        local_path = self._convert_apple_url_to_local_path(apple_url)
+                        local_path = self._convert_apple_url_to_local_path(url)
                         # Create a markdown link to local file
-                        resolved_parts.append(f"[`{title}`]({local_path})")
+                        resolved_parts.append(f"[{text}]({local_path})")
                     else:
-                        # Fallback to just code formatting if no URL
-                        resolved_parts.append(f"`{title}`")
+                        # A reference without a URL (unresolvable) is plain text
+                        resolved_parts.append(text)
                 else:
                     # Fallback to the last part of the identifier
                     fallback = identifier.split('/')[-1] if '/' in identifier else identifier
@@ -1703,27 +1947,141 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
                 # Bold text - recursively resolve nested content
                 inner = self._resolve_inline_content(item.get('inlineContent', []), references)
                 resolved_parts.append(f"**{inner}**")
+            elif item_type == 'strikethrough':
+                inner = self._resolve_inline_content(item.get('inlineContent', []), references)
+                resolved_parts.append(f"~~{inner}~~")
             elif item_type == 'image':
                 # Handle inline images
                 image_content = self._process_image(item, references)
                 resolved_parts.append(image_content)
             else:
-                # Handle other types as plain text
-                resolved_parts.append(item.get('text', ''))
+                # Not rendered above: its text, never silently dropped, and a
+                # WARN for a type that isn't known. On one line (each line break
+                # a space, its other spaces kept): a block under it (a code
+                # listing's fence, a list) can't break the paragraph
+                if str(item_type) not in KNOWN_INLINE_TYPES:
+                    self._note_unknown('inline type', item_type)
+                resolved_parts.append(re.sub(
+                    r'\s*\n\s*', ' ', ' '.join(self._fallback_parts(item, references, inline=True))))
         
         return ''.join(resolved_parts)
     
-    def _extract_all_content_sections(self, primary_content: List[Dict[str, Any]], references: Dict[str, Any]) -> Dict[str, Any]:
+    @staticmethod
+    def _rewrite_doc_literals(text: str) -> str:
+        """A doc://<bundle>/<rest> link written as text, as its web URL:
+        https://developer.apple.com/documentation/<rest without a leading
+        "documentation" and its slash>. A trailing ".", "," or ";" stays outside."""
+        if 'doc://' not in text:
+            return text
+
+        def web_url(match: re.Match[str]) -> str:
+            literal = match.group(0)
+            stripped = literal.rstrip('.,;')
+            rest = stripped.split('/', 3)[3] if stripped.count('/') >= 3 else ''
+            if rest.startswith('documentation'):
+                rest = rest[len('documentation'):]
+            if rest.startswith('/'):
+                rest = rest[1:]
+            return f"https://developer.apple.com/documentation/{rest}{literal[len(stripped):]}"
+
+        return DOC_LITERAL.sub(web_url, text)
+
+    def _fallback_blocks(self, item: Dict[str, Any], references: Dict[str, Any]) -> List[str]:
+        """The text of a block or section the converter doesn't render, as
+        blocks (_fallback_parts), so that its content is never silently lost."""
+        return [part for part in self._fallback_parts(item, references) if part.strip()]
+
+    def _fallback_parts(
+        self, item: Dict[str, Any], references: Dict[str, Any], inline: bool = False
+    ) -> List[str]:
+        """The text of a block, inline item or section the converter doesn't
+        render: every value under it but its type name, in order, recursively
+        (_fallback_value). inline: the item is inline content (code lines
+        stay inline code)."""
+        return [part for key, value in item.items() if not (key == 'type' and isinstance(value, str))
+                for part in self._fallback_value(key, value, references, inline)]
+
+    def _fallback_value(self, key: str, value: Any, references: Dict[str, Any], inline: bool) -> List[str]:
+        """The text a value under key holds, recursively. A list holding known
+        blocks (KNOWN_BLOCK_TYPES) is rendered as blocks, one holding known
+        inline items (KNOWN_INLINE_TYPES) as one paragraph, and a dict of a
+        known type as such; a list of untyped text fragments (tokens) is one
+        text; in any other dict or list, each value the same way. A "text"
+        string is text and a "code" string inline code; a "code" list of lines
+        is an untagged code listing (inline code when inline). Other strings
+        (identifiers, anchors, styles, syntax names) aren't text."""
+        if isinstance(value, dict):
+            if str(value.get('type')) in KNOWN_BLOCK_TYPES:
+                return self._process_content_items([value], references)
+            if str(value.get('type')) in KNOWN_INLINE_TYPES:
+                return [self._resolve_inline_content([value], references)]
+            return self._fallback_parts(value, references, inline)
+        if isinstance(value, list):
+            items = [v for v in value if isinstance(v, dict)]
+            types = {v['type'] for v in items if isinstance(v.get('type'), str)}
+            if types & KNOWN_BLOCK_TYPES:
+                return self._process_content_items(items, references)
+            if types & KNOWN_INLINE_TYPES:
+                return [self._resolve_inline_content(items, references)]
+            if key == 'code' and value and all(isinstance(line, str) for line in value):
+                return [f"`{' '.join(value)}`" if inline else '```\n' + '\n'.join(value) + '\n```']
+            if items and len(items) == len(value) and not types and all(
+                    isinstance(v.get('text'), str) for v in items):
+                return [''.join(v['text'] for v in items)]
+            return [part for v in value for part in self._fallback_value(key, v, references, inline)]
+        if isinstance(value, str) and key == 'text':
+            return [self._rewrite_doc_literals(value)]
+        if isinstance(value, str) and key == 'code' and value:
+            return [f"`{value}`"]
+        return []
+
+    def _format_attributes(self, attributes: List[Dict[str, Any]]) -> List[str]:
+        """A property's, parameter's or key's attributes, one "**Label**: value" each."""
+        parts = []
+        for attr in attributes or []:
+            attr_kind = attr.get('kind', '')
+            attr_value = attr.get('value', '')
+            if attr_kind == 'allowedValues':
+                values = attr.get('values', [])
+                if values:
+                    parts.append(f"**Allowed Values**: {', '.join(f'`{v}`' for v in values)}")
+            elif attr_kind == 'allowedTypes':
+                types = [''.join(t.get('text', '') for t in tokens) for tokens in attr.get('values', [])]
+                if any(types):
+                    parts.append(f"**Allowed Types**: {', '.join(f'`{t}`' for t in types if t)}")
+            elif attr_kind in ATTRIBUTE_LABELS and attr_value:
+                parts.append(f"**{ATTRIBUTE_LABELS[attr_kind]}**: `{attr_value}`")
+        return parts
+
+    def _format_rest_item(self, item: Dict[str, Any], references: Dict[str, Any]) -> str:
+        """A REST parameter's or an object property's list item: name, type,
+        required and deprecated flags, then its description and attributes."""
+        name = item.get('name', '')
+        type_text = ''.join(t.get('text', '') for t in item.get('type', []))
+        markers = (" *(required)*" if item.get('required', False) else "") + (
+            " *(deprecated)*" if item.get('deprecated', False) else "")
+        blocks = self._process_content_items(item.get('content', []), references)
+        attributes = self._format_attributes(item.get('attributes', []))
+        if attributes:
+            blocks = blocks + ['; '.join(attributes)]
+        desc = join_blocks(blocks, 2).strip()
+        head = f"- `{name}` ({type_text}){markers}" if type_text else f"- `{name}`{markers}"
+        return labeled(f"{head}:", desc, 2) if desc else head
+
+    def _extract_all_content_sections(
+        self, primary_content: List[Dict[str, Any]], references: Dict[str, Any], title: str = ''
+    ) -> Dict[str, Any]:
         """Extract all content from primaryContentSections comprehensively.
         
         Args:
             primary_content: List of primary content sections
             references: References for resolving inline content
+            title: The page's title (a key's Details show its Xcode title when it differs)
             
         Returns:
             Dictionary of extracted content
         """
-        extracted = {}
+        extracted: Dict[str, Any] = {}
         
         for section in primary_content:
             kind = section.get('kind', '')
@@ -1767,25 +2125,56 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
                     })
             
             elif kind == 'restBody':
-                # REST API body documentation
-                content_items = section.get('content', [])
-                rest_parts = self._process_content_items(content_items, references)
+                # REST API body: its content type and type, description and parameters
+                body_head = []
+                if section.get('mimeType'):
+                    body_head.append(f"**Content-Type**: `{section['mimeType']}`")
+                body_type = ''.join(t.get('text', '') for t in section.get('bodyContentType', []))
+                if body_type:
+                    body_head.append(f"**Type**: `{body_type}`")
+                rest_parts = ['  \n'.join(body_head)] if body_head else []
+                rest_parts.extend(self._process_content_items(section.get('content', []), references))
+                body_parameters = [self._format_rest_item(p, references) for p in section.get('parameters', [])]
+                if body_parameters:
+                    rest_parts.append('\n'.join(body_parameters))
                 if rest_parts:
                     extracted['rest_body'] = '\n\n'.join(rest_parts)
             
             elif kind == 'restResponses':
-                # REST API responses
-                content_items = section.get('content', [])
-                response_parts = self._process_content_items(content_items, references)
+                # REST API responses: per status, its reason, type and MIME type, and description
+                response_parts = self._process_content_items(section.get('content', []), references)
+                response_lines = []
+                for item in section.get('items', []):
+                    head = f"- `{item.get('status', '')}`"
+                    if item.get('reason'):
+                        head += f" {item['reason']}"
+                    extras = []
+                    type_text = ''.join(t.get('text', '') for t in item.get('type', []))
+                    if type_text:
+                        extras.append(f"`{type_text}`")
+                    if item.get('mimeType'):
+                        extras.append(f"`{item['mimeType']}`")
+                    if extras:
+                        head += f" ({', '.join(extras)})"
+                    desc = join_blocks(self._process_content_items(item.get('content', []), references), 2).strip()
+                    response_lines.append(labeled(f"{head}:", desc, 2) if desc else head)
+                if response_lines:
+                    response_parts.append('\n'.join(response_lines))
                 if response_parts:
                     extracted['rest_responses'] = '\n\n'.join(response_parts)
             
-            elif kind == 'possible_values':
-                # Possible values for enums/options
-                content_items = section.get('content', [])
-                values_parts = self._process_content_items(content_items, references)
-                if values_parts:
-                    extracted['possible_values'] = '\n\n'.join(values_parts)
+            elif kind == 'possibleValues':
+                # Possible values of a key, property or REST type (shown after the Declaration)
+                value_lines = []
+                for value in section.get('values', []):
+                    desc = join_blocks(self._process_content_items(value.get('content', []), references), 2).strip()
+                    name = f"`{value.get('name', '')}`"
+                    value_lines.append(labeled(f"- {name}:", desc, 2) if desc else f"- {name}")
+                if value_lines:
+                    extracted.setdefault('detail_sections', []).append({
+                        'title': section.get('title') or 'Possible Values',
+                        'content': '\n'.join(value_lines)
+                    })
             
             elif kind == 'thrown_errors':
                 # Error documentation
@@ -1795,30 +2184,30 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
                     extracted['thrown_errors'] = '\n\n'.join(error_parts)
 
             elif kind == 'details':
-                # Detail metadata (type info, platform details)
+                # A key's details (shown after the Declaration): its raw name,
+                # its Xcode title when that isn't the page's title, its type
                 details = section.get('details', {})
-                detail_name = details.get('name', '')
-                detail_values = details.get('value', [])
-                if detail_name and detail_values:
-                    type_info = ', '.join(v.get('baseType', '') for v in detail_values if v.get('baseType'))
-                    if type_info:
-                        if 'content' not in extracted:
-                            extracted['content'] = ''
-                        extracted['content'] += f"\n\n**Type**: {type_info}"
+                detail_lines = []
+                if details.get('name'):
+                    name_line = f"- **Name**: `{details['name']}`"
+                    if details.get('ideTitle') and details['ideTitle'] != title:
+                        name_line += f" ({details['ideTitle']})"
+                    detail_lines.append(name_line)
+                types = [
+                    f"array of {v['baseType']}" if v.get('arrayMode') else v['baseType']
+                    for v in details.get('value', []) if v.get('baseType')
+                ]
+                if types:
+                    detail_lines.append(f"- **Type**: {', '.join(types)}")
+                if detail_lines:
+                    extracted.setdefault('detail_sections', []).append({
+                        'title': section.get('title') or 'Details',
+                        'content': '\n'.join(detail_lines)
+                    })
 
             elif kind == 'attributes':
                 # Default value and other attributes
-                attrs = section.get('attributes', [])
-                attr_parts = []
-                for attr in attrs:
-                    attr_kind = attr.get('kind', '')
-                    attr_value = attr.get('value', '')
-                    if attr_kind == 'default' and attr_value:
-                        attr_parts.append(f"**Default**: `{attr_value}`")
-                    elif attr_kind == 'allowedValues':
-                        values = attr.get('values', [])
-                        if values:
-                            attr_parts.append(f"**Allowed Values**: {', '.join(f'`{v}`' for v in values)}")
+                attr_parts = self._format_attributes(section.get('attributes', []))
                 if attr_parts:
                     if 'content' not in extracted:
                         extracted['content'] = ''
@@ -1826,22 +2215,7 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
 
             elif kind == 'properties':
                 # Object properties (common in App Store Connect API)
-                items = section.get('items', [])
-                prop_parts = []
-                for prop in items:
-                    name = prop.get('name', '')
-                    required = prop.get('required', False)
-                    type_tokens = prop.get('type', [])
-                    type_text = ''.join(t.get('text', '') for t in type_tokens)
-                    prop_content = prop.get('content', [])
-                    desc_parts = self._process_content_items(prop_content, references)
-                    desc = ' '.join(desc_parts).strip()
-
-                    req_marker = " *(required)*" if required else ""
-                    if type_text:
-                        prop_parts.append(f"- `{name}` ({type_text}){req_marker}: {desc}" if desc else f"- `{name}` ({type_text}){req_marker}")
-                    else:
-                        prop_parts.append(f"- `{name}`{req_marker}: {desc}" if desc else f"- `{name}`{req_marker}")
+                prop_parts = [self._format_rest_item(prop, references) for prop in section.get('items', [])]
                 if prop_parts:
                     extracted['properties'] = '\n'.join(prop_parts)
 
@@ -1853,25 +2227,24 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
                     extracted['rest_endpoint'] = endpoint
 
             elif kind == 'restParameters':
-                # REST API parameters
-                items = section.get('items', [])
-                param_parts = []
-                for param in items:
-                    name = param.get('name', '')
-                    required = param.get('required', False)
-                    type_tokens = param.get('type', [])
-                    type_text = ''.join(t.get('text', '') for t in type_tokens)
-                    param_content = param.get('content', [])
-                    desc_parts = self._process_content_items(param_content, references)
-                    desc = ' '.join(desc_parts).strip()
-
-                    req_marker = " *(required)*" if required else ""
-                    if type_text:
-                        param_parts.append(f"- `{name}` ({type_text}){req_marker}: {desc}" if desc else f"- `{name}` ({type_text}){req_marker}")
-                    else:
-                        param_parts.append(f"- `{name}`{req_marker}: {desc}" if desc else f"- `{name}`{req_marker}")
+                # REST API parameters, one group per section (path, query, header)
+                param_parts = [self._format_rest_item(param, references) for param in section.get('items', [])]
                 if param_parts:
-                    extracted['rest_parameters'] = '\n'.join(param_parts)
+                    extracted.setdefault('rest_parameters', []).append({
+                        'title': section.get('title', ''),
+                        'items': '\n'.join(param_parts)
+                    })
+
+            elif kind not in KNOWN_SECTION_KINDS:
+                # Unknown: its text, never silently dropped
+                self._note_unknown('section kind', kind)
+                fallback_parts = self._fallback_blocks(section, references)
+                if fallback_parts:
+                    fallback_content = '\n\n'.join(fallback_parts)
+                    if 'content' not in extracted:
+                        extracted['content'] = fallback_content
+                    else:
+                        extracted['content'] += '\n\n' + fallback_content
 
         return extracted
     
@@ -1897,9 +2270,11 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
                     processed_parts.append(resolved_content)
             
             elif item_type == 'heading':
-                # Headings
+                # Headings: DocC writes the text in text
                 level = item.get('level', 1)
-                heading_text = self._resolve_inline_content(item.get('inlineContent', []), references)
+                heading_text = item.get('text') or ''
+                if not heading_text.strip():
+                    heading_text = self._resolve_inline_content(item.get('inlineContent', []), references)
                 
                 # If heading is empty but has an anchor, convert anchor to heading text
                 if not heading_text.strip() and 'anchor' in item:
@@ -1922,21 +2297,22 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
                     processed_parts.append(f"{heading_prefix} {heading_text}")
             
             elif item_type == 'codeListing':
-                # Code blocks (already handled elsewhere but ensuring completeness)
+                # Code blocks (already handled elsewhere but ensuring completeness);
+                # a null syntax gets no language tag, a missing one swift
                 code_lines = item.get('code', [])
                 if code_lines:
                     code = '\n'.join(code_lines)
                     language = item.get('syntax', 'swift')
-                    processed_parts.append(f"```{language}\n{code}\n```")
+                    processed_parts.append(f"```{language if language is not None else ''}\n{code}\n```")
             
             elif item_type == 'unorderedList':
-                # Unordered lists
+                # Unordered lists: an item's later blocks on their own lines, under it
                 list_items = item.get('items', [])
                 list_parts = []
                 for list_item in list_items:
                     list_content = self._process_content_items(list_item.get('content', []), references)
                     if list_content:
-                        list_parts.append(f"- {' '.join(list_content)}")
+                        list_parts.append(f"- {join_blocks(list_content, 2)}")
                 if list_parts:
                     processed_parts.append('\n'.join(list_parts))
             
@@ -1947,7 +2323,8 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
                 for i, list_item in enumerate(list_items, 1):
                     list_content = self._process_content_items(list_item.get('content', []), references)
                     if list_content:
-                        list_parts.append(f"{i}. {' '.join(list_content)}")
+                        marker = f"{i}. "
+                        list_parts.append(f"{marker}{join_blocks(list_content, len(marker))}")
                 if list_parts:
                     processed_parts.append('\n'.join(list_parts))
             
@@ -1967,7 +2344,7 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
                 # Images
                 image_content = self._process_image(item, references)
                 if image_content:
-                    processed_parts.append(image_content)
+                    processed_parts.append(self._with_caption(image_content, item, references))
 
             elif item_type == 'termList':
                 # Definition lists (term + definition pairs)
@@ -1978,7 +2355,7 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
                     definition = term_item.get('definition', {})
                     def_content = self._process_content_items(definition.get('content', []), references)
                     if term_text:
-                        term_parts.append(f"- **{term_text}**: {' '.join(def_content)}")
+                        term_parts.append(labeled(f"- **{term_text}**:", join_blocks(def_content, 2), 2))
                 if term_parts:
                     processed_parts.append('\n'.join(term_parts))
 
@@ -1997,6 +2374,40 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
                         if len(tabs) > 1 and title:
                             processed_parts.append(f"**{title}**:")
                         processed_parts.extend(tab_parts)
+
+            elif item_type == 'row':
+                # Grid layout: each column's content, in order
+                for column in item.get('columns', []):
+                    processed_parts.extend(self._process_content_items(column.get('content', []), references))
+
+            elif item_type == 'links':
+                # A list of links to other pages, each with its abstract
+                link_lines = []
+                for identifier in item.get('items', []):
+                    link = self._resolve_inline_content(
+                        [{'type': 'reference', 'identifier': identifier, 'isActive': True}], references)
+                    if not link:
+                        continue
+                    link_lines.append(f"- {link}")
+                    abstract = (references.get(identifier) or {}).get('abstract') or []
+                    abstract_text = self._resolve_inline_content(abstract, references)
+                    if abstract_text.strip():
+                        link_lines.append(f"  {abstract_text}")
+                if link_lines:
+                    processed_parts.append('\n'.join(link_lines))
+
+            elif item_type == 'video':
+                video_content = self._process_video(item, references)
+                if video_content:
+                    processed_parts.append(self._with_caption(video_content, item, references))
+
+            else:
+                # Not rendered above: its text, never silently dropped, and a
+                # WARN for a type that isn't known
+                if str(item_type) not in KNOWN_BLOCK_TYPES:
+                    self._note_unknown('block type', item_type)
+                processed_parts.extend(self._fallback_blocks(item, references))
+                continue
 
             # Handle any nested content recursively for item types that don't process content themselves
             # Skip recursive processing for items that handle their own content (aside, table, termList, tabNavigator, etc.)
@@ -2057,7 +2468,9 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         return '\n'.join(markdown_lines)
     
     def _process_aside(self, aside_item: Dict[str, Any], references: Dict[str, Any]) -> str:
-        """Process aside/callout content."""
+        """Process aside/callout content: its name (Precondition, Complexity…)
+        or else its style's, then its blocks on the quote's lines (quote_blocks:
+        the first on the name's line unless it can't share it)."""
         aside_type = aside_item.get('style', 'note')
         content_items = aside_item.get('content', [])
         aside_content = self._process_content_items(content_items, references)
@@ -2065,16 +2478,16 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         if not aside_content:
             return ""
         
-        content_text = ' '.join(aside_content)
-        
+        name = aside_item.get('name')
         if aside_type == 'warning':
-            return f"> ⚠️ **Warning**: {content_text}"
+            label = f"⚠️ **{name or 'Warning'}**:"
         elif aside_type == 'important':
-            return f"> ❗ **Important**: {content_text}"
+            label = f"❗ **{name or 'Important'}**:"
         elif aside_type == 'tip':
-            return f"> 💡 **Tip**: {content_text}"
+            label = f"💡 **{name or 'Tip'}**:"
         else:
-            return f"> **Note**: {content_text}"
+            label = f"**{name or 'Note'}**:"
+        return quote_blocks(label, aside_content)
     
     def _process_image(self, image_item: Dict[str, Any], references: Dict[str, Any]) -> str:
         """Process image content."""
@@ -2085,23 +2498,12 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
             # Look up image in references
             if image_identifier in references:
                 ref_data = references[image_identifier]
-                alt_text = ref_data.get('alt', '')
-                
-                # Get the best variant URL
-                variants = ref_data.get('variants', [])
-                if variants:
-                    # Prefer 2x light variant
-                    image_url = None
-                    for variant in variants:
-                        if '2x' in variant.get('traits', []) and 'light' in variant.get('traits', []):
-                            image_url = variant.get('url', '')
-                            break
-                    # Fallback to first variant
-                    if not image_url and variants:
-                        image_url = variants[0].get('url', '')
-                    
-                    if image_url:
-                        return f"![{alt_text}]({image_url})"
+                alt_text = ref_data.get('alt') or ''
+
+                # The preferred variant (2x light), under the hosting root
+                image_url = variant_url(ref_data, self.ASSET_ROOT)
+                if image_url:
+                    return f"![{alt_text}]({image_url})"
                 
                 return f"![{alt_text}](image:{image_identifier})"
             
@@ -2109,33 +2511,43 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         
         # For imageBlock items (different structure)
         image_identifier = image_item.get('identifier', '')
-        alt_text = image_item.get('alt', '')
+        alt_text = image_item.get('alt') or ''
         
         # Look up image in references
         if image_identifier in references:
             ref_data = references[image_identifier]
             # Use alt from references if not provided
             if not alt_text:
-                alt_text = ref_data.get('alt', '')
-            
-            # Get the best variant URL
-            variants = ref_data.get('variants', [])
-            if variants:
-                # Prefer 2x light variant
-                image_url = None
-                for variant in variants:
-                    if '2x' in variant.get('traits', []) and 'light' in variant.get('traits', []):
-                        image_url = variant.get('url', '')
-                        break
-                # Fallback to first variant
-                if not image_url and variants:
-                    image_url = variants[0].get('url', '')
-                
-                if image_url:
-                    return f"![{alt_text}]({image_url})"
+                alt_text = ref_data.get('alt') or ''
+
+            # The preferred variant (2x light), under the hosting root
+            image_url = variant_url(ref_data, self.ASSET_ROOT)
+            if image_url:
+                return f"![{alt_text}]({image_url})"
         
         return f"![{alt_text}](image:{image_identifier})" if alt_text else ""
     
+    def _with_caption(self, media: str, item: Dict[str, Any], references: Dict[str, Any]) -> str:
+        """An image or video block's markdown and, on the line under it, its
+        caption: Apple's text under the figure (the block's metadata abstract),
+        on one line."""
+        metadata = item.get('metadata') or {}
+        abstract = metadata.get('abstract') if isinstance(metadata, dict) else None
+        if not isinstance(abstract, list) or not abstract:
+            return media
+        caption = ' '.join(self._resolve_inline_content(abstract, references).split())
+        return f"{media}\n{caption}" if caption else media
+
+    def _process_video(self, video_item: Dict[str, Any], references: Dict[str, Any]) -> str:
+        """A video block as a link to the video (its preferred variant, under
+        the hosting root), named by its alt text; "" when it has no URL."""
+        identifier = video_item.get('identifier', '')
+        ref_data = references.get(identifier) or {}
+        video_url = variant_url(ref_data, self.ASSET_ROOT)
+        if not video_url:
+            return ""
+        name = video_item.get('alt') or ref_data.get('alt') or identifier
+        return f"[Video: {name}]({video_url})"
     def _track_cross_framework_ref(self, identifier: str) -> None:
         """Track a cross-framework reference."""
         # Extract target framework from identifier

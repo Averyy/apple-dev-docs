@@ -36,7 +36,7 @@ import logging
 import re
 import sys
 import time
-from collections import deque
+from collections import Counter, deque
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Set, Tuple, Union
@@ -45,6 +45,11 @@ import httpx
 from rich.console import Console
 from rich.progress import Progress, SpinnerColumn, TextColumn, BarColumn
 
+# The repo root, for the asset URL helper shared with the Apple scraper
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
+from scraper.utils.assets import hosting_root, variant_url
+from scraper.utils.markdown_converter import join_blocks, labeled, quote_blocks
 from utilities.hash_utils import HashFileError, compute_hash, read_hash_file, save_hashes, write_text_atomic
 from utilities.source_policy import (
     FAILURE_COUNTS_KEY,
@@ -76,6 +81,8 @@ HASH_FILE = Path(__file__).parent.parent / ".hashes" / "hig_docs_hashes.json"
 # API URLs
 JSON_BASE_URL = "https://developer.apple.com/tutorials/data/design"
 WEB_BASE_URL = "https://developer.apple.com/design"
+# Root-relative image and video URLs ("/images/…") are served under it
+ASSET_ROOT = hosting_root(JSON_BASE_URL)
 HIG_ROOT = "human-interface-guidelines"
 
 # Rate limiting
@@ -97,6 +104,42 @@ HIG_IDENTIFIER_PATTERNS = [
 
 # Hash-file metadata the failure policy keeps (saved whenever it changes)
 POLICY_KEYS = (FAILURE_COUNTS_KEY, PENDING_ORPHANS_KEY)
+
+# The block and inline types the converter renders (_convert_content_to_markdown,
+# _extract_text_from_inline_content). Any other, like a section kind the page
+# conversion doesn't read, is rendered as its text (_fallback_parts) and
+# counted: one WARN per type at the end of the run (unknown_content). In such
+# an unknown item, these tell a list of blocks from one of inline content
+# ("image" is both: there, inline content)
+KNOWN_BLOCK_TYPES = frozenset({
+    'paragraph', 'small', 'heading', 'codeListing', 'unorderedList', 'orderedList', 'aside',
+    'row', 'tabNavigator', 'links', 'table', 'image', 'imageBlock', 'video', 'card', 'icon',
+    'topic', 'termList', 'thematicBreak',
+})
+KNOWN_INLINE_TYPES = frozenset({
+    'text', 'codeVoice', 'emphasis', 'strong', 'strikethrough', 'reference', 'link', 'image',
+    'inlineHead', 'newTerm', 'superscript', 'subscript',
+})
+
+
+def one_line(text: str) -> str:
+    """Text on one line (a list item's or table cell's): each line break, with
+    the whitespace around it, as one space."""
+    return re.sub(r'\s*\n\s*', ' ', text.strip())
+
+
+def join_parts(parts: List[str]) -> str:
+    """Rendered parts as one text, with at most one blank line where two meet:
+    the newlines ending one part and starting the next (a paragraph's or
+    list's blank line, a heading's or code listing's leading newline) are cut
+    to two, so that no 3+ newlines run between blocks. A part's own text (a
+    code listing's blank lines) is kept as it is."""
+    text = ''
+    for part in parts:
+        trailing = len(text) - len(text.rstrip('\n'))
+        leading = len(part) - len(part.lstrip('\n'))
+        text += part[min(leading, max(0, trailing + leading - 2)):]
+    return text
 
 
 class HIGDocsScraper:
@@ -137,6 +180,12 @@ class HIGDocsScraper:
 
         # Topic hierarchy for organized file structure
         self.topic_hierarchy: Dict[str, Dict] = {}
+
+        # JSON the converter doesn't know, (what, name) -> count, logged at the
+        # end of the run, with the page it was first seen on
+        self.unknown_content: Counter[Tuple[str, str]] = Counter()
+        self.unknown_examples: Dict[Tuple[str, str], str] = {}
+        self.current_url = ''
 
     async def __aenter__(self) -> "HIGDocsScraper":
         """Async context manager entry."""
@@ -397,7 +446,7 @@ class HIGDocsScraper:
 
         return urls
 
-    def _extract_urls_from_content(self, content: List, urls: List[str]):
+    def _extract_urls_from_content(self, content: List, urls: List[str]) -> None:
         """Recursively extract URLs from content blocks."""
         for item in content:
             if isinstance(item, dict):
@@ -408,8 +457,8 @@ class HIGDocsScraper:
                         if json_url:
                             urls.append(json_url)
 
-                # Recurse into nested content
-                for key in ['content', 'items', 'columns']:
+                # Recurse into nested content (a tab navigator's tabs included)
+                for key in ['content', 'items', 'columns', 'tabs']:
                     nested = item.get(key, [])
                     if isinstance(nested, list):
                         self._extract_urls_from_content(nested, urls)
@@ -431,10 +480,16 @@ class HIGDocsScraper:
                     inner = self._extract_text_from_inline_content(item.get('inlineContent', []), references)
                     parts.append(f"**{inner}**")
                 elif item_type == 'reference':
-                    # Resolve reference
+                    # Resolve reference: the prose's own wording (its overriding
+                    # title) as the link text, else the target's title
                     ref_id = item.get('identifier', '')
                     ref = references.get(ref_id, {})
-                    title = ref.get('title', item.get('overridingTitle', ref_id.split('/')[-1]))
+                    if item.get('overridingTitleInlineContent'):
+                        title = self._extract_text_from_inline_content(item['overridingTitleInlineContent'], references)
+                    elif item.get('overridingTitle'):
+                        title = item['overridingTitle']
+                    else:
+                        title = ref.get('title', ref_id.split('/')[-1])
                     url = ref.get('url', '')
                     if url:
                         local_path = self._convert_url_to_local_path(url)
@@ -455,16 +510,12 @@ class HIGDocsScraper:
                     elif title:
                         parts.append(title)
                 elif item_type == 'image':
-                    # Resolve image from references to get URL
-                    img_id = item.get('identifier', '')
-                    img_ref = references.get(img_id, {})
-                    variants = img_ref.get('variants', [])
-                    if variants:
-                        # Get highest resolution variant
-                        img_url = variants[-1].get('url', '')
-                        alt = img_ref.get('alt', img_id)
-                        if img_url:
-                            parts.append(f"![{alt}]({img_url})")
+                    # Resolve image from references to get URL: its 2x light
+                    # variant, under the hosting root; its caption under it
+                    img_md = self._resolve_image(item.get('identifier', ''), references)
+                    figure = self._figure(img_md, item, references)
+                    if figure:
+                        parts.append(figure)
                 elif item_type == 'inlineHead':
                     inner = self._extract_text_from_inline_content(item.get('inlineContent', []), references)
                     parts.append(f"**{inner}**")
@@ -477,29 +528,107 @@ class HIGDocsScraper:
                 elif item_type == 'subscript':
                     inner = self._extract_text_from_inline_content(item.get('inlineContent', []), references)
                     parts.append(f"<sub>{inner}</sub>")
+                elif item_type == 'strikethrough':
+                    inner = self._extract_text_from_inline_content(item.get('inlineContent', []), references)
+                    parts.append(f"~~{inner}~~")
+                else:
+                    # Not rendered above: its text, never silently dropped, and a
+                    # WARN. On one line (each line break a space, its other spaces
+                    # kept): a block under it (a code listing, a list) can't break
+                    # the paragraph
+                    self._note_unknown('inline type', item_type)
+                    fallback = ' '.join(self._fallback_parts(item, references, inline=True))
+                    parts.append(re.sub(r'\s*\n\s*', ' ', fallback))
         return ''.join(parts)
 
+    def _note_unknown(self, what: str, name: Any) -> None:
+        """Count JSON the converter doesn't know (a block or inline type, a
+        section kind); logged at the end of the run (_log_unknown_content)."""
+        key = (what, str(name))
+        if key not in self.unknown_content:
+            self.unknown_examples[key] = self.current_url
+        self.unknown_content[key] += 1
+
+    def _log_unknown_content(self) -> None:
+        """One WARN per unknown block or inline type or section kind seen this run, with its count."""
+        for (what, name), count in sorted(self.unknown_content.items()):
+            logger.warning(f"unknown_content: {what} {name!r} x{count}, rendered as its text "
+                           f"(e.g. {self.unknown_examples.get((what, name), '')})")
+
+    def _fallback_parts(self, item: Dict[str, Any], references: Dict, inline: bool = False) -> List[str]:
+        """The text of a block, inline item or section the converter doesn't
+        render: every value under it but its type name, in order, recursively
+        (_fallback_value). inline: the item is inline content (code lines
+        stay inline code)."""
+        return [part for key, value in item.items() if not (key == 'type' and isinstance(value, str))
+                for part in self._fallback_value(key, value, references, inline)]
+
+    def _fallback_value(self, key: str, value: Any, references: Dict, inline: bool) -> List[str]:
+        """The text a value under key holds, recursively. A list holding known
+        blocks (KNOWN_BLOCK_TYPES) is rendered as blocks, one holding known
+        inline items (KNOWN_INLINE_TYPES) as one text, and a dict of a known
+        type as such; a list of untyped text fragments (tokens) is one text; in
+        any other dict or list, each value the same way. A "text" string is
+        text and a "code" string inline code; a "code" list of lines is an
+        untagged code listing (inline code when inline). Other strings
+        (identifiers, anchors, styles, syntax names) aren't text."""
+        blocks_only = KNOWN_BLOCK_TYPES - KNOWN_INLINE_TYPES
+        if isinstance(value, dict):
+            if str(value.get('type')) in blocks_only:
+                return [self._convert_content_to_markdown([value], references)]
+            if str(value.get('type')) in KNOWN_INLINE_TYPES:
+                return [self._extract_text_from_inline_content([value], references)]
+            return self._fallback_parts(value, references, inline)
+        if isinstance(value, list):
+            items = [v for v in value if isinstance(v, dict)]
+            types = {v['type'] for v in items if isinstance(v.get('type'), str)}
+            if types & blocks_only:
+                return [self._convert_content_to_markdown(items, references)]
+            if types & KNOWN_INLINE_TYPES:
+                return [self._extract_text_from_inline_content(items, references)]
+            if key == 'code' and value and all(isinstance(line, str) for line in value):
+                return [f"`{' '.join(value)}`" if inline else '```\n' + '\n'.join(value) + '\n```']
+            if items and len(items) == len(value) and not types and all(
+                    isinstance(v.get('text'), str) for v in items):
+                return [''.join(v['text'] for v in items)]
+            return [part for v in value for part in self._fallback_value(key, v, references, inline)]
+        if isinstance(value, str) and key == 'text':
+            return [value]
+        if isinstance(value, str) and key == 'code' and value:
+            return [f"`{value}`"]
+        return []
+
+    def _fallback_markdown(self, item: Dict[str, Any], references: Dict) -> str:
+        """The text of a block or section the converter doesn't render
+        (_fallback_parts), as blocks with a blank line after each."""
+        return ''.join(f"{part.strip()}\n\n" for part in self._fallback_parts(item, references) if part.strip())
+
     def _resolve_image(self, identifier: str, references: Dict) -> str:
-        """Resolve an image identifier to markdown."""
+        """Resolve an image identifier to markdown: its 2x light variant, under the hosting root."""
         ref = references.get(identifier, {})
-        variants = ref.get('variants', [])
-        if variants:
-            # Get highest resolution variant
-            img_url = variants[-1].get('url', '')
-            alt = ref.get('alt', identifier)
-            if img_url:
-                return f"![{alt}]({img_url})"
+        img_url = variant_url(ref, ASSET_ROOT)
+        if img_url:
+            alt = ref.get('alt') or ''
+            return f"![{alt}]({img_url})"
         return ''
 
     def _resolve_video(self, identifier: str, references: Dict) -> str:
-        """Resolve a video identifier to markdown link."""
+        """Resolve a video identifier to markdown link: its light variant, under the hosting root,
+        named by its alt text (else its identifier), as the Apple converter does."""
         ref = references.get(identifier, {})
-        variants = ref.get('variants', [])
-        if variants:
-            video_url = variants[-1].get('url', '')
-            if video_url:
-                return f"[Video: {identifier}]({video_url})"
+        video_url = variant_url(ref, ASSET_ROOT)
+        if video_url:
+            name = one_line(ref.get('alt') or '') or identifier
+            return f"[Video: {name}]({video_url})"
         return ''
+
+    def _figure(self, media_md: str, item: Dict[str, Any], references: Dict) -> str:
+        """An image or video (its markdown) and, on the line under it, its
+        caption: Apple's text under the figure (the item's metadata abstract),
+        on one line. A table cell, one line, holds both."""
+        metadata = item.get('metadata') or {}
+        caption = one_line(self._extract_text_from_inline_content(metadata.get('abstract') or [], references))
+        return '\n'.join(part for part in (media_md, caption) if part)
 
     def _convert_content_to_markdown(self, content: List, references: Dict, level: int = 2) -> str:
         """Convert content blocks to markdown."""
@@ -509,10 +638,12 @@ class HIGDocsScraper:
             if isinstance(item, dict):
                 item_type = item.get('type', '')
 
-                if item_type == 'paragraph':
+                if item_type in ('paragraph', 'small'):
+                    # A paragraph, or small print (a footnote under a table)
                     text = self._extract_text_from_inline_content(item.get('inlineContent', []), references)
                     if text:
-                        parts.append(text + '\n')
+                        # A blank line after it: the next paragraph would otherwise continue it
+                        parts.append(text + '\n\n')
 
                 elif item_type == 'heading':
                     text = item.get('text', '')
@@ -538,28 +669,29 @@ class HIGDocsScraper:
                         # Process all content in list item, not just paragraphs
                         list_text = self._convert_content_to_markdown(item_content, references, level)
                         if list_text.strip():
-                            # Format as list item
-                            lines = list_text.strip().split('\n')
-                            parts.append(f"- {lines[0]}\n")
-                            for line in lines[1:]:
-                                if line.strip():
-                                    parts.append(f"  {line}\n")
+                            # Format as list item: its blocks (a blank line between
+                            # them) with every later line indented under the marker
+                            parts.append(f"- {join_blocks([list_text.strip()], 2)}\n")
+                    # A blank line after the list: the next paragraph would otherwise
+                    # continue its last item
+                    parts.append('\n')
 
                 elif item_type == 'orderedList':
                     for i, list_item in enumerate(item.get('items', []), 1):
                         item_content = list_item.get('content', [])
                         list_text = self._convert_content_to_markdown(item_content, references, level)
                         if list_text.strip():
-                            lines = list_text.strip().split('\n')
-                            parts.append(f"{i}. {lines[0]}\n")
-                            for line in lines[1:]:
-                                if line.strip():
-                                    parts.append(f"   {line}\n")
+                            marker = f"{i}. "
+                            parts.append(f"{marker}{join_blocks([list_text.strip()], len(marker))}\n")
+                    parts.append('\n')
 
                 elif item_type == 'aside':
-                    style = item.get('style', 'note')
+                    # Its name ("Developer note"…), or else its style's
+                    label = item.get('name') or item.get('style', 'note').title()
                     aside_content = self._convert_content_to_markdown(item.get('content', []), references, level)
-                    parts.append(f"\n> **{style.title()}:** {aside_content.strip()}\n")
+                    # Every line quoted, and a blank line after it: the next paragraph
+                    # would otherwise continue the quote
+                    parts.append(f"\n{quote_blocks(f'**{label}:**', [aside_content.strip()])}\n\n")
 
                 elif item_type == 'row':
                     # Grid layout - process columns
@@ -567,6 +699,17 @@ class HIGDocsScraper:
                         col_content = self._convert_content_to_markdown(column.get('content', []), references, level)
                         if col_content.strip():
                             parts.append(col_content)
+
+                elif item_type == 'tabNavigator':
+                    # Tabbed content (e.g. one tab per platform): each tab's
+                    # title as a bold label, then its content
+                    for tab in item.get('tabs', []):
+                        tab_content = self._convert_content_to_markdown(tab.get('content', []), references, level)
+                        if tab_content.strip():
+                            title = tab.get('title', '')
+                            if title:
+                                parts.append(f"**{title}**:\n\n")
+                            parts.append(tab_content)
 
                 elif item_type == 'links':
                     # Links section - resolve and list
@@ -579,9 +722,13 @@ class HIGDocsScraper:
 
                         if url:
                             parts.append(f"- [{title}]({url})")
-                            if abstract_text:
-                                parts.append(f" - {abstract_text}")
+                            if abstract_text.strip():
+                                # On the item's line: a line break in Apple's text
+                                # would continue or end the list
+                                parts.append(f" - {one_line(abstract_text)}")
                             parts.append('\n')
+                    # A blank line after the list, as after any list
+                    parts.append('\n')
 
                 elif item_type == 'table':
                     # Render table
@@ -598,7 +745,9 @@ class HIGDocsScraper:
                                     cell_content = self._convert_content_to_markdown(cell, references, level)
                                 else:
                                     cell_content = str(cell)
-                                cells.append(cell_content.strip().replace('\n', ' '))
+                                # One line: its line breaks and blank lines (between
+                                # paragraphs) as single spaces
+                                cells.append(one_line(cell_content))
                             if cells:
                                 parts.append('| ' + ' | '.join(cells) + ' |\n')
                                 if i == 0 and header == 'row':
@@ -606,25 +755,25 @@ class HIGDocsScraper:
                         parts.append('\n')
 
                 elif item_type in ('image', 'imageBlock'):
-                    # Image block
+                    # Image block, its caption under it
                     img_id = item.get('identifier', '')
-                    img_md = self._resolve_image(img_id, references)
+                    img_md = self._figure(self._resolve_image(img_id, references), item, references)
                     if img_md:
-                        parts.append(f"\n{img_md}\n")
+                        parts.append(f"\n{img_md}\n\n")
 
                 elif item_type == 'video':
-                    # Video block
+                    # Video block, its caption under it
                     video_id = item.get('identifier', '')
-                    video_md = self._resolve_video(video_id, references)
+                    video_md = self._figure(self._resolve_video(video_id, references), item, references)
                     if video_md:
-                        parts.append(f"\n{video_md}\n")
+                        parts.append(f"\n{video_md}\n\n")
 
                 elif item_type == 'card':
                     # Card (usually a thumbnail image)
                     card_id = item.get('identifier', '')
                     card_md = self._resolve_image(card_id, references)
                     if card_md:
-                        parts.append(f"\n{card_md}\n")
+                        parts.append(f"\n{card_md}\n\n")
 
                 elif item_type == 'icon':
                     # Icon/SVG
@@ -643,13 +792,13 @@ class HIGDocsScraper:
                     if url and title:
                         local_path = self._convert_url_to_local_path(url)
                         parts.append(f"- [{title}]({local_path})")
-                        if abstract_text:
-                            parts.append(f" - {abstract_text}")
+                        if abstract_text.strip():
+                            parts.append(f" - {one_line(abstract_text)}")
                         parts.append('\n')
                     elif title:
                         parts.append(f"- {title}")
-                        if abstract_text:
-                            parts.append(f" - {abstract_text}")
+                        if abstract_text.strip():
+                            parts.append(f" - {one_line(abstract_text)}")
                         parts.append('\n')
 
                 elif item_type == 'termList':
@@ -660,9 +809,21 @@ class HIGDocsScraper:
                         definition = term_item.get('definition', {})
                         def_content = self._convert_content_to_markdown(definition.get('content', []), references, level)
                         if term_text:
-                            parts.append(f"**{term_text}**: {def_content.strip()}\n")
+                            # Its definition after the term (after a blank line when it
+                            # starts with a list, code listing, table, quote or heading), and
+                            # a blank line after it: the next term would otherwise continue it
+                            parts.append(f"{labeled(f'**{term_text}**:', def_content.strip(), 0)}\n\n")
 
-                # Handle nested content for any unhandled types
+                elif item_type == 'thematicBreak':
+                    parts.append('\n---\n\n')
+
+                else:
+                    # Not rendered above: its text, never silently dropped, and a WARN
+                    self._note_unknown('block type', item_type)
+                    parts.append(self._fallback_markdown(item, references))
+                    continue
+
+                # Content nested under a type rendered above that doesn't render its own
                 if 'content' in item and isinstance(item['content'], list) and item_type not in (
                     'aside', 'table', 'unorderedList', 'orderedList', 'termList'
                 ):
@@ -670,12 +831,14 @@ class HIGDocsScraper:
                     if nested.strip():
                         parts.append(nested)
 
-        return ''.join(parts)
+        return join_parts(parts)
 
     def _extract_to_markdown(self, data: Dict, json_url: str) -> str:
         """Convert JSON data to markdown."""
         parts = []
         references = data.get('references', {})
+        # For the WARN of JSON the converter doesn't know
+        self.current_url = json_url
 
         # Get the correct web URL for this page
         web_url = self._convert_json_url_to_web_url(json_url)
@@ -724,7 +887,12 @@ class HIGDocsScraper:
                 content = section.get('content', [])
                 markdown = self._convert_content_to_markdown(content, references)
                 if markdown.strip():
-                    parts.append(markdown + '\n')
+                    # One blank line after it (join_parts: one before it)
+                    parts.append(markdown.rstrip('\n') + '\n\n')
+            else:
+                # Not read above: its text, never silently dropped, and a WARN
+                self._note_unknown('section kind', kind)
+                parts.append(self._fallback_markdown(section, references))
 
         # Sections (additional content sections in HIG docs)
         for section in data.get('sections', []):
@@ -755,6 +923,10 @@ class HIGDocsScraper:
                         else:
                             parts.append(f"- {ref_title}\n")
                     parts.append('\n')
+            else:
+                # Not read above: its text, never silently dropped, and a WARN
+                self._note_unknown('section kind', section_kind)
+                parts.append(self._fallback_markdown(section, references))
 
         # Topic sections (child pages)
         topic_sections = data.get('topicSections', [])
@@ -777,8 +949,9 @@ class HIGDocsScraper:
                         parts.append(f"- [{ref_title}]({local_path})")
                     else:
                         parts.append(f"- {ref_title}")
-                    if abstract_text:
-                        parts.append(f" - {abstract_text}")
+                    if abstract_text.strip():
+                        # On the item's line, as in a links list
+                        parts.append(f" - {one_line(abstract_text)}")
                     parts.append('\n')
                 parts.append('\n')
 
@@ -842,7 +1015,8 @@ class HIGDocsScraper:
         # Source URL
         parts.append(f"\n\n---\n*Source: [{web_url}]({web_url})*\n")
 
-        return ''.join(parts)
+        # No 3+ newlines where the sections meet
+        return join_parts(parts)
 
     async def scrape_page(self, json_url: str, data: Optional[Dict] = None) -> bool:
         """Scrape a single page and save it.
@@ -989,6 +1163,9 @@ class HIGDocsScraper:
                 total_processed = (self.stats['pages_scraped'] + self.stats['pages_skipped'] + self.stats['pages_gone']
                                    + self.stats['pages_failed'])
                 progress.update(task, completed=total_processed, description=f"Scraping HIG... (queue: {len(url_queue)})")
+
+        # One WARN per block or inline type or section kind the converter doesn't know
+        self._log_unknown_content()
 
         # Clean up orphaned files (pages Apple no longer links, or that
         # returned 404/410), unless a failure of ours blocks it

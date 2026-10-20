@@ -163,6 +163,10 @@ Creates a connection to the IOService. See IOSurface for iOS-style surfaces.
             ("- Mac Catalyst 13.1+ - Deprecated in 17.0", "Mac Catalyst"),
             ("- visionOS 1.0+ (Beta) - Deprecated in 2.0: Use `other(_:)` instead.", "visionOS"),
             ("- iOS 2.0+ - Deprecated in 8.0 (renamed: newName(_:))", "iOS"),
+            # The converter's bare platform (no introduced version) and renamed-only forms
+            ("- visionOS - Deprecated", "visionOS"),
+            ("- macOS (Beta)", "macOS"),
+            ("- iOS 7.0+ - Deprecated (renamed: AVAudioSession.Orientation.back)", "iOS"),
         ]
         for item, expected in items:
             with self.subTest(item=item):
@@ -220,19 +224,36 @@ Creates a connection to the IOService. See IOSurface for iOS-style surfaces.
                 self.assertEqual(result, expected)
 
     def test_extract_kind_without_a_kind_line(self) -> None:
-        """No **Kind** line: an article, whatever its code shows."""
+        """No **Kind** line: the kind its **Role** line names (ROLE_KINDS), else an article,
+        whatever its code shows."""
         test_cases = [
             "# Declaring a custom view\n\n**Framework**: SwiftUI\n\n```swift\nstruct MyView: View {}\n```\n",
+            "# Declaring a custom view\n\n**Framework**: SwiftUI  \n**Role**: Article\n\nText.\n",
             "class MyView: UIView {",
             "func calculate() -> Int",
             # A **Kind** line further down is not the page's header
             "# Title\n\nSome text.\n\n**Kind**: class\n",
+            # Nor a **Role** line
+            "# Title\n\nSome text.\n\n**Role**: Sample Code\n",
+            # A role the table doesn't list
+            "# Release Notes\n\n**Framework**: Xcode  \n**Role**: Release Notes\n",
             # The HIG's header
             "---\nurl: https://example.com\n---\n\n# Images\n\n**Type:** article\n\n**Platforms:** ios, macos\n",
         ]
         for content in test_cases:
             with self.subTest(content=content):
                 self.assertEqual(self.extractor.extract_kind(content), "article")
+        roles = [("API Collection", "collection"), ("Sample Code", "sample-code"), ("Article", "article")]
+        for role, expected in roles:
+            with self.subTest(role=role):
+                content = (f"# Title\n\n**Framework**: Kit  \n**Role**: {role}  \n"
+                           "**Download**: [App.zip](https://docs-assets.developer.apple.com/published/1/App.zip)\n\nText.\n")
+                self.assertEqual(self.extractor.extract_kind(content), expected)
+        # The **Kind** line keeps priority
+        framework = "# Kit\n\n**Framework**: Kit  \n**Kind**: module  \n**Role**: Framework\n\nText.\n"
+        self.assertEqual(self.extractor.extract_kind(framework), "module")
+        method = "# f()\n\n**Framework**: Kit  \n**Kind**: method  \n**Role**: Instance Method\n\nText.\n"
+        self.assertEqual(self.extractor.extract_kind(method), "method")
     
     def test_extract_overview(self):
         """Test overview extraction."""
@@ -283,7 +304,25 @@ A Boolean value that indicates a response is being generated.
         # A symbol titled "description": its title isn't an Overview section heading
         titled = "# description\n\n**Framework**: ARKit  \n**Kind**: property\n\nA textual representation.\n"
         self.assertEqual(self.extractor.extract_overview(titled), "A textual representation.")
-    
+
+    def test_extract_overview_skips_the_deprecation_summary(self) -> None:
+        """The deprecation summary after the Availability list is no overview: without an
+        abstract the page has none; with one, the abstract."""
+        bare = ("# CKContainer_Application_PermissionBlock\n\n**Framework**: CloudKit  \n**Kind**: typealias  \n"
+                "**Role**: Type Alias\n\n**Availability**:\n- iOS 8.0+ - Deprecated\n- visionOS - Deprecated\n\n"
+                "> **Deprecated**: renamed to CKContainer.ApplicationPermissionBlock\n>\n> ```swift\n> old()\n> ```\n\n"
+                "## Declaration\n\n```swift\ntypealias CKContainer_Application_PermissionBlock = X\n```\n")
+        self.assertEqual(self.extractor.extract_overview(bare), "")
+        no_availability = ("# old\n\n**Framework**: Kit  \n**Kind**: func\n\n> **Deprecated**: Use new().\n\n"
+                           "Some text after it.\n")
+        self.assertEqual(self.extractor.extract_overview(no_availability), "Some text after it.")
+        abstract = ("# old\n\n**Framework**: Kit  \n**Kind**: func  \n**Role**: Function\n\nDoes the old thing.\n\n"
+                    "**Availability**:\n- macOS 10.0+ - Deprecated in 13.0\n\n> **Deprecated**: Use new().\n")
+        self.assertEqual(self.extractor.extract_overview(abstract), "Does the old thing.")
+        # Any other quote is the page's first paragraph, as before
+        note = "# Guide\n\n**Framework**: Kit\n\n> **Note**: Read this first.\n"
+        self.assertEqual(self.extractor.extract_overview(note), "> **Note**: Read this first.")
+
     def test_extract_overview_section_skips_rules_and_labels(self) -> None:
         """An Overview section's rule, lone "**Label**:" line or footer is no overview."""
         footer = "\n\n---\n\n*[View on Apple Developer](https://developer.apple.com/documentation/kit/x)*\n"

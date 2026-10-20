@@ -16,6 +16,9 @@ GitHub Markdown:
 - mlx-swift, mlx-swift-lm, mlx-swift-examples - MLX Swift (DocC catalogs and READMEs)
 - ml-stable-diffusion - Stable Diffusion on Core ML
 
+A GitHub file in a DocC catalog (a *.docc dir) has its DocC markup converted
+(utilities/docc.py): its <doc:> links point to the articles of its own catalog.
+
 The Sphinx pages are fetched with wafer-py, one at a time so its per-host
 rate limit spaces them, with its retries; so this script needs Python 3.12
 and requirements-scrape.txt on top of requirements.txt (the scheduled scrape
@@ -53,6 +56,7 @@ import hashlib
 import logging
 import re
 import sys
+import textwrap
 from collections import deque
 from dataclasses import dataclass, field
 from pathlib import Path, PurePosixPath
@@ -60,10 +64,11 @@ from typing import Any, Dict, Iterable, List, Optional, Tuple, Union
 from urllib.parse import urljoin, urlparse, urlunparse
 
 import aiohttp
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, PageElement, Tag
 from rich.console import Console
 from wafer import AsyncSession, WaferError
 
+from utilities.docc import DocCPage, catalog_articles, convert_docc, docc_catalog
 from utilities.hash_utils import (
     HashFileError,
     compute_hash,
@@ -73,6 +78,7 @@ from utilities.hash_utils import (
 )
 from utilities.source_policy import (
     FAILURE_COUNTS_KEY,
+    GITHUB_RAW,
     PENDING_ORPHANS_KEY,
     CleanupResult,
     FetchFailed,
@@ -133,8 +139,10 @@ class SphinxDocSource:
     base_url: str  # e.g., "https://ml-explore.github.io/mlx/build/html/"
     output_dir: str  # e.g., "MLX"
     framework: str = ""  # Framework name for indexing (defaults to name)
-    # CSS selectors for content extraction
-    content_selector: str = "main, article, .body, [role='main']"
+    # CSS selectors for content extraction, the first match wins (article
+    # first: the theme's header bar, with its theme switcher and source
+    # links, is in main but outside the article)
+    content_selector: str = "article, .body, [role='main'], main"
     # Paths to skip (relative to base_url)
     skip_paths: List[str] = field(default_factory=list)
     # Only include paths matching these patterns (empty = include all)
@@ -153,6 +161,9 @@ class GitHubDocSource:
     files: List[str] = field(default_factory=list)
     # Directories to crawl for markdown files
     directories: List[str] = field(default_factory=list)
+    # Take only the README.md files the directory crawls find (e.g. an
+    # examples tree whose other .md files are test data, not docs)
+    readme_only: bool = False
 
 
 # Sphinx documentation sites
@@ -232,6 +243,7 @@ GITHUB_SOURCES: List[GitHubDocSource] = [
         framework="MLX-Swift",
         files=["README.md"],
         directories=["Applications"],
+        readme_only=True,  # the apps' other .md files are test prompts (LLMEval/Models)
     ),
     GitHubDocSource(
         name="ml-stable-diffusion",
@@ -444,16 +456,20 @@ def html_to_markdown(html: str, source: SphinxDocSource, url: str) -> str:
     # Convert to markdown
     md_lines = []
 
-    # Extract title
-    title = soup.find('h1')
+    # Extract title: the content's first h1, taken out of the content so it
+    # isn't converted a second time (else the page's first h1, outside it)
+    content_title = content.find('h1')
+    title = content_title or soup.find('h1')
     if title:
         title_text = title.get_text(strip=True)
         # Remove pilcrow/link symbols
         title_text = re.sub(r'[¶#]$', '', title_text).strip()
         md_lines.append(f"# {title_text}\n")
+    if isinstance(content_title, Tag):
+        content_title.decompose()
 
     # Process content
-    md_content = convert_element_to_markdown(content)
+    md_content = convert_element_to_markdown(content, url)
     md_lines.append(md_content)
 
     # Add source header with framework (consistent with GitHub sources)
@@ -472,9 +488,82 @@ url: {url}
     return result.strip() + '\n'
 
 
-def convert_element_to_markdown(element) -> str:
-    """Recursively convert HTML element to markdown."""
-    if element.name is None:  # Text node
+def local_href(href: str) -> str:
+    """A link's target in our docs: a relative link to a page
+    (<path>.html, with or without a #fragment) points to its .md file. An
+    absolute link (http://, https://, mailto:) is another site's page, and
+    a bare #fragment this page's: both are left as they are."""
+    if href.startswith(('http://', 'https://', 'mailto:')):
+        return href
+    path, sep, fragment = href.partition('#')
+    if path.endswith('.html'):
+        path = path[:-5] + '.md'
+    return f"{path}{sep}{fragment}"
+
+
+def attribute(element: Tag, name: str) -> str:
+    """An attribute's value ('' if missing; a multi-valued one, e.g. class,
+    space-separated)."""
+    value = element.get(name)
+    if isinstance(value, list):
+        return ' '.join(value)
+    return value or ''
+
+
+def image_markdown(img: Tag, url: str) -> str:
+    """An img as markdown ('' without a src). A relative src is resolved
+    against the page's URL (a Sphinx page's images are relative to it)."""
+    src = attribute(img, 'src')
+    if not src:
+        return ''
+    return f"![{attribute(img, 'alt')}]({urljoin(url, src)})"
+
+
+def only_image(link: Tag) -> Optional[Tag]:
+    """The img that is a link's only content (whitespace aside), if it is one
+    (linked_image_markdown)."""
+    children = [child for child in link.children if isinstance(child, Tag) or str(child).strip()]
+    if len(children) == 1 and isinstance(children[0], Tag) and children[0].name == 'img':
+        return children[0]
+    return None
+
+
+def linked_image_markdown(image: Tag, href: str, url: str) -> str:
+    """An img that is a link's only content: the image itself when the link
+    points to the image's own file (Sphinx wraps a figure in a link to its
+    full-size file), else the image linked to the link's target (e.g. a
+    badge, [![alt](src)](href))."""
+    markdown = image_markdown(image, url)
+    if markdown and href and urljoin(url, href) != urljoin(url, attribute(image, 'src')):
+        return f"[{markdown}]({local_href(href)})"
+    return markdown
+
+
+def convert_code_block(element: Tag) -> str:
+    """A code block (a pre, or an element holding a code) as a fenced block
+    on its own lines."""
+    code = element.find('code')
+    code_elem = code if isinstance(code, Tag) else element
+    # Try to detect language from class
+    lang = ''
+    classes = attribute(code_elem, 'class').split()
+    for cls in classes:
+        if cls.startswith('language-') or cls.startswith('highlight-'):
+            lang = cls.split('-', 1)[1]
+            break
+        if cls in ['python', 'swift', 'cpp', 'c', 'bash', 'shell', 'json', 'yaml']:
+            lang = cls
+            break
+
+    code_text = code_elem.get_text()
+    # Remove leading/trailing blank lines but preserve internal structure
+    code_text = code_text.strip('\n')
+    return f"\n```{lang}\n{code_text}\n```\n"
+
+
+def convert_element_to_markdown(element: PageElement, url: str) -> str:
+    """Recursively convert HTML element to markdown (url: the page's URL)."""
+    if not isinstance(element, Tag):  # Text node
         text = str(element)
         # Normalize whitespace but preserve some structure
         return text
@@ -492,73 +581,53 @@ def convert_element_to_markdown(element) -> str:
             result.append(f"\n{'#' * level} {text}\n")
 
     elif tag == 'p':
-        text = process_inline_elements(element)
+        text = process_inline_elements(element, url)
         if text.strip():
             result.append(f"\n{text}\n")
 
     elif tag in ['pre', 'code']:
         if tag == 'pre' or element.find('code'):
-            code_elem = element.find('code') or element
-            # Try to detect language from class
-            lang = ''
-            classes = code_elem.get('class', [])
-            for cls in classes:
-                if cls.startswith('language-') or cls.startswith('highlight-'):
-                    lang = cls.split('-', 1)[1]
-                    break
-                if cls in ['python', 'swift', 'cpp', 'c', 'bash', 'shell', 'json', 'yaml']:
-                    lang = cls
-                    break
-
-            code_text = code_elem.get_text()
-            # Remove leading/trailing blank lines but preserve internal structure
-            code_text = code_text.strip('\n')
-            result.append(f"\n```{lang}\n{code_text}\n```\n")
+            result.append(convert_code_block(element))
         else:
             result.append(f"`{element.get_text()}`")
 
     elif tag == 'a':
-        href = element.get('href', '')
+        image = only_image(element)
+        href = attribute(element, 'href')
         text = element.get_text(strip=True)
-        if href and text:
-            # Clean up internal links
-            if href.startswith('#'):
-                result.append(f"[{text}]({href})")
-            elif not href.startswith(('http://', 'https://', 'mailto:')):
-                # Convert .html to .md for internal links
-                if href.endswith('.html'):
-                    href = href[:-5] + '.md'
-                result.append(f"[{text}]({href})")
-            else:
-                result.append(f"[{text}]({href})")
+        if image is not None:
+            result.append(linked_image_markdown(image, href, url))
+        elif href and text:
+            result.append(f"[{text}]({local_href(href)})")
         elif text:
             result.append(text)
 
     elif tag in ['ul', 'ol']:
         for i, li in enumerate(element.find_all('li', recursive=False)):
             prefix = '- ' if tag == 'ul' else f"{i+1}. "
-            li_text = process_inline_elements(li)
+            # A code block in the item is indented under it
+            li_text = process_inline_elements(li, url, indent=' ' * len(prefix))
             if li_text.strip():
                 result.append(f"{prefix}{li_text.strip()}\n")
         result.append('\n')
 
     elif tag == 'dl':
         for dt in element.find_all('dt', recursive=False):
-            term = process_inline_elements(dt)
+            term = process_inline_elements(dt, url)
             result.append(f"\n**{term.strip()}**\n")
             dd = dt.find_next_sibling('dd')
-            if dd:
-                desc = process_inline_elements(dd)
+            if isinstance(dd, Tag):
+                desc = process_inline_elements(dd, url, indent='  ')
                 result.append(f": {desc.strip()}\n")
 
     elif tag == 'blockquote':
-        text = process_inline_elements(element)
+        text = process_inline_elements(element, url)
         lines = text.strip().split('\n')
         quoted = '\n'.join(f"> {line}" for line in lines)
         result.append(f"\n{quoted}\n")
 
     elif tag == 'table':
-        result.append(convert_table_to_markdown(element))
+        result.append(convert_table_to_markdown(element, url))
 
     elif tag in ['strong', 'b']:
         text = element.get_text()
@@ -574,27 +643,28 @@ def convert_element_to_markdown(element) -> str:
     elif tag in ['div', 'section', 'article', 'main', 'span']:
         # Container elements - process children
         for child in element.children:
-            result.append(convert_element_to_markdown(child))
+            result.append(convert_element_to_markdown(child, url))
 
     elif tag == 'img':
-        alt = element.get('alt', '')
-        src = element.get('src', '')
-        if src:
-            result.append(f"![{alt}]({src})")
+        result.append(image_markdown(element, url))
 
     else:
         # Default: process children
         for child in element.children:
-            result.append(convert_element_to_markdown(child))
+            result.append(convert_element_to_markdown(child, url))
 
     return ''.join(result)
 
 
-def process_inline_elements(element) -> str:
-    """Process inline elements within a block."""
+def process_inline_elements(element: Tag, url: str, indent: str = '') -> str:
+    """Process inline elements within a block (url: the page's URL).
+
+    A code block inside it is fenced on its own lines, each prefixed with
+    indent (a list item's: the block stays inside the item).
+    """
     result = []
     for child in element.children:
-        if child.name is None:  # Text node
+        if not isinstance(child, Tag):  # Text node
             result.append(str(child))
         elif child.name in ['code']:
             result.append(f"`{child.get_text()}`")
@@ -603,34 +673,45 @@ def process_inline_elements(element) -> str:
         elif child.name in ['em', 'i']:
             result.append(f"*{child.get_text()}*")
         elif child.name == 'a':
-            href = child.get('href', '')
+            image = only_image(child)
+            href = attribute(child, 'href')
             text = child.get_text(strip=True)
-            if href.endswith('.html'):
-                href = href[:-5] + '.md'
-            result.append(f"[{text}]({href})" if href else text)
+            if image is not None:
+                result.append(linked_image_markdown(image, href, url))
+            else:
+                result.append(f"[{text}]({local_href(href)})" if href else text)
+        elif child.name == 'img':
+            result.append(image_markdown(child, url))
+        elif child.name == 'pre':
+            result.append(textwrap.indent(convert_code_block(child), indent))
         elif child.name == 'br':
             result.append('\n')
         else:
-            result.append(process_inline_elements(child))
+            result.append(process_inline_elements(child, url, indent))
     return ''.join(result)
 
 
-def convert_table_to_markdown(table) -> str:
-    """Convert HTML table to markdown table."""
+def table_cell_text(cell: Tag, url: str) -> str:
+    """A table cell's text on one line, its words kept apart as rendered."""
+    return ' '.join(process_inline_elements(cell, url).split())
+
+
+def convert_table_to_markdown(table: Tag, url: str) -> str:
+    """Convert HTML table to markdown table (url: the page's URL)."""
     rows = []
 
     # Process header
     thead = table.find('thead')
-    if thead:
-        header_cells = [th.get_text(strip=True) for th in thead.find_all(['th', 'td'])]
+    if isinstance(thead, Tag):
+        header_cells = [table_cell_text(th, url) for th in thead.find_all(['th', 'td'])]
         if header_cells:
             rows.append('| ' + ' | '.join(header_cells) + ' |')
             rows.append('| ' + ' | '.join(['---'] * len(header_cells)) + ' |')
 
     # Process body
-    tbody = table.find('tbody') or table
-    for tr in tbody.find_all('tr'):
-        cells = [td.get_text(strip=True) for td in tr.find_all(['td', 'th'])]
+    tbody = table.find('tbody')
+    for tr in (tbody if isinstance(tbody, Tag) else table).find_all('tr'):
+        cells = [table_cell_text(td, url) for td in tr.find_all(['td', 'th'])]
         if cells:
             # Add header separator if first row and no thead
             if not thead and len(rows) == 0:
@@ -681,6 +762,15 @@ url: {source_url}
 
 """
     return header + content
+
+
+def docc_page(source: GitHubDocSource, catalog: str, output_path: Path) -> DocCPage:
+    """A GitHub file's page in its DocC catalog (catalog: the catalog's repo
+    path), with the catalog's articles as they are on disk now: the .md files
+    under its dir in the source's output dir (a discovered file keeps its
+    repo path there)."""
+    return DocCPage(output_path, catalog_articles([OUTPUT_BASE / source.output_dir / catalog]),
+                    f"{GITHUB_RAW}/{source.repo}/{source.branch}/{catalog}/Assets")
 
 
 def validate_github_path(file_path: str) -> bool:
@@ -738,6 +828,8 @@ async def scrape_github_source(
                                      key_prefix=subdirectory_key)
                 stats["gone" if failure.gone else "failed"] += 1
             for file_path in discovered:
+                if source.readme_only and PurePosixPath(file_path).name.lower() != "readme.md":
+                    continue
                 files_to_fetch.setdefault(file_path, False)
 
     console.print(f"  Found {len(files_to_fetch)} markdown files")
@@ -796,6 +888,11 @@ async def scrape_github_source(
 
         # Convert and save; an error here is ours: the file is kept, never deleted
         try:
+            # A DocC catalog's page: its DocC markup converted, within its own catalog
+            catalog = docc_catalog(file_path)
+            if catalog is not None:
+                content = convert_docc(content, docc_page(source, catalog, output_path))
+
             # Add source header
             content = add_github_source_header(content, source, file_path)
 

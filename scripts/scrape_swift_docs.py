@@ -21,7 +21,9 @@ other failure of a configured directory keeps its files until it recovers; a
 file GitHub no longer lists or that returns 404/410 is removed at once; other
 failures and convert/save errors keep the file and block the orphan cleanup
 for up to 3 runs. The orphan cleanup uses confirm-then-delete for mass
-removals (pending_orphans in the hash file's metadata).
+removals (pending_orphans in the hash file's metadata). A Jekyll redirect
+stub (front matter redirect_to) is a page that moved: it isn't kept, so its
+old file goes with the cleanup.
 
 Exit codes: 0 clean (removals and valve holds included); 1 an error of ours
 (a blocked cleanup, a configured directory that failed, a persistent
@@ -31,15 +33,19 @@ failure, a failed save, an unexpected exception); 130 interrupted.
 import argparse
 import asyncio
 import logging
+import re
 import sys
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Any, Dict, List, Optional, Tuple
+from typing import Any, Callable, Dict, List, Optional, Tuple
+from urllib.parse import urljoin
 
 import aiohttp
+import yaml  # type: ignore[import-untyped]  # requirements.txt pins PyYAML without its stubs
 from rich.console import Console
 from rich.progress import Progress, SpinnerColumn, TextColumn, BarColumn
 
+from utilities.docc import DocCPage, catalog_articles, convert_docc, docc_catalog
 from utilities.hash_utils import (
     HashFileError,
     compute_hash,
@@ -49,6 +55,7 @@ from utilities.hash_utils import (
 )
 from utilities.source_policy import (
     FAILURE_COUNTS_KEY,
+    GITHUB_RAW,
     PENDING_ORPHANS_KEY,
     FetchFailed,
     KeptLocation,
@@ -195,44 +202,39 @@ def _output_path_for_hash_key(hash_key: str) -> Optional[Path]:
     return None
 
 
-def clean_docc_content(content: str, filename: str) -> str:
+def docc_page(source: DocSource, file_path: str, output_path: Path) -> Optional[DocCPage]:
+    """A file's page in its DocC catalog (file_path: its repo path), with the
+    catalog's articles as they are on disk now (None outside a catalog).
+
+    DocC finds a <doc:Name> target by name anywhere in the catalog, so the
+    articles of every configured source in the same catalog are targets (in
+    SOURCES order: the first file with a name wins).
+    """
+    catalog = docc_catalog(file_path)
+    if catalog is None:
+        return None
+    directories = [
+        OUTPUT_DIR / other.output_subdir if other.output_subdir else OUTPUT_DIR
+        for other in SOURCES
+        if other.repo == source.repo and other.branch == source.branch and docc_catalog(other.path) == catalog
+    ]
+    return DocCPage(output_path, catalog_articles(directories),
+                    f"{GITHUB_RAW}/{source.repo}/{source.branch}/{catalog}/Assets")
+
+
+def clean_docc_content(content: str, filename: str, docc: Optional[DocCPage] = None) -> str:
     """
     Clean DocC-specific syntax from markdown content.
 
     Transforms:
-    - <doc:Topic> links to readable format
-    - @Metadata blocks (remove)
     - HTML test comments (remove)
+    - DocC markup (utilities/docc.py convert_docc): <doc:> links, in a DocC
+      catalog (docc) asset images, @Metadata and @Comment blocks
     """
-    import re
-
-    # Remove @Metadata blocks
-    content = re.sub(r'@Metadata\s*\{[^}]*\}', '', content, flags=re.DOTALL)
-
     # Remove HTML test comments like <!-- test: xxx -->
     content = re.sub(r'<!--\s*test:[^>]*-->', '', content)
 
-    def transform_doc_link(match):
-        """Transform <doc:Document#Section> to [Section](Document.md#Section)"""
-        link_target = match.group(1)
-
-        if '#' in link_target:
-            # Has section anchor: <doc:Functions#Nested-Functions>
-            doc, section = link_target.split('#', 1)
-            # Humanize section name: "Nested-Functions" -> "Nested Functions"
-            section_text = section.replace('-', ' ')
-            return f'[{section_text}]({doc}.md#{section})'
-        else:
-            # Simple document link: <doc:Functions>
-            # Humanize: "ClassesAndStructures" -> "Classes And Structures"
-            doc_text = re.sub(r'([a-z])([A-Z])', r'\1 \2', link_target)
-            return f'[{doc_text}]({link_target}.md)'
-
-    # Transform <doc:Topic> and <doc:Topic#Section> links
-    content = re.sub(r'<doc:([^>]+)>', transform_doc_link, content)
-
-    # Remove @Comment blocks
-    content = re.sub(r'@Comment\s*\{[^}]*\}', '', content, flags=re.DOTALL)
+    content = convert_docc(content, docc)
 
     # Clean up multiple blank lines
     content = re.sub(r'\n{3,}', '\n\n', content)
@@ -240,29 +242,211 @@ def clean_docc_content(content: str, filename: str) -> str:
     return content.strip()
 
 
-def add_source_header(content: str, source: DocSource, filename: str) -> str:
-    """Add a source attribution header to the content."""
-    # Extract title from content if present
-    title_match = None
-    for line in content.split('\n')[:10]:
-        if line.startswith('# '):
-            title_match = line[2:].strip()
-            break
+# Jekyll front matter: the YAML between the --- lines that open a page
+FRONT_MATTER_PATTERN = re.compile(r'\A---[ \t]*\n(.*?)^---[ \t]*$\n?', re.DOTALL | re.MULTILINE)
+# Liquid: raw blocks (kept as they are), comment blocks, and tags and outputs
+LIQUID_RAW_PATTERN = re.compile(r'\{%-?\s*raw\s*-?%\}(.*?)\{%-?\s*endraw\s*-?%\}', re.DOTALL)
+LIQUID_COMMENT_PATTERN = re.compile(r'\{%-?\s*comment\s*-?%\}.*?\{%-?\s*endcomment\s*-?%\}', re.DOTALL)
+LIQUID_TOKEN_PATTERN = re.compile(r'\{%-?\s*(\w+)(.*?)-?%\}|\{\{-?(.*?)-?\}\}', re.DOTALL)
+LIQUID_ASSIGN_PATTERN = re.compile(r'\s*(\w+)\s*=\s*(.*?)\s*$', re.DOTALL)
+# A value that is markup (HTML or kramdown), not text
+MARKUP_PATTERN = re.compile(r'<[A-Za-z/!]|\{:')
+# A kramdown block IAL ({:.class}, {:#id}, {:toc}) on a line of its own, and a class it sets
+KRAMDOWN_IAL_PATTERN = re.compile(r'([ \t]*)\{:([^}\n]*)\}[ \t]*')
+IAL_CLASS_PATTERN = re.compile(r'(?<!\S)\.([\w-]+)')
+LIST_ITEM_PATTERN = re.compile(r'[ \t]*([*+-]|\d+\.)[ \t]')
+# A fenced code block's fence line: the fence (``` or ~~~, 3 or more) and the rest of the line
+FENCE_PATTERN = re.compile(r'[ \t]*(`{3,}|~{3,})(.*)')
+# A root-relative link target: a markdown link's (](/...)) or an HTML href's (href="/...")
+ROOT_RELATIVE_LINK_PATTERN = re.compile(r'''(\]\(|\bhref=["'])(/[^\s)"']*)''')
+CODE_SPAN_PATTERN = re.compile(r'(`+).+?\1')
 
-    # Build source URL
-    source_url = f"https://github.com/{source.repo}/blob/{source.branch}/{source.path}/{filename}"
 
-    # Only add header if there isn't already one
-    if not content.startswith('---'):
-        header = f"""---
+def split_front_matter(content: str) -> Tuple[Optional[Dict[str, Any]], str]:
+    """A Jekyll page's front matter and its body: (None, content) for a page
+    without front matter, or whose front matter can't be read as a YAML
+    mapping."""
+    match = FRONT_MATTER_PATTERN.match(content)
+    if match is None:
+        return None, content
+    try:
+        front_matter = yaml.safe_load(match.group(1))
+    except Exception:  # yaml.YAMLError, or e.g. ValueError for an invalid date (date: 2024-13-45)
+        return None, content
+    if front_matter is None:
+        front_matter = {}
+    if not isinstance(front_matter, dict):
+        return None, content
+    return front_matter, content[match.end():]
+
+
+def redirect_target(content: str) -> Optional[str]:
+    """Where a Jekyll redirect stub (front matter redirect_to) sends its
+    readers; None for a page."""
+    front_matter, _ = split_front_matter(content)
+    target = front_matter.get('redirect_to') if front_matter is not None else None
+    if isinstance(target, list):
+        target = target[0] if target else None
+    return str(target) if target else None
+
+
+def render_liquid(text: str) -> str:
+    """A Jekyll page's Liquid, rendered as text.
+
+    Comments are dropped. A variable set by assign (to a quoted string or
+    another variable) or capture is output where {{ it }} is, unless its
+    value is markup (HTML or kramdown, which the page uses for presentation
+    only); an unknown variable outputs nothing, and every other tag is
+    dropped. A raw block is kept as it is.
+    """
+    variables: Dict[str, str] = {}
+    parts = LIQUID_RAW_PATTERN.split(text)  # text, raw, text, raw, ..., text
+    return ''.join(part if index % 2 else _render_liquid_text(part, variables)
+                   for index, part in enumerate(parts))
+
+
+def _render_liquid_text(text: str, variables: Dict[str, str]) -> str:
+    text = LIQUID_COMMENT_PATTERN.sub('', text)
+    out: List[str] = []
+    capture: Optional[Tuple[str, List[str]]] = None
+    position = 0
+    for match in LIQUID_TOKEN_PATTERN.finditer(text):
+        sink = capture[1] if capture is not None else out
+        sink.append(text[position:match.start()])
+        position = match.end()
+        tag, arguments, expression = match.groups()
+        if expression is not None:
+            value = variables.get(expression.split('|')[0].strip(), '')
+            if not MARKUP_PATTERN.search(value):
+                sink.append(value)
+        elif tag == 'capture':
+            capture = (arguments.strip(), [])
+        elif tag == 'endcapture' and capture is not None:
+            variables[capture[0]] = ''.join(capture[1])
+            capture = None
+        elif tag == 'assign':
+            assignment = LIQUID_ASSIGN_PATTERN.match(arguments)
+            if assignment:
+                name, value = assignment.groups()
+                if len(value) >= 2 and value[0] in '\'"' and value[-1] == value[0]:
+                    variables[name] = value[1:-1]
+                else:
+                    variables[name] = variables.get(value.split('|')[0].strip(), '')
+    (capture[1] if capture is not None else out).append(text[position:])
+    if capture is not None:  # never closed: its text stays
+        out.extend(capture[1])
+    return ''.join(out)
+
+
+def strip_kramdown_ials(text: str) -> str:
+    """Drop the kramdown block IALs on lines of their own, and the list a
+    {:toc} IAL is on (kramdown replaces it with the page's table of contents).
+
+    A class IAL on the line right after a fenced code block's closing fence
+    styles that block (e.g. swift.org's good and bad examples): it is kept
+    as a line naming its classes under the block, "*(bad)*". The lines of a
+    code block are code, kept as they are.
+    """
+    lines: List[str] = []
+    fence: Optional[str] = None  # the open code block's fence
+    after_fence = False  # the previous line closed a code block
+    for line in text.split('\n'):
+        closed, after_fence = after_fence, False
+        fence_line = FENCE_PATTERN.fullmatch(line)
+        if fence is not None:
+            lines.append(line)
+            # Closed by a fence of its own character, at least as long, alone on its line
+            if fence_line is not None and fence_line.group(1).startswith(fence) and not fence_line.group(2).strip():
+                fence, after_fence = None, True
+            continue
+        # Opened by a fence (a ``` fence's info string holds no backtick)
+        if fence_line is not None and not (fence_line.group(1)[0] == '`' and '`' in fence_line.group(2)):
+            fence = fence_line.group(1)
+            lines.append(line)
+            continue
+        ial = KRAMDOWN_IAL_PATTERN.fullmatch(line)
+        if ial is None:
+            lines.append(line)
+            continue
+        indent, attributes = ial.groups()
+        classes = IAL_CLASS_PATTERN.findall(attributes)
+        if closed and classes:
+            lines.append(f"{indent}*({', '.join(classes)})*")
+        elif attributes.strip() == 'toc' and lines and LIST_ITEM_PATTERN.match(lines[-1]):
+            lines.pop()
+    return '\n'.join(lines)
+
+
+def map_outside_code(text: str, rewrite: Callable[[str], str]) -> str:
+    """text with rewrite applied to its prose only: fenced code blocks (with
+    their fences) and inline code spans are kept as they are."""
+    lines: List[str] = []
+    fence: Optional[str] = None  # the open code block's fence
+    for line in text.split('\n'):
+        fence_line = FENCE_PATTERN.fullmatch(line)
+        if fence is not None:
+            if fence_line is not None and fence_line.group(1).startswith(fence) and not fence_line.group(2).strip():
+                fence = None
+            lines.append(line)
+            continue
+        if fence_line is not None and not (fence_line.group(1)[0] == '`' and '`' in fence_line.group(2)):
+            fence = fence_line.group(1)
+            lines.append(line)
+            continue
+        pieces: List[str] = []
+        position = 0
+        for span in CODE_SPAN_PATTERN.finditer(line):
+            pieces += [rewrite(line[position:span.start()]), span.group(0)]
+            position = span.end()
+        pieces.append(rewrite(line[position:]))
+        lines.append(''.join(pieces))
+    return '\n'.join(lines)
+
+
+def clean_jekyll_body(body: str) -> str:
+    """A Jekyll page's body without its Liquid (render_liquid), kramdown
+    IALs, <style> blocks and the HTML comments left empty."""
+    body = render_liquid(body)
+    body = re.sub(r'<style\b[^>]*>.*?</style>', '', body, flags=re.DOTALL | re.IGNORECASE)
+    body = re.sub(r'<!--\s*-->', '', body)
+    body = strip_kramdown_ials(body)
+    # Lines left holding only whitespace are blank lines
+    body = re.sub(r'^[ \t]+$', '', body, flags=re.MULTILINE)
+    body = re.sub(r'\n{3,}', '\n\n', body)
+    return body.strip()
+
+
+def add_source_header(content: str, source: DocSource, file_path: str) -> str:
+    """Add a source attribution header to the content (file_path: the
+    file's repo-relative path).
+
+    A Jekyll page's front matter is replaced: its url is the page's
+    official_url (else its GitHub URL), its title its "# " heading, and its
+    body is cleaned (clean_jekyll_body). A root-relative link on a page with
+    an official_url is on that page's site: resolved against it.
+    """
+    url = f"https://github.com/{source.repo}/blob/{source.branch}/{file_path}"
+    front_matter, body = split_front_matter(content)
+    if front_matter is not None:
+        content = clean_jekyll_body(body)
+        official_url = front_matter.get('official_url')
+        if isinstance(official_url, str) and official_url.startswith(('http://', 'https://')):
+            url = official_url
+            content = map_outside_code(content, lambda prose: ROOT_RELATIVE_LINK_PATTERN.sub(
+                lambda match: match.group(1) + urljoin(official_url, match.group(2)), prose))
+        title = front_matter.get('title')
+        if isinstance(title, str) and title.strip() and not content.startswith('# '):
+            content = f"# {title.strip()}\n\n{content}"
+    elif content.startswith('---'):
+        logger.warning(f"front_matter_unreadable: {source.repo}:{file_path}; kept as text")
+
+    header = f"""---
 source: {source.repo}
-url: {source_url}
+url: {url}
 ---
 
 """
-        return header + content
-
-    return content
+    return header + content
 
 
 # =============================================================================
@@ -300,7 +484,7 @@ async def scrape_source(
     force: bool = False
 ) -> Dict[str, int]:
     """Scrape a single documentation source, reporting every outcome to run."""
-    stats = {"downloaded": 0, "skipped": 0, "gone": 0, "failed": 0}
+    stats = {"downloaded": 0, "skipped": 0, "gone": 0, "failed": 0, "redirected": 0}
     location = _source_location(source)
     source_key = _directory_key(source.repo, source.path)
 
@@ -342,6 +526,16 @@ async def scrape_source(
                                previously_good=hash_key in hashes or has_file_named(output_path)):
                 run.keep_file(hash_key, output_path)
             continue
+
+        # A Jekyll redirect stub is a page that moved (its target is scraped
+        # where a configured directory has it): not reported as produced, so
+        # the cleanup removes its old file and its key is pruned
+        target = redirect_target(content)
+        if target is not None:
+            logger.warning(f"source_redirected: {hash_key} redirects to {target}; not kept, "
+                           "its old file goes with the cleanup")
+            stats["redirected"] += 1
+            continue
         run.page_ok(hash_key, output_path)
 
         await asyncio.sleep(REQUEST_DELAY)  # Rate limiting
@@ -357,8 +551,8 @@ async def scrape_source(
         # Convert and save; an error here is ours: the file is kept, never deleted
         try:
             # Clean and enhance content
-            content = clean_docc_content(content, filename)
-            content = add_source_header(content, source, filename)
+            content = clean_docc_content(content, filename, docc_page(source, file_path, output_path))
+            content = add_source_header(content, source, file_path)
 
             if dry_run:
                 console.print(f"  [dim]Would write:[/dim] {output_path}")
@@ -410,7 +604,8 @@ async def scrape_all(dry_run: bool = False, force: bool = False) -> Dict[str, An
     if not dry_run:
         OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
-    total_stats: Dict[str, Any] = {"downloaded": 0, "skipped": 0, "gone": 0, "failed": 0, "deleted": 0, "pruned": 0}
+    total_stats: Dict[str, Any] = {"downloaded": 0, "skipped": 0, "gone": 0, "failed": 0, "redirected": 0,
+                                   "deleted": 0, "pruned": 0}
 
     async with aiohttp.ClientSession() as session:
         with Progress(
@@ -430,7 +625,7 @@ async def scrape_all(dry_run: bool = False, force: bool = False) -> Dict[str, An
                     session, source, hashes, run, dry_run=dry_run, force=force
                 )
 
-                for name in ("downloaded", "skipped", "gone", "failed"):
+                for name in ("downloaded", "skipped", "gone", "failed", "redirected"):
                     total_stats[name] += stats[name]
 
                 if stats["downloaded"] > 0:
@@ -464,6 +659,8 @@ async def scrape_all(dry_run: bool = False, force: bool = False) -> Dict[str, An
         console.print(f"  Deleted (orphaned): [yellow]{total_stats['deleted']}[/yellow]")
     if total_stats["gone"] > 0:
         console.print(f"  Gone (404/410): [yellow]{total_stats['gone']}[/yellow]")
+    if total_stats["redirected"] > 0:
+        console.print(f"  Redirected (moved): [yellow]{total_stats['redirected']}[/yellow]")
     if total_stats["failed"] > 0:
         console.print(f"  Failed: [red]{total_stats['failed']}[/red]")
     for line in run.summary_lines(cleanup):

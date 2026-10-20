@@ -131,6 +131,9 @@ TITLE_FUNCTION_BOOST = 0.1  # a function of that name: name(...)
 # a sentence when only its first letter is a capital: that may just start the sentence
 # ("Color picker in SwiftUI")
 NAMED_SYMBOL_BOOST = 0.1
+# The kinds of pages that aren't symbols (scripts/metadata_extractor.py: a page without a
+# **Kind** line, by its **Role** line in ROLE_KINDS, else an article)
+NON_SYMBOL_KINDS = ("article", "collection", "sample-code")
 
 # A question ("What is NavigationStack?", "How do I present a sheet in SwiftUI?") is
 # searched without its question and function words: every word must match, and pages
@@ -450,8 +453,9 @@ def title_boost(title: str, name: str) -> float:
 
 
 def named_symbol_boost(hit: Dict, words: List[str], typed: str = "") -> float:
-    """NAMED_SYMBOL_BOOST for a symbol page (not an article) whose api_name is one of
-    several query words, a word with a capital letter, case and all; else 0.
+    """NAMED_SYMBOL_BOOST for a symbol page (not an article, API collection or sample code,
+    NON_SYMBOL_KINDS) whose api_name is one of several query words, a word with a capital
+    letter, case and all; else 0.
 
     typed is the query as typed. When it reads as a sentence (another of its words starts
     in lower case), the capital of its first word may only start it ("Color picker in
@@ -459,7 +463,7 @@ def named_symbol_boost(hit: Dict, words: List[str], typed: str = "") -> float:
     after its first letter ("NavigationView navigationBarTitle"). "Button SwiftUI" is no
     sentence."""
     name = str(hit.get("api_name", ""))
-    if len(words) > 1 and hit.get("kind") != "article" and name in words and name != name.lower():
+    if len(words) > 1 and hit.get("kind") not in NON_SYMBOL_KINDS and name in words and name != name.lower():
         typed_words = typed.split()
         if (typed_words and name == typed_words[0].rstrip("?!.,:;") and name[1:] == name[1:].lower()
                 and any(word[:1].islower() for word in typed_words[1:])):

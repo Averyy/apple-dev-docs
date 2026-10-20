@@ -1,11 +1,46 @@
 """Convert Apple documentation HTML to clean markdown."""
 
+import re
 from pathlib import Path
-from typing import Dict, List, Optional, Any
+from typing import Dict, Final, List, Optional, Any
 
 from scraper.utils.logger import get_logger
 
 logger = get_logger(__name__)
+
+# The start of a block that can't share a line with a label before it ("- `x`:",
+# "> **Note**:"): a list item, a code fence (its info string holds no backtick,
+# as in CommonMark: "```x``" opens a code span), a table row, a quote, a heading
+BLOCK_START: Final = re.compile(r'(?:[-*+]|\d{1,9}[.)])(?: |$)|```[^`\n]*(?:\n|$)|\||>|#{1,6}(?: |$)')
+
+
+def join_blocks(blocks: List[str], indent: int) -> str:
+    """Blocks rendered as one list item's (or quote's) content, to follow its
+    marker or label: the first block on that line, each later block after a
+    blank line, and every line after the first indented by indent spaces (an
+    empty line stays empty), so that no line of a list or code listing in it
+    leaves the item."""
+    pad = ' ' * indent
+    first, *rest = '\n\n'.join(blocks).split('\n')
+    return '\n'.join([first] + [f"{pad}{line}" if line else '' for line in rest])
+
+
+def labeled(label: str, content: str, indent: int) -> str:
+    """A label ("- `x`:", "- **term**:", "**Note**:") followed by its content
+    (join_blocks, indented by indent): on the label's line after a space, or,
+    when the content starts with a block that can't share that line
+    (BLOCK_START: a list, code listing, table, quote or heading), after a
+    blank line, its first line indented too."""
+    if BLOCK_START.match(content):
+        return f"{label}\n\n{' ' * indent}{content}"
+    return f"{label} {content}"
+
+
+def quote_blocks(label: str, blocks: List[str]) -> str:
+    """Blocks rendered as a "> <label> …" quote (labeled): every line
+    prefixed "> " (an empty one is ">")."""
+    text = labeled(label, join_blocks(blocks, 0), 0)
+    return '\n'.join(f"> {line}" if line else '>' for line in text.split('\n'))
 
 
 class AppleDocMarkdownConverter:
@@ -42,18 +77,30 @@ class AppleDocMarkdownConverter:
         if data.get('availability'):
             sections.append(self._format_availability(data['availability']))
         
-        # Declaration
+        # Deprecation summary, after the abstract and the Availability list
+        if data.get('deprecation_summary'):
+            sections.append(data['deprecation_summary'])
+
+        # Declaration: one fence per declaration (a label names its platforms
+        # when one language has several), the constraints it's available
+        # under, then the symbol's other overloads
         if data.get('declaration'):
             sections.append("## Declaration")
-            sections.append(self._format_code_block(
-                data['declaration'].get('swift', ''),
-                'swift'
-            ))
-            if data['declaration'].get('objc'):
-                sections.append(self._format_code_block(
-                    data['declaration']['objc'],
-                    'objc'
-                ))
+            for declaration in data['declaration']:
+                if declaration.get('label'):
+                    sections.append(f"*{declaration['label']}*")
+                sections.append(self._format_code_block(declaration['code'], declaration['language']))
+        if data.get('conformance'):
+            sections.append(data['conformance'])
+        if data.get('other_declarations'):
+            sections.append("**Other overloads**:")
+            for declaration in data['other_declarations']:
+                sections.append(self._format_code_block(declaration['code'], declaration['language']))
+
+        # Details and Possible Values (keys, REST types), in Apple's order
+        for detail in data.get('detail_sections') or []:
+            sections.append(f"## {detail['title']}")
+            sections.append(detail['content'])
         
         # Mentions (related documentation links) - comes right after Declaration per Apple's structure
         if data.get('mentions'):
@@ -105,6 +152,11 @@ class AppleDocMarkdownConverter:
             sections.append("## Topics")
             sections.append(self._format_topics(data['topics']))
         
+        # A protocol requirement's default implementations
+        if data.get('default_implementations'):
+            sections.append("## Default Implementations")
+            sections.append(self._format_topics(data['default_implementations']))
+
         # Tasks/Tutorial content
         if data.get('tasks'):
             sections.append("## Tasks")
@@ -117,9 +169,13 @@ class AppleDocMarkdownConverter:
             sections.append("## Endpoint")
             sections.append(f"`{data['rest_endpoint']}`")
 
+        # REST parameters, by group (path, query, header)
         if data.get('rest_parameters'):
             sections.append("## Parameters")
-            sections.append(data['rest_parameters'])
+            for group in data['rest_parameters']:
+                if group.get('title'):
+                    sections.append(f"### {group['title']}")
+                sections.append(group['items'])
 
         if data.get('properties'):
             sections.append("## Properties")
@@ -132,11 +188,6 @@ class AppleDocMarkdownConverter:
         if data.get('rest_responses'):
             sections.append("## Responses")
             sections.append(data['rest_responses'])
-        
-        # Possible Values (for enums/options)
-        if data.get('possible_values'):
-            sections.append("## Possible Values")
-            sections.append(data['possible_values'])
         
         # Thrown Errors
         if data.get('thrown_errors'):
@@ -185,22 +236,35 @@ class AppleDocMarkdownConverter:
         if data.get('symbol_kind'):
             lines.append(f"**Kind**: {data['symbol_kind']}")
             
+        # The page's role as Apple names it (Instance Method, Article, Sample Code…)
+        if data.get('role_heading'):
+            lines.append(f"**Role**: {data['role_heading']}")
+
         if data.get('required'):
             lines.append("**Required**: Yes")
         
+        # A sample code project's download
+        if data.get('sample_download'):
+            download = data['sample_download']
+            lines.append(f"**Download**: [{download['name']}]({download['url']})")
+
         return "  \n".join(lines) if lines else ""
     
-    def _format_availability(self, availability: List[Dict[str, str]]) -> str:
-        """Format availability information."""
+    def _format_availability(self, availability: List[Dict[str, Any]]) -> str:
+        """Format availability information, one platform per line:
+        "- <platform>[ <introduced>+][ (Beta)][ - Deprecated[ in <version>][ (renamed: <name>)]]"
+        (the deprecation message is the page's summary, not the line's)."""
         if not availability:
             return ""
         
         lines = ["**Availability**:"]
         for item in availability:
             platform = item.get('platform', 'Unknown')
-            version = item.get('version', '')
-            
-            line = f"- {platform} {version}"
+
+            # A platform without an introduced version is named alone
+            line = f"- {platform}"
+            if item.get('introduced'):
+                line += f" {item['introduced']}+"
             
             # Add beta indicator
             if item.get('beta', False):
@@ -211,8 +275,8 @@ class AppleDocMarkdownConverter:
                 dep_info = "Deprecated"
                 if item.get('deprecated_at'):
                     dep_info += f" in {item['deprecated_at']}"
-                if item.get('deprecation_message'):
-                    dep_info += f": {item['deprecation_message']}"
+                if item.get('renamed'):
+                    dep_info += f" (renamed: {item['renamed']})"
                 line += f" - {dep_info}"
             
             lines.append(line)
@@ -240,10 +304,8 @@ class AppleDocMarkdownConverter:
             description = param.get('description', '')
             param_type = param.get('type', '')
             
-            if param_type:
-                lines.append(f"- `{name}` ({param_type}): {description}")
-            else:
-                lines.append(f"- `{name}`: {description}")
+            head = f"- `{name}` ({param_type}):" if param_type else f"- `{name}`:"
+            lines.append(labeled(head, description, 2))
         
         return "\n".join(lines)
     
@@ -274,30 +336,35 @@ class AppleDocMarkdownConverter:
         
         return "\n".join(lines)
     
-    def _format_see_also(self, see_also: List[Dict[str, str]]) -> str:
-        """Format see also section."""
+    def _format_see_also(self, see_also: List[Dict[str, Any]]) -> str:
+        """Format see also section, by group under its title."""
         if not see_also:
             return ""
         
         lines = []
-        for item in see_also:
-            title = item.get('title', '')
-            url = item.get('url', '')
-            description = item.get('description', '')
-            
-            if url:
-                dual_link = self._create_dual_link(url, title)
-                if description:
-                    lines.append(f"- {dual_link}")
-                    lines.append(f"  {description}")
+        for group in see_also:
+            group_title = group.get('title', '')
+            if group_title:
+                lines.append(f"### {group_title}")
+
+            for item in group.get('items', []):
+                title = item.get('name', '')
+                url = item.get('url', '')
+                description = item.get('description', '')
+
+                if url:
+                    dual_link = self._create_dual_link(url, title)
+                    if description:
+                        lines.append(f"- {dual_link}")
+                        lines.append(f"  {description}")
+                    else:
+                        lines.append(f"- {dual_link}")
                 else:
-                    lines.append(f"- {dual_link}")
-            else:
-                if description:
-                    lines.append(f"- {title}")
-                    lines.append(f"  {description}")
-                else:
-                    lines.append(f"- {title}")
+                    if description:
+                        lines.append(f"- {title}")
+                        lines.append(f"  {description}")
+                    else:
+                        lines.append(f"- {title}")
         
         return "\n".join(lines)
     

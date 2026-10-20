@@ -58,6 +58,7 @@ docker-compose up -d
 - Local links in results and in `expand_result` become the path of the page they lead to (`Button (-> expand_result: documentation/SwiftUI/button.md)`), for links relative to the framework's directory or to the page, percent-encoded or with a `#fragment`, and for link text holding brackets (`[var locations: [Accessory.LocationName]](…)`, 16K Topics links that stayed raw); a link whose page isn't in the docs stays a `search:` hint
 - `expand_result`'s `sections` keep their subsections (`topics` its groups, `overview` its subheadings) and stop at the next heading of their level, and their links become hints too
 - Responses stay within `token_budget`, counted in characters (the per-result estimates undercounted by up to ~1 token a result)
+- A page without a Kind line gets its `Type` from its Role line once re-scraped: `collection` for an API collection, `sample-code` for sample code, else `article`. Like articles, API collections and sample code get no named-symbol boost (the smaller boost for the symbol one word of a longer query names)
 
 ### v3.2.0
 - `search_apple_docs` returns one result per page, not one per indexed chunk of a long page; such a result shows the part that matched (`Part 3 of 6`)

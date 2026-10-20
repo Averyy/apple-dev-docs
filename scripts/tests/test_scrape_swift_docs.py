@@ -274,10 +274,10 @@ async def test_a_convert_error_x3_keeps_the_file(site: FakeUpstream, monkeypatch
     remove_upstream(site, "org/book", "Book/Reference/Types.md")
     clean = scrape_swift_docs.clean_docc_content
 
-    def failing_clean(content: str, filename: str) -> str:
+    def failing_clean(content: str, filename: str, *args: Any) -> str:
         if filename == "Basics.md":
             raise RuntimeError("converter bug")
-        return clean(content, filename)
+        return clean(content, filename, *args)
 
     monkeypatch.setattr(scrape_swift_docs, "clean_docc_content", failing_clean)
     for run_number in (1, 2):
@@ -301,10 +301,10 @@ async def test_a_local_count_waits_while_blocked_and_goes_with_its_file(site: Fa
     site.github_file("org/book", "Book/Guide/Basics.md", "# Basics\n\nChanged.\n")
     clean = scrape_swift_docs.clean_docc_content
 
-    def failing_clean(content: str, filename: str) -> str:
+    def failing_clean(content: str, filename: str, *args: Any) -> str:
         if filename == "Basics.md":
             raise RuntimeError("converter bug")
-        return clean(content, filename)
+        return clean(content, filename, *args)
 
     monkeypatch.setattr(scrape_swift_docs, "clean_docc_content", failing_clean)
     assert await run() == 1
@@ -356,6 +356,190 @@ async def test_a_source_removed_from_the_config_is_cleaned(site: FakeUpstream, m
     assert not any(key.startswith("org/site:") for key in hash_file()["hashes"])
 
 
+JEKYLL_PAGE = """---
+layout: page
+title: Guidelines
+official_url: https://swift.example/documentation/guidelines/
+redirect_from: /documentation/guidelines.html
+---
+<!-- {% comment %}
+Why the style is here.
+{% endcomment %} -->
+<style>
+article pre { overflow: visible; }
+</style>
+{% capture expand %}{::nomarkdown}
+<input type="checkbox" class="detail">
+{:/nomarkdown}{% endcapture %}
+{% assign detail = '<div class="more" markdown="1">' %}
+{% assign enddetail = '</div>' %}
+
+## Table of Contents
+{:.no_toc}
+
+* TOC
+{:toc}
+
+## Fundamentals
+
+* **Clarity** is the goal.
+  {:#clarity}
+
+  {{expand}}
+  {{detail}}
+  {% assign ref = 'https://ref.example/markup/' %}
+  {% capture SymbolDoc %}{{ref}}Symbols.html#SW{% endcapture %}
+
+  * Use the [dialect]({{ ref }}) and [symbol markup]({{SymbolDoc}}1).
+
+  {{enddetail}}
+
+* **Names** read as phrases.
+  {:#phrases}
+
+  ~~~ swift
+  x.insert(y, at: z)
+  ~~~
+  {:.good}
+
+  ~~~ swift
+  x.insert(y, position: z)
+  {:.code-line}
+  ~~~
+  {:.bad #bad-insert}
+
+  ```
+  x.remove()
+  ```
+  {:#remove}
+
+  See the [status](/doc/status#types) and <a href="/platforms/">platforms</a>.
+
+{% comment %}
+* A hidden guideline.
+{% endcomment %}
+{% raw %}Literal {{ braces }} stay.{% endraw %}
+"""
+
+
+async def test_a_jekyll_page_is_cleaned(site: FakeUpstream) -> None:
+    """swift.org's Jekyll pages: the front matter gives the url and the H1;
+    Liquid is rendered (text variables output, markup ones dropped), and
+    kramdown IALs (with {:toc}'s list), <style> and emptied comments go,
+    except a class IAL right after a code block (kept as text naming its
+    classes). A root-relative link is resolved against the official_url."""
+    site.github_file("org/site", "docs/interop/A.md", JEKYLL_PAGE)
+    site.github_file("org/site", "docs/interop/sub/B.md",
+                     "---\ntitle: Nested\n---\n\nNo official URL: [kept](/documentation/x).\n")
+    assert await run() == 0
+    page = (scrape_swift_docs.OUTPUT_DIR / "Interop/A.md").read_text()
+    assert page == """---
+source: org/site
+url: https://swift.example/documentation/guidelines/
+---
+
+# Guidelines
+
+## Table of Contents
+
+## Fundamentals
+
+* **Clarity** is the goal.
+
+  * Use the [dialect](https://ref.example/markup/) and [symbol markup](https://ref.example/markup/Symbols.html#SW1).
+
+* **Names** read as phrases.
+
+  ~~~ swift
+  x.insert(y, at: z)
+  ~~~
+  *(good)*
+
+  ~~~ swift
+  x.insert(y, position: z)
+  {:.code-line}
+  ~~~
+  *(bad)*
+
+  ```
+  x.remove()
+  ```
+
+  See the [status](https://swift.example/doc/status#types) and <a href="https://swift.example/platforms/">platforms</a>.
+
+Literal {{ braces }} stay."""
+    nested = (scrape_swift_docs.OUTPUT_DIR / "Interop/sub/B.md").read_text()
+    assert nested.startswith("---\nsource: org/site\nurl: https://github.com/org/site/blob/main/docs/interop/sub/B.md\n"
+                             "---\n\n# Nested\n\nNo official URL: [kept](/documentation/x).")
+
+
+async def test_an_unreadable_front_matter_keeps_the_page(site: FakeUpstream, caplog: pytest.LogCaptureFixture) -> None:
+    """Front matter YAML can't load (an invalid date raises ValueError, not
+    a YAMLError): the page is kept as text under its header, with a warning,
+    and the run goes on."""
+    site.github_file("org/site", "docs/interop/A.md", "---\ntitle: Dated\ndate: 2024-13-45\n---\n\nBody.\n")
+    assert await run() == 0
+    assert docs() == ALL
+    assert (scrape_swift_docs.OUTPUT_DIR / "Interop/A.md").read_text() == (
+        "---\nsource: org/site\nurl: https://github.com/org/site/blob/main/docs/interop/A.md\n---\n\n"
+        "---\ntitle: Dated\ndate: 2024-13-45\n---\n\nBody.")
+    assert any(record.levelname == "WARNING" and "front_matter_unreadable: org/site:docs/interop/A.md"
+               in record.getMessage() for record in caplog.records)
+
+
+async def test_a_redirect_stub_is_a_move(site: FakeUpstream, caplog: pytest.LogCaptureFixture) -> None:
+    """A page replaced by a Jekyll redirect stub moved: its old file is
+    removed and its key pruned, with a warning, and the run stays clean."""
+    assert await run() == 0
+    site.github_file("org/site", "docs/interop/A.md", "---\nredirect_to: /documentation/interop/moved/\n---\n")
+    site.github_file("org/site", "docs/interop/moved/A.md", "# A\n\nMoved here.\n")
+    assert await run() == 0
+    assert docs() == ALL - {"Interop/A.md"} | {"Interop/moved/A.md"}
+    assert "org/site:docs/interop/A.md" not in hash_file()["hashes"] and "failure_counts" not in metadata()
+    assert any(record.levelname == "WARNING" and "source_redirected: org/site:docs/interop/A.md" in record.getMessage()
+               for record in caplog.records)
+
+
+CATALOG_SOURCES = [
+    DocSource(repo="org/book", branch="main", path="Book.docc/Guide", output_subdir="Guide"),
+    DocSource(repo="org/book", branch="main", path="Book.docc/Reference", output_subdir="Reference"),
+]
+
+
+async def test_doc_links_and_assets_resolve_in_the_catalog(site: FakeUpstream, monkeypatch: pytest.MonkeyPatch) -> None:
+    """<doc:Name> finds its target across the catalog's sources, linked
+    relative to the page, under the target's title or the heading its anchor
+    names; a target with no file yet keeps the name's text and path until
+    the page is converted again. <doc:#Anchor> is a heading of the page
+    itself. A bare image name is the catalog's asset."""
+    monkeypatch.setattr(scrape_swift_docs, "SOURCES", CATALOG_SOURCES)
+    site.files.clear()
+    site.github_file("org/book", "Book.docc/Guide/Functions.md",
+                     "# Functions\n\n## In-Out Parameters\n\n```\n# not a heading\n```\n\n"
+                     "See <doc:Declarations#Top-Level-Code>.\n")
+    site.github_file("org/book", "Book.docc/Guide/ClassesAndStructures.md", "# Structures and Classes\n")
+    site.github_file("org/book", "Book.docc/Reference/Declarations.md",
+                     "# Declarations\n\n## Top-Level Code\n\n<doc:Functions#In-Out-Parameters>, "
+                     "<doc:ClassesAndStructures>, <doc:Missing#Some-Part> and <doc:Declarations#Top-Level-Code>.\n\n"
+                     "Here: <doc:#Top-Level-Code>.\n\n"
+                     "![A diagram.](macro-expansion) ![](https://example.com/x.png)\n")
+    assert await run() == 0
+    out = scrape_swift_docs.OUTPUT_DIR
+    declarations = (out / "Reference/Declarations.md").read_text()
+    assert ("[In-Out Parameters](../Guide/Functions.md#In-Out-Parameters), "
+            "[Structures and Classes](../Guide/ClassesAndStructures.md), [Some Part](Missing.md#Some-Part) and "
+            "[Top Level Code](Declarations.md#Top-Level-Code).") in declarations  # its own file isn't written yet
+    assert "Here: [Top-Level Code](#Top-Level-Code)." in declarations  # from the page being converted
+    assert ("![A diagram.](https://raw.githubusercontent.com/org/book/main/Book.docc/Assets/macro-expansion@2x.png) "
+            "![](https://example.com/x.png)") in declarations
+    # Guide is converted first: Declarations had no file yet
+    assert "See [Top Level Code](Declarations.md#Top-Level-Code)." in (out / "Guide/Functions.md").read_text()
+    assert await run(force=True) == 0
+    assert ("See [Top-Level Code](../Reference/Declarations.md#Top-Level-Code)."
+            in (out / "Guide/Functions.md").read_text())
+    assert "[Top-Level Code](Declarations.md#Top-Level-Code)." in (out / "Reference/Declarations.md").read_text()
+
+
 def test_main_exit_codes(monkeypatch: pytest.MonkeyPatch) -> None:
     monkeypatch.setattr("sys.argv", ["scrape_swift_docs.py"])
 
@@ -373,3 +557,15 @@ def test_main_exit_codes(monkeypatch: pytest.MonkeyPatch) -> None:
     assert scrape_swift_docs.main() == 130
     monkeypatch.setattr(scrape_swift_docs, "scrape_all", lambda **_: raises(RuntimeError("bug")))
     assert scrape_swift_docs.main() == 1
+
+
+def test_a_root_relative_link_in_code_is_kept() -> None:
+    """Only prose links are resolved: fenced code blocks and inline code spans stay as written."""
+    text = ('See [the guide](/guide) and `](/inline)`.\n'
+            '```html\n<a href="/fenced">x</a>\n```\n'
+            '<a href="/prose">y</a>')
+    resolved = scrape_swift_docs.map_outside_code(text, lambda prose: scrape_swift_docs.ROOT_RELATIVE_LINK_PATTERN.sub(
+        lambda match: match.group(1) + "https://swift.example" + match.group(2), prose))
+    assert resolved == ('See [the guide](https://swift.example/guide) and `](/inline)`.\n'
+                        '```html\n<a href="/fenced">x</a>\n```\n'
+                        '<a href="https://swift.example/prose">y</a>')

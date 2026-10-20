@@ -814,6 +814,119 @@ def test_main_exit_codes(monkeypatch: pytest.MonkeyPatch) -> None:
     assert scrape_mlx_docs.main() == 1
 
 
+async def test_readme_only_takes_the_crawls_readmes(site: FakeUpstream, monkeypatch: pytest.MonkeyPatch) -> None:
+    """readme_only: the directory crawl takes only README.md files; the
+    other .md files it took before go through the normal cleanup."""
+    assert await run() == 0
+    site.github_file("org/lib-swift", "Docs/Guides/README.md", "# Guides\n")
+    readme_only = [GITHUB[0], GitHubDocSource(name="lib-swift", repo="org/lib-swift", branch="main",
+                                              output_dir="Lib-Swift/lib-swift", framework="Lib-Swift",
+                                              files=["README.md"], directories=["Docs"], readme_only=True)]
+    monkeypatch.setattr(scrape_mlx_docs, "GITHUB_SOURCES", readme_only)
+    others = {"Lib-Swift/lib-swift/Docs/Intro.md", "Lib-Swift/lib-swift/Docs/Guides/Usage.md",
+              "Lib-Swift/lib-swift/Docs/Guides/More.md"}
+    assert await run() == 0  # 3 of Lib-Swift's 5 files: held by the valve
+    assert docs() == ALL | {"Lib-Swift/lib-swift/Docs/Guides/README.md"}
+    assert len(metadata()["pending_orphans"]) == 3
+    assert site.count("/raw/org/lib-swift/main/Docs/Intro.md") == 1  # not fetched again
+    assert await run() == 0  # confirmed
+    assert docs() == (ALL - others) | {"Lib-Swift/lib-swift/Docs/Guides/README.md"}
+    assert not any(key.startswith("github:org/lib-swift:Docs/") and not key.endswith("README.md")
+                   for key in hash_file()["hashes"])
+
+
+async def test_doc_links_resolve_in_their_own_catalog(site: FakeUpstream, monkeypatch: pytest.MonkeyPatch) -> None:
+    """A GitHub file in a DocC catalog (a *.docc dir) has its DocC markup
+    converted within its own catalog: <doc:Name> links the catalog's article
+    of that name (a name in two catalogs: each links its own), under its
+    title, <doc:Name#Anchor> its heading, <doc:#Anchor> a heading of the
+    page itself; @Metadata goes. A file outside a catalog is left as it is."""
+    catalogs = GitHubDocSource(name="lib-swift", repo="org/lib-swift", branch="main",
+                               output_dir="Lib-Swift/lib-swift", framework="Lib-Swift", files=["README.md"],
+                               directories=["Sources/One/One.docc", "Sources/Two/Two.docc"])
+    monkeypatch.setattr(scrape_mlx_docs, "GITHUB_SOURCES", [GITHUB[0], catalogs])
+    site.github_file("org/lib-swift", "README.md", "# Lib\n\nSee <doc:memory>.\n")
+    site.github_file("org/lib-swift", "Sources/One/One.docc/One.md",
+                     "# ``One``\n\n@Metadata {\n    @PageKind(sampleCode)\n}\n\n## Topics\n\n"
+                     "- <doc:memory>\n- <doc:guide#Getting-Started>\n- <doc:#Topics>\n")
+    site.github_file("org/lib-swift", "Sources/One/One.docc/Articles/memory.md", "# Memory in One\n")
+    site.github_file("org/lib-swift", "Sources/One/One.docc/Articles/guide.md",
+                     "# The Guide\n\n## Getting Started\n")
+    site.github_file("org/lib-swift", "Sources/Two/Two.docc/Two.md", "# Two\n\nSee <doc:memory>.\n")
+    site.github_file("org/lib-swift", "Sources/Two/Two.docc/memory.md",
+                     "# Memory in Two\n\nSee <doc:#Wired-Limits>.\n\n## Wired Limits\n")
+    assert await run() == 0
+    assert await run(force=True) == 0  # every target now has its file
+    out = scrape_mlx_docs.OUTPUT_BASE / "Lib-Swift/lib-swift"
+    one = (out / "Sources/One/One.docc/One.md").read_text()
+    assert ("## Topics\n\n- [Memory in One](Articles/memory.md)\n"
+            "- [Getting Started](Articles/guide.md#Getting-Started)\n- [Topics](#Topics)\n") in one
+    assert "@Metadata" not in one and "@PageKind" not in one
+    assert "See [Memory in Two](memory.md)." in (out / "Sources/Two/Two.docc/Two.md").read_text()
+    assert "See [Wired Limits](#Wired-Limits)." in (out / "Sources/Two/Two.docc/memory.md").read_text()
+    assert "See <doc:memory>." in (out / "README.md").read_text()
+
+
+SPHINX_PAGE = """<html><body><main>
+<div class="header"><a href="../_sources/api/page.rst">.rst</a>
+<ul><li><button>System Settings</button></li><li><button>Light</button></li></ul></div>
+<article><h1>mlx.core.thing<a class="headerlink" href="#thing">#</a></h1>
+<p>See <a href="ops.html#mlx.core.abs">abs</a>, <a href="ops.html">ops</a>,
+<a href="https://other.example/doc/y.html#frag">y</a> and <a href="https://other.example/z.html">z</a>.</p>
+<p><img alt="Inline" src="../_images/inline.png"/>
+<a class="reference internal image-reference" href="../_images/big.png"><img alt="Big" src="../_images/big.png"/></a></p>
+<a class="image-reference" href="../_images/top.png"><img alt="Top" src="../_images/top.png"/></a>
+<a class="reference internal" href="tutorial.html"><img alt="Go" src="../_static/go.png"/></a>
+<p>Try it: <a class="reference external" href="https://binder.example/v2/gh/x/HEAD"><img alt="Binder"
+src="https://binder.example/badge.svg"/></a></p>
+<blockquote><div><img alt="Quoted" src="../_static/q.png"/></div></blockquote>
+<table><thead><tr><th><p>Name</p></th><th><p>Description</p></th></tr></thead>
+<tbody><tr><td><p><a href="list.html#list"><code>list</code></a></p></td><td><p>Convert to a Python <code>list</code>.
+See <a href="concat.html#c"><code>concatenate()</code></a>.</p></td></tr>
+<tr><td><p><img alt="Cell" src="cell.png"/></p></td><td><p>An <a href="https://pytorch.example/trace.html">external</a>
+page.</p></td></tr></tbody></table>
+<ul><li><p>Load it:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span># Load the model
+model = load()
+</pre></div></div>
+</li></ul>
+<dl><dt>batch()</dt><dd><p>An example.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre># prints (4, 10)
+print(x)</pre></div></div>
+</dd></dl>
+</article></main></body></html>"""
+
+
+def test_sphinx_conversion() -> None:
+    source = SphinxDocSource(name="X", base_url="https://h.test/doc/html/", output_dir="X", framework="X")
+    url = "https://h.test/doc/html/api/page.html"
+    markdown = scrape_mlx_docs.html_to_markdown(SPHINX_PAGE, source, url)
+    body = markdown.split("---\n", 2)[2]
+    # The article only: no theme switcher or source link, the title once
+    assert "System Settings" not in body and "_sources" not in body and "Light" not in body
+    assert body.startswith("\n# mlx.core.thing\n") and body.count("# mlx.core.thing") == 1
+    # Relative page links to .md, with or without a fragment; absolute ones unchanged
+    assert ("See [abs](ops.md#mlx.core.abs), [ops](ops.md),\n[y](https://other.example/doc/y.html#frag) and "
+            "[z](https://other.example/z.html).") in body
+    # Images resolved against the page, in a paragraph, in a link, alone in a link, in a blockquote
+    assert ("![Inline](https://h.test/doc/html/_images/inline.png)\n"
+            "![Big](https://h.test/doc/html/_images/big.png)") in body
+    assert "![Top](https://h.test/doc/html/_images/top.png)" in body
+    # An image linked elsewhere (a badge, another page) keeps its link
+    assert "[![Go](https://h.test/doc/html/_static/go.png)](tutorial.md)" in body
+    assert "Try it: [![Binder](https://binder.example/badge.svg)](https://binder.example/v2/gh/x/HEAD)" in body
+    assert "> ![Quoted](https://h.test/doc/html/_static/q.png)" in body
+    # Table cells: words kept apart (not "Pythonlist", "Seeconcatenate()"), links and images kept
+    assert "| Name | Description |" in body
+    assert "| [list](list.md#list) | Convert to a Python `list`. See [concatenate()](concat.md#c). |" in body
+    assert ("| ![Cell](https://h.test/doc/html/api/cell.png) | An "
+            "[external](https://pytorch.example/trace.html) page. |") in body
+    # Code in a list item or a definition is fenced, indented under the item
+    assert "- Load it:\n\n  ```\n  # Load the model\n  model = load()\n  ```\n" in body
+    assert ": An example.\n\n  ```\n  # prints (4, 10)\n  print(x)\n  ```\n" in body
+    assert not [line for line in body.split("\n") if line.startswith("# ") and line != "# mlx.core.thing"]
+
+
 def test_link_normalization() -> None:
     source = SphinxDocSource(name="X", base_url="https://h.test/doc/html/", output_dir="X",
                              skip_paths=["genindex.html"])

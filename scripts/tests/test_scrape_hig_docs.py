@@ -459,3 +459,284 @@ async def test_dry_run_writes_nothing(site: FakeUpstream) -> None:
     scraper = await run(dry_run=True)
     assert scraper.exit_code == 0 and docs() == ALL
     assert scrape_hig_docs.HASH_FILE.read_text() == before
+
+
+def test_images_and_videos_use_the_light_variant_under_the_hosting_root() -> None:
+    scraper = HIGDocsScraper()
+    references: Dict[str, Any] = {
+        "intro.png": {"type": "image", "alt": "A sketch.", "variants": [
+            {"traits": ["2x", "light"], "url": "/images/com.apple.HIG/intro@2x.png"},
+            {"traits": ["2x", "dark"], "url": "/images/com.apple.HIG/intro~dark@2x.png"}]},
+        "card.png": {"type": "image", "alt": None, "variants": [
+            {"traits": ["1x", "light"], "url": "https://docs-assets.developer.apple.com/published/1/card.png"}]},
+        "success.mp4": {"type": "video", "alt": None, "variants": [
+            {"traits": ["1x", "light"], "url": "/videos/com.apple.HIG/success.mp4"},
+            {"traits": ["1x", "dark"], "url": "/videos/com.apple.HIG/success~dark.mp4"}]},
+    }
+    root = "https://developer.apple.com/tutorials"
+    assert scraper._resolve_image("intro.png", references) == f"![A sketch.]({root}/images/com.apple.HIG/intro@2x.png)"
+    # A null alt is no "None"; an absolute URL stays as it is
+    assert scraper._resolve_image("card.png", references) == \
+        "![](https://docs-assets.developer.apple.com/published/1/card.png)"
+    assert scraper._resolve_video("success.mp4", references) == \
+        f"[Video: success.mp4]({root}/videos/com.apple.HIG/success.mp4)"
+    inline = scraper._extract_text_from_inline_content([{"type": "image", "identifier": "intro.png"}], references)
+    assert inline == f"![A sketch.]({root}/images/com.apple.HIG/intro@2x.png)"
+    assert scraper._resolve_image("missing.png", references) == ""
+
+
+def test_a_caption_is_on_the_line_under_its_image_or_video() -> None:
+    """An image's or video's caption (its metadata abstract) is on the line
+    under it, on one line, in every container (in a table cell, after the
+    image on the cell's line); a device frame alone is no caption, and a
+    caption whose image can't be resolved is still rendered."""
+    scraper = HIGDocsScraper()
+    references: Dict[str, Any] = {
+        "fig.png": {"type": "image", "alt": "A sketch.", "variants": [
+            {"traits": ["2x", "light"], "url": "/images/com.apple.HIG/fig@2x.png"}]},
+        "clip.mp4": {"type": "video", "variants": [
+            {"traits": ["1x", "light"], "url": "/videos/com.apple.HIG/clip.mp4"}]},
+    }
+    captioned = {"type": "paragraph", "inlineContent": [{"type": "image", "identifier": "fig.png", "metadata": {
+        "abstract": [{"type": "text", "text": "The "},
+                     {"type": "strong", "inlineContent": [{"type": "text", "text": "Done"}]},
+                     {"type": "text", "text": " button\nin a "}, {"type": "codeVoice", "code": "toolbar"}],
+        "deviceFrame": "iPhone16-top-half"}}]}
+    content = [
+        captioned,
+        {"type": "paragraph", "inlineContent": [
+            {"type": "image", "identifier": "fig.png", "metadata": {"deviceFrame": "iPhone16-top-half"}}]},
+        {"type": "video", "identifier": "clip.mp4", "metadata": {"abstract": [{"type": "text", "text": "Scrolling."}]}},
+        paragraph("After."),
+        {"type": "aside", "style": "note", "content": [captioned]},
+        {"type": "unorderedList", "items": [{"content": [captioned]}]},
+        {"type": "table", "header": "row", "rows": [[[paragraph("Example")]], [[captioned]]]},
+        {"type": "paragraph", "inlineContent": [
+            {"type": "image", "identifier": "gone.png",
+             "metadata": {"abstract": [{"type": "text", "text": "Kept."}]}}]},
+    ]
+    root = "https://developer.apple.com/tutorials"
+    image, caption = f"![A sketch.]({root}/images/com.apple.HIG/fig@2x.png)", "The **Done** button in a `toolbar`"
+    assert scraper._convert_content_to_markdown(content, references, 2) == (
+        f"{image}\n{caption}\n\n{image}\n\n"
+        f"[Video: clip.mp4]({root}/videos/com.apple.HIG/clip.mp4)\nScrolling.\n\nAfter.\n\n"
+        f"> **Note:** {image}\n> {caption}\n\n"
+        f"- {image}\n  {caption}\n\n"
+        f"| Example |\n| --- |\n| {image} {caption} |\n\n"
+        "Kept.\n\n")
+
+
+def test_an_aside_is_quoted_whole_and_ends_its_quote() -> None:
+    """Every line of an aside is quoted, and the paragraph after it isn't."""
+    scraper = HIGDocsScraper()
+    content = [
+        {"type": "aside", "style": "tip", "content": [
+            {"type": "paragraph", "inlineContent": [{"type": "text", "text": "First."}]},
+            {"type": "paragraph", "inlineContent": [{"type": "text", "text": "Second."}]}]},
+        {"type": "paragraph", "inlineContent": [{"type": "text", "text": "After."}]},
+    ]
+    markdown = scraper._convert_content_to_markdown(content, {}, 2)
+    assert "> **Tip:** First.\n>\n> Second.\n\nAfter." in markdown
+
+
+def test_an_aside_is_labeled_with_its_name_else_its_style() -> None:
+    scraper = HIGDocsScraper()
+    content = [
+        {"type": "aside", "style": "note", "name": "Developer note", "content": [paragraph("Use the API.")]},
+        {"type": "aside", "style": "important", "content": [paragraph("Unnamed.")]},
+    ]
+    assert scraper._convert_content_to_markdown(content, {}, 2).lstrip("\n") == (
+        "> **Developer note:** Use the API.\n\n> **Important:** Unnamed.\n\n")
+
+
+def test_a_reference_reads_as_the_prose_words_it() -> None:
+    """An inline reference's link text is its overriding title (its inline
+    content, formatted as Apple wrote it, else its plain text) when it carries
+    one, else the target's title, never in code voice."""
+    scraper = HIGDocsScraper()
+    references: Dict[str, Any] = {
+        "doc://com.apple.HIG/design/Human-Interface-Guidelines/dark-mode": {
+            "type": "topic", "title": "Dark Mode", "url": "/design/human-interface-guidelines/dark-mode"},
+        "doc://com.apple.HIG/design/Human-Interface-Guidelines/materials": {
+            "type": "topic", "title": "Materials", "url": "/design/human-interface-guidelines/materials"},
+        "https://developer.apple.com/design/resources/": {
+            "type": "link", "title": "Resources", "url": "https://developer.apple.com/design/resources/"},
+        "doc://com.apple.documentation/documentation/SwiftUI/Button": {
+            "type": "topic", "kind": "symbol", "role": "symbol", "title": "Button",
+            "url": "/documentation/SwiftUI/Button"},
+    }
+    inline = [
+        {"type": "text", "text": "Both light and "},
+        {"type": "reference", "identifier": "doc://com.apple.HIG/design/Human-Interface-Guidelines/dark-mode",
+         "isActive": True, "overridingTitle": "dark",
+         "overridingTitleInlineContent": [{"type": "emphasis", "inlineContent": [{"type": "text", "text": "dark"}]}]},
+        {"type": "text", "text": " use "},
+        {"type": "reference", "identifier": "doc://com.apple.HIG/design/Human-Interface-Guidelines/materials",
+         "isActive": True, "overridingTitle": "material"},
+        {"type": "text", "text": "; see "},
+        {"type": "reference", "identifier": "https://developer.apple.com/design/resources/", "isActive": True,
+         "overridingTitle": "Apple Design Resources",
+         "overridingTitleInlineContent": [{"type": "text", "text": "Apple Design Resources"}]},
+        {"type": "text", "text": ", "},
+        {"type": "reference", "identifier": "doc://com.apple.documentation/documentation/SwiftUI/Button",
+         "isActive": True},
+        {"type": "text", "text": " and "},
+        {"type": "reference", "identifier": "doc://missing", "isActive": True, "overridingTitle": "the kit"},
+        {"type": "text", "text": "."},
+    ]
+    assert scraper._extract_text_from_inline_content(inline, references) == (
+        "Both light and [*dark*](dark-mode.md) use [material](materials.md); see "
+        "[Apple Design Resources](https://developer.apple.com/design/resources/), [Button](../SwiftUI/Button.md) "
+        "and the kit.")
+
+
+def paragraph(value: str) -> Dict[str, Any]:
+    return {"type": "paragraph", "inlineContent": [{"type": "text", "text": value}]}
+
+
+def test_paragraphs_stay_apart_in_every_container() -> None:
+    """Each paragraph is a Markdown paragraph of its own (a blank line between
+    them): at the top level, in a list item (indented under its marker), after
+    a list, in a term's definition, and in a table cell on one line."""
+    scraper = HIGDocsScraper()
+    content = [
+        paragraph("One."), paragraph("Two."),
+        {"type": "unorderedList", "items": [{"content": [paragraph("Item."), paragraph("More.")]},
+                                            {"content": [paragraph("Last.")]}]},
+        paragraph("After the list."),
+        {"type": "orderedList", "items": [{"content": [paragraph("First."), paragraph("Also.")]}]},
+        {"type": "table", "header": "row", "rows": [
+            [[paragraph("Name")], [paragraph("Use")]],
+            [[paragraph("Cell.")], [paragraph("Line one."), paragraph("Line two.")]]]},
+        {"type": "termList", "items": [
+            {"term": {"inlineContent": [{"type": "text", "text": "A"}]},
+             "definition": {"content": [paragraph("Def."), paragraph("Rest.")]}},
+            {"term": {"inlineContent": [{"type": "text", "text": "B"}]},
+             "definition": {"content": [paragraph("Other.")]}}]},
+    ]
+    assert scraper._convert_content_to_markdown(content, {}, 2) == (
+        "One.\n\nTwo.\n\n"
+        "- Item.\n\n  More.\n- Last.\n\n"
+        "After the list.\n\n"
+        "1. First.\n\n   Also.\n\n"
+        "| Name | Use |\n| --- | --- |\n| Cell. | Line one. Line two. |\n\n"
+        "**A**: Def.\n\nRest.\n\n**B**: Other.\n\n")
+
+
+def test_a_page_has_one_blank_line_between_blocks() -> None:
+    """Where blocks and the page's sections meet, one blank line, never more;
+    a code listing's own blank lines stay."""
+    scraper = HIGDocsScraper()
+    data: Dict[str, Any] = {
+        "metadata": {"title": "Buttons"},
+        "abstract": [{"type": "text", "text": "Buttons start actions."}],
+        "primaryContentSections": [{"kind": "content", "content": [
+            {"type": "heading", "level": 2, "text": "Best practices"}, paragraph("Text."),
+            {"type": "aside", "style": "note", "content": [paragraph("Aside.")]},
+            {"type": "heading", "level": 2, "text": "Lists"},
+            {"type": "unorderedList", "items": [{"content": [paragraph("Item.")]}]},
+            {"type": "video", "identifier": "v.mp4"}, paragraph("Caption.")]}],
+        "topicSections": [{"title": "Related", "identifiers": ["doc://t"]}],
+        "references": {"doc://t": {"title": "Toggles", "url": "/design/human-interface-guidelines/toggles"},
+                       "v.mp4": {"type": "video", "variants": [{"traits": ["1x", "light"], "url": "/videos/v.mp4"}]}},
+    }
+    md = scraper._extract_to_markdown(data, f"{scrape_hig_docs.JSON_BASE_URL}/human-interface-guidelines/buttons.json")
+    assert "\n\n\n" not in md
+    assert ("Buttons start actions.\n\n## Best practices\nText.\n\n> **Note:** Aside.\n\n## Lists\n- Item.\n\n"
+            "[Video: v.mp4](https://developer.apple.com/tutorials/videos/v.mp4)\n\nCaption.\n\n## Topics\n\n"
+            "### Related\n\n- [Toggles](toggles.md)\n\n---\n") in md
+    listing = "\n```swift\na\n\n\nb\n```\n"
+    assert scrape_hig_docs.join_parts(["Text.\n\n", listing, "\n## Next\n"]) == f"Text.\n{listing}\n## Next\n"
+
+
+def test_a_tab_navigator_renders_every_tab_under_its_title() -> None:
+    """Each tab: its title as a bold label, then its content (a heading, a
+    table and the small print under it included); small print outside a tab
+    is a paragraph too. Links in a tab are discovered."""
+    scraper = HIGDocsScraper()
+    small = {"type": "small", "inlineContent": [{"type": "text", "text": "Sizes in points."}]}
+    content = [
+        paragraph("Before."),
+        {"type": "tabNavigator", "tabs": [
+            {"title": "iOS", "content": [
+                paragraph("Phone."), {"type": "heading", "level": 4, "text": "Sizes"},
+                {"type": "table", "header": "row", "rows": [[[paragraph("Style")], [paragraph("Size")]],
+                                                            [[paragraph("Body")], [paragraph("17")]]]},
+                small]},
+            {"title": "macOS", "content": [
+                {"type": "row", "numberOfColumns": 1, "columns": [{"size": 1, "content": [paragraph("Mac.")]}]},
+                {"type": "links", "style": "list", "items": ["doc://com.apple.HIG/design/Human-Interface-Guidelines/x"]}]},
+            {"title": "Empty", "content": []}]},
+        small, paragraph("After."),
+    ]
+    assert scraper._convert_content_to_markdown(content, {}, 2) == (
+        "Before.\n\n**iOS**:\n\nPhone.\n\n#### Sizes\n"
+        "| Style | Size |\n| --- | --- |\n| Body | 17 |\n\nSizes in points.\n\n"
+        "**macOS**:\n\nMac.\n\nSizes in points.\n\nAfter.\n\n")
+    data: Dict[str, Any] = {"primaryContentSections": [{"kind": "content", "content": content}]}
+    assert scraper._extract_urls_from_json(data) == [f"{scrape_hig_docs.JSON_BASE_URL}/human-interface-guidelines/x.json"]
+    assert not scraper.unknown_content
+
+
+def test_a_links_abstract_stays_on_its_item_line() -> None:
+    """A links abstract's line breaks (Apple's text has paragraphs) are spaces:
+    its later lines can't continue the item or end the list."""
+    scraper = HIGDocsScraper()
+    references: Dict[str, Any] = {
+        "doc://v1": {"title": "Session one", "url": "https://developer.apple.com/videos/play/wwdc2025/1",
+                     "abstract": [{"type": "text", "text": "Explore it.\n\nTo get the most out of it, watch "},
+                                  {"type": "emphasis", "inlineContent": [{"type": "text", "text": "Basics"}]},
+                                  {"type": "text", "text": " first.\n"}]},
+        "doc://v2": {"title": "Session two", "url": "https://developer.apple.com/videos/play/wwdc2025/2",
+                     "abstract": [{"type": "text", "text": "Learn more."}]},
+    }
+    content = [{"type": "links", "style": "list", "items": ["doc://v1", "doc://v2"]}, paragraph("After.")]
+    assert scraper._convert_content_to_markdown(content, references, 2) == (
+        "- [Session one](https://developer.apple.com/videos/play/wwdc2025/1) - Explore it. To get the most out of it, "
+        "watch *Basics* first.\n"
+        "- [Session two](https://developer.apple.com/videos/play/wwdc2025/2) - Learn more.\n\nAfter.\n\n")
+
+
+def test_unknown_content_is_rendered_as_its_text_and_warned(caplog: pytest.LogCaptureFixture) -> None:
+    """A block or inline type or section kind the converter doesn't know is
+    rendered as its text (its blocks as blocks, inline on one line), never
+    dropped, and counted: one WARN per type at the end of the run, with the
+    page it was first seen on. Strikethrough and a thematic break are known."""
+    scraper = HIGDocsScraper()
+    data: Dict[str, Any] = {
+        "metadata": {"title": "Mystery"},
+        "primaryContentSections": [
+            {"kind": "content", "content": [
+                {"type": "step", "content": [paragraph("Step text.")], "caption": [paragraph("Caption.")],
+                 "media": "step.png", "code": ["let a = 1", "", "print(a)"]},
+                {"type": "paragraph", "inlineContent": [
+                    {"type": "text", "text": "A "},
+                    {"type": "mystery", "inlineContent": [{"type": "text", "text": "term "}],
+                     "content": [{"type": "unorderedList", "items": [{"content": [paragraph("x")]}]}]},
+                    {"type": "strikethrough", "inlineContent": [{"type": "text", "text": "old"}]},
+                    {"type": "text", "text": " and more."}]},
+                {"type": "thematicBreak"},
+                {"type": "step", "content": [paragraph("Again.")]}]},
+            {"kind": "discussion", "content": [paragraph("Section text.")]}],
+        "references": {},
+    }
+    url = f"{scrape_hig_docs.JSON_BASE_URL}/human-interface-guidelines/mystery.json"
+    md = scraper._extract_to_markdown(data, url)
+    assert ("Step text.\n\nCaption.\n\n```\nlet a = 1\n\nprint(a)\n```\n\n"
+            "A term  - x ~~old~~ and more.\n\n---\n\nAgain.\n\nSection text.\n\n") in md
+    assert dict(scraper.unknown_content) == {
+        ("block type", "step"): 2, ("inline type", "mystery"): 1, ("section kind", "discussion"): 1}
+    with caplog.at_level("WARNING", logger=scrape_hig_docs.logger.name):
+        scraper._log_unknown_content()
+    assert [r.getMessage() for r in caplog.records] == [
+        f"unknown_content: block type 'step' x2, rendered as its text (e.g. {url})",
+        f"unknown_content: inline type 'mystery' x1, rendered as its text (e.g. {url})",
+        f"unknown_content: section kind 'discussion' x1, rendered as its text (e.g. {url})"]
+
+
+def test_a_video_is_named_by_its_alt_text() -> None:
+    scraper = HIGDocsScraper()
+    references: Dict[str, Any] = {"clip.mp4": {"type": "video", "alt": "A person taps\nthe button.", "variants": [
+        {"traits": ["1x", "light"], "url": "/videos/com.apple.HIG/clip.mp4"}]}}
+    assert scraper._resolve_video("clip.mp4", references) == \
+        "[Video: A person taps the button.](https://developer.apple.com/tutorials/videos/com.apple.HIG/clip.mp4)"
