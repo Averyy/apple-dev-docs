@@ -1,4 +1,4 @@
 Completed scraping LiveCommunicationKit!
-Total pages scraped: 22
-Pages skipped (unchanged): 164
+Total pages scraped: 0
+Pages skipped (unchanged): 186
 Pages failed: 0

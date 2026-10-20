@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-10-19T20:45:18.663130",
+    "last_updated": "2026-10-20T00:52:44.908481",
     "total_pages": 60,
-    "session_id": "2026-10-19T20:45:14.125517"
+    "session_id": "2026-10-20T00:52:40.660876"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/RelevanceKit.json": {
       "hash": "69af96980dbe516821847458b547cbd7a2c9db24c6c40fb786010f8903db0787",
-      "last_checked": "2026-10-19T20:45:14.315592",
+      "last_checked": "2026-10-20T00:52:40.825002",
       "status": "unchanged",
-      "session_id": "2026-10-19T20:45:14.125517",
+      "session_id": "2026-10-20T00:52:40.660876",
       "etag": "\"5a9b-65d55e21542bd-df\"",
       "file_path": "documentation/RelevanceKit/RelevanceKit.md"
     },
     "https://developer.apple.com/documentation/RelevanceKit": {
       "hash": "69af96980dbe516821847458b547cbd7a2c9db24c6c40fb786010f8903db0787",
-      "last_checked": "2026-10-19T20:45:14.307469",
+      "last_checked": "2026-10-20T00:52:40.776211",
       "status": "unchanged",
-      "session_id": "2026-10-19T20:45:14.125517",
+      "session_id": "2026-10-20T00:52:40.660876",
       "etag": "\"5a9b-65d55e21542bd-df\"",
       "file_path": "documentation/RelevanceKit/RelevanceKit.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/relevancekit/relevantcontext.json": {
       "hash": "f4136b0fc45f667ed40fb7ab1586c09337b995b54978cc405eee8ed9b468d2d4",
-      "last_checked": "2026-10-19T20:45:14.579354",
+      "last_checked": "2026-10-20T00:52:41.051099",
       "status": "unchanged",
-      "session_id": "2026-10-19T20:45:14.125517",
+      "session_id": "2026-10-20T00:52:40.660876",
       "etag": "\"56b8-65d55e21542bd-df\"",
       "file_path": "documentation/RelevanceKit/relevantcontext.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/relevancekit/relevantcontext/fitness(_:).json": {
       "hash": "38f09e8ce8ae7b050ee51201faa9bfb523864e4096302fe36e325a2e3c6fcaea",
-      "last_checked": "2026-10-19T20:45:14.780069",
+      "last_checked": "2026-10-20T00:52:41.330874",
       "status": "unchanged",
-      "session_id": "2026-10-19T20:45:14.125517",
+      "session_id": "2026-10-20T00:52:40.660876",
       "etag": "\"46a6-65d55e21542bd-df\"",
       "file_path": "documentation/RelevanceKit/relevantcontext/fitness.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/relevancekit/relevantcontext/fitnesscondition.json": {
       "hash": "e377e54826c0f55add4d9e0f25bb8eff9b8e81f33b947c5614990bfc25518f36",
-      "last_checked": "2026-10-19T20:45:14.959380",
+      "last_checked": "2026-10-20T00:52:41.425722",
       "status": "unchanged",
-      "session_id": "2026-10-19T20:45:14.125517",
+      "session_id": "2026-10-20T00:52:40.660876",
       "etag": "\"1d16-65d55e21542bd-df\"",
       "file_path": "documentation/RelevanceKit/relevantcontext/fitnesscondition.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/relevancekit/relevantcontext/hardware(headphones:).json": {
       "hash": "3b32149f75b75e9628728d980c862569e1f895fd1bb845c8e4cadc81f16636c5",
-      "last_checked": "2026-10-19T20:45:15.086654",
+      "last_checked": "2026-10-20T00:52:41.539513",
       "status": "unchanged",
-      "session_id": "2026-10-19T20:45:14.125517",
+      "session_id": "2026-10-20T00:52:40.660876",
       "etag": "\"235c-65d55e21542bd-df\"",
       "file_path": "documentation/RelevanceKit/relevantcontext/hardware-headphones.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/relevancekit/relevantcontext/headphonescondition.json": {
       "hash": "6d33979851a69769d94663c58239129d56c4f5a6aed9e32b186d95c7c6fb1d15",
-      "last_checked": "2026-10-19T20:45:15.270717",
+      "last_checked": "2026-10-20T00:52:41.660039",
       "status": "unchanged",
-      "session_id": "2026-10-19T20:45:14.125517",
+      "session_id": "2026-10-20T00:52:40.660876",
       "etag": "\"1999-65d55e21542bd-df\"",
       "file_path": "documentation/RelevanceKit/relevantcontext/headphonescondition.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/relevancekit/relevantcontext/location(_:).json": {
       "hash": "85c25600d76f7532016b5d2d291ea13bcd402efd9c08f30626de65b7439b714a",
-      "last_checked": "2026-10-19T20:45:15.547619",
+      "last_checked": "2026-10-20T00:52:41.832353",
       "status": "unchanged",
-      "session_id": "2026-10-19T20:45:14.125517",
+      "session_id": "2026-10-20T00:52:40.660876",
       "etag": "\"2a1e-65d55e21542bd-df\"",
       "file_path": "documentation/RelevanceKit/relevantcontext/location.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/relevancekit/relevantcontext/location(inferred:).json": {
       "hash": "a1f782130e4d90610c5a11f293ca446cd19469e1f67544b17c161e5e83ff8faa",
-      "last_checked": "2026-10-19T20:45:15.689747",
+      "last_checked": "2026-10-20T00:52:41.969043",
       "status": "unchanged",
-      "session_id": "2026-10-19T20:45:14.125517",
+      "session_id": "2026-10-20T00:52:40.660876",
       "etag": "\"29dc-65d55e21542bd-df\"",
       "file_path": "documentation/RelevanceKit/relevantcontext/location-inferred.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/relevancekit/relevantcontext/inferredlocation.json": {
       "hash": "1e18fc35bb48f7df3585da0d08b282134b9ff3562e42b96fb85640fdd7070c50",
-      "last_checked": "2026-10-19T20:45:15.821118",
+      "last_checked": "2026-10-20T00:52:42.077956",
       "status": "unchanged",
-      "session_id": "2026-10-19T20:45:14.125517",
+      "session_id": "2026-10-20T00:52:40.660876",
       "etag": "\"28d0-65d55e21542bd-df\"",
       "file_path": "documentation/RelevanceKit/relevantcontext/inferredlocation.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/relevancekit/relevantcontext/sleep(_:).json": {
       "hash": "a7023c3accfa1817ad66c685163c3acffc1f5a8d2d5d8c7645c9c8b4074ff7d9",
-      "last_checked": "2026-10-19T20:45:15.954034",
+      "last_checked": "2026-10-20T00:52:42.191745",
       "status": "unchanged",
-      "session_id": "2026-10-19T20:45:14.125517",
+      "session_id": "2026-10-20T00:52:40.660876",
       "etag": "\"2b0e-65d55e21542bd-df\"",
       "file_path": "documentation/RelevanceKit/relevantcontext/sleep.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/relevancekit/relevantcontext/sleepcondition.json": {
       "hash": "3b6b4a5042cc0c06567b4f338c574f292d7e19c0281566319d0bd83317200c8f",
-      "last_checked": "2026-10-19T20:45:16.095617",
+      "last_checked": "2026-10-20T00:52:42.326329",
       "status": "unchanged",
-      "session_id": "2026-10-19T20:45:14.125517",
+      "session_id": "2026-10-20T00:52:40.660876",
       "etag": "\"1c7c-65d55e21542bd-df\"",
       "file_path": "documentation/RelevanceKit/relevantcontext/sleepcondition.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/relevancekit/relevantcontext/date(_:).json": {
       "hash": "76dc529469fede1a73a4180f4397216e8e28c8ad0df4f9aba1fb88ad5877a521",
-      "last_checked": "2026-10-19T20:45:16.223427",
+      "last_checked": "2026-10-20T00:52:42.467605",
       "status": "unchanged",
-      "session_id": "2026-10-19T20:45:14.125517",
+      "session_id": "2026-10-20T00:52:40.660876",
       "etag": "\"3747-65d55e21542bd-df\"",
       "file_path": "documentation/RelevanceKit/relevantcontext/date.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/relevancekit/relevantcontext/date(_:kind:).json": {
       "hash": "661ffed2aa43abc20ad667e7647a67a079f02acf0863389f4c875bb9b50b9628",
-      "last_checked": "2026-10-19T20:45:16.335929",
+      "last_checked": "2026-10-20T00:52:42.574310",
       "status": "unchanged",
-      "session_id": "2026-10-19T20:45:14.125517",
+      "session_id": "2026-10-20T00:52:40.660876",
       "etag": "\"404b-65d55e21542bd-df\"",
       "file_path": "documentation/RelevanceKit/relevantcontext/date-kind.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/relevancekit/relevantcontext/date(interval:kind:).json": {
       "hash": "b05b05aeebe5a8376aec0dedd032a19a1dcb8507090550451e112e90bd8afab8",
-      "last_checked": "2026-10-19T20:45:16.498092",
+      "last_checked": "2026-10-20T00:52:42.737049",
       "status": "unchanged",
-      "session_id": "2026-10-19T20:45:14.125517",
+      "session_id": "2026-10-20T00:52:40.660876",
       "etag": "\"39fe-65d55e21542bd-df\"",
       "file_path": "documentation/RelevanceKit/relevantcontext/date-intervalkind.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/relevancekit/relevantcontext/date(range:kind:).json": {
       "hash": "d8b51303263630ae4f961d1033cdbe9bae6d384a56ede2d3c1cf6e93b3acbb75",
-      "last_checked": "2026-10-19T20:45:16.595240",
+      "last_checked": "2026-10-20T00:52:42.830055",
       "status": "unchanged",
-      "session_id": "2026-10-19T20:45:14.125517",
+      "session_id": "2026-10-20T00:52:40.660876",
       "etag": "\"3cda-65d55e21542bd-df\"",
       "file_path": "documentation/RelevanceKit/relevantcontext/date-rangekind.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/relevancekit/relevantcontext/datekind.json": {
       "hash": "8fe9e93b68ff88090c414fb2d168d99cdae539a2a30aa7b8944ccc7a81452c24",
-      "last_checked": "2026-10-19T20:45:16.722377",
+      "last_checked": "2026-10-20T00:52:42.969230",
       "status": "unchanged",
-      "session_id": "2026-10-19T20:45:14.125517",
+      "session_id": "2026-10-20T00:52:40.660876",
       "etag": "\"35d3-65d55e21542bd-df\"",
       "file_path": "documentation/RelevanceKit/relevantcontext/datekind.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/relevancekit/relevantcontext/date(from:to:).json": {
       "hash": "13c3ce524bfad1d8c4bb94e2ab0ff0f07a868df1f55aed7d253bec554fb28015",
-      "last_checked": "2026-10-19T20:45:16.856086",
+      "last_checked": "2026-10-20T00:52:43.149763",
       "status": "unchanged",
-      "session_id": "2026-10-19T20:45:14.125517",
+      "session_id": "2026-10-20T00:52:40.660876",
       "etag": "\"39f8-65d55e21542bd-df\"",
       "file_path": "documentation/RelevanceKit/relevantcontext/date-fromto.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/relevancekit/relevantcontext/location(category:).json": {
       "hash": "a33f3f4c15b05d17684e63cce1e6caa93e76520a4c11b9746040f98c5f32a93f",
-      "last_checked": "2026-10-19T20:45:17.044361",
+      "last_checked": "2026-10-20T00:52:43.238511",
       "status": "unchanged",
-      "session_id": "2026-10-19T20:45:14.125517",
+      "session_id": "2026-10-20T00:52:40.660876",
       "etag": "\"32d1-65d55e21542bd-df\"",
       "file_path": "documentation/RelevanceKit/relevantcontext/location-category.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/relevancekit/relevantcontext/fitnesscondition/activityringsincomplete.json": {
       "hash": "d312f87f7176a778d6dbd7b1b5f796637b4ae33505a7160e74e03ba7b4fb56ee",
-      "last_checked": "2026-10-19T20:45:17.179012",
+      "last_checked": "2026-10-20T00:52:43.360538",
       "status": "unchanged",
-      "session_id": "2026-10-19T20:45:14.125517",
+      "session_id": "2026-10-20T00:52:40.660876",
       "etag": "\"1c23-65d55e21542bd-df\"",
       "file_path": "documentation/RelevanceKit/relevantcontext/fitnesscondition/activityringsincomplete.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/relevancekit/relevantcontext/fitnesscondition/workoutactive.json": {
       "hash": "ac20980112aedbc90a807fd71671401fe2ce2b2d0661e983f03581716da77a24",
-      "last_checked": "2026-10-19T20:45:17.326035",
+      "last_checked": "2026-10-20T00:52:43.486532",
       "status": "unchanged",
-      "session_id": "2026-10-19T20:45:14.125517",
+      "session_id": "2026-10-20T00:52:40.660876",
       "etag": "\"1be2-65d55e21542bd-df\"",
       "file_path": "documentation/RelevanceKit/relevantcontext/fitnesscondition/workoutactive.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/relevancekit/relevantcontext/headphonescondition/connected.json": {
       "hash": "8514b95cf46eab20d313972d4b482fc6380b188eeda39689a217117ff82b29d5",
-      "last_checked": "2026-10-19T20:45:17.427453",
+      "last_checked": "2026-10-20T00:52:43.606987",
       "status": "unchanged",
-      "session_id": "2026-10-19T20:45:14.125517",
+      "session_id": "2026-10-20T00:52:40.660876",
       "etag": "\"1769-65d55e21542bd-df\"",
       "file_path": "documentation/RelevanceKit/relevantcontext/headphonescondition/connected.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/relevancekit/relevantcontext/inferredlocation/commute.json": {
       "hash": "774d53abefa532df5fa5cfe9252c028f48ad9d00a6fecc5f9ff092593134051c",
-      "last_checked": "2026-10-19T20:45:17.552344",
+      "last_checked": "2026-10-20T00:52:43.723556",
       "status": "unchanged",
-      "session_id": "2026-10-19T20:45:14.125517",
+      "session_id": "2026-10-20T00:52:40.660876",
       "etag": "\"2343-65d55e21542bd-df\"",
       "file_path": "documentation/RelevanceKit/relevantcontext/inferredlocation/commute.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/relevancekit/relevantcontext/inferredlocation/home.json": {
       "hash": "d6ab4e85ad63cfe8b4b96bf427fc3f3b88e7ab8b76f39c6332ce1ca1cacad7f3",
-      "last_checked": "2026-10-19T20:45:17.732261",
+      "last_checked": "2026-10-20T00:52:43.856022",
       "status": "unchanged",
-      "session_id": "2026-10-19T20:45:14.125517",
+      "session_id": "2026-10-20T00:52:40.660876",
       "etag": "\"2324-65d55e21542bd-df\"",
       "file_path": "documentation/RelevanceKit/relevantcontext/inferredlocation/home.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/relevancekit/relevantcontext/inferredlocation/school.json": {
       "hash": "c5bf749e97244cceea5954b7bba3f78ae480a8e485dedacd79c09526e211ea0c",
-      "last_checked": "2026-10-19T20:45:17.830133",
+      "last_checked": "2026-10-20T00:52:43.981900",
       "status": "unchanged",
-      "session_id": "2026-10-19T20:45:14.125517",
+      "session_id": "2026-10-20T00:52:40.660876",
       "etag": "\"2330-65d55e21542bd-df\"",
       "file_path": "documentation/RelevanceKit/relevantcontext/inferredlocation/school.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/relevancekit/relevantcontext/inferredlocation/work.json": {
       "hash": "2800085745ca44d9d164b67c8359d550e03baf86779dca89953645bb69c4b1a7",
-      "last_checked": "2026-10-19T20:45:17.965355",
+      "last_checked": "2026-10-20T00:52:44.100150",
       "status": "unchanged",
-      "session_id": "2026-10-19T20:45:14.125517",
+      "session_id": "2026-10-20T00:52:40.660876",
       "etag": "\"2324-65d55e21542bd-df\"",
       "file_path": "documentation/RelevanceKit/relevantcontext/inferredlocation/work.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/relevancekit/relevantcontext/sleepcondition/bedtime.json": {
       "hash": "a1b7b7690ba1076927d22a8fb0ce4ae7da1d05fc718dc1498c8e80ca8484237b",
-      "last_checked": "2026-10-19T20:45:18.079927",
+      "last_checked": "2026-10-20T00:52:44.228547",
       "status": "unchanged",
-      "session_id": "2026-10-19T20:45:14.125517",
+      "session_id": "2026-10-20T00:52:40.660876",
       "etag": "\"1b46-65d55e21542bd-df\"",
       "file_path": "documentation/RelevanceKit/relevantcontext/sleepcondition/bedtime.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/relevancekit/relevantcontext/sleepcondition/wakeup.json": {
       "hash": "e475cd07aed2cc20ad5b12fc99371646f1ae11feedd0a6c8de27ba595ad50171",
-      "last_checked": "2026-10-19T20:45:18.206787",
+      "last_checked": "2026-10-20T00:52:44.346655",
       "status": "unchanged",
-      "session_id": "2026-10-19T20:45:14.125517",
+      "session_id": "2026-10-20T00:52:40.660876",
       "etag": "\"1b3e-65d55e21542bd-df\"",
       "file_path": "documentation/RelevanceKit/relevantcontext/sleepcondition/wakeup.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/relevancekit/relevantcontext/datekind/default.json": {
       "hash": "dcb2c0d40ddd0e410ebed2381fdb66a9fb8c374d832f94393747125e252af2e6",
-      "last_checked": "2026-10-19T20:45:18.346973",
+      "last_checked": "2026-10-20T00:52:44.475256",
       "status": "unchanged",
-      "session_id": "2026-10-19T20:45:14.125517",
+      "session_id": "2026-10-20T00:52:40.660876",
       "etag": "\"1fad-65d55e21542bd-df\"",
       "file_path": "documentation/RelevanceKit/relevantcontext/datekind/default.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/relevancekit/relevantcontext/datekind/informational.json": {
       "hash": "695ce116c29b8a33ccac83dbaf5f792e3cd693b7e9ba6cd47dee4da04a49cbd4",
-      "last_checked": "2026-10-19T20:45:18.460679",
+      "last_checked": "2026-10-20T00:52:44.590908",
       "status": "unchanged",
-      "session_id": "2026-10-19T20:45:14.125517",
+      "session_id": "2026-10-20T00:52:40.660876",
       "etag": "\"203f-65d55e21542bd-df\"",
       "file_path": "documentation/RelevanceKit/relevantcontext/datekind/informational.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/relevancekit/relevantcontext/datekind/scheduled.json": {
       "hash": "cd4b936c1e8d78e0a15683d6af989cdd358c3cc50fd2bc57c2a8677c6b3125b6",
-      "last_checked": "2026-10-19T20:45:18.607525",
+      "last_checked": "2026-10-20T00:52:44.902912",
       "status": "unchanged",
-      "session_id": "2026-10-19T20:45:14.125517",
+      "session_id": "2026-10-20T00:52:40.660876",
       "etag": "\"1fee-65d55e21542bd-df\"",
       "file_path": "documentation/RelevanceKit/relevantcontext/datekind/scheduled.md"
     },

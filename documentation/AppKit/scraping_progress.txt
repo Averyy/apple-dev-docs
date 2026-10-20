@@ -1,4 +1,4 @@
 Completed scraping AppKit!
-Total pages scraped: 1138
-Pages skipped (unchanged): 11556
+Total pages scraped: 0
+Pages skipped (unchanged): 12694
 Pages failed: 0
