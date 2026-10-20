@@ -4,11 +4,24 @@ import sys
 import os
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
+import re
 from pathlib import Path
+
+import pytest
+
+from scraper.config import Config
 from scraper.json_scraper import AppleJSONDocumentationScraper
+from scraper.utils.naming import seg_name
 from scraper.utils.markdown_converter import AppleDocMarkdownConverter
 from scraper.utils.hash_manager import HashManager
 import tempfile
+
+
+@pytest.fixture(autouse=True)
+def no_hash_files(tmp_path, monkeypatch):
+    """The scrapers made here see no hash file: in a checkout, .hashes/WatchKit_hashes.json's
+    casing would win over the 'watchkit' id the tests use (_canonical_framework_id)."""
+    monkeypatch.setattr(Config, "CACHE_DIR", tmp_path / ".hashes")
 
 
 class TestCriticalPathGeneration:
@@ -155,25 +168,24 @@ class TestURLConversion:
 class TestFilenameGeneration:
     """Test critical filename generation to prevent file conflicts."""
     
-    def setup_method(self):
-        self.scraper = AppleJSONDocumentationScraper('watchkit')
-        
     def test_method_names_dont_break_filesystem(self):
         """CRITICAL: Special characters in method names must be cleaned."""
         dangerous_names = [
-            ("init?(rawValue: Int)", "init-rawvalue-int"),  # ? would break
-            ("foo:bar:baz:", "foo-bar-baz"),  # : is invalid on Windows
-            ("operator==(_:_:)", "operator-"),  # = might cause issues
-            ("foo/bar", "foo-bar"),  # / would create subdirectory
+            ("init?(rawValue: Int)", "init_(rawvalue_-int)"),  # ? would break
+            ("foo:bar:baz:", "foo_bar_baz_"),  # : is invalid on Windows
+            ("operator==(_:_:)", "operatoreqeq(_,_)"),  # = might cause issues
+            ("foo/bar", "foo_bar"),  # / would create subdirectory
+            ("*(_:_:)", "star(_,_)"),  # * is invalid on Windows
+            ("'.._(_:_:)", "dotdotop(_,_)"),  # Apple's URL for ..<: never a hidden file
+            ("'..<(_:_:)", "dot._(_,_)"),
         ]
         
         for input_name, expected in dangerous_names:
-            result = self.scraper._create_clean_filename(input_name, {})
-            # Must not contain filesystem-breaking characters
-            assert "/" not in result
-            assert ":" not in result
-            assert "?" not in result
-            assert "*" not in result
+            result = seg_name(input_name)
+            assert result == expected
+            # Only [a-z0-9._(),-]: no filesystem-breaking characters
+            assert re.fullmatch(r"[a-z0-9._(),-]+", result)
+            assert not result.startswith(".")
         print("✓ Filename generation test passed")
 
 

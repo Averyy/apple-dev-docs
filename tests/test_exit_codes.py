@@ -4,7 +4,8 @@
   the valve holds a mass removal for confirmation;
 - 1: an error of ours: a framework raised, its cleanup was blocked (a failed
   request, a local error, zero touched), a page failed persistently (no
-  longer blocking), the orphan cleanup failed, or the re-indexing failed;
+  longer blocking), two pages' file names clashed (never blocking), the
+  orphan cleanup failed, or the re-indexing failed;
 - 2: aborted before scraping: the list guard, a --frameworks name that is no
   framework, a --resume target that isn't listed (or missing);
 - 130: interrupted.
@@ -186,6 +187,23 @@ class TestExit1:
         assert await scrape(monkeypatch, routes, "--frameworks", FW, *CI) == 1
         assert f"   - {FW}: persistent_local_error x1\n" in capsys.readouterr().out
         assert file_of(BETA).exists()  # never deleted on a local error
+
+    async def test_a_filename_clash_flags_the_run_but_never_blocks_cleanup(
+        self, runs: Runs, monkeypatch: pytest.MonkeyPatch, capsys: pytest.CaptureFixture[str]
+    ) -> None:
+        """Apple adds a page named like alpha: it gets a hashed stem, alpha keeps its file."""
+        await seeded(runs)
+        orphan = stray()
+        clashing = "testkit/alpha-"  # seg_name strips the "-"
+        site: Site = {**SITE, ROOT: [*SITE[ROOT], clashing], clashing: []}
+        capsys.readouterr()
+        assert await scrape(monkeypatch, routes_for(site), "--frameworks", FW, *CI) == 1
+        assert f"Errors of ours this run (1), exit code 1:\n   - {FW}: filename_clash x1\n" in capsys.readouterr().out
+        assert not orphan.exists()  # the cleanup ran
+        hashed = Runs.entry(clashing)["file_path"]
+        assert Path(hashed).name.startswith("alpha-") and Path(hashed).exists()
+        assert Runs.entry(ALPHA)["file_path"] == str(file_of(ALPHA))
+        assert f"The {ALPHA} page." in file_of(ALPHA).read_text(encoding="utf-8")
 
     async def test_a_framework_that_raised(self, runs: Runs, monkeypatch: pytest.MonkeyPatch,
                                            capsys: pytest.CaptureFixture[str]) -> None:

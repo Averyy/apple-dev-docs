@@ -79,10 +79,12 @@ def framework_errors(outcomes: Sequence[FrameworkOutcome]) -> List[str]:
 
     That is a framework that raised, one whose cleanup was blocked (a failed
     request or local error, its root, a hash file that couldn't be loaded,
-    zero entries touched), and one with a page whose fetch failure or local
+    zero entries touched), one with a page whose fetch failure or local
     error reached PERSISTENT_FAILURE_RUNS (it no longer blocks, but still
-    flags the run). A root that returned 404/410 and a mass removal the
-    valve holds for confirmation aren't errors.
+    flags the run), and one with a filename clash (two pages named alike:
+    the newcomer was written under a hashed stem; it never blocks). A root
+    that returned 404/410 and a mass removal the valve holds for
+    confirmation aren't errors.
     """
     errors = []
     for outcome in outcomes:
@@ -92,6 +94,8 @@ def framework_errors(outcomes: Sequence[FrameworkOutcome]) -> List[str]:
             reasons.append(f"persistent_fetch_failure x{len(outcome.persistent_fetch_failures)}")
         if outcome.persistent_local_errors:
             reasons.append(f"persistent_local_error x{len(outcome.persistent_local_errors)}")
+        if outcome.filename_clashes:
+            reasons.append(f"filename_clash x{len(outcome.filename_clashes)}")
         if reasons:
             errors.append(f"{outcome.framework_id}: {', '.join(reasons)}")
     return errors
@@ -252,9 +256,9 @@ async def scrape_everything() -> int:
       the second such run) and a mass removal the valve holds for
       confirmation aren't errors.
     - 1: an error of ours (framework_errors: a framework raised, its cleanup
-      was blocked, or a page failed on PERSISTENT_FAILURE_RUNS runs), the
-      orphan cleanup failed to delete a file or write a hash file, or the
-      re-indexing failed.
+      was blocked, a page failed on PERSISTENT_FAILURE_RUNS runs, or two
+      pages' file names clashed), the orphan cleanup failed to delete a file
+      or write a hash file, or the re-indexing failed.
     - 2: aborted before scraping: the list guard (check_framework_list), a
       --frameworks name that is no framework's id or title, or a --resume
       framework that isn't in the list.

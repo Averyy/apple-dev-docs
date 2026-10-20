@@ -30,6 +30,7 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')
 from scraper.base import NOT_MODIFIED, FetchFailed, NotModified
 from scraper.config import Config
 from scraper.json_scraper import AppleJSONDocumentationScraper
+from scraper.utils.naming import clash_suffix
 
 FW = "testkit"
 JSON_BASE = AppleJSONDocumentationScraper.JSON_BASE_URL
@@ -660,13 +661,13 @@ class TestProcessQueuedUrl:
         assert rig.mark_error_calls == []
         assert list(rig.scraper._local_errors) == [json_url(ALPHA)]
 
-    async def test_local_error_while_extracting_finds_a_file_named_by_its_kind(
+    async def test_local_error_while_extracting_finds_the_file_of_a_page_named_like_its_framework(
         self, make_rig: Callable[..., Rig], tmp_path: Path, monkeypatch: pytest.MonkeyPatch
     ) -> None:
-        """A page named like its framework gets a kind suffix: the kind is read from its JSON."""
+        """A page named like its framework gets "-page": its path comes from its URL alone."""
         path = f"{FW}/{FW}"
         rig = make_rig({json_url(path): [ok(page(path), "E-T2")]})
-        file_path = rig.scraper.output_dir / f"{FW}-class.md"
+        file_path = rig.scraper.output_dir / f"{FW}-page.md"
         file_path.parent.mkdir(parents=True)
         file_path.write_text("# old\n", encoding="utf-8")
         for key in (json_url(path), doc_url(path)):
@@ -723,15 +724,16 @@ class TestProcessQueuedUrl:
         assert list(rig.scraper._local_errors) == [json_url(ALPHA)]
         assert [e["url"] for e in rig.logged("page_file_path_failed")] == [json_url(ALPHA)]
 
-    async def test_local_error_saving_a_name_too_long_writes_an_error_entry(
+    async def test_local_error_saving_a_path_too_long_writes_an_error_entry(
         self, make_rig: Callable[..., Rig], tmp_path: Path
     ) -> None:
-        """A new page whose file name is over the filesystem's limit (255 bytes).
+        """A new page whose path is over the filesystem's limit (PATH_MAX).
 
+        Each name is capped at 230 bytes (naming.SEGMENT_MAX), a path isn't.
         The file lookup's existence check fails the same way the save did:
         still a counted local error, never the outer except.
         """
-        path = f"{FW}/{'a' * 300}"
+        path = f"{FW}/" + "/".join(["a" * 200] * 25)
         rig = make_rig({json_url(path): [ok(page(path, ["testkit/alpha/child"]), "E-L")]})
         queue: Deque[str] = deque()
         with capture_logs() as events:
@@ -779,6 +781,156 @@ class TestProcessQueuedUrl:
         assert rig.scraper.outcome.blocks == {"exception": [json_url(ALPHA)]}
         assert rig.scraper._local_errors == {}
         assert recorded(rig) == {}
+
+
+# Named like ALPHA: seg_name strips the trailing "-"
+OTHER = "testkit/alpha-"
+
+
+class TestTripwire:
+    """The write-time tripwire: a page never overwrites another page's file."""
+
+    @staticmethod
+    async def process(rig: Rig) -> None:
+        with capture_logs() as events:
+            await rig.scraper._process_queued_url(json_url(ALPHA), deque())
+        rig.events = events
+        assert rig.logged("error_processing_url") == []
+
+    @staticmethod
+    def hashed(rig: Rig) -> Path:
+        """ALPHA's file under the tripwire's hashed stem."""
+        return rig.scraper.output_dir / f"alpha{clash_suffix(json_url(ALPHA))}.md"
+
+    @staticmethod
+    def record(rig: Rig, path: str, file_path: Path, body_hash: str, etag: str) -> Dict[str, Any]:
+        """Both of the page's keys record file_path; the entry they hold."""
+        entry = {"hash": body_hash, "etag": etag, "file_path": str(file_path)}
+        rig.hashes[json_url(path)] = dict(entry)
+        rig.hashes[doc_url(path)] = dict(entry)
+        return entry
+
+    def test_the_two_pages_are_named_alike(self, make_rig: Callable[..., Rig]) -> None:
+        rig = make_rig({})
+        path = rig.scraper._get_organized_file_path
+        assert path(doc_url(OTHER), {}) == path(doc_url(ALPHA), {}) == rig.scraper.output_dir / "alpha.md"
+        assert self.hashed(rig).name == f"alpha-{hashlib.sha256(json_url(ALPHA).lower().encode()).hexdigest()[:8]}.md"
+
+    async def test_a_clash_writes_a_hashed_stem_and_flags_the_run_without_blocking(
+        self, make_rig: Callable[..., Rig]
+    ) -> None:
+        rig = make_rig({json_url(ALPHA): [ok(ALPHA_BODY, "E-A")]})
+        theirs = rig.seed_good(OTHER, page(OTHER), "E-O")
+        await self.process(rig)
+        hashed = self.hashed(rig)
+        assert theirs.read_text(encoding="utf-8") == f"# {OTHER}\n"
+        assert "The testkit/alpha page." in hashed.read_text(encoding="utf-8")
+        for path, file_path in ((ALPHA, hashed), (OTHER, theirs)):
+            for key in (json_url(path), doc_url(path)):
+                assert rig.hashes[key]["file_path"] == str(file_path)
+        [event] = rig.logged("filename_clash")
+        assert event["log_level"] == "error"
+        assert (event["url"], event["path"], event["other_url"], event["written_to"]) == (
+            json_url(ALPHA), str(theirs), json_url(OTHER).lower(), str(hashed)
+        )
+        assert rig.scraper.outcome.filename_clashes == [json_url(ALPHA)]
+        assert rig.scraper.outcome.blocks == {} and not rig.scraper.outcome.skip_cleanup
+        assert rig.scraper._saved_ok == {json_url(ALPHA)}
+        assert {json_url(ALPHA), doc_url(ALPHA)} <= rig.touched
+
+    async def test_a_page_rewritten_under_its_own_name_is_no_clash(self, make_rig: Callable[..., Rig]) -> None:
+        rig = make_rig({json_url(ALPHA): [ok(ALPHA_BODY, "E-A2")]})
+        mine = rig.seed_good(ALPHA, ALPHA_BODY, "E-A")
+        rig.hashes[json_url(ALPHA)]["hash"] = "old"
+        await self.process(rig)
+        assert "The testkit/alpha page." in mine.read_text(encoding="utf-8")
+        assert rig.logged("filename_clash") == [] and rig.scraper.outcome.filename_clashes == []
+
+    async def test_a_hashed_stem_is_kept_while_the_page_answers_304(self, make_rig: Callable[..., Rig]) -> None:
+        rig = make_rig({json_url(ALPHA): [ok(ALPHA_BODY, "E-A")]})
+        theirs = rig.seed_good(OTHER, page(OTHER), "E-O")
+        hashed = self.hashed(rig)
+        hashed.write_text("# alpha\n", encoding="utf-8")
+        entry = self.record(rig, ALPHA, hashed, hashlib.sha256(ALPHA_BODY.encode()).hexdigest(), "E-A")
+        await self.process(rig)
+        assert rig.fake.requests[0] == (json_url(ALPHA), "E-A")
+        assert_touched_only(rig, json_url(ALPHA), entry)
+        assert hashed.read_text(encoding="utf-8") == "# alpha\n"
+        assert theirs.read_text(encoding="utf-8") == f"# {OTHER}\n"
+        assert rig.logged("filename_clash") == [] and rig.scraper.outcome.filename_clashes == []
+
+    async def test_a_hashed_stem_is_kept_while_the_other_page_has_the_name(self, make_rig: Callable[..., Rig]) -> None:
+        rig = make_rig({json_url(ALPHA): [ok(ALPHA_BODY, "E-A2")]})
+        rig.seed_good(OTHER, page(OTHER), "E-O")
+        hashed = self.hashed(rig)
+        hashed.write_text("# alpha\n", encoding="utf-8")
+        self.record(rig, ALPHA, hashed, "old", "E-A")
+        await self.process(rig)
+        assert "The testkit/alpha page." in hashed.read_text(encoding="utf-8")
+        assert rig.hashes[json_url(ALPHA)]["file_path"] == str(hashed)
+        assert rig.scraper.outcome.filename_clashes == [json_url(ALPHA)]
+        assert rig.logged("clash_file_removed") == []
+
+    async def test_once_the_other_page_is_gone_the_page_takes_its_name_back(self, make_rig: Callable[..., Rig]) -> None:
+        """Its hashed file is deleted, as no entry will record it again; the run is clean."""
+        rig = make_rig({json_url(ALPHA): [ok(ALPHA_BODY, "E-A2")]})
+        theirs = rig.seed_good(OTHER, page(OTHER), "E-O")
+        # Apple removed the other page last run; its file waits for cleanup
+        rig.hashes[json_url(OTHER)] = {"status": "error", "error": "HTTP 404"}
+        hashed = self.hashed(rig)
+        hashed.write_text("# alpha\n", encoding="utf-8")
+        self.record(rig, ALPHA, hashed, "old", "E-A")
+        await self.process(rig)
+        assert not hashed.exists()
+        assert "The testkit/alpha page." in theirs.read_text(encoding="utf-8")
+        for key in (json_url(ALPHA), doc_url(ALPHA)):
+            assert rig.hashes[key]["file_path"] == str(theirs)
+        assert [e["file"] for e in rig.logged("clash_file_removed")] == [str(hashed)]
+        assert rig.logged("filename_clash") == [] and rig.scraper.outcome.filename_clashes == []
+
+    async def test_the_hashed_file_stays_when_the_write_fails(
+        self, make_rig: Callable[..., Rig], monkeypatch: pytest.MonkeyPatch
+    ) -> None:
+        rig = make_rig({json_url(ALPHA): [ok(ALPHA_BODY, "E-A2")]})
+        rig.seed_good(OTHER, page(OTHER), "E-O")
+        rig.hashes[json_url(OTHER)] = {"status": "error", "error": "HTTP 404"}
+        hashed = self.hashed(rig)
+        hashed.write_text("# alpha\n", encoding="utf-8")
+        entry = self.record(rig, ALPHA, hashed, "old", "E-A")
+
+        def boom(data: Dict[str, Any]) -> str:
+            raise ValueError("bad table")
+
+        monkeypatch.setattr(rig.scraper.markdown_converter, "convert_page", boom)
+        await self.process(rig)
+        assert hashed.read_text(encoding="utf-8") == "# alpha\n"
+        assert_touched_only(rig, json_url(ALPHA), entry)
+
+    async def test_a_clashing_page_that_fails_to_save_never_records_the_other_pages_file(
+        self, make_rig: Callable[..., Rig], monkeypatch: pytest.MonkeyPatch
+    ) -> None:
+        rig = make_rig({json_url(ALPHA): [ok(ALPHA_BODY, "E-A")]})
+        theirs = rig.seed_good(OTHER, page(OTHER), "E-O")
+
+        def boom(data: Dict[str, Any]) -> str:
+            raise ValueError("bad table")
+
+        monkeypatch.setattr(rig.scraper.markdown_converter, "convert_page", boom)
+        await self.process(rig)
+        # The hashed file isn't on disk: nothing to keep
+        assert_error_entry(rig.hashes[json_url(ALPHA)], "local error: bad table")
+        assert rig.hashes[json_url(OTHER)]["file_path"] == str(theirs)
+        assert rig.scraper.outcome.filename_clashes == [json_url(ALPHA)]
+        assert list(rig.scraper._local_errors) == [json_url(ALPHA)]
+
+    async def test_a_304_backfill_never_records_the_other_pages_file(self, make_rig: Callable[..., Rig]) -> None:
+        """The backfilled path is the hashed one: missing, so the next run writes it."""
+        rig = make_rig({json_url(ALPHA): [ok(ALPHA_BODY, "E-A")]})
+        rig.seed_good(OTHER, page(OTHER), "E-O")
+        rig.hashes[json_url(ALPHA)] = {"hash": hashlib.sha256(ALPHA_BODY.encode()).hexdigest(), "etag": "E-A"}
+        await self.process(rig)
+        assert rig.hashes[json_url(ALPHA)]["file_path"] == str(self.hashed(rig))
+        assert rig.scraper.hash_manager.get_etag(json_url(ALPHA)) is None
 
 
 class TestScrapePage:

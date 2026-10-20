@@ -466,10 +466,10 @@ class TestLocalErrors:
         assert runs.orphans() == {file_of(BETA)}
         assert would_delete(scraper) == {FW: [file_of(BETA)]}
 
-    async def test_a_new_page_whose_name_is_too_long_blocks_until_3(self, runs: Runs) -> None:
-        """Its save fails every run (a file name over the filesystem's 255-byte limit): counted like any local error."""
+    async def test_a_new_page_whose_path_is_too_long_blocks_until_3(self, runs: Runs) -> None:
+        """Its save fails every run (a path over the filesystem's PATH_MAX; names are capped): counted like any local error."""
         await seeded(runs)
-        long = f"{FW}/{'a' * 300}"
+        long = f"{FW}/" + "/".join(["a" * 200] * 25)
         # Apple adds the page and stops linking beta (a real removal)
         site: Site = {**SITE, ROOT: [ALPHA, GAMMA, long], long: []}
         for run in (1, 2):

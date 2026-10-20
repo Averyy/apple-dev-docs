@@ -8,7 +8,7 @@ import time
 from collections import Counter
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Any, Deque, Dict, Final, List, Literal, Optional, Set, Tuple
+from typing import Any, Deque, Dict, Final, List, Literal, Optional, Set, Tuple, Union
 from urllib.parse import urlparse
 
 from scraper.base import NOT_MODIFIED, BaseAppleScraper, FetchFailed
@@ -17,6 +17,7 @@ from scraper.utils.assets import hosting_root, variant_url
 from scraper.utils.hash_manager import same_name_any_case, write_text_atomic
 from scraper.utils.logger import get_logger
 from scraper.utils.markdown_converter import AppleDocMarkdownConverter, join_blocks, labeled, quote_blocks
+from scraper.utils.naming import clash_suffix, page_path, seg_name
 
 logger = get_logger(__name__)
 
@@ -215,6 +216,10 @@ class FrameworkOutcome:
             longer block cleanup but flag the run
         persistent_local_errors: URLs whose convert/save failed for the
             PERSISTENT_FAILURE_RUNS-th consecutive run (or more); same
+        filename_clashes: JSON URLs of pages whose file name another
+            page's file already has (the naming isn't injective there):
+            each was written under a hashed stem. They flag the run but
+            never block cleanup, since a clash recurs every run
         root_fetch_failed: The root failed with something other than 404/410,
             or with a 404/410 after it answered 200/304 in this run (our
             failure: it blocks cleanup and never reaches D8)
@@ -233,6 +238,7 @@ class FrameworkOutcome:
     blocks: Dict[str, List[str]] = field(default_factory=dict)
     persistent_fetch_failures: List[str] = field(default_factory=list)
     persistent_local_errors: List[str] = field(default_factory=list)
+    filename_clashes: List[str] = field(default_factory=list)
     root_fetch_failed: bool = False
     root_gone_runs: int = 0
     failure_storm: bool = False
@@ -302,6 +308,8 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
             1 for url, entry in self.hash_manager.hashes.items()
             if url.startswith(self.JSON_BASE_URL) and entry.get('file_path')
         )
+        # The write-time tripwire's map, seeded on first use (_path_owners)
+        self._path_owner_map: Optional[Dict[str, str]] = None
         if self.hash_manager.load_error is not None:
             # The hash file exists but loaded nothing, so this run can't tell
             # the pages we have from new ones. This run's save replaces the
@@ -487,13 +495,15 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
                 self.stats['pages_skipped'] += 1
 
                 # Touch the entry for orphan detection even though content
-                # unchanged. PRESERVE the recorded file path: paths can
-                # be data-dependent (kind-suffix disambiguation uses symbol_kind),
-                # so recomputing from the URL alone with empty data would record
-                # a wrong path and get the real file orphan-deleted.
+                # unchanged. KEEP the recorded file path: a page the tripwire
+                # gave a hashed stem keeps that file (recomputing the path
+                # from its URL would record the other page's file of its
+                # clash). Only an entry without one gets the tripwire's path.
                 if json_url in self.hash_manager.hashes:
                     if not self.hash_manager.hashes[json_url].get('file_path'):
-                        self.hash_manager.set_file_path(json_url, self._get_organized_file_path(doc_url, {}))
+                        self.hash_manager.set_file_path(
+                            json_url, self._claim_path(json_url, self._get_organized_file_path(doc_url, {}))
+                        )
                     self.hash_manager.touch(json_url)
 
                 # IMPORTANT: Still need to discover child pages!
@@ -582,7 +592,7 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
                             json_url, doc_url, page_data, file_path, response_text, etag
                         )
             except Exception as e:
-                self._handle_local_error(json_url, e, file_path, data)
+                self._handle_local_error(json_url, e, file_path)
                 return
             self._saved_ok.add(json_url)
 
@@ -630,16 +640,102 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
     ) -> bool:
         """Write the page's file, then record it on both hash keys.
 
+        Through the write-time tripwire (_tripwire_path): a page whose file
+        name another page's file already has is a filename_clash (an ERROR
+        that flags the run, never a block) and is written under a hashed
+        stem instead. A page that had a hashed stem and is now written
+        elsewhere loses its old file (_remove_moved_clash_file).
+
+        Args:
+            file_path: The page's path (_get_organized_file_path)
+
         Returns:
             True if the file was written. A file that is never written (an
             unsafe path) gets an error entry instead, so no key records it.
         """
-        if not await self.save_page_data(doc_url, page_data, file_path):
+        target = self._tripwire_path(json_url, file_path)
+        if target != file_path:
+            logger.error(
+                "filename_clash",
+                url=json_url,
+                path=str(file_path),
+                other_url=self._path_owners.get(self._path_key(file_path)),
+                written_to=str(target),
+            )
+            if json_url not in self.outcome.filename_clashes:
+                self.outcome.filename_clashes.append(json_url)
+        if not await self.save_page_data(doc_url, page_data, target):
             self.hash_manager.mark_error(json_url, "unsafe file path")
             return False
-        self.hash_manager.update_hash(json_url, content, etag, file_path)
-        self.hash_manager.update_hash(doc_url, content, etag, file_path)
+        self._remove_moved_clash_file(json_url, target)
+        self.hash_manager.update_hash(json_url, content, etag, target)
+        self.hash_manager.update_hash(doc_url, content, etag, target)
+        self._path_owners[self._path_key(target)] = json_url.lower()
         return True
+
+    @property
+    def _path_owners(self) -> Dict[str, str]:
+        """The write-time tripwire's map (_tripwire_path): the page each file is.
+
+        Lowercased path -> lowercased JSON URL (URL space is
+        case-insensitive). Seeded on first use from the live JSON-URL keys'
+        recorded files (a page answering 304 keeps its file), then every file
+        this run records.
+        """
+        if self._path_owner_map is None:
+            self._path_owner_map = {
+                self._path_key(entry['file_path']): url.lower()
+                for url, entry in self.hash_manager.hashes.items()
+                if url.startswith(self.JSON_BASE_URL + '/') and self._is_previously_good(entry)
+            }
+        return self._path_owner_map
+
+    @staticmethod
+    def _path_key(file_path: Union[str, Path]) -> str:
+        """A file's key in the tripwire's map: its path, lowercased."""
+        return str(Path(file_path)).lower()
+
+    def _tripwire_path(self, json_url: str, file_path: Path) -> Path:
+        """Where the page's file goes: file_path, unless it is another page's file.
+
+        Two pages whose URLs give the same file name (the naming isn't
+        injective there, e.g. for a new Apple page) would overwrite each
+        other's file. The page whose file it isn't gets the hashed stem
+        <stem><clash_suffix> in the same folder, stable run to run (its
+        children keep their folder). Its old name comes back once the other
+        page is gone (its error entry seeds no file).
+        """
+        owner = self._path_owners.get(self._path_key(file_path))
+        if owner is None or owner == json_url.lower():
+            return file_path
+        return file_path.with_name(f"{file_path.stem}{clash_suffix(json_url)}.md")
+
+    def _claim_path(self, json_url: str, file_path: Path) -> Path:
+        """The tripwire's path for a page whose file is recorded without a write; now the page's."""
+        target = self._tripwire_path(json_url, file_path)
+        self._path_owners[self._path_key(target)] = json_url.lower()
+        return target
+
+    def _remove_moved_clash_file(self, json_url: str, file_path: Path) -> None:
+        """Delete the page's hashed-stem file once its file was written at file_path instead.
+
+        Its keys are about to record file_path, so no entry would record the
+        old file, and no cleanup would ever remove it. Only a recorded file
+        named with this page's clash_suffix, inside the framework dir.
+        """
+        suffix = clash_suffix(json_url)
+        output_root = self.output_dir.resolve()
+        recorded = {
+            (self.hash_manager.hashes.get(key) or {}).get('file_path')
+            for key in (json_url, self._convert_json_url_to_doc_url(json_url))
+        }
+        for old_path in sorted(path for path in recorded if path):
+            old = Path(old_path)
+            if self._path_key(old) == self._path_key(file_path):
+                continue
+            if old.stem.endswith(suffix) and output_root in old.resolve().parents:
+                old.unlink(missing_ok=True)
+                logger.info("clash_file_removed", url=json_url, file=old_path, now=str(file_path))
 
     def _handle_fetch_failure(self, json_url: str, failure: FetchFailed, after_304: bool = False) -> None:
         """Apply the failure policy to a fetch that gave no usable page.
@@ -711,7 +807,6 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         json_url: str,
         error: Exception,
         file_path: Optional[Path] = None,
-        json_data: Optional[Dict[str, Any]] = None,
     ) -> None:
         """A convert or save error of ours: keep the page, block cleanup, count it.
 
@@ -730,41 +825,45 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
             json_url: The page's JSON URL
             error: The convert or save error
             file_path: The path this run computed for the page's file, if it got that far
-            json_data: The page's parsed JSON
         """
         logger.error("page_save_failed", url=json_url, error=str(error))
         hm = self.hash_manager
         if self._is_previously_good(hm.hashes.get(json_url)):
             hm.touch(json_url)
-        else:
-            on_disk = self._page_file_path(json_url, file_path, json_data)
-            if on_disk is None or not hm.keep_file(json_url, on_disk):
-                hm.mark_error(json_url, f"local error: {error}")
+        elif not self._keep_file(json_url, self._page_file_path(json_url, file_path)):
+            hm.mark_error(json_url, f"local error: {error}")
         self._local_errors[json_url] = str(error)
 
-    def _page_file_path(
-        self, json_url: str, file_path: Optional[Path], json_data: Optional[Dict[str, Any]]
-    ) -> Optional[Path]:
+    def _page_file_path(self, json_url: str, file_path: Optional[Path]) -> Optional[Path]:
         """Where the file of a page without a live JSON-URL entry would be.
 
         Its doc-URL key's recorded path if that key is live; else the path
-        this run computed; else, for an error raised before that, the one its
-        URL and its symbol kind give (the only extracted field the path
-        depends on; the root's path needs only its URL). None if that fails
-        too.
+        this run computed, or for an error raised before that, the one its
+        URL gives (the path depends on the URL alone), under the tripwire
+        (never another page's file, see _tripwire_path). None if that fails.
         """
         doc_url = self._convert_json_url_to_doc_url(json_url)
         doc_entry = self.hash_manager.hashes.get(doc_url)
         if doc_entry is not None and self._is_previously_good(doc_entry):
             return Path(doc_entry['file_path'])
-        if file_path is not None:
-            return file_path
         try:
-            metadata = (json_data or {}).get('metadata', {})
-            return self._get_organized_file_path(doc_url, {'symbol_kind': metadata.get('symbolKind') or ''})
+            if file_path is None:
+                file_path = self._get_organized_file_path(doc_url, {})
+            return self._tripwire_path(json_url, file_path)
         except Exception as e:
             logger.warning("page_file_path_failed", url=json_url, error=str(e))
             return None
+
+    def _keep_file(self, json_url: str, file_path: Optional[Path]) -> bool:
+        """HashManager.keep_file for a page's file found on disk; the file is then the page's.
+
+        Returns:
+            True if the file was found and is now recorded
+        """
+        if file_path is None or not self.hash_manager.keep_file(json_url, file_path):
+            return False
+        self._path_owners[self._path_key(file_path)] = json_url.lower()
+        return True
 
     def _kept_unrecorded_file(self, json_url: str) -> bool:
         """Keep a failed page that no entry records but whose file is on disk.
@@ -780,16 +879,14 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         the failure counts toward D8 as for any page we have. A URL that has
         an entry is judged by it: an error entry (from a 404/410, a D8, an
         earlier never-good failure or a local error) stays never-good. The
-        path comes from the URL alone (there is no JSON to read the symbol
-        kind from), so a file named by its kind isn't found.
+        path comes from the URL alone, as every page's does.
 
         Returns:
             True if the file was found and is now recorded
         """
         if json_url in self.hash_manager.hashes:
             return False
-        file_path = self._page_file_path(json_url, None, None)
-        return file_path is not None and self.hash_manager.keep_file(json_url, file_path)
+        return self._keep_file(json_url, self._page_file_path(json_url, None))
 
     def _apply_failure_policy(self) -> None:
         """Count this run's failures once, and decide whether cleanup is blocked.
@@ -1022,14 +1119,6 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         except Exception as e:
             logger.error(f"Error converting identifier {identifier}: {e}")
             return None
-    
-    def _slugify(self, text: str) -> str:
-        """Convert text to URL-safe folder name."""
-        import re
-        # Convert to lowercase and replace spaces/special chars with hyphens
-        slug = re.sub(r'[^\w\s-]', '', text.lower())
-        slug = re.sub(r'[\s_-]+', '-', slug)
-        return slug.strip('-')
     
     async def scrape_page(self, url: str) -> Optional[Dict[str, Any]]:
         """Fetch the framework root page and save it if it changed.
@@ -1646,111 +1735,30 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         return True
     
     def _get_organized_file_path(self, url: str, data: Dict[str, Any]) -> Path:
-        """Generate organized file path based on URL hierarchy (mirrors Apple's structure).
-        
+        """The page's file: the docs root (Config.OUTPUT_DIR) / naming.page_path.
+
+        The path is a function of the URL alone (data isn't read), so the
+        filename migration, links and the tripwire compute the same path.
+        The framework segment matches case-insensitively: Apple emits URL
+        casing inconsistently over time ('XCTest' vs 'xctest'), but the URL
+        space itself is case-insensitive.
+
         Args:
-            url: Source URL
-            data: Extracted data containing title and other metadata
-            
+            url: The page's documentation URL
+            data: The page's extracted data (unused)
+
         Returns:
-            Path object for the organized file location following URL structure
+            The file's path, documentation/<framework_id>/….md by default
         """
-        # Match the framework prefix case-insensitively: Apple emits URL
-        # casing inconsistently over time ('XCTest' vs 'xctest'), but the
-        # URL space itself is case-insensitive.
-        prefix = f'https://developer.apple.com/documentation/{self.framework_id}'.lower()
-        url_path = None
-        if url.lower().startswith(prefix):
-            rest = url[len(prefix):]
-            if rest == '' or rest.startswith('/'):
-                url_path = rest.lstrip('/')
-        
-        # Fallback if no pattern matches
-        if url_path is None:
+        relative = page_path(self.framework_id, url)
+        if relative is None:
+            # Not a page of this framework (never crawled): a file named
+            # after the whole URL in the framework dir
             logger.warning("failed_to_parse_url_path", url=url, framework_id=self.framework_id)
-            # Use full URL as fallback (this was causing the https: folders)
             safe_url = url.replace('https://', '').replace('http://', '').replace('/', '-')
-            return self.output_dir / f"{safe_url}.md"
-        
-        if not url_path:
-            # Main framework page: use framework_id to match URL structure
-            return self.output_dir / f"{self.framework_id}.md"
-        
-        # Split path into segments
-        path_segments = url_path.split('/')
-        
-        # Always use the full URL path structure, just with lowercase and clean filenames
-        if len(path_segments) == 1:
-            # Single segment: watchkit/enabling-background-sessions.md
-            filename = self._create_clean_filename(path_segments[0], data)
-            if filename.lower() == self.framework_id.lower():
-                # A symbol named like its framework (e.g. the XCTest class in
-                # the XCTest framework) would collide case-insensitively with
-                # the framework root file on case-insensitive filesystems.
-                kind = self._slugify(data.get('symbol_kind', '')) or 'page'
-                filename = f"{filename}-{kind}"
-            return self.output_dir / f"{filename}.md"
-        else:
-            # Multiple segments: watchkit/wkapplication/shared.md
-            # All segments except last become folders
-            folder_path = Path(*[segment.lower() for segment in path_segments[:-1]])
-            filename = self._create_clean_filename(path_segments[-1], data)
-            return self.output_dir / folder_path / f"{filename}.md"
-    
-    # Operator symbols to readable names for filenames
-    _OPERATOR_NAMES = {
-        '==': 'equal',
-        '!=': 'notequal',
-        '<': 'lessthan',
-        '>': 'greaterthan',
-        '<=': 'lessthanorequal',
-        '>=': 'greaterthanorequal',
-        '+': 'plus',
-        '-': 'minus',
-        '*': 'multiply',
-        '/': 'divide',
-        '%': 'modulo',
-        '&': 'bitwiseand',
-        '|': 'bitwiseor',
-        '^': 'bitwisexor',
-        '~': 'bitwisenot',
-        '<<': 'leftshift',
-        '>>': 'rightshift',
-        '&&': 'logicaland',
-        '||': 'logicalor',
-        '!': 'logicalnot',
-        '...': 'closedrange',
-        '..<': 'halfopen',
-        '??': 'nilcoalescing',
-    }
+            return self.output_dir / f"{seg_name(safe_url)}.md"
+        return Config.OUTPUT_DIR / relative
 
-    def _create_clean_filename(self, api_name: str, data: Dict[str, Any]) -> str:
-        """Create a clean, readable filename."""
-        # Start with the API name
-        base_name = api_name
-
-        # For methods/operators, clean up parameter syntax but preserve important info
-        if '(' in base_name and ')' in base_name:
-            # Extract operator before parentheses (e.g., "!=(_:_:)" -> "!=")
-            op_part = base_name[:base_name.index('(')]
-            if op_part in self._OPERATOR_NAMES:
-                base_name = self._OPERATOR_NAMES[op_part]
-            else:
-                # Convert init?(rawValue: Int) -> init-rawvalue
-                # Convert shared() -> shared
-                base_name = base_name.replace('?', '').replace('!', '')
-                base_name = base_name.replace('(', '-').replace(')', '')
-                base_name = base_name.replace(':', '').replace(' ', '').replace(',', '-')
-
-        # Remove other special characters and convert to lowercase with hyphens
-        clean_name = self._slugify(base_name)
-
-        # Ensure it doesn't start with numbers or special chars
-        if clean_name and clean_name[0].isdigit():
-            clean_name = f"api-{clean_name}"
-
-        return clean_name or 'unknown'
-    
     def _convert_apple_url_to_local_path(self, apple_url: str, current_page_url: str = None) -> str:
         """Convert an Apple documentation URL to a local markdown file path.
         
