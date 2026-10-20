@@ -58,7 +58,7 @@ from mcp.types import ToolAnnotations
 MEILISEARCH_URL = os.getenv("MEILI_HTTP_ADDR", "http://localhost:7700")
 MEILISEARCH_API_KEY = os.getenv("MEILI_SEARCH_KEY", os.getenv("MEILI_MASTER_KEY", ""))
 INDEX_NAME = "apple-docs"
-SERVER_VERSION = "3.3.0"
+SERVER_VERSION = "3.4.0"
 HTTP_PORT = int(os.getenv("HTTP_PORT", "8000"))
 BUILD_TIME = os.getenv("BUILD_TIME", "unknown")
 DOCS_UPDATED = os.getenv("DOCS_UPDATED", "unknown")
@@ -131,6 +131,13 @@ TITLE_FUNCTION_BOOST = 0.1  # a function of that name: name(...)
 # a sentence when only its first letter is a capital: that may just start the sentence
 # ("Color picker in SwiftUI")
 NAMED_SYMBOL_BOOST = 0.1
+# A deprecated page whose deprecation summary (the indexer's deprecation) holds every word
+# of the query ranks with its Meilisearch score scaled by this, unless the query names it
+# (a title or named-symbol boost): the summary tells what to use instead, so it holds the
+# words of the replacement's task ("Use the UNUserNotificationCenter class to schedule
+# local notifications instead" on five UIKit methods), and they matched there, not the
+# page's own text. Meilisearch scores the pages a query matches within a few hundredths
+DEPRECATED_RANKING_FACTOR = 0.9
 # The kinds of pages that aren't symbols (scripts/metadata_extractor.py: a page without a
 # **Kind** line, by its **Role** line in ROLE_KINDS, else an article)
 NON_SYMBOL_KINDS = ("article", "collection", "sample-code")
@@ -472,6 +479,17 @@ def named_symbol_boost(hit: Dict, words: List[str], typed: str = "") -> float:
     return 0.0
 
 
+def deprecation_matches(deprecation: str, query: str) -> bool:
+    """Whether a deprecation summary holds every word of query, each as the start of one of
+    its words (as Meilisearch matches 'notification' in 'notifications'), in the text it
+    shows: a link's destination ("(./view/alert%28…%29.md)") isn't read."""
+    words = re.findall(r"\w+", query.lower())
+    if not deprecation or not words:
+        return False
+    shown = re.findall(r"\w+", re.sub(r"\]\([^)]*\)", "]", deprecation).lower())
+    return all(any(word.startswith(query_word) for word in shown) for query_word in words)
+
+
 def calculate_relevance_score(hit: Dict, query: str, asked: str = "") -> float:
     """A search hit's relevance (0.0-1.0): Meilisearch's _rankingScore (from its ranking
     rules: matched words, typos, proximity, attribute, position, exactness), plus a
@@ -482,6 +500,9 @@ def calculate_relevance_score(hit: Dict, query: str, asked: str = "") -> float:
     NSPersistentContainer"): the title is compared with the rest of it. asked is the query
     as asked: a question is searched without its question words (question_terms), and a
     page titled with the question itself ("What Is Core ML Tools?") keeps its boost.
+
+    A deprecated page the query doesn't name (no boost) ranks lower when its deprecation
+    summary holds the query's words (deprecation_matches): DEPRECATED_RANKING_FACTOR.
     """
     ranking = float(hit.get("_rankingScore") or 0.0)
     title = str(hit.get("title", ""))
@@ -491,6 +512,8 @@ def calculate_relevance_score(hit: Dict, query: str, asked: str = "") -> float:
         boost = max(boost, title_boost(title.rstrip("?"), asked.strip().rstrip("?")))
     if not boost:
         boost = named_symbol_boost(hit, rest.split(), asked.strip() or query)
+    if not boost and deprecation_matches(str(hit.get("deprecation") or ""), query):
+        ranking *= DEPRECATED_RANKING_FACTOR
     # Rounded, so that hits Meilisearch ranks alike compare equal (see rank_hits)
     return round(ranking * (1 - TITLE_BOOST_MAX) + boost, 6)
 
@@ -748,7 +771,11 @@ def transform_internal_links(content: str, file_path: str) -> str:
             page = local_page(candidate)
             if page:
                 return f"{text} (-> expand_result: {page})"
-        search_term = target.replace('.md', '').replace('/', ' ').replace('-', ' ')
+        # The path's names, without a file-relative link's "." and ".." segments (the path
+        # itself when it has no other)
+        path = target.replace('.md', '')
+        names = [name for name in path.split('/') if name not in ('', '.', '..')] or [path]
+        search_term = ' '.join(names).replace('-', ' ')
         return f"{text} (-> search: {' '.join(search_term.split())})"
 
     return LOCAL_LINK_RE.sub(replace_link, content)
@@ -1005,8 +1032,8 @@ def search_apple_docs(
         return _build_no_results_response(original_query, framework, platform if platform_filter else "", has_wildcards)
 
     # Search attributes
-    attrs = ["title", "framework", "api_name", "overview", "url", "platforms", "kind", "file_path",
-             "chunk_index", "total_chunks"]
+    attrs = ["title", "framework", "api_name", "overview", "url", "platforms", "kind", "deprecated",
+             "deprecation", "file_path", "chunk_index", "total_chunks"]
     if not summary_mode:
         attrs.append("content")
 
@@ -1166,8 +1193,8 @@ def search_apple_docs(
         # A hit from a long page is one of its parts: expand_result's part reads it
         part = part_label(hit)
         result_lines.append(f"Framework: {hit.get('framework', 'Unknown')} | Type: {hit.get('kind', '')}"
+                            + (" | Deprecated" if hit.get("deprecated") else "")
                             + (f" | {part}" if part else ""))
-
         if hit.get("file_path"):
             result_lines.append(f"Path: `{hit.get('file_path')}`")
         if hit.get("url"):
@@ -1179,6 +1206,10 @@ def search_apple_docs(
             body = transform_internal_links(hit.get("content", ""), str(hit.get("file_path", "")))
         elif hit.get("overview"):
             body = hit.get("overview", "")[:400]
+        if summary_mode and hit.get("deprecation"):
+            # What to use instead, its links as hints (the content holds it as the page does)
+            deprecation = transform_internal_links(str(hit["deprecation"]), str(hit.get("file_path", "")))
+            body = "\n".join(["Deprecated: " + deprecation] + ([body] if body else []))
 
         result_text = "\n".join(result_lines + ([body] if body else []) + ["\n---\n"])
 

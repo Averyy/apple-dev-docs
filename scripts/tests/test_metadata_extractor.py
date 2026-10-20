@@ -178,6 +178,54 @@ Creates a connection to the IOService. See IOSurface for iOS-style surfaces.
         content = "# Get an App\n\nUse it from iOS apps.\n\n**Availability**:\n- App Store Connect API 1.0+\n"
         self.assertEqual(self.extractor.extract_platforms(content), [])
 
+    def test_extract_deprecated(self) -> None:
+        """Deprecated: Apple's summary before the page's first section, or every listed platform."""
+        summary = ("# scheduleLocalNotification(_:)\n\n**Framework**: UIKit  \n**Kind**: method\n\n"
+                   "Schedules a local notification.\n\n**Availability**:\n- iOS 4.0+ - Deprecated in 10.0\n\n"
+                   "> **Deprecated**: Use the [`UNUserNotificationCenter`](../x.md) class instead.\n\n"
+                   "## Declaration\n")
+        cases = [
+            (summary, True),
+            # Every platform deprecated, without a summary
+            ("# a\n\n**Availability**:\n- iOS 2.0+ - Deprecated in 8.0\n- macOS 10.5+ - Deprecated\n\n"
+             "## Declaration\n", True),
+            # Apple's page-level summary on a page one platform still lists as current
+            ("# a\n\n**Availability**:\n- iOS 15.0+\n- macOS 12.0+ - Deprecated in 14.0\n\n"
+             "> **Deprecated**: Use `b` instead.\n\n## Declaration\n", True),
+            # Deprecated on some platforms only, without a summary
+            ("# a\n\n**Availability**:\n- iOS 15.0+\n- macOS 12.0+ - Deprecated in 14.0\n\n## Declaration\n", False),
+            ("# a\n\n**Availability**:\n- iOS 15.0+\n\n## Declaration\n", False),
+            ("# Scheduling a notification\n\n**Framework**: User Notifications\n\nCreate one.\n\n#### Overview\n\nText.\n",
+             False),
+            # A quote or a list in a later section isn't the page's
+            ("# a\n\n**Availability**:\n- iOS 15.0+\n\n## Discussion\n\n> **Deprecated**: quoted in the text\n", False),
+            ("# a\n\n## Topics\n\n**Availability**:\n- iOS 2.0+ - Deprecated\n", False),
+        ]
+        for content, expected in cases:
+            with self.subTest(content=content[:60]):
+                self.assertIs(self.extractor.extract_deprecated(content), expected)
+        self.assertIs(self.extractor.extract_metadata(summary, "documentation/UIKit/a.md")["deprecated"], True)
+        self.assertIs(self.extractor.extract_metadata(cases[3][0], "documentation/UIKit/b.md")["deprecated"], False)
+
+    def test_extract_deprecation(self) -> None:
+        """The deprecation summary's first paragraph, on one line; none without a summary (or
+        after a section)."""
+        content = ("# a\n\n**Availability**:\n- iOS 2.0+ - Deprecated\n\n"
+                   "> **Deprecated**: Use [`b`](./b.md)\n> instead.\n\n## Declaration\n")
+        self.assertEqual(self.extractor.extract_deprecation(content), "Use [`b`](./b.md) instead.")
+        self.assertEqual(self.extractor.extract_metadata(content, "documentation/UIKit/a.md")["deprecation"],
+                         "Use [`b`](./b.md) instead.")
+        # Its later blocks aren't what to use instead: a code sample, a stray heading of Apple's
+        for rest in ("> ```swift\n> let x = try b()\n> ```\n", "> #### Discussion\n"):
+            with self.subTest(rest=rest):
+                quote = f"# a\n\n> **Deprecated**: Use `b` instead.\n>\n{rest}\n## Declaration\n"
+                self.assertEqual(self.extractor.extract_deprecation(quote), "Use `b` instead.")
+        for content in ("# a\n\n**Availability**:\n- iOS 2.0+ - Deprecated\n\n## Declaration\n",
+                        "# a\n\n## Discussion\n\n> **Deprecated**: quoted in the text\n"):
+            with self.subTest(content=content[:40]):
+                self.assertIsNone(self.extractor.extract_deprecation(content))
+                self.assertNotIn("deprecation", self.extractor.extract_metadata(content, "documentation/UIKit/a.md"))
+
     def test_platform_scan_matches_whole_words_only(self) -> None:
         """Without an Availability list, IOService or IOSurface don't name iOS."""
         self.assertEqual(self.extractor.extract_platforms("Registers an IOService with the IOSurface."), [])

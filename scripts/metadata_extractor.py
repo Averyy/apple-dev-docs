@@ -179,7 +179,12 @@ class MetadataExtractor:
             r'^\*\*Availability\*\*:[ \t]*\n((?:- [^\n]*(?:\n|\Z))+)', re.MULTILINE)
         self._availability_item_pattern = re.compile(
             r'^- (?P<platform>.+?)(?: (?P<intro>[^\s+]+)\+)?(?: \(Beta\))?'
-            r'(?: - Deprecated(?: in (?P<dep>[\w.]+))?(?:: .*| \(renamed: .*\))?)?$')
+            r'(?P<deprecated> - Deprecated(?: in (?P<dep>[\w.]+))?(?:: .*| \(renamed: .*\))?)?$')
+        # Apple's deprecation summary (markdown_converter.py): a "> **Deprecated**: …" quote
+        # (and its "> " lines) after the abstract and the **Availability** list, before the
+        # page's first section
+        self._deprecation_summary_pattern = re.compile(r'^> \*\*Deprecated\*\*:[^\n]*(?:\n>[^\n]*)*', re.MULTILINE)
+        self._section_heading_pattern = re.compile(r'^#{2,6}\s', re.MULTILINE)
         self._platform_patterns = [
             re.compile(r'(?:Platforms?|Available on|Supported on):\s*([^\n]+)', re.IGNORECASE),
             re.compile(r'!\[.*?\]\(.*?badge.*?(ios|macos|tvos|watchos|visionos|catalyst).*?\)', re.IGNORECASE),
@@ -262,6 +267,8 @@ class MetadataExtractor:
             "title": self.extract_title(content),
             "platforms": self.extract_platforms(content),
             "kind": self.extract_kind(content),
+            "deprecated": self.extract_deprecated(content),
+            "deprecation": self.extract_deprecation(content),
             "overview": self.extract_overview(content),
             "is_framework_main": self.is_framework_main_page(content, file_path),
             "last_modified": self.get_file_modified_time(file_path),
@@ -459,6 +466,45 @@ class MetadataExtractor:
                 if platform:
                     platforms.add(platform)
         return platforms
+
+    def extract_deprecated(self, content: str) -> bool:
+        """
+        Whether the page is deprecated: it has Apple's deprecation summary ("> **Deprecated**:
+        …", before its first section), or every platform of its **Availability** list is
+        deprecated (" - Deprecated[ in <version>]"). A page deprecated on some platforms
+        only, without a summary, is not.
+        """
+        if self._deprecation_summary(content):
+            return True
+        block = self._availability_list_pattern.search(self._head(content))
+        if not block:
+            return False
+        items = [self._availability_item_pattern.match(item.rstrip()) for item in block.group(1).splitlines()]
+        return bool(items) and all(match is not None and match.group('deprecated') for match in items)
+
+    def extract_deprecation(self, content: str) -> Optional[str]:
+        """The first paragraph of the page's deprecation summary ("Use `b` instead."), on one
+        line, or None. The quote's later blocks aren't what to use instead: a code sample, or
+        a stray heading of Apple's ("> #### Discussion")."""
+        summary = self._deprecation_summary(content)
+        if not summary:
+            return None
+        paragraph: List[str] = []
+        for line in summary.group(0).splitlines():
+            text = line[1:].strip()
+            if not text:
+                break
+            paragraph.append(text)
+        return ' '.join(paragraph)[len('**Deprecated**:'):].strip() or None
+
+    def _head(self, content: str) -> str:
+        """The page before its first section (## to ######)."""
+        section = self._section_heading_pattern.search(content)
+        return content[:section.start()] if section else content
+
+    def _deprecation_summary(self, content: str) -> Optional["re.Match[str]"]:
+        """The page's deprecation summary, before its first section."""
+        return self._deprecation_summary_pattern.search(self._head(content))
 
     def header_fields(self, content: str) -> Dict[str, str]:
         """The "**Key**: value" lines right under the page's title (H1), by key"""

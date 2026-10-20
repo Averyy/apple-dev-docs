@@ -2,7 +2,7 @@
 
 This directory contains the MCP server implementation for Apple Developer Documentation search.
 
-**Current Version:** 3.3.0 (`SERVER_VERSION` in `apple_docs_mcp.py`; CI derives the image version label from it)
+**Current Version:** 3.4.0 (`SERVER_VERSION` in `apple_docs_mcp.py`; CI derives the image version label from it)
 
 ## Architecture
 
@@ -52,6 +52,10 @@ docker-compose up -d
 ```
 
 ## Changelog
+
+### v3.4.0
+- Results mark a deprecated page (`Type: method | Deprecated`) and say what to use instead (`Deprecated: Use UNNotificationRequest instead.`, its links as hints). The indexer flags a page deprecated when it has Apple's deprecation summary or every platform it lists is deprecated (`deprecated`, `deprecation`; `PROCESSOR_VERSION` 3, so the first start rebuilds the index by swap)
+- A deprecated page whose deprecation summary holds every word of the query ranks lower, unless the query names it: the summary says what to use instead, so it holds the words of its replacement's task (`schedule local notification` found five deprecated UIKit methods, whose summary reads "Use the UNUserNotificationCenter class to schedule local notifications instead", before the UserNotifications article and APIs)
 
 ### v3.3.0
 - A query of two or more words also finds the type or framework whose name they spell (`vision entitlement services`, `async image`, `navigation stack`, `url session` find `VisionEntitlementServices`, `AsyncImage`, `NavigationStack`, `URLSession`): it ranks right after a page titled with the query itself and above every other page (the total says "and the pages named 'asyncimage'" when it came from past the top matches). Meilisearch keeps a CamelCase name as one word, which the words matched only as typos

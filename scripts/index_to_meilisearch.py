@@ -73,7 +73,8 @@ TASK_TIMEOUT_MS = 10 * 60 * 1000
 # finds another version in the hash file rebuilds the whole index.
 # 2: sha1(file_path) document ids, one id per chunk, oversized blocks split wherever they
 #    come; kind, platforms, url, api_name and overview from the page's own lines
-PROCESSOR_VERSION = 2
+# 3: deprecated and deprecation (metadata_extractor)
+PROCESSOR_VERSION = 3
 
 # The hash file is a flat map of file path -> content hash plus this one key, which no
 # .md path can be: the processor version and the createdAt of the live index the hashes

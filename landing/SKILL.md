@@ -58,6 +58,9 @@ That's it for most lookups. Add complexity only when needed.
 **Symbol lookup picks the wrong framework?**
 - Pass `framework` to `apple-docs:expand_result` (e.g., `"SwiftUI"`)
 
+**Result marked Deprecated?**
+- Its next line says what to use instead (`Deprecated: Use UNNotificationRequest instead.`): use that in new code
+
 ## Parameters
 
 ### apple-docs:search_apple_docs

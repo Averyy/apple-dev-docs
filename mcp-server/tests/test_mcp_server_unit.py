@@ -483,6 +483,45 @@ class TestRanking(ToolTestCase):
                          0.8)
         self.assertEqual(apple_docs_mcp.calculate_relevance_score({"title": "Other"}, "Text"), 0.0)
 
+    def test_a_deprecated_page_ranks_lower_where_its_deprecation_summary_matched(self) -> None:
+        score = apple_docs_mcp.calculate_relevance_score
+        factor = apple_docs_mcp.DEPRECATED_RANKING_FACTOR
+        summary = ("Use the [`UNUserNotificationCenter`](../../UserNotifications/unusernotificationcenter.md) "
+                   "class to schedule local notifications instead.")
+        method = {"title": "scheduleLocalNotification(_:)", "api_name": "scheduleLocalNotification",
+                  "kind": "method", "deprecated": True, "deprecation": summary, "_rankingScore": 1.0}
+        self.assertEqual(score(method, "schedule local notification"), round(0.8 * factor, 6))
+        # A word the summary doesn't hold: the page's own text matched
+        self.assertEqual(score(method, "schedule local notification delivery"), 0.8)
+        # A link's destination isn't the summary's text
+        self.assertEqual(score(method, "unusernotificationcenter md"), 0.8)
+        # Deprecated without a summary, or named by the query (a title or named-symbol boost)
+        self.assertEqual(score(dict(method, deprecation=None), "schedule local notification"), 0.8)
+        self.assertEqual(score(method, "scheduleLocalNotification"), 0.9)
+        self.assertEqual(score(dict(method, title="UILocalNotification", api_name="UILocalNotification"),
+                               "UILocalNotification schedule local notification"), 0.9)
+        # SwiftUI's Alert: its summary names its replacement, not what "show an alert" asks
+        alert = {"title": "Alert", "api_name": "Alert", "kind": "struct", "deprecated": True,
+                 "deprecation": "Use a [`View`](./view.md) modifier like [`alert(_:isPresented:actions:)`]"
+                                "(./view/alert%28_,ispresented,actions%29-8584l.md) instead.", "_rankingScore": 1.0}
+        self.assertEqual(score(alert, "show an alert"), 0.8)
+        # The current page outranks the deprecated one the search scored higher, which is
+        # marked deprecated with what to use instead
+        deprecated = dict(symbol_doc("documentation/UIKit/uiapplication/schedulelocalnotification(_).md",
+                                     "scheduleLocalNotification(_:)", "UIKit", kind="method", rank=0.95),
+                          deprecated=True, deprecation=summary)
+        article = symbol_doc("documentation/UserNotifications/scheduling-a-notification-locally-from-your-app.md",
+                             "Scheduling a notification locally from your app", "UserNotifications",
+                             kind="article", rank=0.9)
+        self.use_index([dict(doc, content="Use it to schedule local notification requests.")
+                        for doc in (deprecated, article)])
+        result = search_apple_docs("schedule local notification", summary_mode=True)
+        self.assertEqual(result_titles(result),
+                         ["Scheduling a notification locally from your app", "scheduleLocalNotification(_:)"])
+        self.assertIn("Framework: UIKit | Type: method | Deprecated\nPath:", result)
+        self.assertIn("\n\nDeprecated: Use the `UNUserNotificationCenter`", result)
+        self.assertIn("Framework: UserNotifications | Type: article\n", result)
+
     def test_a_query_naming_the_framework_matches_the_title(self) -> None:
         swiftui = symbol_doc("documentation/SwiftUI/button.md", "Button", "SwiftUI", kind="struct", rank=0.94)
         article = symbol_doc("documentation/WidgetKit/swiftui-views.md", "SwiftUI views for widgets",
@@ -1320,7 +1359,7 @@ class TestInternalLinks(ToolTestCase):
         self.use_docs(["documentation/SwiftUI/button.md", "documentation/SwiftUI/togglestyle/isOn.md"])
         self.assertEqual(self.hints("[isOn](./isOn.md) [Button](./button.md)"),
                          "isOn (-> expand_result: documentation/SwiftUI/togglestyle/isOn.md) "
-                         "Button (-> search: . button)")
+                         "Button (-> search: button)")
 
     def test_a_link_starting_with_dot_dot_is_relative_to_the_page_first(self) -> None:
         self.use_docs(["documentation/Swift-Book/LanguageGuide/Functions.md", "documentation/Swift/task.md",
@@ -1353,7 +1392,7 @@ class TestInternalLinks(ToolTestCase):
                          "session/complete(withcallbackurl).md)")
         # A page that isn't there is searched for by its decoded name
         self.assertEqual(self.hints("[cancel()](./session/cancel%28%29.md)", page),
-                         "cancel() (-> search: . session cancel())")
+                         "cancel() (-> search: session cancel())")
         # The hint is the page's path, without the fragment: expand_result takes a file path
         self.assertEqual(self.hints("See [Overview](button.md#overview) and [Gone](gone.md#x)."),
                          "See Overview (-> expand_result: documentation/SwiftUI/button.md) and "
@@ -1385,7 +1424,9 @@ class TestInternalLinks(ToolTestCase):
             self.assertEqual(self.hints(content), content)
         # A path out of documentation/ is no page
         self.assertEqual(self.hints("[x](../../../../etc/passwd.md) [y](../../x.md)", "documentation/SwiftUI/a.md"),
-                         "x (-> search: .. .. .. .. etc passwd) y (-> search: .. .. x)")
+                         "x (-> search: etc passwd) y (-> search: x)")
+        # A path of only "." segments keeps its path as the search
+        self.assertEqual(self.hints("[z](./.md)", "documentation/SwiftUI/a.md"), "z (-> search: ./)")
 
     def test_search_results_name_the_pages_of_their_links(self) -> None:
         self.use_docs(["documentation/SwiftUI/list.md"])
