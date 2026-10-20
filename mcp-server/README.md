@@ -2,7 +2,7 @@
 
 This directory contains the MCP server implementation for Apple Developer Documentation search.
 
-**Current Version:** 3.2.0 (`SERVER_VERSION` in `apple_docs_mcp.py`; CI derives the image version label from it)
+**Current Version:** 3.3.0 (`SERVER_VERSION` in `apple_docs_mcp.py`; CI derives the image version label from it)
 
 ## Architecture
 
@@ -52,6 +52,12 @@ docker-compose up -d
 ```
 
 ## Changelog
+
+### v3.3.0
+- A query of two or more words also finds the type or framework whose name they spell (`vision entitlement services`, `async image`, `navigation stack`, `url session` find `VisionEntitlementServices`, `AsyncImage`, `NavigationStack`, `URLSession`): it ranks right after a page titled with the query itself and above every other page (the total says "and the pages named 'asyncimage'" when it came from past the top matches). Meilisearch keeps a CamelCase name as one word, which the words matched only as typos
+- Local links in results and in `expand_result` become the path of the page they lead to (`Button (-> expand_result: documentation/SwiftUI/button.md)`), for links relative to the framework's directory or to the page, percent-encoded or with a `#fragment`, and for link text holding brackets (`[var locations: [Accessory.LocationName]](…)`, 16K Topics links that stayed raw); a link whose page isn't in the docs stays a `search:` hint
+- `expand_result`'s `sections` keep their subsections (`topics` its groups, `overview` its subheadings) and stop at the next heading of their level, and their links become hints too
+- Responses stay within `token_budget`, counted in characters (the per-result estimates undercounted by up to ~1 token a result)
 
 ### v3.2.0
 - `search_apple_docs` returns one result per page, not one per indexed chunk of a long page; such a result shows the part that matched (`Part 3 of 6`)

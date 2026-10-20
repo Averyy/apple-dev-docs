@@ -15,6 +15,7 @@ import os
 import sys
 import re
 import fnmatch
+import posixpath
 import secrets
 import time
 import logging
@@ -22,7 +23,7 @@ import unicodedata
 from collections import defaultdict
 from typing import Annotated, Callable, Dict, List, Optional, Any, Tuple, TypeVar
 from pathlib import Path
-from urllib.parse import urlsplit
+from urllib.parse import unquote, urlsplit
 
 from pydantic import Field
 
@@ -57,7 +58,7 @@ from mcp.types import ToolAnnotations
 MEILISEARCH_URL = os.getenv("MEILI_HTTP_ADDR", "http://localhost:7700")
 MEILISEARCH_API_KEY = os.getenv("MEILI_SEARCH_KEY", os.getenv("MEILI_MASTER_KEY", ""))
 INDEX_NAME = "apple-docs"
-SERVER_VERSION = "3.2.0"
+SERVER_VERSION = "3.3.0"
 HTTP_PORT = int(os.getenv("HTTP_PORT", "8000"))
 BUILD_TIME = os.getenv("BUILD_TIME", "unknown")
 DOCS_UPDATED = os.getenv("DOCS_UPDATED", "unknown")
@@ -98,6 +99,19 @@ FILE_CHUNKS_LIMIT = 100
 # Display names of the hosts the indexed docs come from; a result link from any other host
 # is labelled with the host itself
 LINK_HOST_NAMES = {"developer.apple.com": "Apple Developer", "github.com": "GitHub"}
+
+# The docs the index is built from (the image's copy, /data/documentation; outside it, the
+# checkout's documentation/ beside mcp-server/): a page's local links are resolved against
+# them (transform_internal_links). The image's docs are the ones its start indexes, so until
+# that update or rebuild is in, a link can name a page the live index doesn't hold yet
+DOCUMENTATION_PATH = os.getenv("DOCUMENTATION_PATH", str(Path(__file__).parent.parent / "documentation"))
+
+# A markdown link to a local page. Its text may hold brackets two levels deep (a Topics
+# link to `var locations: [Accessory.LocationName]`); its destination is a .md path,
+# percent-encoded or not, and may end with a #fragment
+LOCAL_LINK_RE = re.compile(r'\[((?:[^\[\]]|\[(?:[^\[\]]|\[[^\[\]]*\])*\])*)\]\(([^)\s]+?\.md)(#[^)\s]*)?\)')
+# A destination with a URL scheme (https://github.com/…/0001-keywords.md) is no local link
+URL_SCHEME_RE = re.compile(r'[A-Za-z][A-Za-z0-9+.-]*://')
 
 # Search ranking (calculate_relevance_score): Meilisearch's _rankingScore, scaled into
 # 1 - TITLE_BOOST_MAX, plus a boost for a page whose title is the name the query asks for.
@@ -186,6 +200,9 @@ meili_index: Optional[Any] = None
 _frameworks_cache: Optional[Dict[str, int]] = None
 _frameworks_cache_time: float = 0
 _frameworks_cache_ttl: float = 300.0  # seconds
+
+# The directories of a docs root by lowercased name, per root (framework_dirs)
+_framework_dirs: Dict[str, Dict[str, str]] = {}
 
 # =============================================================================
 # MEILISEARCH INITIALIZATION
@@ -474,6 +491,32 @@ def calculate_relevance_score(hit: Dict, query: str, asked: str = "") -> float:
     return round(ranking * (1 - TITLE_BOOST_MAX) + boost, 6)
 
 
+def spelled_name(query: str) -> str:
+    """The name a query of two or more words spells, its words joined ('vision entitlement
+    services' -> 'visionentitlementservices'), when each word is letters, digits or '_';
+    else ''."""
+    words = query.split()
+    if len(words) > 1 and all(re.fullmatch(r"\w+", word) for word in words):
+        return "".join(words)
+    return ""
+
+
+def spells_title(title: str, spelled: str) -> bool:
+    """Whether title is a type's or framework's name (a capital first, no whitespace) that
+    spelled is, ignoring case. A member's name (lowerCamelCase) is left out: members are
+    named with everyday phrases ('table view' would spell the tableView properties and
+    tableView(...) methods of hundreds of types)."""
+    return title[:1].isupper() and not re.search(r"\s", title) and title.lower() == spelled.lower()
+
+
+def spelled_relevance(hit: Dict) -> float:
+    """The relevance of a page whose name a query's words spell: as for a title that is the
+    name but for case (TITLE_NOCASE_BOOST), from the _rankingScore of the name's own search
+    (1.0 for its exact title). So it ranks after a page titled with the query itself ('text
+    field': AppKit's "Text Field", then SwiftUI's TextField) and above every other page."""
+    return round(float(hit.get("_rankingScore") or 0.0) * (1 - TITLE_BOOST_MAX) + TITLE_NOCASE_BOOST, 6)
+
+
 def question_terms(original_query: str, query: str) -> str:
     """The words to search for: query without QUESTION_STOP_WORDS when original_query is a
     question (all of query when every word is one), else query unchanged.
@@ -646,24 +689,96 @@ def estimate_tokens(text: str) -> int:
     return len(text) // 4
 
 
-def transform_internal_links(content: str) -> str:
-    """Transform internal markdown links to search hints."""
-    def replace_link(match):
-        link_text = match.group(1)
-        link_path = match.group(2)
-        if link_path.startswith('http'):
-            return match.group(0)
-        search_term = link_path.replace('.md', '').replace('/', ' ').replace('-', ' ')
-        return f"{link_text} (-> search: {' '.join(search_term.split())})"
+def framework_dirs(root: str) -> Dict[str, str]:
+    """The directories of the docs root by lowercased name ({'swift': 'Swift'}), listed
+    once per root (an unreadable root gives {} and is listed again next time)."""
+    if root not in _framework_dirs:
+        try:
+            _framework_dirs[root] = {name.lower(): name for name in os.listdir(root)}
+        except OSError:
+            return {}
+    return _framework_dirs[root]
 
-    return re.sub(r'\[([^\]]+)\]\(([^)]+\.md)\)', replace_link, content)
+
+def local_page(candidate: str) -> Optional[str]:
+    """The page a link candidate names (a normalized path, documentation/<framework>/...),
+    with its framework directory in its case on disk, when that file is in the docs
+    (DOCUMENTATION_PATH); else None, as for a path outside documentation/.
+
+    Links lowercase the framework of a page in another one (../swift/equatable.md), and the
+    image's file system is case-sensitive."""
+    parts = candidate.split("/")
+    if len(parts) < 3 or parts[0] != "documentation":
+        return None
+    parts[1] = framework_dirs(DOCUMENTATION_PATH).get(parts[1].lower(), parts[1])
+    if not os.path.isfile(os.path.join(DOCUMENTATION_PATH, *parts[1:])):
+        return None
+    return "/".join(parts)
+
+
+def transform_internal_links(content: str, file_path: str) -> str:
+    """The local links of the page at file_path made hints: the path of the page a link
+    leads to, for expand_result, when that page is in the docs; else a search for the
+    link's file name. A link with a URL scheme stays as it is.
+
+    A link's destination, percent-encoded or not, is relative to the page's framework
+    directory (the legacy base, how links have been written) or to the page itself
+    (file-relative), and both are tried: a bare destination against the legacy base first,
+    one starting with '../' against the page first, and one starting with './' only
+    against the page (no legacy link starts so), so a link whose page is gone never
+    resolves to a page of the same name at the framework's root. The hint leaves out the
+    link's #fragment: expand_result takes a file path."""
+    parts = file_path.split("/")
+    framework_dir = f"documentation/{parts[1]}" if len(parts) > 2 else ""
+
+    def replace_link(match: "re.Match[str]") -> str:
+        text, dest = match.group(1), match.group(2)
+        if URL_SCHEME_RE.match(dest):
+            return match.group(0)
+        target = unquote(dest)
+        candidates = [posixpath.normpath(posixpath.join(posixpath.dirname(file_path), target))]
+        if framework_dir and not dest.startswith("./"):
+            legacy = posixpath.normpath(f"{framework_dir}/{target}")
+            candidates.insert(1 if dest.startswith("../") else 0, legacy)
+        for candidate in candidates:
+            page = local_page(candidate)
+            if page:
+                return f"{text} (-> expand_result: {page})"
+        search_term = target.replace('.md', '').replace('/', ' ').replace('-', ' ')
+        return f"{text} (-> search: {' '.join(search_term.split())})"
+
+    return LOCAL_LINK_RE.sub(replace_link, content)
 
 
 def extract_section(content: str, section_name: str) -> str:
-    """Extract a specific section from content."""
-    pattern = re.escape(section_name.replace('_', ' ').title())
-    match = re.search(rf'##?\s*{pattern}\s*\n(.*?)(?=##|\Z)', content, re.DOTALL | re.IGNORECASE)
-    return match.group(1).strip() if match else ""
+    """A section of a page: the text under its heading, a line of level 2-6 (the '# ' line
+    is the page's title: a property named 'parameters' would give its whole page), up to
+    the next heading of the same or a higher level.
+
+    Level-1 lines end no section: after the title they are comments in code. A level-2
+    section also ends at a '####' heading: the converter writes Apple's level-2 content
+    headings (Overview, Discussion, Return Value) at that level, as siblings that follow
+    '## Declaration' and '## Mentions'. So '## Topics' keeps its '###' groups, and
+    '#### Overview' its '#####' subsections. Unless its '####' headings are its children:
+    when its first sub-heading is a '###', or a '####' with no text before it (HIG's
+    '## Platform considerations' / '### macOS' / '#### …', '## Resources' / '#### Related'),
+    a level-2 section runs to the next '## '."""
+    name = re.escape(section_name.replace('_', ' ').title())
+    heading = re.search(rf'^(#{{2,6}})[ \t]*{name}[ \t]*$', content, re.MULTILINE | re.IGNORECASE)
+    if not heading:
+        return ""
+    level = len(heading.group(1))
+    body = content[heading.end():]
+    end = rf'^#{{2,{level}}}\s'
+    if level == 2:
+        first = re.search(r'^(#{2,6})\s', body, re.MULTILINE)
+        children = first is not None and (
+            len(first.group(1)) == 3 or (len(first.group(1)) == 4 and not body[:first.start()].strip())
+        )
+        if not children:
+            end += r'|^####\s'
+    stop = re.search(end, body, re.MULTILINE)
+    return (body[:stop.start()] if stop else body).strip()
 
 
 def escape_filter_value(value: str, max_length: Optional[int] = 100) -> str:
@@ -856,6 +971,7 @@ def search_apple_docs(
     same_case_pattern = None
     literal_chars = 0
     name_prefix = ""
+    spelled = ""  # the name the query's words spell (spelled_name)
 
     if has_wildcards:
         # fnmatch emits atomic groups, so a pattern can't backtrack
@@ -872,6 +988,7 @@ def search_apple_docs(
         query = query.replace('*', ' ').replace('?', ' ').strip() or "a"
     else:
         query = question_terms(original_query, query)
+        spelled = spelled_name(query)
 
     # Build Meilisearch filter
     filters = []
@@ -905,6 +1022,7 @@ def search_apple_docs(
 
     names_total: Optional[int] = None  # names listed for a wildcard pattern's prefix
     types_added = False  # types named as a one-word query, past the top matches
+    spelled_added = False  # pages named what the query's words spell, past the top matches
     try:
         results = safe_search(query, search_params)
         hits = results.get("hits", [])
@@ -934,6 +1052,25 @@ def search_apple_docs(
                     seen.add(hit.get("file_path"))
                     hits.append(hit)
                     types_added = True
+        elif spelled:
+            # A name typed as words ('vision entitlement services', 'async image') is one
+            # word in the index (Meilisearch doesn't split CamelCase), which the words match
+            # only joined, and its typo rule counts each joined word as a typo: every page
+            # holding the words apart outranks the named page, even within the top matches.
+            # So the types and frameworks named what the words spell are searched by that
+            # name, and replace or join the top matches (spelled_relevance)
+            name_params = dict(search_params, limit=SYMBOL_CANDIDATES,
+                               filter=" AND ".join(filters + [api_name_filter(spelled)]))
+            position = {hit.get("file_path"): i for i, hit in enumerate(hits)}
+            for hit in safe_search(spelled, name_params).get("hits", []):
+                if spells_title(str(hit.get("title", "")), spelled):
+                    hit["_spelled"] = True
+                    if hit.get("file_path") in position:
+                        hits[position[hit.get("file_path")]] = hit
+                    else:
+                        position[hit.get("file_path")] = len(hits)
+                        hits.append(hit)
+                        spelled_added = True
     except Exception as e:
         logger.error(f"Search failed for query '{query}': {e}")
         raise ToolError("Search temporarily unavailable. Please try again in a moment.") from e
@@ -946,7 +1083,12 @@ def search_apple_docs(
     # relevance is how closely its name fits the pattern (wildcard_matches).
     scored_hits = []
     for hit in hits:
-        score = hit['_relevance'] if has_wildcards else calculate_relevance_score(hit, query, original_query)
+        if has_wildcards:
+            score = hit['_relevance']
+        elif hit.get('_spelled'):
+            score = spelled_relevance(hit)
+        else:
+            score = calculate_relevance_score(hit, query, original_query)
         if score >= relevance_threshold:
             hit['_relevance'] = score
             scored_hits.append(hit)
@@ -966,6 +1108,8 @@ def search_apple_docs(
                  if names_capped else f"every name starting with '{name_prefix}'")
     elif types_added:
         added = f"the types named '{query}'"
+    elif spelled_added:
+        added = f"the pages named '{spelled}'"
     if window_full:
         # Matches past the top ones were never seen, unless something else found them: a
         # title such as 'Publishers.Map' (api_name 'Map') comes only from the top matches
@@ -998,9 +1142,14 @@ def search_apple_docs(
         output.append(f"Platform: {platform}")
     output.append("")
 
-    # Reserve room for the "Showing" line and the "more results" footer, which
-    # are only written after the results are chosen
-    token_count = estimate_tokens("\n".join(output)) + 40
+    # The reply's length in characters, counted whole (estimate_tokens of each piece,
+    # floored and without the newlines joining them, undercounts), with room for the
+    # "Showing" line and the longest "more results" footer, which are only written after
+    # the results are chosen: neither can end past offset + limit
+    showing = f"Showing {offset + 1}-{offset + limit} of {total_text}"
+    footer = (f"\nToken budget reached. {len(scored_hits)} more results available. "
+              f"Use offset={offset + limit} to continue")
+    used = len("\n".join(output)) + len(showing) + 1 + len(footer)
     results_included = 0
     budget_reached = False
 
@@ -1023,31 +1172,30 @@ def search_apple_docs(
 
         body = ""
         if not summary_mode and hit.get("content"):
-            body = transform_internal_links(hit.get("content", ""))
+            body = transform_internal_links(hit.get("content", ""), str(hit.get("file_path", "")))
         elif hit.get("overview"):
             body = hit.get("overview", "")[:400]
 
         result_text = "\n".join(result_lines + ([body] if body else []) + ["\n---\n"])
-        result_tokens = estimate_tokens(result_text)
 
-        if token_count + result_tokens > token_budget:
+        # The result and the newline joining it
+        if (used + len(result_text) + 1) // 4 > token_budget:
             if results_included > 0:
                 # Stop at the first result that doesn't fit, so the next
                 # offset resumes exactly here (nothing skipped or repeated)
                 budget_reached = True
                 break
             # A single result larger than the whole budget: truncate its body
-            room = (token_budget - token_count - estimate_tokens("\n".join(result_lines)) - 60) * 4
+            room = (token_budget - used // 4 - estimate_tokens("\n".join(result_lines)) - 60) * 4
             body = cut_text(body, room)
             body += (
                 f"\n\n[Truncated to fit token_budget={token_budget}. "
                 "Use expand_result with the Path above for the full document.]"
             )
             result_text = "\n".join(result_lines + [body, "\n---\n"])
-            result_tokens = estimate_tokens(result_text)
 
         output.append(result_text)
-        token_count += result_tokens
+        used += len(result_text) + 1
         results_included += 1
 
     shown_end = offset + results_included
@@ -1204,7 +1352,7 @@ def expand_result(
         content = "\n".join(pieces)
         output = [f"# {chunks[0].get('title', 'Documentation')}", ""]
         for section in sections:
-            section_content = extract_section(content, section)
+            section_content = transform_internal_links(extract_section(content, section), doc_path)
             if section_content:
                 output.append(f"## {section.title()}")
                 output.append(section_content)
@@ -1221,15 +1369,15 @@ def expand_result(
     if part > total_parts:
         return f"No part {part}: `{doc_path}` has {total_parts} part{'' if total_parts == 1 else 's'}."
 
-    text = transform_internal_links("\n".join(pieces))
+    text = transform_internal_links("\n".join(pieces), doc_path)
     if part or estimate_tokens(text) > EXPAND_TOKEN_CAP:
         first = last = part or 1
         if total_parts > 1:
             # Parts are the page's chunks, so a search result's "Part i of N" is part=i
             # here: the reply holds that part and, whole, as many of the next as fit
-            texts = [transform_internal_links(pieces[first - 1])]
+            texts = [transform_internal_links(pieces[first - 1], doc_path)]
             while last < total_parts:
-                more = texts + [transform_internal_links(pieces[last])]
+                more = texts + [transform_internal_links(pieces[last], doc_path)]
                 if estimate_tokens("\n".join(more)) > EXPAND_TOKEN_CAP:
                     break
                 texts, last = more, last + 1

@@ -3,7 +3,9 @@
 
 import asyncio
 import re
+import shutil
 import sys
+import tempfile
 import time
 import unittest
 from collections import Counter
@@ -348,7 +350,25 @@ LONG_PIECES = [f"## Section {i}\n\n" + body for i, body in enumerate(LONG_BODIES
 
 
 class ToolTestCase(unittest.TestCase):
-    """Runs the tools against a FakeIndex."""
+    """Runs the tools against a FakeIndex, and resolves local links against a docs
+    directory of the test's own (empty unless the test calls use_docs)."""
+
+    def setUp(self) -> None:
+        self.use_docs([])
+
+    def use_docs(self, files: List[str]) -> str:
+        """A docs directory holding these files (paths under documentation/), as the
+        server's DOCUMENTATION_PATH; returns its path."""
+        root = tempfile.mkdtemp()
+        self.addCleanup(shutil.rmtree, root)
+        for path in files:
+            full = Path(root, path.removeprefix("documentation/"))
+            full.parent.mkdir(parents=True, exist_ok=True)
+            full.write_text(f"# {full.stem}\n")
+        patcher = patch.object(apple_docs_mcp, "DOCUMENTATION_PATH", root)
+        patcher.start()
+        self.addCleanup(patcher.stop)
+        return root
 
     def use_index(self, documents: List[Dict[str, Any]]) -> FakeIndex:
         index = FakeIndex(documents)
@@ -507,9 +527,10 @@ class TestRanking(ToolTestCase):
                           kind="article", rank=0.995)
         index = self.use_index([dict(doc, content="Core ML Tools") for doc in (faqs, overview)])
         for question in ("What Is Core ML Tools?", "What Is Core ML Tools"):
+            index.searches.clear()
             result = search_apple_docs(question, summary_mode=True)
             # The question words aren't searched for, but the title is still the query asked
-            self.assertEqual(index.searches[-1]["q"], "Core ML Tools")
+            self.assertEqual(index.searches[0]["q"], "Core ML Tools")
             self.assertEqual(result_titles(result), ["What Is Core ML Tools?", "Core ML Tools FAQs"])
 
     def test_equal_scores_go_shortest_path_first(self) -> None:
@@ -554,11 +575,14 @@ class TestRanking(ToolTestCase):
         search_apple_docs("Data", framework="AVFAudio", summary_mode=True)
         self.assertEqual(index.searches[1]["filter"],
                          f'framework = "AVFAudio" AND api_name = "Data" AND {apple_docs_mcp.TYPE_KINDS_FILTER}')
-        # A query of several words is no name; top matches that weren't cut hold every match
+        # A query of several words is no name (only the name its words spell is searched
+        # for: TestSpelledNames); top matches that weren't cut hold every match
         index = self.use_index([dict(doc, content="data stream") for doc in properties] + [data])
         search_apple_docs("data stream", summary_mode=True)
         search_apple_docs("Data", framework="Foundation", summary_mode=True)
-        self.assertEqual(len(index.searches), 2)
+        self.assertEqual([(s["q"], s.get("filter")) for s in index.searches],
+                         [("data stream", None), ("datastream", 'api_name = "datastream"'),
+                          ("Data", 'framework = "Foundation"')])
 
     def test_a_lowercase_name_matches_titles_in_any_case(self) -> None:
         # "color" says nothing about case: every page titled so gets the exact boost, and
@@ -654,6 +678,160 @@ class TestQuestionQueries(ToolTestCase):
         self.assertEqual(result_titles(result), ["NavigationStack"])
         search_apple_docs("What’s New", summary_mode=True)
         self.assertEqual(index.searches[-1]["q"], "What’s New")
+
+
+class TestSpelledNames(ToolTestCase):
+    """A query of two or more words also finds the type or framework whose name they spell."""
+
+    def test_a_name_typed_as_words_finds_its_page(self) -> None:
+        # Meilisearch keeps VisionEntitlementServices as one word, which the words match
+        # only as typos: the pages holding the words apart came first
+        entitlements = symbol_doc("documentation/BundleResources/entitlements.md", "Entitlements",
+                                  "BundleResources", kind="article", rank=0.95)
+        wwdc = symbol_doc("documentation/Updates/wwdc2025.md", "WWDC25", "Updates", kind="article", rank=0.94)
+        framework = symbol_doc("documentation/visionentitlementservices/visionentitlementservices.md",
+                               "VisionEntitlementServices", "visionentitlementservices", kind="module")
+        index = self.use_index([dict(doc, content="vision entitlement services") for doc in (entitlements, wwdc)]
+                               + [framework])
+        result = search_apple_docs("vision entitlement services", summary_mode=True)
+        self.assertEqual(result_titles(result), ["VisionEntitlementServices", "Entitlements", "WWDC25"])
+        self.assertIn("## 1. VisionEntitlementServices (95%)", result)
+        name = index.searches[1]
+        self.assertEqual((name["q"], name["filter"], name["limit"], name["distinct"], name["showRankingScore"]),
+                         ("visionentitlementservices", 'api_name = "visionentitlementservices"',
+                          apple_docs_mcp.SYMBOL_CANDIDATES, "file_path", True))
+        # The top matches weren't cut, so they held every match: the total says nothing more
+        self.assertIn("Showing 1-3 of 3 results\n", result)
+
+    def test_the_named_page_replaces_its_top_match(self) -> None:
+        # Within the top matches too, the named page scores as the name's own search scores it
+        framework = symbol_doc("documentation/visionentitlementservices/visionentitlementservices.md",
+                               "VisionEntitlementServices", "visionentitlementservices", kind="module")
+        entitlements = symbol_doc("documentation/BundleResources/entitlements.md", "Entitlements",
+                                  "BundleResources", kind="article", rank=0.95)
+        self.use_index([dict(doc, content="vision entitlement services") for doc in (entitlements, framework)])
+        result = search_apple_docs("vision entitlement services", summary_mode=True)
+        self.assertEqual(result_titles(result), ["VisionEntitlementServices", "Entitlements"])
+        self.assertIn("## 1. VisionEntitlementServices (95%)", result)
+        self.assertIn("Showing 1-2 of 2 results\n", result)
+
+    def test_a_named_page_past_the_top_matches_says_so(self) -> None:
+        articles = [dict(symbol_doc(f"documentation/SwiftUI/article{i}.md", f"Article {i}", "SwiftUI",
+                                    kind="article", rank=0.9), content="async image") for i in range(100)]
+        image = symbol_doc("documentation/SwiftUI/asyncimage.md", "AsyncImage", "SwiftUI", kind="struct")
+        self.use_index(articles + [image])
+        result = search_apple_docs("async image", summary_mode=True)
+        self.assertEqual(result_titles(result)[:2], ["AsyncImage", "Article 0"])
+        self.assertIn("Showing 1-10 of 101 results (ranked from the top 100 matches and the pages named "
+                      "'asyncimage')\n", result)
+        # The threshold applies to its relevance as to any other
+        self.assertEqual(result_titles(search_apple_docs("async image", summary_mode=True, relevance_threshold=0.9)),
+                         ["AsyncImage"])
+
+    def test_a_page_titled_with_the_query_comes_first(self) -> None:
+        # "text field": AppKit's "Text Field" is titled with the query itself, then SwiftUI's
+        # TextField, which the words spell, then every other page
+        title = symbol_doc("documentation/AppKit/text-field.md", "Text Field", "AppKit", kind="article")
+        article = symbol_doc("documentation/SwiftUI/text-fields-in-forms.md", "Text fields in forms", "SwiftUI",
+                             kind="article", rank=0.99)
+        field = symbol_doc("documentation/SwiftUI/textfield.md", "TextField", "SwiftUI", kind="struct")
+        self.use_index([dict(doc, content="text field") for doc in (article, title)] + [field])
+        result = search_apple_docs("text field", summary_mode=True)
+        self.assertEqual(result_titles(result), ["Text Field", "TextField", "Text fields in forms"])
+        self.assertIn("## 1. Text Field (100%)", result)
+        self.assertIn("## 2. TextField (95%)", result)
+
+    def test_only_a_types_or_frameworks_name(self) -> None:
+        # Members are named with everyday phrases ("table view" spells the tableView
+        # properties and methods of hundreds of types), and a nested type's title is its
+        # qualified name: only a title with a capital first and no whitespace that is the
+        # whole name is kept
+        article = dict(symbol_doc("documentation/UIKit/table-views.md", "Table views", kind="article", rank=0.9),
+                       content="table view keyboard dismiss mode")
+        members = [symbol_doc("documentation/UIKit/uitableviewcontroller/tableview.md", "tableView",
+                              kind="property"),
+                   symbol_doc("documentation/UIKit/uitableviewdelegate/tableview-didselectrowat.md",
+                              "tableView(_:didSelectRowAt:)", kind="method"),
+                   symbol_doc("documentation/UIKit/uiscrollview/keyboarddismissmode.md",
+                              "UIScrollView.KeyboardDismissMode", kind="enum", api_name="KeyboardDismissMode")]
+        index = self.use_index([article] + members)
+        self.assertEqual(result_titles(search_apple_docs("table view", summary_mode=True)), ["Table views"])
+        self.assertEqual(index.searches[1]["q"], "tableview")
+        self.assertEqual(result_titles(search_apple_docs("keyboard dismiss mode", summary_mode=True)),
+                         ["Table views"])
+
+    def test_the_words_left_of_a_question_and_the_filters(self) -> None:
+        data = symbol_doc("documentation/SwiftData/swiftdata.md", "SwiftData", "SwiftData", kind="module")
+        article = dict(symbol_doc("documentation/SwiftData/adding-and-editing.md", "Adding and editing", "SwiftData",
+                                  kind="article", rank=0.99), content="Swift Data")
+        index = self.use_index([article, data])
+        result = search_apple_docs("What is Swift Data?", summary_mode=True)
+        self.assertEqual([s["q"] for s in index.searches], ["Swift Data", "SwiftData"])
+        self.assertEqual(result_titles(result), ["SwiftData", "Adding and editing"])
+        # The search's filters apply to the name's too
+        index.searches.clear()
+        search_apple_docs("swift data", framework="SwiftData", platform="ios", summary_mode=True)
+        self.assertEqual(index.searches[1]["filter"],
+                         'framework = "SwiftData" AND platforms = "ios" AND api_name = "swiftdata"')
+
+    def test_only_a_query_of_plain_words_spells_a_name(self) -> None:
+        index = self.use_index([symbol_doc("documentation/SwiftUI/state.md", "State", "SwiftUI", kind="struct"),
+                                symbol_doc("documentation/UIKit/uiview.md", "UIView")])
+        # One word, a pattern, and words with other characters spell no name
+        for query in ("State", "UI*View", "@State property wrapper", "mlx.core.array", "swift-data model"):
+            index.searches.clear()
+            search_apple_docs(query, summary_mode=True)
+            self.assertFalse([s for s in index.searches if "api_name =" in s.get("filter", "")], query)
+        spell = apple_docs_mcp.spelled_name
+        self.assertEqual(spell("vision entitlement services"), "visionentitlementservices")
+        self.assertEqual(spell("Swift Data"), "SwiftData")
+        self.assertEqual(spell("in app purchase"), "inapppurchase")
+        for query in ("AsyncImage", "@State wrapper", "mlx.core array", ""):
+            self.assertEqual(spell(query), "", query)
+        spells = apple_docs_mcp.spells_title
+        self.assertTrue(spells("AsyncImage", "asyncimage"))
+        for title in ("asyncImage", "Async Image", "SwiftUI.AsyncImage", "AsyncImagePhase"):
+            self.assertFalse(spells(title, "asyncimage"), title)
+
+
+class TestTokenBudget(ToolTestCase):
+    """A reply stays within token_budget: its whole text is counted, with room for the
+    "Showing" line and the longest footer, which are written after the results."""
+
+    def test_a_long_spelled_name_stays_within_the_budget(self) -> None:
+        # The total names the name the query's words spell, which can be ~250 characters
+        words = [f"word{i:02d}abcdefg" for i in range(17)]
+        query = " ".join(words)
+        name = "".join(word.capitalize() for word in words)
+        truncated = False
+        for body in [*range(10, 2000, 61), 6000]:
+            for budget in (1000, 1500):
+                docs = [dict(symbol_doc(f"documentation/Foundation/thing{i}.md", f"Thing {i}", "Foundation",
+                                        kind="article", rank=0.5), content=f"{query} " + "x" * body)
+                        for i in range(120)]
+                docs.append(dict(symbol_doc(f"documentation/Foundation/{name.lower()}.md", name, "Foundation",
+                                            kind="struct"), content="x" * body))
+                self.use_index(docs)
+                result = search_apple_docs(query, limit=20, token_budget=budget)
+                self.assertIn(f" and the pages named '{''.join(words)}')\n", result)
+                self.assertLessEqual(estimate_tokens(result), budget, (body, budget))
+                truncated = truncated or "[Truncated to fit token_budget" in result
+        self.assertTrue(truncated)  # a result longer than the budget was cut to it
+
+    def test_twenty_short_results_stay_within_the_budget(self) -> None:
+        # The newline joining each result, and the fraction each estimate floored away,
+        # used to go uncounted: up to ~1 token a result
+        reached = every = False
+        for budget in (1080, 1100, 1120, 1140):
+            for body in range(1, 60):
+                self.use_index([dict(symbol_doc(f"documentation/Foundation/thing{i}.md", f"Thing {i}", "Foundation",
+                                                kind="article", rank=0.5), content="data " + "x" * body)
+                                for i in range(30)])
+                result = search_apple_docs("data", limit=20, token_budget=budget)
+                self.assertLessEqual(estimate_tokens(result), budget, (body, budget))
+                reached = reached or "\nToken budget reached. " in result
+                every = every or "Showing 1-20 of 30 results\n" in result
+        self.assertTrue(reached and every)
 
 
 class TestWildcards(ToolTestCase):
@@ -916,15 +1094,17 @@ class TestExpandResult(ToolTestCase):
 
     def test_reading_the_parts_as_their_notes_say_gives_the_page(self) -> None:
         # Parts of every size, with relative links: each reply holds whole parts, its links
-        # made search hints as in the whole page, and the replies joined are the page
+        # made hints as in the whole page, and the replies joined are the page
         sizes = [300, 5000, 9000, 2000, 12000, 30000, 40000, 100, 47000, 800]
         pieces = [f"## Section {i}\n\nSee [Next](section-{i + 1}.md) and "
                   "[Apple](https://developer.apple.com/x).\n\n" + "x" * size + "\n"
                   for i, size in enumerate(sizes)]
+        self.use_docs([f"documentation/Swift-Book/section-{i}.md" for i in range(1, 10, 2)])
         self.use_index(page_documents(PATH, pieces))
-        page = apple_docs_mcp.transform_internal_links("\n".join(pieces))
+        page = apple_docs_mcp.transform_internal_links("\n".join(pieces), PATH)
         self.assertGreater(estimate_tokens(page), EXPAND_TOKEN_CAP)
-        self.assertIn("Next (-> search: section 1)", page)
+        self.assertIn("Next (-> expand_result: documentation/Swift-Book/section-1.md)", page)
+        self.assertIn("Next (-> search: section 2)", page)
 
         texts: List[str] = []
         notes: List[str] = []
@@ -945,11 +1125,13 @@ class TestExpandResult(ToolTestCase):
         # Whole parts packed under the cap (~80,000 characters): 3 replies, not 10
         self.assertEqual(notes, ["Parts 1-6 of 10", "Parts 7-8 of 10", "Parts 9-10 of 10"])
 
-    def test_whole_page_links_become_search_hints(self) -> None:
+    def test_whole_page_links_become_hints(self) -> None:
+        # A page in the docs is named by its path, any other by a search
         pieces = ["# Concurrency\n\nSee [Task](../Swift/task.md).\n", "## Actors\n\n[Actor](actor.md)\n"]
+        self.use_docs(["documentation/Swift/task.md"])
         self.use_index(page_documents(PATH, pieces))
-        self.assertEqual(expand_result(PATH), "# Concurrency\n\nSee Task (-> search: .. Swift task).\n\n"
-                         "## Actors\n\nActor (-> search: actor)\n")
+        self.assertEqual(expand_result(PATH), "# Concurrency\n\nSee Task (-> expand_result: documentation/Swift/"
+                         "task.md).\n\n## Actors\n\nActor (-> search: actor)\n")
 
     def test_part_of_a_page_that_fits(self) -> None:
         pieces = ["# Concurrency\n\nIntro.\n", "## Tasks\n\nTask text.\n"]
@@ -998,6 +1180,23 @@ class TestExpandResult(ToolTestCase):
         self.assertLessEqual(estimate_tokens(result), EXPAND_TOKEN_CAP + 60)
         self.assertTrue(result.endswith("\n\n[Truncated to fit one response. Read the whole page in parts: "
                                         f"expand_result(file_path=\"{PATH}\", part=1).]\n"))
+
+    def test_sections_keep_their_subsections_and_their_links_become_hints(self) -> None:
+        button = "documentation/SwiftUI/button.md"
+        page = ("# Button\n\n**Kind**: struct\n\nA control.\n\n## Declaration\n\n"
+                "```swift\nstruct Button<Label>\n```\n\n## Mentions\n\n- [Configuring views](configuring-views.md)\n\n#### Overview\n\nCreate a button.\n\n"
+                "##### Adding buttons to containers\n\nUse [List](list.md).\n\n#### Return Value\n\nNone.\n\n"
+                "## Topics\n\n### Creating a button\n\n- [init(action:label:)](button/init-action-label.md)\n\n"
+                "### Styling\n\n- [ButtonStyle](buttonstyle.md)\n\n## See Also\n\n- [Toggle](toggle.md)\n")
+        self.use_docs(["documentation/SwiftUI/list.md", "documentation/SwiftUI/buttonstyle.md"])
+        self.use_index(page_documents(button, [page], title="Button", framework="SwiftUI", kind="struct"))
+        result = expand_result(button, sections=["declaration", "overview", "topics"])
+        self.assertEqual(result, "# Button\n\n## Declaration\n```swift\nstruct Button<Label>\n```\n\n"
+                         "## Overview\nCreate a button.\n\n##### Adding buttons to containers\n\n"
+                         "Use List (-> expand_result: documentation/SwiftUI/list.md).\n\n"
+                         "## Topics\n### Creating a button\n\n- init(action:label:) (-> search: button init action "
+                         "label)\n\n### Styling\n\n- ButtonStyle (-> expand_result: documentation/SwiftUI/"
+                         "buttonstyle.md)\n")
 
     def test_symbol_lookup_returns_the_whole_page_of_its_best_chunk(self) -> None:
         button = page_documents("documentation/SwiftUI/button.md", ["# Button\n\nA control.\n", "## Topics\n"],
@@ -1081,6 +1280,161 @@ class TestExpandResult(ToolTestCase):
         with patch.object(index, "get_documents", failing), self.assertRaises(apple_docs_mcp.ToolError):
             expand_result(PATH)
         self.assertEqual(failing.call_count, 1)  # an API error isn't retried
+
+
+TOGGLE_BODY = "documentation/SwiftUI/togglestyle/makebody-configuration.md"
+
+
+class TestInternalLinks(ToolTestCase):
+    """A local link becomes the path of the page it leads to, for expand_result, when that
+    page is in the docs; else a search for its file name."""
+
+    @staticmethod
+    def hints(content: str, page: str = TOGGLE_BODY) -> str:
+        return apple_docs_mcp.transform_internal_links(content, page)
+
+    def test_a_bare_link_is_relative_to_the_framework_directory_first(self) -> None:
+        # How links have been written: SwiftUI/togglestyle/makebody-configuration.md's
+        # Button is SwiftUI/button.md, though togglestyle/button.md exists too
+        self.use_docs(["documentation/SwiftUI/button.md", "documentation/SwiftUI/togglestyle/button.md",
+                       "documentation/SwiftUI/togglestyle/configuration.md",
+                       "documentation/XCTest/handling-ui-interruptions.md"])
+        self.assertEqual(self.hints("[`Button`](button.md)"),
+                         "`Button` (-> expand_result: documentation/SwiftUI/button.md)")
+        self.assertEqual(self.hints("[Handling UI interruptions](handling-ui-interruptions.md)",
+                                    "documentation/XCTest/xctestcase/adduiinterruptionmonitor.md"),
+                         "Handling UI interruptions (-> expand_result: documentation/XCTest/"
+                         "handling-ui-interruptions.md)")
+        # ...then to the page itself
+        self.assertEqual(self.hints("[Configuration](configuration.md)"),
+                         "Configuration (-> expand_result: documentation/SwiftUI/togglestyle/configuration.md)")
+
+    def test_a_link_starting_with_dot_slash_is_relative_to_the_page_only(self) -> None:
+        # A file-relative link whose page is gone never resolves to a page of the same name
+        # at the framework's root
+        self.use_docs(["documentation/SwiftUI/button.md", "documentation/SwiftUI/togglestyle/isOn.md"])
+        self.assertEqual(self.hints("[isOn](./isOn.md) [Button](./button.md)"),
+                         "isOn (-> expand_result: documentation/SwiftUI/togglestyle/isOn.md) "
+                         "Button (-> search: . button)")
+
+    def test_a_link_starting_with_dot_dot_is_relative_to_the_page_first(self) -> None:
+        self.use_docs(["documentation/Swift-Book/LanguageGuide/Functions.md", "documentation/Swift/task.md",
+                       "documentation/SwiftUI/SwiftUI/view.md", "documentation/SwiftUI/view.md"])
+        self.assertEqual(self.hints("[In-Out Parameters](../LanguageGuide/Functions.md)",
+                                    "documentation/Swift-Book/ReferenceManual/Declarations.md"),
+                         "In-Out Parameters (-> expand_result: documentation/Swift-Book/LanguageGuide/Functions.md)")
+        # ...then to the framework directory
+        self.assertEqual(self.hints("[Task](../Swift/task.md)", PATH),
+                         "Task (-> expand_result: documentation/Swift/task.md)")
+        # Both exist: the page's
+        self.assertEqual(self.hints("[View](../SwiftUI/view.md)", "documentation/SwiftUI/text/init.md"),
+                         "View (-> expand_result: documentation/SwiftUI/SwiftUI/view.md)")
+
+    def test_another_frameworks_page_is_named_in_its_directorys_case(self) -> None:
+        # Links lowercase another framework's directory, and the image's file system is
+        # case-sensitive
+        self.use_docs(["documentation/Swift/equatable.md", "documentation/SwiftUI/text.md"])
+        self.assertEqual(self.hints("[Equatable](../swift/equatable.md)", "documentation/SwiftUI/text.md"),
+                         "Equatable (-> expand_result: documentation/Swift/equatable.md)")
+        self.assertEqual(self.hints("[Text](../swiftui/text.md)", "documentation/Swift/equatable.md"),
+                         "Text (-> expand_result: documentation/SwiftUI/text.md)")
+
+    def test_encoded_links_and_fragments(self) -> None:
+        self.use_docs(["documentation/AuthenticationServices/session/complete(withcallbackurl).md",
+                       "documentation/SwiftUI/button.md", "documentation/SwiftUI/text.md"])
+        page = "documentation/AuthenticationServices/session.md"
+        self.assertEqual(self.hints("[complete(withCallbackURL:)](./session/complete%28withcallbackurl%29.md)", page),
+                         "complete(withCallbackURL:) (-> expand_result: documentation/AuthenticationServices/"
+                         "session/complete(withcallbackurl).md)")
+        # A page that isn't there is searched for by its decoded name
+        self.assertEqual(self.hints("[cancel()](./session/cancel%28%29.md)", page),
+                         "cancel() (-> search: . session cancel())")
+        # The hint is the page's path, without the fragment: expand_result takes a file path
+        self.assertEqual(self.hints("See [Overview](button.md#overview) and [Gone](gone.md#x)."),
+                         "See Overview (-> expand_result: documentation/SwiftUI/button.md) and "
+                         "Gone (-> search: gone).")
+        self.assertEqual(self.hints("[Text](../text.md#mentions)", "documentation/SwiftUI/button/init.md"),
+                         "Text (-> expand_result: documentation/SwiftUI/text.md)")
+
+    def test_link_text_with_brackets(self) -> None:
+        # Topics links to symbols whose names hold brackets (ARKit/accessory.md)
+        self.use_docs(["documentation/ARKit/accessory/locations.md", "documentation/ARKit/accessory/matrix.md"])
+        content = ("- [var locations: [Accessory.LocationName]](accessory/locations.md)\n"
+                   "- [func matrix() -> [[Float]]](accessory/matrix.md)\n"
+                   "- [subscript(_:) -> [Int]](accessory/subscript.md)\n")
+        self.assertEqual(self.hints(content, "documentation/ARKit/accessory.md"),
+                         "- var locations: [Accessory.LocationName] (-> expand_result: documentation/ARKit/"
+                         "accessory/locations.md)\n"
+                         "- func matrix() -> [[Float]] (-> expand_result: documentation/ARKit/accessory/matrix.md)\n"
+                         "- subscript(_:) -> [Int] (-> search: accessory subscript)\n")
+
+    def test_links_that_stay(self) -> None:
+        self.use_docs(["documentation/Foundation/httpcookie.md"])
+        # A URL stays a link, and a page whose name starts with 'http' is a local page
+        proposal = "[SE-0001](https://github.com/swiftlang/swift-evolution/blob/main/proposals/0001-keywords.md)"
+        self.assertEqual(self.hints(proposal), proposal)
+        self.assertEqual(self.hints("[HTTPCookie](httpcookie.md)", "documentation/Foundation/urlrequest.md"),
+                         "HTTPCookie (-> expand_result: documentation/Foundation/httpcookie.md)")
+        # Links of other kinds stay as they are
+        for content in ("[Apple](https://developer.apple.com/x)", "[Top](#overview)", "![Image](image.png)"):
+            self.assertEqual(self.hints(content), content)
+        # A path out of documentation/ is no page
+        self.assertEqual(self.hints("[x](../../../../etc/passwd.md) [y](../../x.md)", "documentation/SwiftUI/a.md"),
+                         "x (-> search: .. .. .. .. etc passwd) y (-> search: .. .. x)")
+
+    def test_search_results_name_the_pages_of_their_links(self) -> None:
+        self.use_docs(["documentation/SwiftUI/list.md"])
+        self.use_index(page_documents("documentation/SwiftUI/button.md",
+                                      ["# Button\n\nUse [List](list.md) or [Gone](gone.md).\n"],
+                                      title="Button", framework="SwiftUI", kind="struct"))
+        result = search_apple_docs("Button")
+        self.assertIn("Use List (-> expand_result: documentation/SwiftUI/list.md) or Gone (-> search: gone).",
+                      result)
+
+
+class TestExtractSection(unittest.TestCase):
+    """A section runs from its heading to the next heading of its level or a higher one."""
+
+    PAGE = ("# parameters\n\n**Kind**: property\n\nThe parameters.\n\n## Declaration\n\n```python\n"
+            "# a comment\nparameters = {}\n```\n\n## Mentions\n\n- [Models](models.md)\n\n#### Overview\n\n"
+            "Text with ## inside.\n\n##### Details\n\nMore.\n\n#### Discussion\n\nDiscussed.\n\n"
+            "## Topics\n\n### Group A\n\n- a\n\n### Group B\n\n- b\n\n## See Also\n\n- c\n")
+
+    def section(self, name: str) -> str:
+        return apple_docs_mcp.extract_section(self.PAGE, name)
+
+    def test_a_level_2_section_ends_at_the_next_level_2_or_4_heading(self) -> None:
+        # Level-1 lines are comments in code, and the converter writes Apple's level-2
+        # content headings at level 4, after Declaration and Mentions
+        self.assertEqual(self.section("declaration"), "```python\n# a comment\nparameters = {}\n```")
+        self.assertEqual(self.section("mentions"), "- [Models](models.md)")
+        # ...and keeps its level-3 groups
+        self.assertEqual(self.section("topics"), "### Group A\n\n- a\n\n### Group B\n\n- b")
+        self.assertEqual(self.section("see_also"), "- c")
+
+    def test_a_deeper_section_keeps_its_subsections(self) -> None:
+        self.assertEqual(self.section("overview"), "Text with ## inside.\n\n##### Details\n\nMore.")
+        self.assertEqual(self.section("Discussion"), "Discussed.")
+        self.assertEqual(self.section("group_b"), "- b")
+        self.assertEqual(self.section("details"), "More.")
+
+    def test_the_title_is_no_section(self) -> None:
+        # A property named "parameters" would give its whole page
+        self.assertEqual(self.section("parameters"), "")
+        self.assertEqual(self.section("return_value"), "")
+        self.assertEqual(apple_docs_mcp.extract_section("# T\n\n## Overview", "overview"), "")
+        self.assertEqual(apple_docs_mcp.extract_section("## Overview  \nlast\n", "overview"), "last")
+
+    def test_a_level_2_section_keeps_level_4_children(self) -> None:
+        # HIG: a level-2 section whose first sub-heading is a '###', or a '####' right after
+        # its heading, holds its '####' headings and runs to the next '## '
+        page = ("# Buttons\n\n## Platform considerations\n\n### macOS\n\n#### Push buttons\n\nPush.\n\n"
+                "### visionOS\n\nIn space.\n\n## Resources\n\n#### Related\n\n- [Menus](menus.md)\n\n"
+                "#### Videos\n\n- a talk\n")
+        self.assertEqual(apple_docs_mcp.extract_section(page, "platform_considerations"),
+                         "### macOS\n\n#### Push buttons\n\nPush.\n\n### visionOS\n\nIn space.")
+        self.assertEqual(apple_docs_mcp.extract_section(page, "resources"),
+                         "#### Related\n\n- [Menus](menus.md)\n\n#### Videos\n\n- a talk")
 
 
 class TestToolDescriptions(unittest.TestCase):
